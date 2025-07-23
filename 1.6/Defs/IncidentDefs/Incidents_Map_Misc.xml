@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IncidentDef>
+		<defName>VEE_Alphabeavers</defName>
+		<label>alphabeavers</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>VanillaExplorationExpanded.IncidentWorker_Alphabeavers_MutatorLocked</workerClass>
+		<baseChance>0.5</baseChance>
+		<minRefireDays>30</minRefireDays>
+	</IncidentDef>
+	<IncidentDef>
+		<defName>VEE_MigratoryHerds</defName>
+		<label>herd migration</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>VanillaExplorationExpanded.IncidentWorker_HerdMigration_MutatorLocked</workerClass>
+		<baseChance>1.0</baseChance>
+		<letterLabel>Animal migration: {0}</letterLabel>
+		<letterText>A group of {0} is passing through the area.\n\nThey won't attack unless provoked.</letterText>
+		<letterDef>NeutralEvent</letterDef>
+	</IncidentDef>
+	<IncidentDef>
+		<defName>VEE_Infestation</defName>
+		<label>infestation</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>VanillaExplorationExpanded.IncidentWorker_Infestation_MutatorLocked</workerClass>
+		<letterLabel>Infestation</letterLabel>
+		<letterText>Giant insects are tunneling towards you! They will break through in a few seconds and plant hives.\n\nThe hives will spawn more insects and more hives.\n\nIf you don't want the insects to infest the whole area, destroy the hives. But beware - the bugs will defend their home.</letterText>
+		<letterDef>ThreatBig</letterDef>
+		<baseChance>2.7</baseChance>
+		<minRefireDays>20</minRefireDays>
+		<category>ThreatBig</category>
+		<pointsScaleable>true</pointsScaleable>
+		<minThreatPoints>400</minThreatPoints>
+		<tale>Infestation</tale>
+	</IncidentDef>
+	<IncidentDef>
+		<defName>VEE_TornadoAlley</defName>
+		<label>tornado</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>VanillaExplorationExpanded.IncidentWorker_Tornado_MutatorLocked</workerClass>
+		<letterDef>ThreatBig</letterDef>
+		<baseChance>1</baseChance>
+		<minRefireDays>20</minRefireDays>
+		<category>ThreatBig</category>
+	</IncidentDef>
+</Defs>

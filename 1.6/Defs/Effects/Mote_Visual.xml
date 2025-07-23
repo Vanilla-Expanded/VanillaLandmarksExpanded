@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MoteBase">
+		<defName>VEE_RotstinkMote</defName>
+		<graphicData>
+			<texPath>Things/Mote/VEE_RotstinkMote</texPath>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.04</fadeInTime>
+			<solidTime>0.03</solidTime>
+			<fadeOutTime>3</fadeOutTime>
+		</mote>
+	</ThingDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>VEE_ToxicMote</defName>
+		<graphicData>
+			<texPath>Things/Mote/VEE_ToxicMote</texPath>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.04</fadeInTime>
+			<solidTime>0.03</solidTime>
+			<fadeOutTime>3</fadeOutTime>
+		</mote>
+	</ThingDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>VEE_SmokeMote</defName>
+		<graphicData>
+			<texPath>Things/Mote/VEE_SmokeMote</texPath>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.04</fadeInTime>
+			<solidTime>0.03</solidTime>
+			<fadeOutTime>3</fadeOutTime>
+		</mote>
+	</ThingDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>VEE_DeadlifeMote</defName>
+		<graphicData>
+			<texPath>Things/Mote/VEE_DeadlifeMote</texPath>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.04</fadeInTime>
+			<solidTime>0.03</solidTime>
+			<fadeOutTime>3</fadeOutTime>
+		</mote>
+	</ThingDef>
+</Defs>

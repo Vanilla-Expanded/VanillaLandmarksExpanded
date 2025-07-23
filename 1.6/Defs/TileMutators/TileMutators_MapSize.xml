@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TileMutatorDef>
+		<defName>VEE_LargerRegion</defName>
+		<label>larger region</label>
+		<description>This region is 30% larger than usual.</description>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<mapSizeMultiplier>1.3</mapSizeMultiplier>
+			</li>
+		</modExtensions>
+		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
+		<categories>
+			
+			<li>VEE_MapSize</li>
+		</categories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_SmallerRegion</defName>
+		<label>smaller region</label>
+		<description>This region is 30% smaller than usual.</description>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<mapSizeMultiplier>0.7</mapSizeMultiplier>
+			</li>
+		</modExtensions>
+		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
+		<categories>
+			
+			<li>VEE_MapSize</li>
+		</categories>
+	</TileMutatorDef>
+</Defs>
+

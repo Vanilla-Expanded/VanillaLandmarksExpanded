@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TileMutatorDef>
+		<defName>VEE_SteamGeysers_Decreased</defName>
+		<label>no geothermal activity</label>
+		<description>Steam geysers are absent from this area.</description>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<geyserCountFactor>0</geyserCountFactor>
+		<biomeBlacklist>
+			<li>Grasslands</li>
+			<li>GlacialPlain</li>
+		</biomeBlacklist>
+		<categories>
+			<li>VEE_Geothermal_GeyserAmount</li>
+			<li>VEE_Geothermal_NotHigh</li>
+		</categories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_RotstinkVents</defName>
+		<label>rotstink geysers</label>
+		<description>Foul geysers that intermittently belch clouds of corpse-born miasma, choking the air with the stench of decay.</description>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<prefabsToSpawn>
+					<li>VEE_RotstinkVent_Prefab</li>
+				</prefabsToSpawn>
+				<prefabsToSpawnAmount>6~12</prefabsToSpawnAmount>
+				<minSeparationBetweenPrefabs>30</minSeparationBetweenPrefabs>
+			</li>
+		</modExtensions>
+		<workerClass>VEF.Maps.TileMutatorWorker_GenericPrefabSpawner</workerClass>
+		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+			<li>GlacialPlain</li>
+		</biomeBlacklist>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_ToxicVents</defName>
+		<label>toxic geysers</label>
+		<description>Volatile fissures that periodically spew noxious green gas, poisoning the air and sickening anything that breathes it.</description>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<prefabsToSpawn>
+					<li>VEE_ToxicVent_Prefab</li>
+				</prefabsToSpawn>
+				<prefabsToSpawnAmount>6~12</prefabsToSpawnAmount>
+				<minSeparationBetweenPrefabs>30</minSeparationBetweenPrefabs>
+			</li>
+		</modExtensions>
+		<workerClass>VEF.Maps.TileMutatorWorker_GenericPrefabSpawner</workerClass>
+		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+			<li>GlacialPlain</li>
+		</biomeBlacklist>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_SmokeVents</defName>
+		<label>smoke geysers</label>
+		<description>Smoldering fissures that intermittently exhale thick, acrid smoke, reducing visibility and choking the lungs.</description>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<prefabsToSpawn>
+					<li>VEE_SmokeVent_Prefab</li>
+				</prefabsToSpawn>
+				<prefabsToSpawnAmount>6~12</prefabsToSpawnAmount>
+				<minSeparationBetweenPrefabs>30</minSeparationBetweenPrefabs>
+			</li>
+		</modExtensions>
+		<workerClass>VEF.Maps.TileMutatorWorker_GenericPrefabSpawner</workerClass>
+		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+			<li>GlacialPlain</li>
+		</biomeBlacklist>
+	</TileMutatorDef>
+	<TileMutatorDef MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>VEE_DeadlifeVents</defName>
+		<label>deadlife geysers</label>
+		<description>Sinister geysers that exhale eerie, ash-like dust—capable of reawakening the dead under its haunting influence.</description>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<prefabsToSpawn>
+					<li>VEE_DeadlifeVent_Prefab</li>
+				</prefabsToSpawn>
+				<prefabsToSpawnAmount>6~12</prefabsToSpawnAmount>
+				<minSeparationBetweenPrefabs>30</minSeparationBetweenPrefabs>
+			</li>
+		</modExtensions>
+		<workerClass>VEF.Maps.TileMutatorWorker_GenericPrefabSpawner</workerClass>
+		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+			<li>GlacialPlain</li>
+		</biomeBlacklist>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_MineralDevoid</defName>
+		<label>mineral devoid</label>
+		<!-- not actually visible, overriden with a translation -->
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_MineralDevoid</workerClass>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+		</biomeBlacklist>
+		<categories>
+			<li>VEE_Minerals</li>
+		</categories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_Fertility_Reduced</defName>
+		<label>decreased soil fertility</label>
+		<description>This area contains no fertile soils.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_RemoveFertileSoils</workerClass>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+			<li>ExtremeDesert</li>
+			<li>Desert</li>
+			<li>Scarlands</li>
+			<li>GlacialPlain</li>
+		</biomeBlacklist>
+		<categories>
+			<li>VEE_Fertility</li>
+		</categories>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="BasePatch">
+		<defName>VEE_VolcanicRichSoil</defName>
+		<label>rich volcanic soil</label>
+		<description>This area has patches of volcanic soil that have higher than average fertility.</description>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<overrideLakeBeachTerrain>VEE_VolcanicSoilRich</overrideLakeBeachTerrain>
+		<overrideRiverbankTerrain>VEE_VolcanicSoilRich</overrideRiverbankTerrain>
+		<overrideMudTerrain>VEE_VolcanicSoilRich</overrideMudTerrain>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.005</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>VEE_VolcanicSoilRich</terrain>
+						<min>0</min>
+						<max>0.35</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_DeepOreRich</defName>
+		<label>deep ore rich</label>
+		<description>This area is rich in deep ores, increasing the yield of deep drills by 25%.</description>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+		</biomeBlacklist>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<deepOresMultiplier>1.25</deepOresMultiplier>
+			</li>
+		</modExtensions>
+		<categories>
+			<li>VEE_DeepOres</li>
+		</categories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_DeepOrePoor</defName>
+		<label>deep ore poor</label>
+		<description>This area is poor in deep ores, decreasing the yield of deep drills by 25%.</description>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+		</biomeBlacklist>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<deepOresMultiplier>0.75</deepOresMultiplier>
+			</li>
+		</modExtensions>
+		<categories>
+			<li>VEE_DeepOres</li>
+		</categories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_DeepOreDevoid</defName>
+		<label>no deep ores</label>
+		<description>This area is so poor in deep ores that they are almost non-existant.</description>
+		<chanceOnNonLandmarkTile>0.005</chanceOnNonLandmarkTile>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<deepOresMultiplier>0</deepOresMultiplier>
+			</li>
+		</modExtensions>
+		<categories>
+			<li>VEE_DeepOres</li>
+		</categories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_HardToTraverse</defName>
+		<label>hard to traverse</label>
+		<description>Certain geographical features in this region make it harder to traverse.</description>
+		<chanceOnNonLandmarkTile>0.005</chanceOnNonLandmarkTile>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<movementDifficultyOffset>2</movementDifficultyOffset>
+			</li>
+		</modExtensions>
+		<categories>
+			<li>VEE_Traversability</li>
+		</categories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_EasyToTraverse</defName>
+		<label>easy to traverse</label>
+		<description>Certain geographical features in this region make it easier to traverse.</description>
+		<chanceOnNonLandmarkTile>0.005</chanceOnNonLandmarkTile>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<movementDifficultyOffset>-2</movementDifficultyOffset>
+			</li>
+		</modExtensions>
+		<categories>
+			<li>VEE_Traversability</li>
+		</categories>
+	</TileMutatorDef>
+</Defs>
+

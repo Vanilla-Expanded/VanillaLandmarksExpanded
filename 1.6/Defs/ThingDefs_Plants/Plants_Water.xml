@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="TreeBase">
+		<defName>VEE_Mangrove</defName>
+		<label>mangrove</label>
+		<description>A salt-tolerant tree adapted to life in brackish wetlands. Its tangled roots anchor it in shifting mud and provide shelter for aquatic life.</description>
+		<graphicData>
+			<texPath>Things/Plant/Tree_Mangrove</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<ingestible/>
+		<plant>
+			<wildPlantUseDistanceToShore>true</wildPlantUseDistanceToShore>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
+			<showInFrozenWater>true</showInFrozenWater>
+			<leaflessGraphicPath>Things/Plant/Tree_Mangrove_Leafless</leaflessGraphicPath>
+			<immatureGraphicPath>Things/Plant/Tree_Mangrove_Immature</immatureGraphicPath>
+			<choppedThingDef>VEE_Mangrove_ChoppedStump</choppedThingDef>
+			<smashedThingDef>VEE_Mangrove_SmashedStump</smashedThingDef>
+			<wildTerrainTags>
+				<li>Mud</li>
+				<li>WaterMarshy</li>
+				<li>WaterFreshShallow</li>
+			</wildTerrainTags>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="StumpBase" Name="StumpChoppedBase">
+		<defName>VEE_Mangrove_ChoppedStump</defName>
+		<label>mangrove chopped stump</label>
+		<description>A stump left behind after a mangrove tree has been felled. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
+		<statBases>
+			<Beauty>0</Beauty>
+			<DeteriorationRate>20</DeteriorationRate>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Tree_ChoppedStump_Mangrove</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutPlant</shaderType>
+			<shadowData>
+				<volume>(0.15, 0.1, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<harvestWork>90</harvestWork>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="StumpBase" Name="StumpSmashedBase">
+		<defName>VEE_Mangrove_SmashedStump</defName>
+		<label>mangrove smashed stump</label>
+		<description>The remnants of a mangrove tree destroyed by damage. It's ugly. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
+		<statBases>
+			<Beauty>-8</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Tree_SmashedStump_Mangrove</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutPlant</shaderType>
+			<shadowData>
+				<volume>(0.15, 0.15, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+	</ThingDef>
+</Defs>

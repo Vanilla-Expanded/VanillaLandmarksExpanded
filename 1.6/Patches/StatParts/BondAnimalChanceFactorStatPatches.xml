@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/StatDef[defName = "BondAnimalChanceFactor"]/parts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/StatDef[defName = "BondAnimalChanceFactor"]</xpath>
+			<value>
+				<parts>
+					<li Class="VanillaExplorationExpanded.StatPart_BondAnimalChanceFactor_WanderingCompanions"/>
+				
+				</parts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/StatDef[defName = "BondAnimalChanceFactor"]/parts</xpath>
+			<value>
+				<li Class="VanillaExplorationExpanded.StatPart_BondAnimalChanceFactor_WanderingCompanions"/>
+				
+			</value>
+		</match>
+	</Operation>
+</Patch>
+

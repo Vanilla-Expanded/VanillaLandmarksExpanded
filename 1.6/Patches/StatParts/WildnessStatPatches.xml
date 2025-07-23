@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/StatDef[defName = "Wildness"]/parts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/StatDef[defName = "Wildness"]</xpath>
+			<value>
+				<parts>
+					<li Class="VanillaExplorationExpanded.StatPart_Wildness_FeralKinship"/>
+					<li Class="VanillaExplorationExpanded.StatPart_Wildness_Distressed"/>
+				</parts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/StatDef[defName = "Wildness"]/parts</xpath>
+			<value>
+				<li Class="VanillaExplorationExpanded.StatPart_Wildness_FeralKinship"/>
+				<li Class="VanillaExplorationExpanded.StatPart_Wildness_Distressed"/>
+			</value>
+		</match>
+	</Operation>
+</Patch>
+

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>VEE_BurntForestSoil</defName>
+		<label>burnt forest soil</label>
+		<texturePath>Terrain/Surfaces/VEE_BurntForestSoil</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_BurntForestSoil</pollutedTexturePath>
+		<edgeType>FadeRough</edgeType>
+		<categoryType>Stone</categoryType>
+		<renderPrecedence>205</renderPrecedence>
+		<pathCost>3</pathCost>
+		<scatterType>Rocky</scatterType>
+		<driesTo>Soil</driesTo>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<Cleanliness>-3</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>Walkable</li>
+			<li>SmoothableStone</li>
+		</affordances>
+		<generatedFilth>Filth_VolcanicAsh</generatedFilth>
+		<fertility>0</fertility>
+	</TerrainDef>
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>VEE_VolcanicAsh</defName>
+		<label>volcanic ash</label>
+		<texturePath>Terrain/Surfaces/VEE_VolcanicAsh</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_VolcanicAsh</pollutedTexturePath>
+		<edgeType>FadeRough</edgeType>
+		<categoryType>Stone</categoryType>
+		<renderPrecedence>205</renderPrecedence>
+		<pathCost>3</pathCost>
+		<scatterType>Rocky</scatterType>
+		<statBases>
+			<Beauty>-1</Beauty>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>Walkable</li>
+			<li>SmoothableStone</li>
+		</affordances>
+		<generatedFilth>Filth_VolcanicAsh</generatedFilth>
+		<fertility>0</fertility>
+	</TerrainDef>
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>VEE_VolcanicSoilRich</defName>
+		<label>rich volcanic soil</label>
+		<texturePath>Terrain/Surfaces/VEE_VolcanicSoil</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_VolcanicSoil</pollutedTexturePath>
+		<edgeType>FadeRough</edgeType>
+		<categoryType>Soil</categoryType>
+		<renderPrecedence>335</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>1.5</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>dirt</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>DirtInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<tags>
+			<li>Soil</li>
+		</tags>
+		<spaceEdgeGraphicData>
+			<overrideColor>(0.27, 0.22, 0.18, 1)</overrideColor>
+		</spaceEdgeGraphicData>
+	</TerrainDef>
+	<TerrainDef ParentName="Sand">
+		<defName>VEE_Salt</defName>
+		<label>salt</label>
+		<texturePath>Terrain/Surfaces/VEE_Salt</texturePath>
+		<pathCost>28</pathCost>
+		<affordances Inherit="false">
+			<li>Light</li>
+			<li>Walkable</li>
+			<li>Diggable</li>
+		</affordances>
+		<takeFootprints>false</takeFootprints>
+		<generatedFilth Inherit="false"/>
+		<fertility>0</fertility>
+	</TerrainDef>
+	<TerrainDef ParentName="Sand">
+		<defName>VEE_SaltySand</defName>
+		<label>salty sand</label>
+		<texturePath>Terrain/Surfaces/VEE_SaltySoil</texturePath>
+		<affordances Inherit="false">
+			<li>Light</li>
+			<li>Walkable</li>
+			<li>Diggable</li>
+		</affordances>
+		<pathCost>14</pathCost>
+		<fertility>0</fertility>
+	</TerrainDef>
+	<TerrainDef ParentName="Sand">
+		<defName>VEE_DryRiverBed</defName>
+		<label>dry river bed</label>
+		<texturePath>Terrain/Surfaces/VEE_DryRiverBed</texturePath>
+		<affordances Inherit="false">
+			<li>Light</li>
+			<li>Walkable</li>
+			<li>Diggable</li>
+		</affordances>
+		<fertility>0</fertility>
+	</TerrainDef>
+	<TerrainDef ParentName="Sand">
+		<defName>VEE_DryRiverBank</defName>
+		<label>dry river bank</label>
+		<texturePath>Terrain/Surfaces/DryLakeBed</texturePath>
+		<affordances Inherit="false">
+			<li>Light</li>
+			<li>Walkable</li>
+			<li>Diggable</li>
+		</affordances>
+		<fertility>0</fertility>
+	</TerrainDef>
+	<TerrainDef ParentName="WaterDeepBase">
+		<defName>VEE_SulfuricWaterDeep</defName>
+		<label>sulfuric deep water</label>
+		<renderPrecedence>395</renderPrecedence>
+		<texturePath>Terrain/Surfaces/VEE_SulfuricWaterDeepRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_SulfuricWaterDeepRamp</pollutedTexturePath>
+		<toxicBuildupFactor>1</toxicBuildupFactor>
+		<pathCost>400</pathCost>
+		<traversedThought>VEE_SulfuricWater</traversedThought>
+		<waterBodyType>Other</waterBodyType>
+		<statBases>
+			<Beauty>-4</Beauty>
+		</statBases>
+	</TerrainDef>
+	<TerrainDef ParentName="WaterChestDeepBase">
+		<defName>VEE_SulfuricWaterDeepMovingChestDeep</defName>
+		<label>sulfuric chest-deep moving water</label>
+		<renderPrecedence>399</renderPrecedence>
+		<affordances>
+			<li>MovingFluid</li>
+		</affordances>
+		<tags>
+			<li>River</li>
+		</tags>
+		<waterDepthShaderParameters>
+			<_UseWaterOffset>1</_UseWaterOffset>
+		</waterDepthShaderParameters>
+		<texturePath>Terrain/Surfaces/VEE_SulfuricWaterChestDeepRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_SulfuricWaterChestDeepRamp</pollutedTexturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<toxicBuildupFactor>1</toxicBuildupFactor>
+		<pathCost>150</pathCost>
+		<traversedThought>VEE_SulfuricWater</traversedThought>
+		<waterBodyType>Other</waterBodyType>
+		<floodTerrain>ToxicFlood</floodTerrain>
+		<statBases>
+			<Beauty>-4</Beauty>
+		</statBases>
+	</TerrainDef>
+	<TerrainDef ParentName="VEE_SulfuricWaterDeepShallowBase">
+		<defName>VEE_SulfuricWaterFlood</defName>
+		<label>shallow floodwater</label>
+		<temporary>true</temporary>
+		<tags>
+			<li>Flood</li>
+		</tags>
+		<canFreeze>false</canFreeze>
+		<!-- Thin ice and floodwater are both temp terrain, this means we can't support frozen floodwater -->
+		<driesTo/>
+		<!-- We don't want moisture pumps to turn temp terrain into stony soil -->
+		<floodTerrain>VEE_SulfuricWaterFlood</floodTerrain>
+		<renderPrecedence>325</renderPrecedence>
+	</TerrainDef>
+	<TerrainDef Name="VEE_SulfuricWaterDeepShallowBase" ParentName="WaterShallowBase">
+		<defName>VEE_SulfuricWaterShallow</defName>
+		<label>sulfuric shallow water</label>
+		<renderPrecedence>394</renderPrecedence>
+		<driesTo>Gravel</driesTo>
+		<texturePath>Terrain/Surfaces/VEE_SulfuricWaterShallowRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_SulfuricWaterShallowRamp</pollutedTexturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<toxicBuildupFactor>1</toxicBuildupFactor>
+		<pathCost>100</pathCost>
+		<traversedThought>VEE_SulfuricWater</traversedThought>
+		<waterBodyType>Other</waterBodyType>
+		<floodTerrain>VEE_SulfuricWaterFlood</floodTerrain>
+		<statBases>
+			<Beauty>-4</Beauty>
+		</statBases>
+	</TerrainDef>
+</Defs>

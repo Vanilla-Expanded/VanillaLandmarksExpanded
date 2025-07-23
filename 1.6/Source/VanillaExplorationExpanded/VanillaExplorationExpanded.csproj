@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8281E4EE-FE39-4FAD-BA55-326503AE9284}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VanillaExplorationExpanded</RootNamespace>
+    <AssemblyName>VanillaExplorationExpanded</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.3.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.3.6\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VEF">
+      <HintPath>..\..\..\..\VanillaExpandedFramework\1.6\Assemblies\VEF.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Building effects\DeadlifeSprayer.cs" />
+    <Compile Include="Building effects\RotstinkSprayer.cs" />
+    <Compile Include="Building effects\SmokeSprayer.cs" />
+    <Compile Include="Building effects\ToxicSprayer.cs" />
+    <Compile Include="Buildings\Building_DeadlifeVent.cs" />
+    <Compile Include="Buildings\Building_RotstinkVent.cs" />
+    <Compile Include="Buildings\Building_SmokeVent.cs" />
+    <Compile Include="Buildings\Building_ToxicVent.cs" />
+    <Compile Include="DefOfs\InternalDefOf.cs" />
+    <Compile Include="GameConditions\GameCondition_ColossalFauna.cs" />
+    <Compile Include="GameConditions\GameCondition_GeomagneticStorm.cs" />
+    <Compile Include="GameConditions\GameCondition_RottenStench.cs" />
+    <Compile Include="GameConditions\GameCondition_Microfauna.cs" />
+    <Compile Include="GameConditions\GameCondition_NoWind.cs" />
+    <Compile Include="GameConditions\GameCondition_SkygazingSpot.cs" />
+    <Compile Include="Harmony\HarmonyInstance.cs" />
+    <Compile Include="Harmony\PawnUtility_GetManhunterOnDamageChance.cs" />
+    <Compile Include="Harmony\Plant_PlantCollected.cs" />
+    <Compile Include="Harmony\WindManager_WindManagerTick.cs" />
+    <Compile Include="IncidentWorkers\IncidentWorker_Alphabeavers_MutatorLocked.cs" />
+    <Compile Include="IncidentWorkers\IncidentWorker_HerdMigration_MutatorLocked.cs" />
+    <Compile Include="IncidentWorkers\IncidentWorker_Infestation_MutatorLocked.cs" />
+    <Compile Include="IncidentWorkers\IncidentWorker_TornadoAlley.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatParts\StatPart_BondAnimalChanceFactor_WanderingCompanions.cs" />
+    <Compile Include="StatParts\StatPart_Wildness_Distressed.cs" />
+    <Compile Include="StatParts\StatPart_Wildness_FeralKinship.cs" />
+    <Compile Include="TileMutatorWorkers\Animals\TileMutatorWorker_Venomous.cs" />
+    <Compile Include="TileMutatorWorkers\Animals\TileMutatorWorker_Nocturnal.cs" />
+    <Compile Include="TileMutatorWorkers\Animals\TileMutatorWorker_Aerie.cs" />
+    <Compile Include="TileMutatorWorkers\Animals\TileMutatorWorker_MarineSanctuary.cs" />
+    <Compile Include="TileMutatorWorkers\Animals\TileMutatorWorker_Prey.cs" />
+    <Compile Include="TileMutatorWorkers\Animals\TileMutatorWorker_Predators.cs" />
+    <Compile Include="TileMutatorWorkers\Crater\TileMutatorWorker_CalmBasin.cs" />
+    <Compile Include="TileMutatorWorkers\Crater\TileMutatorWorker_Crater.cs" />
+    <Compile Include="TileMutatorWorkers\Crater\TileMutatorWorker_CraterLake.cs" />
+    <Compile Include="TileMutatorWorkers\Crater\TileMutatorWorker_ResurgentCaldera.cs" />
+    <Compile Include="TileMutatorWorkers\Crater\TileMutatorWorker_ToxicCrater.cs" />
+    <Compile Include="TileMutatorWorkers\Crater\TileMutatorWorker_Volcano.cs" />
+    <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_BurnedForest.cs" />
+    <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_MangroveTrees.cs" />
+    <Compile Include="TileMutatorWorkers\Lone Islands\TileMutatorWorker_CoralReef.cs" />
+    <Compile Include="TileMutatorWorkers\Lone Islands\TileMutatorWorker_DetachedIceberg.cs" />
+    <Compile Include="TileMutatorWorkers\Lone Islands\TileMutatorWorker_IceAndFire.cs" />
+    <Compile Include="TileMutatorWorkers\Lone Islands\TileMutatorWorker_LoneIsland.cs" />
+    <Compile Include="TileMutatorWorkers\Lone Islands\TileMutatorWorker_LoneIslandWithLake.cs" />
+    <Compile Include="TileMutatorWorkers\Lone Islands\TileMutatorWorker_LoneIslandWithMountain.cs" />
+    <Compile Include="TileMutatorWorkers\Geology\TileMutatorWorker_MineralDevoid.cs" />
+    <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_PoisonousFlora.cs" />
+    <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_SerpentineCanyons.cs" />
+    <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_JaggedRocks.cs" />
+    <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_Ridge.cs" />
+    <Compile Include="TileMutatorWorkers\Rivers\TileMutatorWorker_DryRiver.cs" />
+    <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_RemoveFertileSoils.cs" />
+    <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_RemoveTrees.cs" />
+    <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_DustBowl.cs" />
+    <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_SaltPlains.cs" />
+    <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_SulfuricLake.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

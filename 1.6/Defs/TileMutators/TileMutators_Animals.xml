@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TileMutatorDef>
+		<defName>VEE_AbundantPredators</defName>
+		<label>abundant predators</label>
+		<description>Animals considered predators appear in greater numbers here.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_Predators</workerClass>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		<animalDensityRange>0.3~7</animalDensityRange>
+		<pollutionRange>0~0.25</pollutionRange>
+		<categories>
+			<li>VEE_AnimalDensities</li>
+		</categories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_ReducedPredators</defName>
+		<label>reduced predators</label>
+		<description>Animals considered predators appear in lesser numbers here.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_ReducedPredators</workerClass>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		<animalDensityRange>0.3~7</animalDensityRange>
+		<pollutionRange>0~0.25</pollutionRange>
+		<categories>
+			<li>VEE_AnimalDensities</li>
+		</categories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_AbundantPrey</defName>
+		<label>abundant prey</label>
+		<description>Animals considered prey appear in greater numbers here.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_Prey</workerClass>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		<animalDensityRange>0.3~7</animalDensityRange>
+		<pollutionRange>0~0.25</pollutionRange>
+		<categories>
+			<li>VEE_AnimalDensities</li>
+		</categories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_ReducedPrey</defName>
+		<label>reduced prey</label>
+		<description>Animals considered prey appear in lesser numbers here.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_ReducedPrey</workerClass>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		<animalDensityRange>0.3~7</animalDensityRange>
+		<pollutionRange>0~0.25</pollutionRange>
+		<categories>
+			<li>VEE_AnimalDensities</li>
+		</categories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_NaturalAerie</defName>
+		<label>natural aerie</label>
+		<description>Flying animals appear in greater numbers here.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_Aerie</workerClass>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		<animalDensityRange>0.3~7</animalDensityRange>
+		<pollutionRange>0~0.25</pollutionRange>
+		<categories>
+			<li>VEE_AnimalDensities</li>
+		</categories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_MarineSanctuary</defName>
+		<label>marine sanctuary</label>
+		<description>Coastal animals appear in greater numbers here.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_MarineSanctuary</workerClass>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		<coastSidesRange>1~5</coastSidesRange>
+		<animalDensityRange>0.3~7</animalDensityRange>
+		<pollutionRange>0~0.25</pollutionRange>
+		<categories>
+			<li>VEE_AnimalDensities</li>
+		</categories>
+	</TileMutatorDef>
+	<TileMutatorDef MayRequire="VanillaExpanded.VanillaAnimalsExpanded">
+		<defName>VEE_NocturnalFauna</defName>
+		<label>nocturnal fauna</label>
+		<description>Nocturnal and crepuscular animals appear in greater numbers here.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_Nocturnal</workerClass>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		<biomeWhitelist>
+			<li>BorealForest</li>
+			<li>TemperateForest</li>
+			<li>AridShrubland</li>
+			<li>Desert</li>
+			<li>ExtremeDesert</li>
+			<li>TropicalRainforest</li>
+			<li>TropicalSwamp</li>
+		</biomeWhitelist>
+		<animalDensityRange>0.3~7</animalDensityRange>
+		<pollutionRange>0~0.25</pollutionRange>
+		<categories>
+			<li>VEE_AnimalDensities</li>
+		</categories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_RodentPlagues</defName>
+		<label>rodent plagues</label>
+		<description>This area is infested with rats.</description>
+		<workerClass>VEF.Maps.TileMutatorWorker_ExtraAnimal</workerClass>
+		<biomeBlacklist>
+			<li>SeaIce</li>
+		</biomeBlacklist>
+		<chanceOnNonLandmarkTile>0.025</chanceOnNonLandmarkTile>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<forcedPawnKindDefs>
+					<li>
+						<forcedPawnKindDef>Rat</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.25</forcedPawnKindDefChance>
+					</li>
+				</forcedPawnKindDefs>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_VenomousEcosystem</defName>
+		<label>venomous ecosystem</label>
+		<description>Venomous animals appear in greater numbers here.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_Venomous</workerClass>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		<animalDensityRange>0.3~7</animalDensityRange>
+		<pollutionRange>0~0.25</pollutionRange>
+		<categories>
+			<li>VEE_AnimalDensities</li>
+		</categories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_ColossalFauna</defName>
+		<label>colossal fauna</label>
+		<description>All fauna in this area is much larger than usual.</description>
+		<additionalGameConditions>
+			<li>VEE_ColossalFauna</li>
+		</additionalGameConditions>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		<categories>
+			<li>VEE_AnimalSize</li>
+		</categories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_Microfauna</defName>
+		<label>microfauna</label>
+		<description>All fauna in this area is much smaller than usual.</description>
+		<additionalGameConditions>
+			<li>VEE_Microfauna</li>
+		</additionalGameConditions>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		<categories>
+			<li>VEE_AnimalSize</li>
+		</categories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_Alphabeavers</defName>
+		<label>alphabeavers</label>
+		<description>Alphabeavers have been spotted in this region.</description>
+		<biomeBlacklist>
+			<li>Tundra</li>
+			<li>AridShrubland</li>
+		</biomeBlacklist>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_MigratoryHerds</defName>
+		<label>migratory herds</label>
+		<description>Groups of herd animals will periodically cross this region.</description>
+		<biomeBlacklist>
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+			<li>Tundra</li>
+			<li>Desert</li>
+			<li>ExtremeDesert</li>
+		</biomeBlacklist>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_FeralKinship</defName>
+		<label>feral kinship</label>
+		<description>All animals in this region have a decreased wildness.</description>
+		<categories>
+			<li>VEE_AnimalWildness</li>
+		</categories>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_DistressedWildlife</defName>
+		<label>distressed wildlife</label>
+		<description>All animals in this region have increased wildness.</description>
+		<categories>
+			<li>VEE_AnimalWildness</li>
+		</categories>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_AggressiveHerds</defName>
+		<label>aggressive herds</label>
+		<description>Animals in this region have increased manhunter on damage chances.</description>
+		<categories>
+			<li>VEE_AnimalWildness</li>
+		</categories>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_DomesticatedEscapees</defName>
+		<label>domesticated escapees</label>
+		<description>Farm animals like chickens, pigs, and cows will appear in the wild in small herds, remnants of lost settlements or farms.</description>
+		
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		<workerClass>VEF.Maps.TileMutatorWorker_ExtraAnimal</workerClass>
+		<biomeBlacklist>
+			<li>SeaIce</li>
+		</biomeBlacklist>
+		
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<forcedPawnKindDefs>
+					<li>
+						<forcedPawnKindDef>Chicken</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					<li>
+						<forcedPawnKindDef>Cow</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					<li>
+						<forcedPawnKindDef>Pig</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+				</forcedPawnKindDefs>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_NobleSteeds</defName>
+		<label>noble steeds</label>
+		<description>Horses and Donkeys will appear in this area.</description>
+		
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		<workerClass>VEF.Maps.TileMutatorWorker_ExtraAnimal</workerClass>
+		<biomeBlacklist>
+			<li>SeaIce</li>
+		</biomeBlacklist>
+		
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<forcedPawnKindDefs>
+					<li>
+						<forcedPawnKindDef>Horse</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					<li>
+						<forcedPawnKindDef>Donkey</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+				
+				</forcedPawnKindDefs>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_WanderingCompanions</defName>
+		<label>wandering companions</label>
+		<description>Animals are more used to humans in this region, making it easier for colonists to bond with them.</description>
+		
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+	</TileMutatorDef>
+	
+	<TileMutatorDef MayRequire="VanillaExpanded.VAEWaste">
+		<defName>VEE_WastelandFauna</defName>
+		<label>wasteland fauna</label>
+		<description>Wasteland animals appear in greater numbers here.</description>
+		<workerClass>VEF.Maps.TileMutatorWorker_ExtraAnimal</workerClass>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		
+		<animalDensityRange>0.3~7</animalDensityRange>
+		<pollutionRange>0.5~1</pollutionRange>
+		<categories>
+			<li>VEE_AnimalDensities</li>
+		</categories>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<forcedPawnKindDefs>
+					<li>
+						<forcedPawnKindDef>VAEWaste_Megatardi</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.05</forcedPawnKindDefChance>
+					</li>
+					<li>
+						<forcedPawnKindDef>VAEWaste_Pestigator</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					<li>
+						<forcedPawnKindDef>VAEWaste_Toxafox</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					<li>
+						<forcedPawnKindDef>VAEWaste_Toxbear</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					<li>
+						<forcedPawnKindDef>VAEWaste_Toxiguana</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					<li>
+						<forcedPawnKindDef>VAEWaste_Toxlion</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					<li>
+						<forcedPawnKindDef>VAEWaste_Toxscorpion</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					<li>
+						<forcedPawnKindDef>VAEWaste_Wasteboar</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					<li>
+						<forcedPawnKindDef>VAEWaste_Wastedeer</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					<li>
+						<forcedPawnKindDef>VAEWaste_Wasteffalo</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					<li>
+						<forcedPawnKindDef>VAEWaste_Hydra</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					
+					
+				
+				</forcedPawnKindDefs>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_IncreasedInfestations</defName>
+		<label>increased infestations</label>
+		<description>Insectoid infestations are more common in this region.</description>
+		
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+	</TileMutatorDef>
+	
+</Defs>
+

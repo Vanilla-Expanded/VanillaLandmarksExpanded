@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>VEE_RotstinkVent</defName>
+		<label>rotstink geyser</label>
+		<description>A foul geyser that intermittently belches clouds of corpse-born miasma, choking the air with the stench of decay.</description>
+		<thingClass>VanillaExplorationExpanded.Building_RotstinkVent</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Natural/SteamGeyser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<altitudeLayer>Floor</altitudeLayer>
+		<rotatable>false</rotatable>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<selectable>true</selectable>
+		<size>(4,4)</size>
+		<neverOverlapFloors>true</neverOverlapFloors>
+		<building>
+			<isEdifice>false</isEdifice>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>VEE_ToxicVent</defName>
+		<label>toxic geyser</label>
+		<description>A volatile fissure that periodically spews noxious green gas, poisoning the air and sickening anything that breathes it.</description>
+		<thingClass>VanillaExplorationExpanded.Building_ToxicVent</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Natural/SteamGeyser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<altitudeLayer>Floor</altitudeLayer>
+		<rotatable>false</rotatable>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<selectable>true</selectable>
+		<size>(4,4)</size>
+		<neverOverlapFloors>true</neverOverlapFloors>
+		<building>
+			<isEdifice>false</isEdifice>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>VEE_SmokeVent</defName>
+		<label>smoke geyser</label>
+		<description>A smoldering fissure that intermittently exhales thick, acrid smoke, reducing visibility and choking the lungs.</description>
+		<thingClass>VanillaExplorationExpanded.Building_SmokeVent</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Natural/SteamGeyser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<altitudeLayer>Floor</altitudeLayer>
+		<rotatable>false</rotatable>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<selectable>true</selectable>
+		<size>(4,4)</size>
+		<neverOverlapFloors>true</neverOverlapFloors>
+		<building>
+			<isEdifice>false</isEdifice>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>VEE_DeadlifeVent</defName>
+		<label>deadlife geyser</label>
+		<description>A sinister geyser that exhales eerie, ash-like dust—capable of reawakening the dead under its haunting influence.</description>
+		<thingClass>VanillaExplorationExpanded.Building_DeadlifeVent</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Natural/SteamGeyser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<altitudeLayer>Floor</altitudeLayer>
+		<rotatable>false</rotatable>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<selectable>true</selectable>
+		<size>(4,4)</size>
+		<neverOverlapFloors>true</neverOverlapFloors>
+		<building>
+			<isEdifice>false</isEdifice>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+		</building>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>VEE_Coral</defName>
+		<label>coral</label>
+		<description>A colorful, calcified colony of tiny marine organisms, forming intricate reef structures teeming with life.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Test</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<altitudeLayer>Floor</altitudeLayer>
+		<rotatable>false</rotatable>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		
+		<selectable>true</selectable>
+		<pathCost>100</pathCost>
+		<size>(2,2)</size>
+		<neverOverlapFloors>true</neverOverlapFloors>
+		<building>
+			<isEdifice>false</isEdifice>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+		</building>
+	</ThingDef>
+</Defs>

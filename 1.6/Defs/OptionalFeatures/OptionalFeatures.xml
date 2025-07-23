@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <VEF.OptionalFeatures.ModDef>
+        <defName>VEE_OptionalFeatures</defName>
+        <label>Vanilla Landmarks Expanded</label>
+        <description>VE Framework optional features for Vanilla Landmarks Expanded</description>
+        <Activate>
+            <li>TileMutatorMechanics</li>
+        </Activate>
+    </VEF.OptionalFeatures.ModDef>
+</Defs>

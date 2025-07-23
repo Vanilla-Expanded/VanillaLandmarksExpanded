@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PrefabDef>
+		<defName>VEE_RotstinkVent_Prefab</defName>
+		<size>(2,2)</size>
+		<things>
+			<VEE_RotstinkVent>
+				<position>(0,0,0)</position>
+			</VEE_RotstinkVent>
+		</things>
+	</PrefabDef>
+	<PrefabDef>
+		<defName>VEE_ToxicVent_Prefab</defName>
+		<size>(2,2)</size>
+		<things>
+			<VEE_ToxicVent>
+				<position>(0,0,0)</position>
+			</VEE_ToxicVent>
+		</things>
+	</PrefabDef>
+	<PrefabDef>
+		<defName>VEE_SmokeVent_Prefab</defName>
+		<size>(2,2)</size>
+		<things>
+			<VEE_SmokeVent>
+				<position>(0,0,0)</position>
+			</VEE_SmokeVent>
+		</things>
+	</PrefabDef>
+	<PrefabDef>
+		<defName>VEE_DeadlifeVent_Prefab</defName>
+		<size>(2,2)</size>
+		<things>
+			<VEE_DeadlifeVent>
+				<position>(0,0,0)</position>
+			</VEE_DeadlifeVent>
+		</things>
+	</PrefabDef>
+</Defs>

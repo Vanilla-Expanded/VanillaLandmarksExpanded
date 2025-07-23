@@ -1,0 +1,67 @@
+﻿using System;
+using RimWorld;
+using Verse;
+using System.Collections.Generic;
+
+namespace VanillaExplorationExpanded
+{
+	[DefOf]
+	public static class InternalDefOf
+	{
+		static InternalDefOf()
+		{
+			DefOfHelper.EnsureInitializedInCtor(typeof(InternalDefOf));
+		}
+
+		public static TerrainDef VEE_VolcanicAsh;
+        public static TerrainDef VEE_Salt;
+        public static TerrainDef VEE_SaltySand;
+        public static TerrainDef VEE_DryRiverBed;
+        public static TerrainDef VEE_DryRiverBank;
+        public static TerrainDef VEE_SulfuricWaterDeep;
+        public static TerrainDef VEE_SulfuricWaterShallow;
+        public static TerrainDef VEE_BurntForestSoil;
+
+        public static ThingDef VEE_RotstinkMote;
+		public static ThingDef VEE_ToxicMote;
+		public static ThingDef VEE_SmokeMote;
+		public static ThingDef VEE_DeadlifeMote;
+        public static ThingDef Tornado;
+        public static ThingDef VEE_Coral;
+        public static ThingDef BurnedTree;
+
+        public static EffecterDef Impact_Toxic;
+
+		public static ToolCapacityDef ToxicBite;
+        public static ToolCapacityDef ScratchToxic;
+        [MayRequire("VanillaExpanded.VanillaAnimalsExpanded")]
+        public static ToolCapacityDef AEXP_GilaVenomousBite;
+        [MayRequire("VanillaExpanded.VanillaAnimalsExpanded")]
+        public static ToolCapacityDef AEXP_RattleSnakeVenomousBite;
+        [MayRequire("VanillaExpanded.VanillaAnimalsExpanded")]
+        public static ToolCapacityDef AEXP_MegascorpionVenomousBite;
+        [MayRequire("sarg.alphaanimals")]
+        public static ToolCapacityDef AA_ToxicSting;
+        [MayRequire("sarg.alphaanimals")]
+        public static ToolCapacityDef AA_ToxicBite;
+        [MayRequire("sarg.alphaanimals")]
+        public static ToolCapacityDef AA_VeryToxicSting;
+
+        public static HediffDef VEE_ColossalFauna;
+        public static HediffDef VEE_Microfauna;
+        public static HediffDef VEE_RottenStench;
+
+        public static TileMutatorDef VEE_Alphabeavers;
+        public static TileMutatorDef VEE_MigratoryHerds;
+        public static TileMutatorDef VEE_FeralKinship;
+        public static TileMutatorDef VEE_DistressedWildlife;
+        public static TileMutatorDef VEE_AggressiveHerds;
+        public static TileMutatorDef VEE_WanderingCompanions;
+        public static TileMutatorDef VEE_IncreasedInfestations;
+        public static TileMutatorDef VEE_TornadoAlley;
+        public static TileMutatorDef VEE_NoWind;
+
+
+        public static WeatherDef Windy;
+    }
+}

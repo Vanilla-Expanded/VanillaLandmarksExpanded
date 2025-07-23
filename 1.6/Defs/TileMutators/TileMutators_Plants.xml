@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TileMutatorDef>
+		<defName>VEE_PlantLife_Overgrown</defName>
+		<label>overgrown</label>
+		<description>Plant life is extremely more abundant here.</description>
+		<categories>
+			<li>PlantLife</li>
+		</categories>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		<plantDensityFactor>4</plantDensityFactor>
+		<plantDensityRange>0.0001~1</plantDensityRange>
+		<pollutionRange>0~0.01</pollutionRange>
+		<biomeBlacklist>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+		</biomeBlacklist>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_PlantLife_Decimated</defName>
+		<label>decimated</label>
+		<description>Plant life is extremely scarce here.</description>
+		<categories>
+			<li>PlantLife</li>
+		</categories>
+		<chanceOnNonLandmarkTile>0.005</chanceOnNonLandmarkTile>
+		<plantDensityFactor>0.15</plantDensityFactor>
+		<plantDensityRange>0.3~4</plantDensityRange>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="WildPlants_Base">
+		<defName>VEE_WildRice</defName>
+		<label>wild rice</label>
+		<description>This area can grow a large number of wild {0}.</description>
+		<workerClass>TileMutatorWorker_WildPlants</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+			<li>ExtremeDesert</li>
+		</biomeBlacklist>
+		<plantKinds>
+			<li>Plant_Rice</li>
+		</plantKinds>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="WildPlants_Base" MayRequire="VanillaExpanded.VCookE">
+		<defName>VEE_WildWheat</defName>
+		<label>wild wheat</label>
+		<description>This area can grow a large number of wild {0}.</description>
+		<workerClass>TileMutatorWorker_WildPlants</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+			<li>ExtremeDesert</li>
+		</biomeBlacklist>
+		<plantKinds>
+			<li>VCE_Wheat</li>
+		</plantKinds>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_NoTrees</defName>
+		<label>lack of trees</label>
+		<description>Trees of any kind do not grow here naturally.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_RemoveTrees</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+			<li>ExtremeDesert</li>
+			<li>Glowforest</li>
+		</biomeBlacklist>
+		<categories>
+			<li>PlantLife</li>
+			<li>VEE_GroveAndNoTrees</li>
+		</categories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_PoisonousFlora</defName>
+		<label>poisonous flora</label>
+		<description>Harvesting any flora in this area will cause toxic buildup. Crops planted by colonists won't be affected.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_PoisonousFlora</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+		</biomeBlacklist>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="WildPlants_Base">
+		<defName>VEE_MangroveTrees</defName>
+		<label>mangrove trees</label>
+		<description>This area is filled with large amounts of mangrove trees whose roots can thrive in brackish water.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_MangroveTrees</workerClass>
+		<coastSidesRange>1~6</coastSidesRange>
+		<biomeBlacklist>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+			<li>ExtremeDesert</li>
+		</biomeBlacklist>
+		<plantKinds>
+			<li>VEE_Mangrove</li>
+		</plantKinds>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="WildPlants_Base" MayRequire="VanillaExpanded.VPlantsE">
+		<defName>VEE_WildFruitTrees</defName>
+		<label>wild fruit trees</label>
+		<description>This area can grow a large number of wild {0}.</description>
+		<workerClass>TileMutatorWorker_WildPlants</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+			<li>ExtremeDesert</li>
+		</biomeBlacklist>
+		<plantKinds>
+			<li>VCE_AppleTree</li>
+			<li>VCE_BearBerryBush</li>
+			<li>VCE_PeachTree</li>
+			<li>VCE_Opuntia</li>
+			<li>VCE_CherryTree</li>
+			<li>VCE_PlumTree</li>
+			<li>VCE_PearTree</li>
+			<li>VCE_BananaTree</li>
+			<li>VCE_OrangeTree</li>
+		</plantKinds>
+	</TileMutatorDef>
+</Defs>
+

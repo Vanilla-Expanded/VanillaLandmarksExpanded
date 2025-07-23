@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TileMutatorDef>
+		<defName>VEE_NoDiseases</defName>
+		<label>no diseases</label>
+		<description>Diseases very rarely strike in this region, making them almost a nonexistent threat.</description>
+		
+		<chanceOnNonLandmarkTile>0.001</chanceOnNonLandmarkTile>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<diseaseMTBMultiplier>1000</diseaseMTBMultiplier>
+				
+			</li>
+		</modExtensions>
+		<categories>
+			<li>VEE_Diseases</li>
+		</categories>
+	</TileMutatorDef>
+	
+	<TileMutatorDef>
+		<defName>VEE_ReducedDiseases</defName>
+		<label>reduced diseases</label>
+		<description>Diseases are 25% less common in this region.</description>
+		
+		<chanceOnNonLandmarkTile>0.001</chanceOnNonLandmarkTile>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<diseaseMTBMultiplier>1.25</diseaseMTBMultiplier>
+				
+			</li>
+		</modExtensions>
+		<categories>
+			<li>VEE_Diseases</li>
+		</categories>
+	</TileMutatorDef>
+	
+	<TileMutatorDef>
+		<defName>VEE_IncreasedDiseases</defName>
+		<label>increased diseases</label>
+		<description>Diseases are 25% more common in this region.</description>
+		
+		<chanceOnNonLandmarkTile>0.001</chanceOnNonLandmarkTile>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<diseaseMTBMultiplier>0.75</diseaseMTBMultiplier>
+				
+			</li>
+		</modExtensions>
+		<categories>
+			<li>VEE_Diseases</li>
+		</categories>
+	</TileMutatorDef>
+</Defs>
+

@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TileMutatorDef ParentName="BaseCoastMut">
+		<defName>VEE_LoneIsland</defName>
+		<label>lone island</label>
+		<description>A large island separated from the shore.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_LoneIsland</workerClass>
+		<coastSidesRange>3~5</coastSidesRange>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRoad>false</canSpawnOnRoad>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="BaseCoastMut">
+		<defName>VEE_DetachedIceberg</defName>
+		<label>detached iceberg</label>
+		<description>A floating mass of ice, detached from the larger ice sheet and quite distant from the shore.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_DetachedIceberg</workerClass>
+		<biomeWhitelist Inherit="False">
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+			<li>Tundra</li>
+			<li>ColdBog</li>
+			<li>BorealForest</li>
+		</biomeWhitelist>
+		<averageTemperatureRange>-100~0</averageTemperatureRange>
+		<geyserCountFactor>0</geyserCountFactor>
+		<junkDensityFactor>0</junkDensityFactor>
+		<coastSidesRange>3~5</coastSidesRange>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRoad>false</canSpawnOnRoad>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="BaseCoastMut">
+		<defName>VEE_IceAndFire</defName>
+		<label>ice and fire</label>
+		<description>A floating mass of ice, with an active lava lake inside. It doesn't get more metal than this.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_IceAndFire</workerClass>
+		<biomeWhitelist Inherit="False">
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+			<li>Tundra</li>
+			<li>ColdBog</li>
+			<li>BorealForest</li>
+		</biomeWhitelist>
+		<averageTemperatureRange>-100~0</averageTemperatureRange>
+		<geyserCountFactor>0</geyserCountFactor>
+		<junkDensityFactor>0</junkDensityFactor>
+		<coastSidesRange>3~5</coastSidesRange>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRoad>false</canSpawnOnRoad>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="BaseCoastMut">
+		<defName>VEE_LoneIslandWithLake</defName>
+		<label>central lake island</label>
+		<description>A large island separated from the shore with a freshwater lake inside it.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_LoneIslandWithLake</workerClass>
+		<coastSidesRange>3~5</coastSidesRange>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRoad>false</canSpawnOnRoad>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="BaseCoastMut">
+		<defName>VEE_LoneIslandWithMountain</defName>
+		<label>resurgent island</label>
+		<description>A large island separated from the shore with a tall peak in its center.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_LoneIslandWithMountain</workerClass>
+		<coastSidesRange>3~5</coastSidesRange>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRoad>false</canSpawnOnRoad>
+		<maxHilliness>Flat</maxHilliness>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="BaseCoastMut">
+		<defName>VEE_CoralReef</defName>
+		<label>coral reef</label>
+		<description>A large atoll separated from the shore with a ring of corals growing around it.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_CoralReef</workerClass>
+		<coastSidesRange>3~5</coastSidesRange>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRoad>false</canSpawnOnRoad>
+		<maxHilliness>Flat</maxHilliness>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_MeteorCrater</defName>
+		<label>meteor crater</label>
+		<description>A vast impact site with jagged rocky edges and a debris-littered basin.</description>
+		<categories>
+			<li>Mountain</li>
+		</categories>
+		<priority>5</priority>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_Crater</workerClass>
+		<genOrder>-200</genOrder>
+		<!-- Must be before any mutators that generate caves -->
+		<maxHilliness>Flat</maxHilliness>
+		<coastSidesRange>0~0</coastSidesRange>
+		<biomeBlacklist>
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+		</biomeBlacklist>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_ResurgentCaldera</defName>
+		<label>resurgent caldera</label>
+		<description>Ancient volcanic collapse zone with steep crater walls, a central rocky dome, and echoes of past eruptions.</description>
+		<categories>
+			<li>Mountain</li>
+		</categories>
+		<priority>5</priority>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_ResurgentCaldera</workerClass>
+		<genOrder>-200</genOrder>
+		<!-- Must be before any mutators that generate caves -->
+		<maxHilliness>Flat</maxHilliness>
+		<coastSidesRange>0~0</coastSidesRange>
+		<biomeBlacklist>
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+		</biomeBlacklist>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_CraterLake</defName>
+		<label>crater lake</label>
+		<description>A vast ring of rocky walls encircles a serene, deep-blue lake.</description>
+		<categories>
+			<li>Mountain</li>
+		</categories>
+		<priority>5</priority>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_CraterLake</workerClass>
+		<genOrder>-200</genOrder>
+		<!-- Must be before any mutators that generate caves -->
+		<maxHilliness>Flat</maxHilliness>
+		<biomeBlacklist>
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+		</biomeBlacklist>
+		<coastSidesRange>0~0</coastSidesRange>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_ToxicCrater</defName>
+		<label>toxic crater</label>
+		<description>A blasted ring of stone surrounds a stagnant, foul-smelling pool. The water glows faintly...</description>
+		<categories>
+			<li>Mountain</li>
+		</categories>
+		<priority>5</priority>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_ToxicCrater</workerClass>
+		<genOrder>-200</genOrder>
+		<!-- Must be before any mutators that generate caves -->
+		<maxHilliness>Flat</maxHilliness>
+		<biomeBlacklist>
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+		</biomeBlacklist>
+		<coastSidesRange>0~0</coastSidesRange>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_Volcano</defName>
+		<label>volcano</label>
+		<description>Charred stone ridges form the rim of an ancient caldera, its heart glowing with molten fury.</description>
+		<categories>
+			<li>Mountain</li>
+		</categories>
+		<priority>5</priority>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_Volcano</workerClass>
+		<genOrder>-200</genOrder>
+		<!-- Must be before any mutators that generate caves -->
+		<maxHilliness>Flat</maxHilliness>
+		<coastSidesRange>0~0</coastSidesRange>
+		<biomeBlacklist>
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+			<li>LavaField</li>
+		</biomeBlacklist>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_CalmBasin</defName>
+		<label>calm basin</label>
+		<description>A wide, shallow crater filled with fine, undisturbed sand. Shielded from the wind by its sloped rim, the basin remains eerily still.</description>
+		<categories>
+			<li>Mountain</li>
+		</categories>
+		<priority>5</priority>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_CalmBasin</workerClass>
+		<genOrder>-200</genOrder>
+		<!-- Must be before any mutators that generate caves -->
+		<maxHilliness>Flat</maxHilliness>
+		<coastSidesRange>0~0</coastSidesRange>
+		<biomeBlacklist>
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+		</biomeBlacklist>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_SaltPlains</defName>
+		<label>salt plains</label>
+		<description>The dried surface of an inland ocean. Sterile and hard to traverse.</description>
+		<categories>
+			<li>Lake</li>
+		</categories>
+		<priority>2</priority>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_SaltPlains</workerClass>
+		<biomeWhitelist>
+			<li>Desert</li>
+			<li>ExtremeDesert</li>
+			<li>Tundra</li>
+			<li>AridShrubland</li>
+			<li>Grasslands</li>
+		</biomeWhitelist>
+		<coastSidesRange>0~0</coastSidesRange>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_RockRidge</defName>
+		<label>rock ridge</label>
+		<description>A rock ridge separating this region in two.</description>
+		<categories>
+			<li>Mountain</li>
+		</categories>
+		<priority>5</priority>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_Ridge</workerClass>
+		<genOrder>-200</genOrder>
+		<!-- Must be before any mutators that generate caves -->
+		<maxHilliness>Flat</maxHilliness>
+		<coastSidesRange>0~0</coastSidesRange>
+		<biomeBlacklist>
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+			<li>LavaField</li>
+		</biomeBlacklist>
+		<overrideCategories>
+			<li>BaseCaves</li>
+		</overrideCategories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_JaggedRocks</defName>
+		<label>jagged rocks</label>
+		<description>Thin rock ridges criss cross this region.</description>
+		<categories>
+			<li>Mountain</li>
+		</categories>
+		<priority>5</priority>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_JaggedRocks</workerClass>
+		<genOrder>-200</genOrder>
+		<!-- Must be before any mutators that generate caves -->
+		<maxHilliness>Flat</maxHilliness>
+		<coastSidesRange>0~0</coastSidesRange>
+		<biomeBlacklist>
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+			<li>LavaField</li>
+		</biomeBlacklist>
+		<overrideCategories>
+			<li>BaseCaves</li>
+		</overrideCategories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_DryRiver</defName>
+		<label>dry river</label>
+		<description>A section of this river that has dried up, presumably due to absence of precipitation up-river.</description>
+		<categories>
+			<li>River</li>
+		</categories>
+		<priority>2</priority>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_DryRiver</workerClass>
+		<biomeWhitelist>
+			<li>Desert</li>
+			<li>ExtremeDesert</li>
+			<li>Tundra</li>
+			<li>AridShrubland</li>
+			<li>Grasslands</li>
+			<li>TemperateForest</li>
+			<li>BorealForest</li>
+		</biomeWhitelist>
+		<coastSidesRange>0~0</coastSidesRange>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_MangroveTerrain</defName>
+		<label>coastal wetland</label>
+		<description>Large interconnected backish water pools dominate the area.</description>
+		<workerClass>TileMutatorWorker_Wetland</workerClass>
+		<biomeWhitelist>
+			<li>BorealForest</li>
+			<li>ColdBog</li>
+			<li>Glowforest</li>
+			<li>TemperateForest</li>
+			<li>TemperateSwamp</li>
+			<li>TropicalRainforest</li>
+			<li>TropicalSwamp</li>
+			<li>Tundra</li>
+		</biomeWhitelist>
+		<maxHilliness>Flat</maxHilliness>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<overrideLakeBeachTerrain>Mud</overrideLakeBeachTerrain>
+		<overrideRiverbankTerrain>Mud</overrideRiverbankTerrain>
+		<coastSidesRange>1~6</coastSidesRange>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_SerpentineCanyons</defName>
+		<label>serpentine canyons</label>
+		<description>Geological movement has caused several deep fissures in this mountain.</description>
+		<categories>
+			<li>Mountain</li>
+		</categories>
+		<priority>5</priority>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_SerpentineCanyons</workerClass>
+		<genOrder>-200</genOrder>
+		<!-- Must be before any mutators that generate caves -->
+		<minHilliness>Mountainous</minHilliness>
+		<preventNaturalElevation>true</preventNaturalElevation>
+		<overrideCategories>
+			<li>BaseCaves</li>
+		</overrideCategories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_DustBowl</defName>
+		<label>dust bowl</label>
+		<description>A sun-scorched wasteland choked with dust and dry winds. Vegetation is nearly gone, and relentless sandstorms make survival harsh and unforgiving.</description>
+		<categories>
+			<li>Lake</li>
+		</categories>
+		<priority>2</priority>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_DustBowl</workerClass>
+		<coastSidesRange>0~0</coastSidesRange>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_SulfuricLake</defName>
+		<label>sulfuric lake</label>
+		<description>A stagnant volcanic lake with a strong, foul sulfuric odor. While the water is very mildly toxic, the surrounding soil is rich in nutrients, supporting hardy, sulfur-tolerant plant life.</description>
+		<categories>
+			<li>Lake</li>
+		</categories>
+		<priority>2</priority>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_SulfuricLake</workerClass>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_BurnedForest</defName>
+		<label>burned forest</label>
+		<description>A forested area that has been recently affected by a severe wildfire.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_BurnedForest</workerClass>
+		<biomeWhitelist>
+			<li>BorealForest</li>
+			<li>TemperateForest</li>
+			<li>TropicalRainforest</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
+</Defs>
+
