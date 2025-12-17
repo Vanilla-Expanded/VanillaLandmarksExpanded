@@ -109,12 +109,12 @@
 		<defName>VEE_Coral</defName>
 		<label>coral</label>
 		<description>A colorful, calcified colony of tiny marine organisms, forming intricate reef structures teeming with life.</description>
-		<thingClass>Building</thingClass>
+		<thingClass>VanillaExplorationExpanded.Building_FakePlant2x2</thingClass>
 		<graphicData>
-			<texPath>Things/Test</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>Transparent</shaderType>
-			<drawSize>(2,2)</drawSize>
+			<texPath>Things/Plant/Coral</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		
+			<drawSize>0.75</drawSize>
 		</graphicData>
 		<uiIconScale>0.5</uiIconScale>
 		<altitudeLayer>Floor</altitudeLayer>
