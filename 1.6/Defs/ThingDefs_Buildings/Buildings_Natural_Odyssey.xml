@@ -6,7 +6,7 @@
 		<description>A foul geyser that intermittently belches clouds of corpse-born miasma, choking the air with the stench of decay.</description>
 		<thingClass>VanillaExplorationExpanded.Building_RotstinkVent</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Natural/SteamGeyser</texPath>
+			<texPath>Things/Special/RotstinkGeyser</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>Transparent</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -32,7 +32,7 @@
 		<description>A volatile fissure that periodically spews noxious green gas, poisoning the air and sickening anything that breathes it.</description>
 		<thingClass>VanillaExplorationExpanded.Building_ToxicVent</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Natural/SteamGeyser</texPath>
+			<texPath>Things/Special/ToxicGeyser</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>Transparent</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -58,7 +58,7 @@
 		<description>A smoldering fissure that intermittently exhales thick, acrid smoke, reducing visibility and choking the lungs.</description>
 		<thingClass>VanillaExplorationExpanded.Building_SmokeVent</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Natural/SteamGeyser</texPath>
+			<texPath>Things/Special/SmokeGeyser</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>Transparent</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -84,7 +84,7 @@
 		<description>A sinister geyser that exhales eerie, ash-like dust—capable of reawakening the dead under its haunting influence.</description>
 		<thingClass>VanillaExplorationExpanded.Building_DeadlifeVent</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Natural/SteamGeyser</texPath>
+			<texPath>Things/Special/DeadlifeDustGeyser</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>Transparent</shaderType>
 			<drawSize>(4,4)</drawSize>
