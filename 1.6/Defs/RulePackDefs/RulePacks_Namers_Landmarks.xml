@@ -146,4 +146,34 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_BloomingFields</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>
+				<li>terrain_word(p=2)->wildflower meadow</li>
+				<li>terrain_word->blooming field</li>
+				<li>terrain_word->floral plain</li>
+				<li>terrain_word->petal-covered grasslands</li>
+				
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_CactusFields</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>				
+				<li>terrain_word->cactus field</li>
+				<li>terrain_word->xerophile garden</li>
+				
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 </Defs>

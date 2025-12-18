@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="PlantBase">
+		<defName>VEE_ButtercupFlower</defName>
+		<label>buttercup</label>
+		<description>A beautiful wild flower.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/ButtercupFlower</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.05</fertilityMin>
+			<maxMeshCount>25</maxMeshCount>
+			<visualSizeRange>0.3~0.4</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VEE_ForgetMeNot</defName>
+		<label>forget-me-not</label>
+		<description>A beautiful wild flower.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/ForgetMeNot</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.05</fertilityMin>
+			<maxMeshCount>25</maxMeshCount>
+			<visualSizeRange>0.3~0.4</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="BushBase">
+		<defName>VEE_Knapweed</defName>
+		<label>knapweed</label>
+		<description>A robust, weedy, wild plant.</description>
+		<statBases>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Knapweed</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1</drawSize>
+			<shadowData>
+				<volume>(0.55, 0.17, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<plant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<maxMeshCount>4</maxMeshCount>
+			<wildClusterWeight>7.5</wildClusterWeight>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="BushBase">
+		<defName>VEE_Loosestrife</defName>
+		<label>loosestrife</label>
+		<description>A beautiful herbaceous perennial wild plant.</description>
+		<statBases>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Loosestrife</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1</drawSize>
+			<shadowData>
+				<volume>(0.55, 0.17, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<plant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<maxMeshCount>4</maxMeshCount>
+			<wildClusterWeight>7.5</wildClusterWeight>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
+		</plant>
+	</ThingDef>
+</Defs>
