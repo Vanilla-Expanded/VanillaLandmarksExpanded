@@ -607,7 +607,7 @@
 	<LandmarkDef>
 		<defName>VEE_FloodPlains</defName>
 		<label>flood plains</label>
-		<drawScale>0.7</drawScale>
+		<drawScale>1</drawScale>
 		<iconTexturePath>World/Landmarks/VEE_FloodPlains</iconTexturePath>
 		<atlasSize>(2, 2)</atlasSize>
 		<commonality>0.6</commonality>
