@@ -29,6 +29,8 @@ namespace VanillaExplorationExpanded
         public static ThingDef Tornado;
         public static ThingDef VEE_Coral;
         public static ThingDef BurnedTree;
+        [MayRequire("VanillaExpanded.VPsycastsE")]
+        public static ThingDef VPE_EltexOre;
 
         public static EffecterDef Impact_Toxic;
 

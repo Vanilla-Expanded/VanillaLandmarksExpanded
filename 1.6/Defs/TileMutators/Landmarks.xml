@@ -604,4 +604,36 @@
 			<AncientUplink>0.02</AncientUplink>
 		</mutatorChances>
 	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_FloodPlains</defName>
+		<label>flood plains</label>
+		<drawScale>1</drawScale>
+		<iconTexturePath>World/Landmarks/VEE_FloodPlains</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.6</commonality>
+		<nameMaker>VEE_NamerLandmark_FloodPlains</nameMaker>
+		<mutatorChances>
+			<VEE_FloodPlains Required="True"/>
+			<Stockpile>0.05</Stockpile>
+			<AnimalLife_Increased>0.15</AnimalLife_Increased>
+			<VEE_PlantLife_Overgrown>0.2</VEE_PlantLife_Overgrown>
+			<FoggyMutator>0.05</FoggyMutator>
+			<SunnyMutator>0.05</SunnyMutator>
+			<WetClimate>0.1</WetClimate>
+			<WindyMutator>0.05</WindyMutator>
+			<AnimalHabitat>0.05</AnimalHabitat>
+			<PlantGrove>0.05</PlantGrove>
+			<Marshy>0.05</Marshy>
+			<Fertile>0.05</Fertile>
+			<Muddy>0.05</Muddy>
+			<MixedBiome>0.5</MixedBiome>
+			<WildPlants>0.05</WildPlants>
+			<WildTropicalPlants>0.03</WildTropicalPlants>
+			<ArcheanTrees>0.01</ArcheanTrees>
+			<Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.01</Pollution_Increased>
+			<AncientUplink>0.02</AncientUplink>
+			<Fish_Increased>0.05</Fish_Increased>
+			<Fish_Decreased>0.01</Fish_Decreased>
+		</mutatorChances>
+	</LandmarkDef>
 </Defs>

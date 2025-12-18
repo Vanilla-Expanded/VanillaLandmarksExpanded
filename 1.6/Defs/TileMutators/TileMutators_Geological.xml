@@ -230,5 +230,12 @@
 			<li>VEE_Traversability</li>
 		</categories>
 	</TileMutatorDef>
+	<TileMutatorDef MayRequire="VanillaExpanded.VPsycastsE">
+		<defName>VEE_EltexDeposits</defName>
+		<label>eltex deposits</label>
+		<description>This area has deposits of psychically active eltex.</description>
+		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_EltexDeposits</workerClass>
+	</TileMutatorDef>
 </Defs>
 

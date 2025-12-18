@@ -29,7 +29,7 @@ namespace VanillaExplorationExpanded
             WeatherBuildupUtility.AddSnowRadial(this.OccupiedRect().RandomCell, base.Map, 4f, -0.06f);
             this.spraySustainer = SoundDefOf.GeyserSpray.TrySpawnSustainer(new TargetInfo(base.Position, base.Map, false));
             this.spraySustainerStartTick = Find.TickManager.TicksGame;
-            GasUtility.AddDeadifeGas(Position, Map, Faction.OfEntities, 5);
+            GasUtility.AddDeadifeGas(Position, Map, Faction.OfEntities, 7500);
 
 
         }
