@@ -89,7 +89,7 @@
 		<defName>VEE_MangroveTrees</defName>
 		<label>mangrove trees</label>
 		<description>This area is filled with large amounts of mangrove trees whose roots can thrive in brackish water.</description>
-		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_MangroveTrees</workerClass>
+		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
 		<coastSidesRange>1~6</coastSidesRange>
 		<biomeBlacklist>
 			<li>IceSheet</li>
@@ -99,6 +99,11 @@
 		<plantKinds>
 			<li>VEE_Mangrove</li>
 		</plantKinds>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantCommonality>5</plantCommonality>
+			</li>
+		</modExtensions>
 	</TileMutatorDef>
 	<TileMutatorDef ParentName="WildPlants_Base" MayRequire="VanillaExpanded.VPlantsE">
 		<defName>VEE_WildFruitTrees</defName>
@@ -122,6 +127,172 @@
 			<li>VCE_BananaTree</li>
 			<li>VCE_OrangeTree</li>
 		</plantKinds>
+	</TileMutatorDef>
+	<TileMutatorDef Name="VEE_WildFlowers_Base" Abstract="True">
+		<label>wild flowers</label>
+		<plantDensityRange>0.3~4</plantDensityRange>
+		<pollutionRange>0~0.25</pollutionRange>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="VEE_WildFlowers_Base">
+		<defName>VEE_Blooming_Buttercup</defName>
+		<label>blooming buttercups</label>
+		<description>This area can grow a large number of colorful wild buttercups.</description>
+		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeWhitelist>
+			<li>TemperateForest</li>
+			<li>TemperateSwamp</li>
+			<li>Grasslands</li>
+		</biomeWhitelist>
+		<plantKinds>
+			<li>VEE_ButtercupFlower</li>
+		</plantKinds>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantCommonality>1</plantCommonality>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="VEE_WildFlowers_Base">
+		<defName>VEE_Blooming_ForgetMeNot</defName>
+		<label>blooming forget-me-nots</label>
+		<description>This area can grow a large number of colorful wild forget-me-nots.</description>
+		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeWhitelist>
+			<li>TemperateForest</li>
+			<li>TemperateSwamp</li>
+			<li>Grasslands</li>
+		</biomeWhitelist>
+		<plantKinds>
+			<li>VEE_ForgetMeNot</li>
+		</plantKinds>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantCommonality>1</plantCommonality>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="VEE_WildFlowers_Base">
+		<defName>VEE_Blooming_Knapweed</defName>
+		<label>blooming knapweed</label>
+		<description>This area can grow a large number of colorful wild knapweed.</description>
+		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeWhitelist>
+			<li>TemperateForest</li>
+			<li>TemperateSwamp</li>
+			<li>Grasslands</li>
+		</biomeWhitelist>
+		<plantKinds>
+			<li>VEE_Knapweed</li>
+		</plantKinds>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantCommonality>0.5</plantCommonality>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="VEE_WildFlowers_Base">
+		<defName>VEE_Blooming_Loosestrife</defName>
+		<label>blooming loosestrife</label>
+		<description>This area can grow a large number of colorful wild loosestrife.</description>
+		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeWhitelist>
+			<li>TemperateForest</li>
+			<li>TemperateSwamp</li>
+			<li>Grasslands</li>
+		</biomeWhitelist>
+		<plantKinds>
+			<li>VEE_Loosestrife</li>
+		</plantKinds>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantCommonality>0.5</plantCommonality>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef Name="VEE_WildCacti_Base" Abstract="True">
+		<label>wild cacti</label>
+		<plantDensityRange>0~4</plantDensityRange>
+		<pollutionRange>0~0.25</pollutionRange>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="VEE_WildCacti_Base">
+		<defName>VEE_Cactus_Barrel</defName>
+		<label>barrel cacti</label>
+		<description>This area can grow a large number of wild barrel cacti.</description>
+		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeWhitelist>
+			<li>Desert</li>
+			<li>AridShrubland</li>
+		</biomeWhitelist>
+		<plantKinds>
+			<li>VEE_Plant_BarrelCactus</li>
+		</plantKinds>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantCommonality>1</plantCommonality>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="VEE_WildCacti_Base">
+		<defName>VEE_Cactus_Beavertail</defName>
+		<label>beavertail cacti</label>
+		<description>This area can grow a large number of wild beavertail cacti.</description>
+		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeWhitelist>
+			<li>Desert</li>
+			<li>AridShrubland</li>
+		</biomeWhitelist>
+		<plantKinds>
+			<li>VEE_Plant_BeavertailCactus</li>
+		</plantKinds>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantCommonality>1</plantCommonality>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="VEE_WildCacti_Base">
+		<defName>VEE_Cactus_Hedgehog</defName>
+		<label>hedgehog cacti</label>
+		<description>This area can grow a large number of wild hedgehog cacti.</description>
+		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeWhitelist>
+			<li>Desert</li>
+			<li>AridShrubland</li>
+		</biomeWhitelist>
+		<plantKinds>
+			<li>VEE_Plant_HedgehogCactus</li>
+		</plantKinds>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantCommonality>1</plantCommonality>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="VEE_WildCacti_Base">
+		<defName>VEE_Cactus_OrganPipe</defName>
+		<label>organ pipe cacti</label>
+		<description>This area can grow a large number of wild organ pipe cacti.</description>
+		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeWhitelist>
+			<li>Desert</li>
+		<li>AridShrubland</li>
+		</biomeWhitelist>
+		<plantKinds>
+			<li>VEE_Plant_OrganPipeCactus</li>
+		</plantKinds>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantCommonality>1</plantCommonality>
+			</li>
+		</modExtensions>
 	</TileMutatorDef>
 </Defs>
 

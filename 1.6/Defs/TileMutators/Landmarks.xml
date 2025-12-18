@@ -557,4 +557,51 @@
 			<Fish_Decreased>0.01</Fish_Decreased>
 		</mutatorChances>
 	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_BloomingFields</defName>
+		<label>blooming fields</label>
+		<iconTexturePath>World/Landmarks/VEE_BloomingFields</iconTexturePath>
+		<atlasSize>(1, 1)</atlasSize>
+		<commonality>0.5</commonality>
+		<nameMaker>VEE_NamerLandmark_BloomingFields</nameMaker>
+		<mutatorChances>
+			<VEE_Blooming_Buttercup Required="True"/>
+			<VEE_Blooming_ForgetMeNot Required="True"/>
+			<VEE_Blooming_Knapweed Required="True"/>
+			<VEE_Blooming_Loosestrife Required="True"/>
+			<Stockpile>0.05</Stockpile>
+			<WetClimate>0.2</WetClimate>
+			<AnimalLife_Increased>0.05</AnimalLife_Increased>
+			<AnimalHabitat>0.15</AnimalHabitat>
+			<Fertile>0.05</Fertile>
+			<WildPlants>0.1</WildPlants>
+			<WildTropicalPlants>0.03</WildTropicalPlants>
+			<ArcheanTrees>0.01</ArcheanTrees>
+			<AncientUplink>0.02</AncientUplink>
+			<PlantLife_Increased>0.05</PlantLife_Increased>
+			<PlantGrove>0.05</PlantGrove>
+			<Fish_Increased>0.05</Fish_Increased>
+			<Fish_Decreased>0.01</Fish_Decreased>
+		</mutatorChances>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_CactusFields</defName>
+		<label>cactus fields</label>
+		<iconTexturePath>World/Landmarks/VEE_CactusFields</iconTexturePath>
+		<atlasSize>(1, 1)</atlasSize>
+		<commonality>0.5</commonality>
+		<nameMaker>VEE_NamerLandmark_CactusFields</nameMaker>
+		<mutatorChances>
+			<VEE_Cactus_Barrel Required="True"/>
+			<VEE_Cactus_Beavertail Required="True"/>
+			<VEE_Cactus_Hedgehog Required="True"/>
+			<VEE_Cactus_OrganPipe Required="True"/>
+			<VEE_PlantLife_Overgrown Required="True"/>
+			<Stockpile>0.05</Stockpile>
+			<AnimalLife_Increased>0.75</AnimalLife_Increased>
+			<AnimalHabitat>0.25</AnimalHabitat>
+			<SunnyMutator>0.05</SunnyMutator>
+			<AncientUplink>0.02</AncientUplink>
+		</mutatorChances>
+	</LandmarkDef>
 </Defs>
