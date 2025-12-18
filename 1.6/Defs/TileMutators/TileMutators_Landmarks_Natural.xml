@@ -343,5 +343,18 @@
 			<li>TropicalRainforest</li>
 		</biomeWhitelist>
 	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_FloodPlains</defName>
+		<label>flood plains</label>
+		<description>A low-lying stretch of land shaped by seasonal flooding, where nutrient-rich waters periodically spill over the banks and retreat, leaving fertile soil in their wake.</description>
+		<categories>
+			<li>River</li>
+		</categories>
+		<priority>2</priority>
+		
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_LargeRiverBanks</workerClass>
+		<maxHilliness>Flat</maxHilliness>
+	
+	</TileMutatorDef>
 </Defs>
 

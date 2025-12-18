@@ -64,7 +64,6 @@
 			<rulesStrings>
 				<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>
 				<li>terrain_word(p=2)->canyons</li>
-			
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
@@ -142,7 +141,6 @@
 				<li>terrain_word->charred forest</li>
 				<li>terrain_word->burnt woodland</li>
 				<li>terrain_word->scorched grove</li>
-				
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
@@ -158,7 +156,6 @@
 				<li>terrain_word->blooming field</li>
 				<li>terrain_word->floral plain</li>
 				<li>terrain_word->petal-covered grasslands</li>
-				
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
@@ -169,10 +166,29 @@
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>				
-				<li>terrain_word->cactus field</li>
+				<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>
+				<li>terrain_word(p=2)->cactus field</li>
 				<li>terrain_word->xerophile garden</li>
-				
+				<li>terrain_word->cactus plain</li>
+				<li>terrain_word->spinebrush flats</li>
+				<li>terrain_word->thorned lowlands</li>
+				<li>terrain_word->prickled desert</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_FloodPlains</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>
+				<li>terrain_word(p=2)->flood plain</li>
+				<li>terrain_word->river floodlands</li>
+				<li>terrain_word->alluvial plain</li>
+				<li>terrain_word->seasonal floodplain</li>
+				<li>terrain_word->silt-rich lowlands</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
