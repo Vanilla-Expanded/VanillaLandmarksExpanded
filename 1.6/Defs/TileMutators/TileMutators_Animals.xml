@@ -282,47 +282,47 @@
 				<forcedPawnKindDefs>
 					<li>
 						<forcedPawnKindDef>VAEWaste_Megatardi</forcedPawnKindDef>
-						<forcedPawnKindDefChance>0.05</forcedPawnKindDefChance>
+						<forcedPawnKindDefChance>0.025</forcedPawnKindDefChance>
 					</li>
 					<li>
 						<forcedPawnKindDef>VAEWaste_Pestigator</forcedPawnKindDef>
-						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+						<forcedPawnKindDefChance>0.025</forcedPawnKindDefChance>
 					</li>
 					<li>
 						<forcedPawnKindDef>VAEWaste_Toxafox</forcedPawnKindDef>
-						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+						<forcedPawnKindDefChance>0.05</forcedPawnKindDefChance>
 					</li>
 					<li>
 						<forcedPawnKindDef>VAEWaste_Toxbear</forcedPawnKindDef>
-						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+						<forcedPawnKindDefChance>0.025</forcedPawnKindDefChance>
 					</li>
 					<li>
 						<forcedPawnKindDef>VAEWaste_Toxiguana</forcedPawnKindDef>
-						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+						<forcedPawnKindDefChance>0.05</forcedPawnKindDefChance>
 					</li>
 					<li>
 						<forcedPawnKindDef>VAEWaste_Toxlion</forcedPawnKindDef>
-						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+						<forcedPawnKindDefChance>0.05</forcedPawnKindDefChance>
 					</li>
 					<li>
 						<forcedPawnKindDef>VAEWaste_Toxscorpion</forcedPawnKindDef>
-						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+						<forcedPawnKindDefChance>0.05</forcedPawnKindDefChance>
 					</li>
 					<li>
 						<forcedPawnKindDef>VAEWaste_Wasteboar</forcedPawnKindDef>
-						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+						<forcedPawnKindDefChance>0.05</forcedPawnKindDefChance>
 					</li>
 					<li>
 						<forcedPawnKindDef>VAEWaste_Wastedeer</forcedPawnKindDef>
-						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+						<forcedPawnKindDefChance>0.05</forcedPawnKindDefChance>
 					</li>
 					<li>
 						<forcedPawnKindDef>VAEWaste_Wasteffalo</forcedPawnKindDef>
-						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+						<forcedPawnKindDefChance>0.05</forcedPawnKindDefChance>
 					</li>
 					<li>
 						<forcedPawnKindDef>VAEWaste_Hydra</forcedPawnKindDef>
-						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+						<forcedPawnKindDefChance>0.05</forcedPawnKindDefChance>
 					</li>
 					
 					

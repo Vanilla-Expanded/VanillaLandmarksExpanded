@@ -27,4 +27,35 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	<ThoughtDef>
+		<defName>VEE_IrradiatedWater</defName>
+		<durationDays>2</durationDays>
+		<stackLimit>1</stackLimit>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>irradiated water</label>
+				<description>I can feel my cells screaming in pain.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>VEE_DustStorm</defName>
+		<durationDays>0.1</durationDays>
+		<stackLimit>1</stackLimit>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<nullifyingPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">RoughLiving_Welcomed</li>
+		</nullifyingPrecepts>
+		<stages>
+			<li>
+				<label>dust storm</label>
+				<description>This dust gets everywhere!</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+		<thoughtClass>VEF.Cooking.Thought_Hediff</thoughtClass>
+		<hediff>VEE_DustStorm</hediff>
+	</ThoughtDef>
 </Defs>

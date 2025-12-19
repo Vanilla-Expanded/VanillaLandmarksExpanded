@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<WeatherDef>
+		<defName>VEE_FertileRains</defName>
+		<label>fertile rain</label>
+		<description>Unusually nutrient-rich rainfall is sweeping across the region, boosting plant growth for its duration.</description>
+		<overlayClasses>
+			<li>VEF.Weathers.WeatherOverlay_Custom</li>
+		</overlayClasses>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<accuracyMultiplier>0.8</accuracyMultiplier>
+		<favorability>Neutral</favorability>
+		<perceivePriority>1</perceivePriority>
+		<weatherThought>SoakingWet</weatherThought>
+		<rainRate>1</rainRate>
+		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+		<modExtensions>
+			<li Class="VEF.Weathers.WeatherOverlayExtension">
+				<overlayPath>Weather/FertileRainWorldOverlay</overlayPath>
+				<copyPropertiesFrom>Weather/RainOverlayWorld</copyPropertiesFrom>
+				<worldOverlayPanSpeed1>0.015</worldOverlayPanSpeed1>
+				<worldPanDir1>(-0.25, -1)</worldPanDir1>
+				<worldOverlayPanSpeed2>0.022</worldOverlayPanSpeed2>
+				<worldPanDir2>(-0.24, -1)</worldPanDir2>
+			</li>
+		</modExtensions>
+		<ambientSounds>
+			<li>Ambient_Rain</li>
+		</ambientSounds>
+		<commonalityRainfallFactor>
+			<points>
+				<li>(0, 0)</li>
+				<li>(1300, 1)</li>
+				<li>(4000, 3.0)</li>
+			</points>
+		</commonalityRainfallFactor>
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+			<sky>(0.8,0.8,0.8)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.7,0.7,0.7)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	<WeatherDef>
+		<defName>VEE_DustStorm</defName>
+		<label>dust storm</label>
+		<description>A choking wall of wind-driven dust sweeps across the land, reducing visibility, slowing movement, and scouring anything left exposed.</description>
+		<temperatureRange>10~999</temperatureRange>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<windSpeedOffset>1.25</windSpeedOffset>
+		<weatherThought>VEE_DustStorm</weatherThought>
+		<favorability>Neutral</favorability>
+		<perceivePriority>1</perceivePriority>
+		<moveSpeedMultiplier>0.75</moveSpeedMultiplier>
+		<preventSkygaze>true</preventSkygaze>
+		<preventsShuttleLaunch>true</preventsShuttleLaunch>
+		<ambientSounds>
+			<li>Ambient_Wind_Storm</li>
+		</ambientSounds>
+		<overlayClasses>
+			<li>VEF.Weathers.WeatherOverlay_Custom</li>
+		</overlayClasses>
+		<modExtensions>
+			<li Class="VEF.Weathers.WeatherOverlayExtension">
+				<overlayPath>Weather/DustStormWorldOverlay</overlayPath>
+				<copyPropertiesFrom>Weather/Sandstorm/ParticleLayer</copyPropertiesFrom>
+				<worldOverlayPanSpeed1>0.045</worldOverlayPanSpeed1>
+				<worldPanDir1>(-0.5, -1)</worldPanDir1>
+				<worldOverlayPanSpeed2>0.082</worldOverlayPanSpeed2>
+				<worldPanDir2>(-0.65, -1)</worldPanDir2>
+			</li>
+		</modExtensions>
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+			<sky>(0.8,0.8,0.8)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.7,0.7,0.7)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+</Defs>
+
+
+
+
+
+
+
+

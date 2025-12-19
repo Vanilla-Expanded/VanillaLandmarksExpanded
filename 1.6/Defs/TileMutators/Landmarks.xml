@@ -495,7 +495,7 @@
 			<VEE_DustBowl Required="True"/>
 			<VEE_PlantLife_Decimated Required="True"/>
 			<VEE_Fertility_Reduced Required="True"/>
-			<VEE_Sandstorms Required="True"/>
+			<VEE_DustStorms Required="True"/>
 			<Stockpile>0.01</Stockpile>
 			<AnimalLife_Decreased>0.15</AnimalLife_Decreased>
 			<Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.02</Pollution_Increased>
@@ -634,6 +634,81 @@
 			<AncientUplink>0.02</AncientUplink>
 			<Fish_Increased>0.05</Fish_Increased>
 			<Fish_Decreased>0.01</Fish_Decreased>
+		</mutatorChances>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_ContaminatedReservoir</defName>
+		<label>contaminated reservoir</label>
+		<drawScale>1</drawScale>
+		<iconTexturePath>World/Landmarks/VEE_ContaminatedReservoir</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.3</commonality>
+		<nameMaker>VEE_NamerLandmark_ContaminatedReservoir</nameMaker>
+		<mutatorChances>
+			<VEE_ContaminatedReservoir Required="True"/>
+			<Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">1</Pollution_Increased>
+			<Junkyard MayRequire="Ludeon.RimWorld.Ideology">0.25</Junkyard>
+			<Stockpile>0.05</Stockpile>
+			<AnimalLife_Decreased/>
+			<Marshy>0.05</Marshy>
+			<Sandy>0.05</Sandy>
+			<Muddy>0.05</Muddy>
+			<FoggyMutator>0.05</FoggyMutator>
+			<SunnyMutator>0.05</SunnyMutator>
+			<WetClimate>0.05</WetClimate>
+			<WindyMutator>0.05</WindyMutator>
+			<InsectMegahive>0.01</InsectMegahive>
+			<AncientUplink>0.02</AncientUplink>
+		</mutatorChances>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_ContaminatedRiver</defName>
+		<label>contaminated river</label>
+		<drawScale>0.7</drawScale>
+		<iconTexturePath>World/Landmarks/VEE_ContaminatedReservoir</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.3</commonality>
+		<nameMaker>VEE_NamerLandmark_ContaminatedRiver</nameMaker>
+		<mutatorChances>
+			<VEE_ContaminatedRiver Required="True"/>
+			<Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">1</Pollution_Increased>
+			<Junkyard MayRequire="Ludeon.RimWorld.Ideology">0.25</Junkyard>
+			<Stockpile>0.05</Stockpile>
+			<AnimalLife_Decreased/>
+			<Marshy>0.05</Marshy>
+			<Sandy>0.05</Sandy>
+			<Muddy>0.05</Muddy>
+			<FoggyMutator>0.05</FoggyMutator>
+			<SunnyMutator>0.05</SunnyMutator>
+			<WetClimate>0.05</WetClimate>
+			<WindyMutator>0.05</WindyMutator>
+			<InsectMegahive>0.01</InsectMegahive>
+			<AncientUplink>0.02</AncientUplink>
+		</mutatorChances>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_ContaminatedCoast</defName>
+		<label>contaminated coast</label>
+		<drawScale>0.7</drawScale>
+		<iconTexturePath>World/Landmarks/VEE_ContaminatedReservoir</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.3</commonality>
+		<nameMaker>VEE_NamerLandmark_ContaminatedCoast</nameMaker>
+		<mutatorChances>
+			<VEE_ContaminatedCoast Required="True"/>
+			<Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">1</Pollution_Increased>
+			<Junkyard MayRequire="Ludeon.RimWorld.Ideology">0.25</Junkyard>
+			<Stockpile>0.05</Stockpile>
+			<AnimalLife_Decreased/>
+			<Marshy>0.05</Marshy>
+			<Sandy>0.05</Sandy>
+			<Muddy>0.05</Muddy>
+			<FoggyMutator>0.05</FoggyMutator>
+			<SunnyMutator>0.05</SunnyMutator>
+			<WetClimate>0.05</WetClimate>
+			<WindyMutator>0.05</WindyMutator>
+			<InsectMegahive>0.01</InsectMegahive>
+			<AncientUplink>0.02</AncientUplink>
 		</mutatorChances>
 	</LandmarkDef>
 </Defs>

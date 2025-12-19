@@ -53,4 +53,22 @@
 		<minRefireDays>20</minRefireDays>
 		<category>ThreatBig</category>
 	</IncidentDef>
+	<IncidentDef>
+		<defName>VEE_FertileRains</defName>
+		<label>fertile rains</label>
+		<category>Misc</category>
+		<baseChance>2</baseChance>
+		<earliestDay>1</earliestDay>
+		<minRefireDays>15</minRefireDays>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>VanillaExplorationExpanded.IncidentWorker_FertileRains_MutatorLocked</workerClass>
+		<gameCondition>VEE_FertileRainsGameCondition</gameCondition>
+		<letterLabel>Fertile Rains</letterLabel>
+		<letterText>Unusually nutrient-rich rainfall is sweeping across the region, boosting plant growth for its duration.</letterText>
+		<letterDef>NeutralEvent</letterDef>
+		<durationDays>3~7</durationDays>
+		<!-- 8~36 hours -->
+	</IncidentDef>
 </Defs>

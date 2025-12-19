@@ -331,6 +331,13 @@
 		<priority>2</priority>
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_SulfuricLake</workerClass>
 		<canSpawnOnRiver>false</canSpawnOnRiver>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<thingToSpawn>VEE_SulfurVent</thingToSpawn>
+				<thingToSpawnAmount>15~25</thingToSpawnAmount>
+				
+			</li>
+		</modExtensions>
 	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_BurnedForest</defName>
@@ -351,10 +358,70 @@
 			<li>River</li>
 		</categories>
 		<priority>2</priority>
-		
+		<overrideRiverbankTerrain>VEE_FertileRiverbank</overrideRiverbankTerrain>
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_LargeRiverBanks</workerClass>
 		<maxHilliness>Flat</maxHilliness>
-	
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_ContaminatedReservoir</defName>
+		<label>contaminated reservoir</label>
+		<description>A stagnant body of water saturated with lingering radiation, its depths unsafe for drinking or fishing and its shores hostile to life.</description>
+		<categories>
+			<li>Lake</li>
+		</categories>
+		<priority>2</priority>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_ContaminatedReservoir</workerClass>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<thingToSpawn>VEE_RadioactiveBarrel</thingToSpawn>
+				<thingToSpawnAmount>100~200</thingToSpawnAmount>
+				<terrainValidation>
+					<li>VEE_IrradiatedSoil</li>
+				</terrainValidation>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_ContaminatedRiver</defName>
+		<label>contaminated river</label>
+		<description>A flowing waterway tainted by lingering radiation, spreading contamination downstream and rendering its waters unsafe for use.</description>
+		<categories>
+			<li>River</li>
+		</categories>
+		<priority>2</priority>
+		<overrideRiverbankTerrain>VEE_IrradiatedSoil</overrideRiverbankTerrain>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_ContaminatedRiver</workerClass>
+		<maxHilliness>Flat</maxHilliness>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<thingToSpawn>VEE_RadioactiveBarrel</thingToSpawn>
+				<thingToSpawnAmount>100~200</thingToSpawnAmount>
+				<terrainValidation>
+					<li>VEE_IrradiatedSoil</li>
+				</terrainValidation>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_ContaminatedCoast</defName>
+		<label>contaminated coast</label>
+		<description>A stretch of shoreline where irradiated waters lap against the land, poisoning the shallows and disrupting all nearby life.</description>
+		<maxHilliness>Flat</maxHilliness>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<coastSidesRange>1~6</coastSidesRange>
+		<priority>2</priority>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_ContaminatedCoast</workerClass>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<thingToSpawn>VEE_RadioactiveBarrel</thingToSpawn>
+				<thingToSpawnAmount>100~200</thingToSpawnAmount>
+				<terrainValidation>
+					<li>VEE_IrradiatedSoil</li>
+				</terrainValidation>
+			</li>
+		</modExtensions>
 	</TileMutatorDef>
 </Defs>
 

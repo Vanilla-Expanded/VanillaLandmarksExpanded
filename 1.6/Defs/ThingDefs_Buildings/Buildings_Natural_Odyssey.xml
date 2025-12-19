@@ -19,7 +19,7 @@
 		<tickerType>Normal</tickerType>
 		<selectable>true</selectable>
 		<size>(4,4)</size>
-		 <blockPlants>true</blockPlants>
+		<blockPlants>true</blockPlants>
 		<neverOverlapFloors>true</neverOverlapFloors>
 		<building>
 			<isEdifice>false</isEdifice>
@@ -46,7 +46,7 @@
 		<tickerType>Normal</tickerType>
 		<selectable>true</selectable>
 		<size>(4,4)</size>
-		 <blockPlants>true</blockPlants>
+		<blockPlants>true</blockPlants>
 		<neverOverlapFloors>true</neverOverlapFloors>
 		<building>
 			<isEdifice>false</isEdifice>
@@ -73,7 +73,7 @@
 		<tickerType>Normal</tickerType>
 		<selectable>true</selectable>
 		<size>(4,4)</size>
-		 <blockPlants>true</blockPlants>
+		<blockPlants>true</blockPlants>
 		<neverOverlapFloors>true</neverOverlapFloors>
 		<building>
 			<isEdifice>false</isEdifice>
@@ -89,7 +89,7 @@
 		<graphicData>
 			<texPath>Things/Special/DeadlifeDustGeyser</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>Transparent</shaderType>
+			<shaderType>Transparent</shaderType>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		<uiIconScale>0.5</uiIconScale>
@@ -100,7 +100,7 @@
 		<tickerType>Normal</tickerType>
 		<selectable>true</selectable>
 		<size>(4,4)</size>
-		 <blockPlants>true</blockPlants>
+		<blockPlants>true</blockPlants>
 		<neverOverlapFloors>true</neverOverlapFloors>
 		<building>
 			<isEdifice>false</isEdifice>
@@ -108,7 +108,6 @@
 			<deconstructible>false</deconstructible>
 		</building>
 	</ThingDef>
-	
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>VEE_Coral</defName>
 		<label>coral</label>
@@ -117,7 +116,6 @@
 		<graphicData>
 			<texPath>Things/Plant/Coral</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
-		
 			<drawSize>0.75</drawSize>
 		</graphicData>
 		<uiIconScale>0.5</uiIconScale>
@@ -125,7 +123,6 @@
 		<rotatable>false</rotatable>
 		<destroyable>false</destroyable>
 		<useHitPoints>false</useHitPoints>
-		
 		<selectable>true</selectable>
 		<pathCost>100</pathCost>
 		<size>(2,2)</size>
@@ -134,6 +131,54 @@
 			<isEdifice>false</isEdifice>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>VEE_SulfurVent</defName>
+		<label>sulfur fissure</label>
+		<description>A naturally-occurring break in the ground from which sulfuric gases escape. The gas produced on these fissures stinks of rotten eggs.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/GeothermalVent</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_FleckEmitterLongTerm">
+				<fleckDef>VEE_SulfurCloud</fleckDef>
+				<spawnRadius>0.2</spawnRadius>
+				<spawnChance>0.05</spawnChance>
+				<spawnOffsetFromCenter>(0.5,0.0,0.5)</spawnOffsetFromCenter>
+				<prewarmCycles>1.0</prewarmCycles>
+				<fleckScale>2.0</fleckScale>
+				<minRotationRate>-10.0</minRotationRate>
+				<maxRotationRate>10.0</maxRotationRate>
+				<minVelocityAngle>-20.0</minVelocityAngle>
+				<maxVelocityAngle>20.0</maxVelocityAngle>
+				<minVelocitySpeed>0.5</minVelocitySpeed>
+				<maxVelocitySpeed>0.7</maxVelocitySpeed>
+				<forceEnabled>true</forceEnabled>
+			</li>
+		</comps>
+		<uiIconScale>0.5</uiIconScale>
+		<altitudeLayer>Floor</altitudeLayer>
+		<rotatable>false</rotatable>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<selectable>true</selectable>
+		<size>(3,3)</size>
+		<neverOverlapFloors>true</neverOverlapFloors>
+		<blockPlants>true</blockPlants>
+		<building>
+			<isEdifice>true</isEdifice>
+			<canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+			<deconstructible>false</deconstructible>
+			<repairable>false</repairable>
+			<isTargetable>false</isTargetable>
+			<isInert>true</isInert>
+			<claimable>false</claimable>
+			<expandHomeArea>false</expandHomeArea>
 		</building>
 	</ThingDef>
 </Defs>

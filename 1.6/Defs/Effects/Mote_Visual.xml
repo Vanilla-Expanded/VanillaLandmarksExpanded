@@ -48,4 +48,20 @@
 			<fadeOutTime>3</fadeOutTime>
 		</mote>
 	</ThingDef>
+	
+	  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>VEE_SulfurCloud</defName>
+    <graphicData>
+      <texPath>Things/Mote/SulfurCloudLowContrast</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(0.46,0.38,0.25,0.3)</color>
+      <drawSize>(1.5, 1.5)</drawSize>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.5</fadeInTime>
+    <solidTime>0.5</solidTime>
+    <fadeOutTime>16.2</fadeOutTime>
+    <growthRate>0.04</growthRate>
+    <acceleration>(0.05, 0.0, 0.0)</acceleration>
+  </FleckDef>
 </Defs>

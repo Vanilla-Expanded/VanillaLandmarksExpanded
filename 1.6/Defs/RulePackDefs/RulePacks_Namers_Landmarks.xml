@@ -192,4 +192,52 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_ContaminatedReservoir</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>
+				<li>terrain_word(p=2)->contaminated reservoir</li>
+				<li>terrain_word->irradiated lake</li>
+				<li>terrain_word->radioactive waters</li>
+				<li>terrain_word->glowwater basin</li>
+				<li>terrain_word->radioactive lakebed</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_ContaminatedRiver</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>
+				<li>terrain_word(p=2)->contaminated river</li>
+				<li>terrain_word->irradiated river</li>
+				<li>terrain_word->radioactive waters</li>
+				<li>terrain_word->glowwater stream</li>
+				<li>terrain_word->radioactive riverbed</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_ContaminatedCoast</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>
+				<li>terrain_word(p=2)->contaminated coast</li>
+				<li>terrain_word->irradiated shoreline</li>
+				<li>terrain_word->radioactive shallows</li>
+				<li>terrain_word->glowwater coast</li>
+				<li>terrain_word->radioactive beachfront</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 </Defs>

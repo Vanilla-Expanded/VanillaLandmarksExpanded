@@ -42,4 +42,15 @@
 		<conditionClass>VanillaExplorationExpanded.GameCondition_RottenStench</conditionClass>
 		<canBePermanent>true</canBePermanent>
 	</GameConditionDef>
+	<GameConditionDef>
+		<defName>VEE_FertileRainsGameCondition</defName>
+		<conditionClass>VanillaExplorationExpanded.GameCondition_FertileRains</conditionClass>
+		<label>fertile rain</label>
+		<description>Unusually nutrient-rich rainfall is sweeping across the region, boosting plant growth for its duration.</description>
+		<weatherDef>VEE_FertileRains</weatherDef>
+		<canBePermanent>true</canBePermanent>
+		<natural>true</natural>
+		<endMessage>The fertile rain is ending.</endMessage>
+		<allowUnderground>false</allowUnderground>
+	</GameConditionDef>
 </Defs>

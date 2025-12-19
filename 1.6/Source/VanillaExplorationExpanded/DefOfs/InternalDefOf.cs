@@ -21,6 +21,13 @@ namespace VanillaExplorationExpanded
         public static TerrainDef VEE_SulfuricWaterDeep;
         public static TerrainDef VEE_SulfuricWaterShallow;
         public static TerrainDef VEE_BurntForestSoil;
+        public static TerrainDef VEE_IrradiatedWaterDeep;
+        public static TerrainDef VEE_IrradiatedWaterShallow;
+        public static TerrainDef VEE_IrradiatedSoil;
+        public static TerrainDef VEE_IrradiatedWaterDeepMovingChestDeep;
+        public static TerrainDef VEE_IrradiatedWaterMovingShallow;
+        public static TerrainDef VEE_IrradiatedWaterOceanShallow;
+        public static TerrainDef VEE_IrradiatedOceanWaterDeep;
 
         public static ThingDef VEE_RotstinkMote;
 		public static ThingDef VEE_ToxicMote;
@@ -31,6 +38,8 @@ namespace VanillaExplorationExpanded
         public static ThingDef BurnedTree;
         [MayRequire("VanillaExpanded.VPsycastsE")]
         public static ThingDef VPE_EltexOre;
+
+        public static GameConditionDef VEE_FertileRainsGameCondition;
 
         public static EffecterDef Impact_Toxic;
 
@@ -62,6 +71,7 @@ namespace VanillaExplorationExpanded
         public static TileMutatorDef VEE_IncreasedInfestations;
         public static TileMutatorDef VEE_TornadoAlley;
         public static TileMutatorDef VEE_NoWind;
+        public static TileMutatorDef VEE_FertileRains;
 
 
         public static WeatherDef Windy;

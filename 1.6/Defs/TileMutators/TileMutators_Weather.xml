@@ -75,5 +75,36 @@
 			<li>VEE_RottenStench</li>
 		</additionalGameConditions>
 	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_FertileRains</defName>
+		<label>fertile rains</label>
+		<description>This region is subject to unusually nutrient-rich rainfall, boosting plant growth for its duration.</description>
+		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>Grasslands</li>
+		</biomeBlacklist>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_DustStorms</defName>
+		<label>dust storms</label>
+		<description>Dust storms that impede vision are much stronger in this area.</description>
+		<categories>
+			<li>Weather</li>
+		</categories>
+		<workerClass>TileMutatorWorker_IncreaseWeatherFrequency</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<weathersToAffect>
+			<li>VEE_DustStorm</li>
+		</weathersToAffect>
+		<weatherFrequencyOffset>10</weatherFrequencyOffset>
+		<biomeWhitelist>
+			<li>AridShrubland</li>
+			<li>Desert</li>
+			<li>ExtremeDesert</li>
+			<li>Grasslands</li>
+			<li>LavaField</li>
+			<li>Scarlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
 </Defs>
 

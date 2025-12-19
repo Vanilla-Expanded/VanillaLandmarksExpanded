@@ -13,9 +13,7 @@
 				<disappearsAfterTicks>120000~120000</disappearsAfterTicks>
 				<showRemainingTime>false</showRemainingTime>
 			</li>
-		
 		</comps>
-		
 		<stages>
 			<li>
 				<statFactors>
@@ -37,7 +35,6 @@
 				<disappearsAfterTicks>120000~120000</disappearsAfterTicks>
 				<showRemainingTime>false</showRemainingTime>
 			</li>
-		
 		</comps>
 		<stages>
 			<li>
@@ -60,15 +57,42 @@
 				<disappearsAfterTicks>120000~120000</disappearsAfterTicks>
 				<showRemainingTime>false</showRemainingTime>
 			</li>
-		
 		</comps>
 		<stages>
 			<li>
 				<capMods>
-					
 					<li>
 						<capacity>Breathing</capacity>
 						<offset>-0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>VEE_DustStorm</defName>
+		<label>affected by dust storm</label>
+		<makesSickThought>false</makesSickThought>
+		<description>A dust storm is making vision practically impossible in this region.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VEF.Cooking.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VEE_DustStorm</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<setMax>0.1</setMax>
 					</li>
 				</capMods>
 			</li>

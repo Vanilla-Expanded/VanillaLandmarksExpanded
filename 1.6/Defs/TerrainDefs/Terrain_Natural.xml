@@ -172,14 +172,14 @@
 		<pathCost>150</pathCost>
 		<traversedThought>VEE_SulfuricWater</traversedThought>
 		<waterBodyType>Other</waterBodyType>
-		<floodTerrain>ToxicFlood</floodTerrain>
+		<floodTerrain>VEE_SulfuricWaterFlood</floodTerrain>
 		<statBases>
 			<Beauty>-4</Beauty>
 		</statBases>
 	</TerrainDef>
 	<TerrainDef ParentName="VEE_SulfuricWaterDeepShallowBase">
 		<defName>VEE_SulfuricWaterFlood</defName>
-		<label>shallow floodwater</label>
+		<label>sulfuric shallow floodwater</label>
 		<temporary>true</temporary>
 		<tags>
 			<li>Flood</li>
@@ -207,5 +207,162 @@
 		<statBases>
 			<Beauty>-4</Beauty>
 		</statBases>
+	</TerrainDef>
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>VEE_FertileRiverbank</defName>
+		<label>fertile riverbank</label>
+		<texturePath>Terrain/Surfaces/VEE_Floodplains</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<categoryType>Soil</categoryType>
+		<renderPrecedence>339</renderPrecedence>
+		<pathCost>4</pathCost>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>1.5</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>dirt</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>DirtInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<tags>
+			<li>Soil</li>
+		</tags>
+	</TerrainDef>
+	<TerrainDef ParentName="Sand">
+		<defName>VEE_IrradiatedSoil</defName>
+		<label>irradiated soil</label>
+		<texturePath>Terrain/Surfaces/VEE_IrradiatedSoil</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_IrradiatedSoil</pollutedTexturePath>
+		<affordances Inherit="false">
+			<li>Light</li>
+			<li>Walkable</li>
+			<li>Diggable</li>
+		</affordances>
+		<fertility>0</fertility>
+	</TerrainDef>
+	<TerrainDef Name="VEE_IrradiatedWaterDeepBase" ParentName="WaterDeepBase">
+		<defName>VEE_IrradiatedWaterDeep</defName>
+		<label>irradiated deep water</label>
+		<renderPrecedence>395</renderPrecedence>
+		<texturePath>Terrain/Surfaces/VEE_IrradiatedWaterDeepRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_IrradiatedWaterDeepRamp</pollutedTexturePath>
+		<toxicBuildupFactor>8</toxicBuildupFactor>
+		<pathCost>600</pathCost>
+		<traversedThought>VEE_IrradiatedWater</traversedThought>
+		<waterBodyType>Other</waterBodyType>
+		<statBases>
+			<Beauty>-10</Beauty>
+		</statBases>
+	</TerrainDef>
+	<TerrainDef ParentName="VEE_IrradiatedWaterDeepBase">
+		<defName>VEE_IrradiatedOceanWaterDeep</defName>
+		<label>irradiated deep ocean water</label>
+		<renderPrecedence>397</renderPrecedence>
+		<waterBodyType>Saltwater</waterBodyType>
+		<gravshipReplacementTerrain>VEE_IrradiatedWaterOceanShallow</gravshipReplacementTerrain>
+		<tags>
+			<li>Ocean</li>
+		</tags>
+	</TerrainDef>
+	<TerrainDef ParentName="WaterChestDeepBase">
+		<defName>VEE_IrradiatedWaterDeepMovingChestDeep</defName>
+		<label>irradiated chest-deep moving water</label>
+		<renderPrecedence>399</renderPrecedence>
+		<affordances>
+			<li>MovingFluid</li>
+		</affordances>
+		<tags>
+			<li>River</li>
+		</tags>
+		<waterDepthShaderParameters>
+			<_UseWaterOffset>1</_UseWaterOffset>
+		</waterDepthShaderParameters>
+		<texturePath>Terrain/Surfaces/VEE_IrradiatedWaterChestDeepRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_IrradiatedWaterChestDeepRamp</pollutedTexturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<toxicBuildupFactor>8</toxicBuildupFactor>
+		<pathCost>700</pathCost>
+		<traversedThought>VEE_IrradiatedWater</traversedThought>
+		<waterBodyType>Other</waterBodyType>
+		<floodTerrain>VEE_IrradiatedWaterFlood</floodTerrain>
+		<statBases>
+			<Beauty>-10</Beauty>
+		</statBases>
+	</TerrainDef>
+	<TerrainDef ParentName="VEE_IrradiatedWaterShallowBase">
+		<defName>VEE_IrradiatedWaterFlood</defName>
+		<label>irradiated shallow floodwater</label>
+		<temporary>true</temporary>
+		<tags>
+			<li>Flood</li>
+		</tags>
+		<canFreeze>false</canFreeze>
+		<!-- Thin ice and floodwater are both temp terrain, this means we can't support frozen floodwater -->
+		<driesTo/>
+		<!-- We don't want moisture pumps to turn temp terrain into stony soil -->
+		<floodTerrain>VEE_IrradiatedWaterFlood</floodTerrain>
+		<renderPrecedence>325</renderPrecedence>
+	</TerrainDef>
+	<TerrainDef Name="VEE_IrradiatedWaterShallowBase" ParentName="WaterShallowBase">
+		<defName>VEE_IrradiatedWaterShallow</defName>
+		<label>irradiated shallow water</label>
+		<renderPrecedence>394</renderPrecedence>
+		<driesTo>VEE_IrradiatedSoil</driesTo>
+		<texturePath>Terrain/Surfaces/VEE_IrradiatedWaterShallowRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_IrradiatedWaterShallowRamp</pollutedTexturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<toxicBuildupFactor>8</toxicBuildupFactor>
+		<pathCost>400</pathCost>
+		<traversedThought>VEE_IrradiatedWater</traversedThought>
+		<waterBodyType>Other</waterBodyType>
+		<floodTerrain>VEE_IrradiatedWaterFlood</floodTerrain>
+		<statBases>
+			<Beauty>-10</Beauty>
+		</statBases>
+	</TerrainDef>
+	<TerrainDef ParentName="VEE_IrradiatedWaterShallowBase">
+		<defName>VEE_IrradiatedWaterMovingShallow</defName>
+		<label>irradiated shallow moving water</label>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<renderPrecedence>398</renderPrecedence>
+		<affordances>
+			<li>MovingFluid</li>
+		</affordances>
+		<tags>
+			<li>River</li>
+			<li>WaterFreshShallow</li>
+			<li>WaterFreshShallowMoving</li>
+		</tags>
+		<waterDepthShaderParameters>
+			<_UseWaterOffset>1</_UseWaterOffset>
+		</waterDepthShaderParameters>
+	</TerrainDef>
+	<TerrainDef ParentName="VEE_IrradiatedWaterShallowBase">
+		<defName>VEE_IrradiatedWaterOceanShallow</defName>
+		<label>irradiated shallow ocean water</label>
+		<renderPrecedence>396</renderPrecedence>
+		<canFreeze>false</canFreeze>
+		<waterBodyType>Saltwater</waterBodyType>
+		<tags>
+			<li>Ocean</li>
+		</tags>
 	</TerrainDef>
 </Defs>
