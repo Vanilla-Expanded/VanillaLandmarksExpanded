@@ -423,5 +423,24 @@
 			</li>
 		</modExtensions>
 	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_QuicksandPits</defName>
+		<label>quicksand pits</label>
+		<description>This region contains pools of shallow quicksand that impede movement.</description>
+		<categories>
+			<li>Lake</li>
+		</categories>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_QuicksandPits</workerClass>
+		<biomeWhitelist>
+			<li>Desert</li>
+			<li>AridShrubland</li>
+			<li>ExtremeDesert</li>
+			
+		</biomeWhitelist>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+		<coastSidesRange>0~0</coastSidesRange>
+	</TileMutatorDef>
 </Defs>
 

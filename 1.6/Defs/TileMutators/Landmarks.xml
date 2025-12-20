@@ -711,4 +711,60 @@
 			<AncientUplink>0.02</AncientUplink>
 		</mutatorChances>
 	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_QuicksandPits</defName>
+		<label>quicksand pits</label>
+		<drawScale>0.8</drawScale>
+		<iconTexturePath>World/Landmarks/VEE_QuicksandPits</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.25</commonality>
+		<nameMaker>VEE_NamerLandmark_QuicksandPits</nameMaker>
+		<mutatorChances>
+			<VEE_QuicksandPits Required="True"/>
+			<VEE_Sandstorms Required="True"/>
+			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
+			<Stockpile>0.05</Stockpile>
+			<MineralRich>0.03</MineralRich>
+			<Muddy>0.05</Muddy>
+			<FoggyMutator>0.05</FoggyMutator>
+			<SunnyMutator>0.75</SunnyMutator>
+			<WindyMutator>0.05</WindyMutator>
+			<InsectMegahive>0.01</InsectMegahive>
+			<MixedBiome>0.1</MixedBiome>
+			<AncientUplink>0.02</AncientUplink>
+			<AnimalHabitat>0.15</AnimalHabitat>
+			<ArcheanTrees>0.01</ArcheanTrees>
+		</mutatorChances>
+		<comboLandmarkMutators>
+			<Valley>0.1</Valley>
+			<Cavern>0.1</Cavern>
+			<Chasm>0.1</Chasm>
+			<TerraformingScar>0.1</TerraformingScar>
+		</comboLandmarkMutators>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_AbandonedFarmland</defName>
+		<label>abandoned farmlands</label>
+		<drawScale>1</drawScale>
+		<iconTexturePath>World/Landmarks/VEE_AbandonedFarmland</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.25</commonality>
+		<nameMaker>VEE_NamerLandmark_AbandonedFarmlands</nameMaker>
+		<mutatorChances>
+			<VEE_AbandonedFarmland Required="True"/>	
+			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
+			<Stockpile>0.05</Stockpile>
+			<MineralRich>0.03</MineralRich>
+			<Muddy>0.05</Muddy>
+			<FoggyMutator>0.05</FoggyMutator>
+			<SunnyMutator>0.75</SunnyMutator>
+			<WindyMutator>0.05</WindyMutator>
+			<InsectMegahive>0.01</InsectMegahive>
+			<MixedBiome>0.1</MixedBiome>
+			<AncientUplink>0.02</AncientUplink>
+			<AnimalHabitat>0.15</AnimalHabitat>
+			<ArcheanTrees>0.01</ArcheanTrees>
+		</mutatorChances>
+		
+	</LandmarkDef>
 </Defs>

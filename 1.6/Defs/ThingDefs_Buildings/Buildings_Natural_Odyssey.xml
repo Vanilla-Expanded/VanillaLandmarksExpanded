@@ -181,4 +181,32 @@
 			<expandHomeArea>false</expandHomeArea>
 		</building>
 	</ThingDef>
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>VEE_DryWheat</defName>
+		<label>dry wheat</label>
+		<thingClass>VanillaExplorationExpanded.Building_FakePlant2x2</thingClass>
+		<description>An amber cereal plant that takes almost an entire growing season to come to fruition. This wheat has been subjected to drought conditions for too long and has wilted away.</description>
+		<graphicData>
+			<texPath>Things/Plant/DryWheat</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>10</MaxHitPoints>
+			<Flammability>2</Flammability>
+		</statBases>
+		<uiIconScale>0.5</uiIconScale>
+		<altitudeLayer>Item</altitudeLayer>
+		<rotatable>false</rotatable>
+		<destroyable>true</destroyable>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<pathCost>20</pathCost>
+		<size>(1,1)</size>
+		<building>
+			<isEdifice>false</isEdifice>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+		</building>
+	</ThingDef>
 </Defs>

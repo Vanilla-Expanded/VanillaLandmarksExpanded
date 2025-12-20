@@ -58,4 +58,17 @@
 		<thoughtClass>VEF.Cooking.Thought_Hediff</thoughtClass>
 		<hediff>VEE_DustStorm</hediff>
 	</ThoughtDef>
+	<ThoughtDef>
+		<defName>VEE_Quicksand</defName>
+		<thoughtClass>VEF.Cooking.Thought_Hediff</thoughtClass>
+		<hediff>VEE_Quicksand</hediff>
+		<durationDays>0.005</durationDays>
+		<stages>
+			<li>
+				<label>traversing quicksand</label>
+				<description>It's like moving through molasses...</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 </Defs>

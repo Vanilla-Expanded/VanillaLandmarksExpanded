@@ -106,5 +106,36 @@
 			<li>Scarlands</li>
 		</biomeWhitelist>
 	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_MoreSolarPower</defName>
+		<label>increased solar exposure</label>
+		<description>Insolation is stronger in this area, increasing the output of solar power by 25%.</description>
+		<categories>
+			<li>VEE_Solar</li>		
+		</categories>
+
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>Glowforest</li>
+			<li MayRequire="sarg.alphabiomes">AB_RockyCrags</li>
+			
+		</biomeBlacklist>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_LessSolarPower</defName>
+		<label>reduced solar exposure</label>
+		<description>Insolation is weaker in this area, reducing the output of solar power by 25%.</description>
+		<categories>
+			<li>VEE_Solar</li>		
+		</categories>
+
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>Glowforest</li>
+			<li MayRequire="sarg.alphabiomes">AB_RockyCrags</li>
+			
+		</biomeBlacklist>
+	</TileMutatorDef>
+	
 </Defs>
 

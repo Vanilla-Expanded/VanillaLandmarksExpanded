@@ -29,7 +29,7 @@ namespace VanillaExplorationExpanded
 
         private const int RiverWidthOctaves = 3;
 
-        protected const float RiverWidthNoiseAmplitude = 0.15f;
+        protected new const float RiverWidthNoiseAmplitude = 0.15f;
 
         private const float RemoveRoofWidthThreshold = 20f;
 
@@ -39,21 +39,21 @@ namespace VanillaExplorationExpanded
 
         private const int Oversample = 25;
 
-        protected ModuleBase riverBendNoise;
+        protected new ModuleBase riverBendNoise;
 
-        protected ModuleBase riverWidthNoise;
+        protected new ModuleBase riverWidthNoise;
 
-        protected ModuleBase shallowizer;
+        protected new ModuleBase shallowizer;
 
         private ModuleBase riverbankNoise;
 
-        protected IntVec3 riverCenter;
+        protected new IntVec3 riverCenter;
 
         private Dictionary<RiverNode, float[]> nodeDepthMaps = new Dictionary<RiverNode, float[]>();
 
-        protected virtual float GetCurveFrequency => 0.007f;
+        protected override float GetCurveFrequency => 0.007f;
 
-        protected virtual float GetCurveAmplitude => 40f;
+        protected override float GetCurveAmplitude => 40f;
 
         public TileMutatorWorker_LargeRiverBanks(TileMutatorDef def)
             : base(def)
@@ -149,7 +149,7 @@ namespace VanillaExplorationExpanded
             }
         }
 
-        protected virtual void GenerateRiverGraph(Map map)
+        protected override void GenerateRiverGraph(Map map)
         {
             if (!map.TileInfo.Isnt<SurfaceTile>(out var casted))
             {
@@ -179,12 +179,12 @@ namespace VanillaExplorationExpanded
             }
         }
 
-        protected virtual IntVec3 GetRiverCenter(Map map)
+        protected override IntVec3 GetRiverCenter(Map map)
         {
             return new IntVec3((int)(Rand.Range(0.3f, 0.7f) * (float)map.Size.x), 0, (int)(Rand.Range(0.3f, 0.7f) * (float)map.Size.z));
         }
 
-        protected (Vector3, Vector3) GetMapEdgeNodes(Map map, float angle)
+        protected  new (Vector3, Vector3) GetMapEdgeNodes(Map map, float angle)
         {
             float slope = Mathf.Tan((450f - angle) % 360f * (Mathf.PI / 180f));
             List<Vector2> intersections = new List<Vector2>();
@@ -192,7 +192,7 @@ namespace VanillaExplorationExpanded
             return (new Vector3(intersections[0].x, 0f, intersections[0].y), new Vector3(intersections[1].x, 0f, intersections[1].y));
         }
 
-        protected bool IsFlowingAToB(Vector3 a, Vector3 b, float angle)
+        protected new bool IsFlowingAToB(Vector3 a, Vector3 b, float angle)
         {
             return Mathf.RoundToInt((b - a).AngleFlat() - angle) % 360 == 0;
         }
@@ -226,7 +226,7 @@ namespace VanillaExplorationExpanded
             }
         }
 
-        protected virtual float GetRiverWidthAt(RiverNode riverNode, Vector2 cell)
+        protected override float GetRiverWidthAt(RiverNode riverNode, Vector2 cell)
         {
             return riverNode.width / 2f * (1f + riverWidthNoise.GetValue(cell) * 0.15f * GetWidthNoiseFactor(riverNode));
         }
@@ -252,7 +252,7 @@ namespace VanillaExplorationExpanded
             return nodeDepthMaps[riverNode][num];
         }
 
-        protected float GetTValue(RiverNode riverNode, Vector2 point)
+        protected new float GetTValue(RiverNode riverNode, Vector2 point)
         {
             Vector2 vector = new Vector2(riverNode.start.x, riverNode.start.z);
             Vector2 vector2 = new Vector2(riverNode.end.x, riverNode.end.z) - vector;
@@ -261,7 +261,7 @@ namespace VanillaExplorationExpanded
             return Vector2.Dot(lhs, vector2) / num;
         }
 
-        protected virtual Vector2 GetDisplacedPoint(RiverNode riverNode, float t)
+        protected override Vector2 GetDisplacedPoint(RiverNode riverNode, float t)
         {
             Vector3 vector = riverNode.end - riverNode.start;
             Vector3 vector2 = riverNode.start + t * vector;
@@ -273,7 +273,7 @@ namespace VanillaExplorationExpanded
             return new Vector2(vector3.x, vector3.z);
         }
 
-        protected virtual float GetWidthNoiseFactor(RiverNode riverNode)
+        protected override float GetWidthNoiseFactor(RiverNode riverNode)
         {
             return 6f / riverNode.width;
         }

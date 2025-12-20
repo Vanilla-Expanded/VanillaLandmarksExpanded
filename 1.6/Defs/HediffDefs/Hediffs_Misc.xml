@@ -98,4 +98,33 @@
 			</li>
 		</stages>
 	</HediffDef>
+	<HediffDef>
+		<defName>VEE_Quicksand</defName>
+		<label>traversing quicksand</label>
+		<makesSickThought>false</makesSickThought>
+		<description>Moving through quicksand. Greatly reduces movement speed.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VEF.Cooking.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VEE_Quicksand</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.2</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>

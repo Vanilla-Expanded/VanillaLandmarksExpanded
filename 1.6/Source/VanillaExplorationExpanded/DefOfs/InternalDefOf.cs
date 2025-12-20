@@ -28,6 +28,7 @@ namespace VanillaExplorationExpanded
         public static TerrainDef VEE_IrradiatedWaterMovingShallow;
         public static TerrainDef VEE_IrradiatedWaterOceanShallow;
         public static TerrainDef VEE_IrradiatedOceanWaterDeep;
+        public static TerrainDef VEE_Quicksand;
 
         public static ThingDef VEE_RotstinkMote;
 		public static ThingDef VEE_ToxicMote;
@@ -72,6 +73,8 @@ namespace VanillaExplorationExpanded
         public static TileMutatorDef VEE_TornadoAlley;
         public static TileMutatorDef VEE_NoWind;
         public static TileMutatorDef VEE_FertileRains;
+        public static TileMutatorDef VEE_MoreSolarPower;
+        public static TileMutatorDef VEE_LessSolarPower;
 
 
         public static WeatherDef Windy;

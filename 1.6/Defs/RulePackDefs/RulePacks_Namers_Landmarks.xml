@@ -240,4 +240,35 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_QuicksandPits</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=4)->quicksand pits</li>
+				<li>terrain_word->sinking sands</li>
+				<li>terrain_word->loose earth pockets</li>
+				<li>terrain_word->unstable ground</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+	<defName>VEE_NamerLandmark_AbandonedFarmlands</defName>
+	<include>
+		<li>WorldFeatureNamerCommon</li>
+	</include>
+	<rulePack>
+		<rulesStrings>
+			<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>
+			<li>terrain_word(p=2)->abandoned farmlands</li>
+			<li>terrain_word->forgotten fields</li>
+			<li>terrain_word->derelict croplands</li>
+			<li>terrain_word->overgrown farms</li>
+			<li>terrain_word->fallow plains</li>
+		</rulesStrings>
+	</rulePack>
+</RulePackDef>
 </Defs>

@@ -237,5 +237,6 @@
 		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_EltexDeposits</workerClass>
 	</TileMutatorDef>
+	
 </Defs>
 

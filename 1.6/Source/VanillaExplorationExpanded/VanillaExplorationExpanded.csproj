@@ -91,6 +91,8 @@
     <Compile Include="GameConditions\GameCondition_Microfauna.cs" />
     <Compile Include="GameConditions\GameCondition_NoWind.cs" />
     <Compile Include="GameConditions\GameCondition_SkygazingSpot.cs" />
+    <Compile Include="Harmony\CompPowerPlantSolar_DesiredPowerOutput.cs" />
+    <Compile Include="Harmony\CompPowerPlantSolar_PostDraw.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\PawnUtility_GetManhunterOnDamageChance.cs" />
     <Compile Include="Harmony\Plant_GrowthRateFactor_Drought.cs" />
@@ -120,6 +122,7 @@
     <Compile Include="TileMutatorWorkers\Crater\TileMutatorWorker_Volcano.cs" />
     <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_BurnedForest.cs" />
     <Compile Include="TileMutatorWorkers\Geology\TileMutatorWorker_EltexDeposits.cs" />
+    <Compile Include="TileMutatorWorkers\Lakes\TileMutatorWorker_QuicksandPits.cs" />
     <Compile Include="TileMutatorWorkers\Lone Islands\TileMutatorWorker_CoralReef.cs" />
     <Compile Include="TileMutatorWorkers\Lone Islands\TileMutatorWorker_DetachedIceberg.cs" />
     <Compile Include="TileMutatorWorkers\Lone Islands\TileMutatorWorker_IceAndFire.cs" />

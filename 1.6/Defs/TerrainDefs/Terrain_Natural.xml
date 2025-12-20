@@ -365,4 +365,68 @@
 			<li>Ocean</li>
 		</tags>
 	</TerrainDef>
+	<TerrainDef ParentName="WaterShallowBase">
+		<defName>VEE_Quicksand</defName>
+		<label>quicksand</label>
+		 <customShader>ShallowLava</customShader>
+		<renderPrecedence>394</renderPrecedence>
+		<driesTo>Sand</driesTo>
+		<texturePath>Terrain/Surfaces/Quicksand</texturePath>
+		 <customShaderParameters>
+      <_NoiseTex>/UI/Empty</_NoiseTex>
+     
+      <_LavaBrightness>0</_LavaBrightness>
+      <_BrightSpotSpeed>0</_BrightSpotSpeed>
+      <_BrightSpotScale>0</_BrightSpotScale>
+    </customShaderParameters>
+		<pathCost>2</pathCost>
+		<canFreeze>false</canFreeze>
+		<traversedThought>VEE_Quicksand</traversedThought>
+		<waterBodyType>Other</waterBodyType>
+		<statBases>
+			<Beauty>-2</Beauty>
+		</statBases>
+	</TerrainDef>
+	<TerrainDef ParentName="FloorBase">
+		<defName>VEE_RuinedFarmland</defName>
+		<label>ruined farmland</label>
+		<texturePath>Terrain/Surfaces/VEE_RuinedTilledSoil</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_RuinedTilledSoil</pollutedTexturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<edgeType>FadeRough</edgeType>
+		
+		<renderPrecedence>320</renderPrecedence>
+		<pathCost>10</pathCost>
+		<statBases>
+			<Beauty>-10</Beauty>
+			<BeautyOutdoors>-5</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+			<WorkToBuild>20000</WorkToBuild>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		
+		<fertility>0</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>gravel</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>GravelInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<tags>
+			<li>Soil</li>
+		</tags>
+	</TerrainDef>
 </Defs>

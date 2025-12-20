@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<TileMutatorDef>
+		<defName>VEE_AbandonedFarmland</defName>
+		<label>abandoned farmland</label>
+		<description>This region contains ancient farms that were abandoned long ago due to the presence of droughts.</description>
+		
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<prefabsToSpawn>
+					<li>VEE_RuinedFarmlandPrefabA</li>
+					<li>VEE_RuinedFarmlandPrefabB</li>
+					<li>VEE_RuinedFarmlandPrefabC</li>
+					<li>VEE_RuinedFarmlandPrefabD</li>
+				</prefabsToSpawn>
+				<prefabsToSpawnAmount>15~25</prefabsToSpawnAmount>
+				<minSeparationBetweenPrefabs>30</minSeparationBetweenPrefabs>
+			</li>
+		</modExtensions>
+		<workerClass>VEF.Maps.TileMutatorWorker_GenericPrefabSpawner</workerClass>
+		<biomeWhitelist>
+			<li>Grasslands</li>
+			
+		</biomeWhitelist>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+		<coastSidesRange>0~2</coastSidesRange>
+	</TileMutatorDef>
+</Defs>
+
