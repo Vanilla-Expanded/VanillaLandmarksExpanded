@@ -335,7 +335,6 @@
 			<li Class="VEF.Maps.TileMutatorExtension">
 				<thingToSpawn>VEE_SulfurVent</thingToSpawn>
 				<thingToSpawnAmount>15~25</thingToSpawnAmount>
-				
 			</li>
 		</modExtensions>
 	</TileMutatorDef>
@@ -436,11 +435,27 @@
 			<li>Desert</li>
 			<li>AridShrubland</li>
 			<li>ExtremeDesert</li>
-			
 		</biomeWhitelist>
 		<preventsPondGeneration>true</preventsPondGeneration>
 		<canSpawnOnRiver>false</canSpawnOnRiver>
 		<coastSidesRange>0~0</coastSidesRange>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="BaseCoastMut">
+		<defName>VEE_DriftwoodShore</defName>
+		<label>driftwood shore</label>
+		<description>A stretch of coastline littered with bleached logs and broken timber, deposited by tides and storms from distant shores.</description>
+		<extraGenSteps>
+			<li>VEE_DriftwoodShore</li>
+		</extraGenSteps>
+		<coastSidesRange>1~6</coastSidesRange>
+		<chunkDensityFactor>0.25</chunkDensityFactor>
+		<canSpawnOnRoad>false</canSpawnOnRoad>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+		<biomeBlacklist>
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+		</biomeBlacklist>
+		<workerClass>TileMutatorWorker_Coast</workerClass>
 	</TileMutatorDef>
 </Defs>
 

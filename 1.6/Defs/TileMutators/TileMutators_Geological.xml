@@ -237,6 +237,14 @@
 		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_EltexDeposits</workerClass>
 	</TileMutatorDef>
-	
+	<TileMutatorDef>
+		<defName>VEE_Sinkholes</defName>
+		<label>sinkholes</label>
+		<description>This region contains several collapses in the ground forming deep, unstable pits, often exposing bare rock beneath the surface.</description>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<extraGenSteps>
+			<li>VEE_Sinkholes</li>
+		</extraGenSteps>
+	</TileMutatorDef>
 </Defs>
 

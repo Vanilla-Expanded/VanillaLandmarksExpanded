@@ -254,21 +254,36 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	
 	<RulePackDef>
-	<defName>VEE_NamerLandmark_AbandonedFarmlands</defName>
-	<include>
-		<li>WorldFeatureNamerCommon</li>
-	</include>
-	<rulePack>
-		<rulesStrings>
-			<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>
-			<li>terrain_word(p=2)->abandoned farmlands</li>
-			<li>terrain_word->forgotten fields</li>
-			<li>terrain_word->derelict croplands</li>
-			<li>terrain_word->overgrown farms</li>
-			<li>terrain_word->fallow plains</li>
-		</rulesStrings>
-	</rulePack>
-</RulePackDef>
+		<defName>VEE_NamerLandmark_AbandonedFarmlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>
+				<li>terrain_word(p=2)->abandoned farmlands</li>
+				<li>terrain_word->forgotten fields</li>
+				<li>terrain_word->derelict croplands</li>
+				<li>terrain_word->overgrown farms</li>
+				<li>terrain_word->fallow plains</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_DriftwoodShore</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>
+				<li>terrain_word(p=2)->driftwood shore</li>
+				<li>terrain_word->driftwood coast</li>
+				<li>terrain_word->wreckwood beach</li>
+				<li>terrain_word->tidal woodline</li>
+				<li>terrain_word->bleached timber shore</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 </Defs>

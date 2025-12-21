@@ -91,6 +91,7 @@
     <Compile Include="GameConditions\GameCondition_Microfauna.cs" />
     <Compile Include="GameConditions\GameCondition_NoWind.cs" />
     <Compile Include="GameConditions\GameCondition_SkygazingSpot.cs" />
+    <Compile Include="GenSteps\GenStep_Driftwood.cs" />
     <Compile Include="Harmony\CompPowerPlantSolar_DesiredPowerOutput.cs" />
     <Compile Include="Harmony\CompPowerPlantSolar_PostDraw.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />

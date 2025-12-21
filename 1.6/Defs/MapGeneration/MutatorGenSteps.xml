@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GenStepDef>
+		<defName>VEE_Sinkholes</defName>
+		<order>950</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>VEE_Sinkhole</thingDef>
+			<createUsedRect>true</createUsedRect>
+			<skipRoofed>true</skipRoofed>
+			<countPer10kCellsRange>1~4</countPer10kCellsRange>
+			<warnOnFail>false</warnOnFail>
+		</genStep>
+	</GenStepDef>
+	<GenStepDef>
+		<defName>VEE_DriftwoodShore</defName>
+		<order>970</order>
+		<genStep Class="VanillaExplorationExpanded.GenStep_Driftwood"/>
+	</GenStepDef>
+</Defs>

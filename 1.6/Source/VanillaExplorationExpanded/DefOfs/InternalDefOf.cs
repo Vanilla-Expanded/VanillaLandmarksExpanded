@@ -39,6 +39,7 @@ namespace VanillaExplorationExpanded
         public static ThingDef BurnedTree;
         [MayRequire("VanillaExpanded.VPsycastsE")]
         public static ThingDef VPE_EltexOre;
+        public static ThingDef VEE_DriftwoodChunk;
 
         public static GameConditionDef VEE_FertileRainsGameCondition;
 

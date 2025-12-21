@@ -6,7 +6,7 @@
 		<description>A foul geyser that intermittently belches clouds of corpse-born miasma, choking the air with the stench of decay.</description>
 		<thingClass>VanillaExplorationExpanded.Building_RotstinkVent</thingClass>
 		<graphicData>
-			<texPath>Things/Special/RotstinkGeyser</texPath>
+			<texPath>Things/Building/RotstinkGeyser</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>Transparent</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -33,7 +33,7 @@
 		<description>A volatile fissure that periodically spews noxious green gas, poisoning the air and sickening anything that breathes it.</description>
 		<thingClass>VanillaExplorationExpanded.Building_ToxicVent</thingClass>
 		<graphicData>
-			<texPath>Things/Special/ToxicGeyser</texPath>
+			<texPath>Things/Building/ToxicGeyser</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>Transparent</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -60,7 +60,7 @@
 		<description>A smoldering fissure that intermittently exhales thick, acrid smoke, reducing visibility and choking the lungs.</description>
 		<thingClass>VanillaExplorationExpanded.Building_SmokeVent</thingClass>
 		<graphicData>
-			<texPath>Things/Special/SmokeGeyser</texPath>
+			<texPath>Things/Building/SmokeGeyser</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>Transparent</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -87,7 +87,7 @@
 		<description>A sinister geyser that exhales eerie, ash-like dust, capable of reawakening the dead under its haunting influence.</description>
 		<thingClass>VanillaExplorationExpanded.Building_DeadlifeVent</thingClass>
 		<graphicData>
-			<texPath>Things/Special/DeadlifeDustGeyser</texPath>
+			<texPath>Things/Building/DeadlifeDustGeyser</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>Transparent</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -208,5 +208,80 @@
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
 		</building>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<label>sinkhole</label>
+		<defName>VEE_Sinkhole</defName>
+		<description>A sudden collapse in the ground forming a deep, unstable pit, often exposing bare rock beneath the surface.</description>
+		<thingClass>Crater</thingClass>
+		<useHitPoints>false</useHitPoints>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<canOverlapZones>false</canOverlapZones>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>42</pathCost>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<texPath>Things/Building/Sinkhole</texPath>
+			<drawSize>(9, 9)</drawSize>
+		</graphicData>
+		<size>(9, 9)</size>
+		<building>
+			<uninstallWork>15000</uninstallWork>
+			<deconstructible>false</deconstructible>
+			<isTargetable>false</isTargetable>
+			<isInert>true</isInert>
+			<claimable>false</claimable>
+			<expandHomeArea>false</expandHomeArea>
+			<crater>true</crater>
+			<canLandGravshipOn>true</canLandGravshipOn>
+		</building>
+		<statBases>
+			<Flammability>0</Flammability>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_LeaveFilthOnDestroyed">
+				<filthDef>Filth_LooseGround</filthDef>
+				<thickness>5</thickness>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>VEE_DriftwoodChunk</defName>
+		<label>driftwood</label>
+		<description>A sun-bleached fragment of wood, smoothed by waves and time, carried ashore from some distant and unknown origin.</description>
+		<graphicData>
+			<texPath>Things/Item/Driftwood</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Item</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.50</fillPercent>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<Beauty>-8</Beauty>
+			<Cleanliness>-2</Cleanliness>
+		</statBases>
+		<selectable>true</selectable>
+		<pathCost>42</pathCost>
+		<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+		<randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
+		<building>
+			<isEdifice>true</isEdifice>
+			<claimable>false</claimable>
+			<deconstructible>true</deconstructible>
+			<alwaysDeconstructible>true</alwaysDeconstructible>
+		</building>
+		<killedLeavings>
+			<WoodLog>20</WoodLog>
+		</killedLeavings>
+		<costList>
+			<WoodLog>20</WoodLog>
+		</costList>
 	</ThingDef>
 </Defs>

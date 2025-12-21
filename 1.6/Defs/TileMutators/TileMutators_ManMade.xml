@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TileMutatorDef>
+		<defName>VEE_BombardedSurface</defName>
+		<label>bombarded surface</label>
+		<description>This region was subject to orbital or artillery bombardment in a past long gone, and the craters from that bombardment are still present.</description>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<extraGenSteps>
+			<li>CratersLarge</li>
+			<li>CratersMedium</li>
+			<li>CratersSmall</li>
+		</extraGenSteps>
+	</TileMutatorDef>
+</Defs>
+
