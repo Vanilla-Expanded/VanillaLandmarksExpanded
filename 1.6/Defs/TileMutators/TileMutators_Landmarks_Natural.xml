@@ -360,6 +360,12 @@
 		<overrideRiverbankTerrain>VEE_FertileRiverbank</overrideRiverbankTerrain>
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_LargeRiverBanks</workerClass>
 		<maxHilliness>Flat</maxHilliness>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<riverbankSizeMultiplier>4</riverbankSizeMultiplier>
+				
+			</li>
+		</modExtensions>
 	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_ContaminatedReservoir</defName>
@@ -456,6 +462,25 @@
 			<li>IceSheet</li>
 		</biomeBlacklist>
 		<workerClass>TileMutatorWorker_Coast</workerClass>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_AlluvialFan</defName>
+		<label>aluvial fan</label>
+		<description>A broad, fan-shaped spread of rich sediment deposited where flowing water from a river slows and disperses across the land.</description>
+		<categories>
+			<li>River</li>
+		</categories>
+		<priority>2</priority>
+		<coastSidesRange>1~6</coastSidesRange>
+		<overrideRiverbankTerrain>VEE_FertileRiverbank</overrideRiverbankTerrain>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_AlluvialFan</workerClass>
+		<maxHilliness>Flat</maxHilliness>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<riverbankSizeMultiplier>4</riverbankSizeMultiplier>
+				
+			</li>
+		</modExtensions>
 	</TileMutatorDef>
 </Defs>
 

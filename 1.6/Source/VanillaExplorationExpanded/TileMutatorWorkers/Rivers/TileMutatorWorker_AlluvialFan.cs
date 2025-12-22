@@ -9,11 +9,11 @@ using Verse.Noise;
 namespace VanillaExplorationExpanded
 {
 
-    public class TileMutatorWorker_LargeRiverBanks : TileMutatorWorker_River
+    public class TileMutatorWorker_AlluvialFan : TileMutatorWorker_RiverDelta
     {
-     
 
-        public TileMutatorWorker_LargeRiverBanks(TileMutatorDef def)
+
+        public TileMutatorWorker_AlluvialFan(TileMutatorDef def)
             : base(def)
         {
         }
@@ -35,7 +35,7 @@ namespace VanillaExplorationExpanded
             return def.label;
         }
 
-      
+
 
     }
 }

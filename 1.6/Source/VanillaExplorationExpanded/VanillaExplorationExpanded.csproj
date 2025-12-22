@@ -135,6 +135,7 @@
     <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_SerpentineCanyons.cs" />
     <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_JaggedRocks.cs" />
     <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_Ridge.cs" />
+    <Compile Include="TileMutatorWorkers\Rivers\TileMutatorWorker_AlluvialFan.cs" />
     <Compile Include="TileMutatorWorkers\Rivers\TileMutatorWorker_ContaminatedRiver.cs" />
     <Compile Include="TileMutatorWorkers\Rivers\TileMutatorWorker_LargeRiverBanks.cs" />
     <Compile Include="TileMutatorWorkers\Rivers\TileMutatorWorker_DryRiver.cs" />

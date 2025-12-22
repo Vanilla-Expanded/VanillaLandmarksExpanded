@@ -286,4 +286,19 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<RulePackDef>
+	<defName>VEE_NamerLandmark_AlluvialFan</defName>
+	<include>
+		<li>WorldFeatureNamerCommon</li>
+	</include>
+	<rulePack>
+		<rulesStrings>
+			<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>
+			<li>terrain_word(p=2)->alluvial fan</li>
+			<li>terrain_word->sediment fan</li>
+			<li>terrain_word->river spillplain</li>
+			<li>terrain_word->depositional flats</li>
+		</rulesStrings>
+	</rulePack>
+</RulePackDef>
 </Defs>
