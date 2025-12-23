@@ -229,7 +229,7 @@
 		<categories>
 			<li>VEE_Traversability</li>
 		</categories>
-	</TileMutatorDef>
+	</TileMutatorDef> 
 	<TileMutatorDef MayRequire="VanillaExpanded.VPsycastsE">
 		<defName>VEE_EltexDeposits</defName>
 		<label>eltex deposits</label>
