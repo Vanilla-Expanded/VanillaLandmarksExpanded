@@ -451,4 +451,34 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_RelictDelta</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=2)->relict delta</li>
+				<li>terrain_word->abandoned delta</li>
+				<li>terrain_word->desiccated delta</li>
+				<li>terrain_word->silt delta</li>
+				<li>terrain_word->braided flats</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+	<defName>VEE_NamerLandmark_StagnantRivulet</defName>
+	<include>
+		<li>WorldFeatureNamerCommon</li>
+	</include>
+	<rulePack>
+		<rulesStrings>
+			<li>terrain_word(p=2)->stagnant rivulet</li>
+			<li>terrain_word->stilled stream</li>
+			<li>terrain_word->sluggish rivulet</li>
+			<li>terrain_word->standing channel</li>
+			<li>terrain_word->silted creek</li>
+		</rulesStrings>
+	</rulePack>
+</RulePackDef>
 </Defs>

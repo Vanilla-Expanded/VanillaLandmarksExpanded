@@ -824,4 +824,51 @@
 			<Fish_Increased>0.05</Fish_Increased>
 		</mutatorChances>
 	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_RelictDelta</defName>
+		<label>relict delta</label>
+		<drawScale>1</drawScale>
+		<iconTexturePath>World/Landmarks/VEE_RelictDelta</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.6</commonality>
+		<nameMaker>VEE_NamerLandmark_RelictDelta</nameMaker>
+		<mutatorChances>
+			<VEE_RelictDelta Required="True"/>
+			<Stockpile>0.05</Stockpile>
+			<AnimalLife_Decreased>0.15</AnimalLife_Decreased>
+			<SunnyMutator>0.25</SunnyMutator>
+			<WetClimate>0</WetClimate>
+			<Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.02</Pollution_Increased>
+			<AncientUplink>0.02</AncientUplink>
+			<Junkyard MayRequire="Ludeon.RimWorld.Ideology">0.1</Junkyard>
+		</mutatorChances>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_StagnantRivulet</defName>
+		<label>stagnant rivulet</label>
+		<drawScale>1</drawScale>
+		<iconTexturePath>World/Landmarks/VEE_StagnantRivulet</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.3</commonality>
+		<nameMaker>VEE_NamerLandmark_StagnantRivulet</nameMaker>
+		<mutatorChances>
+			<VEE_StagnantRivulet Required="True"/>
+			<Stockpile>0.05</Stockpile>
+			<FoggyMutator>0.3</FoggyMutator>
+			
+			<AnimalLife_Increased>0.05</AnimalLife_Increased>
+			<AnimalHabitat>0.15</AnimalHabitat>
+			<Sandy>0.05</Sandy>
+			<Fertile>0.05</Fertile>
+			<Muddy>0.05</Muddy>
+			<WildPlants>0.1</WildPlants>
+			<WildTropicalPlants>0.03</WildTropicalPlants>
+			<ArcheanTrees>0.01</ArcheanTrees>
+			<AncientUplink>0.02</AncientUplink>
+			<PlantLife_Increased>0.05</PlantLife_Increased>
+			<PlantGrove>0.05</PlantGrove>
+			<Fish_Increased>0.05</Fish_Increased>
+			<Fish_Decreased>0.01</Fish_Decreased>
+		</mutatorChances>
+	</LandmarkDef>
 </Defs>

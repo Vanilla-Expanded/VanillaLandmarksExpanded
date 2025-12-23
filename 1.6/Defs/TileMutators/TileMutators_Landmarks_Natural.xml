@@ -480,5 +480,38 @@
 			</li>
 		</modExtensions>
 	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_RelictDelta</defName>
+		<label>relict delta</label>
+		<description>A fan of dried channels and silt deposits, shaped by a river that once split and flowed here long ago.</description>
+		<categories>
+			<li>River</li>
+		</categories>
+		<priority>2</priority>
+		<coastSidesRange>1~6</coastSidesRange>
+	
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_RelictDelta</workerClass>
+		<maxHilliness>Flat</maxHilliness>
+		<biomeWhitelist>
+			<li>Desert</li>
+			<li>ExtremeDesert</li>	
+			<li>AridShrubland</li>
+			<li>Grasslands</li>
+			<li>TemperateForest</li>		
+		</biomeWhitelist>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_StagnantRivulet</defName>
+		<label>stagnant rivulet</label>
+		<description>A slow-moving river where water barely flows, its course clogged with silt and shallow pools.</description>
+		<categories>
+			<li>River</li>
+		</categories>
+		<priority>2</priority>
+		
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_StagnantRivulet</workerClass>
+		<maxHilliness>Flat</maxHilliness>
+		
+	</TileMutatorDef>
 </Defs>
 

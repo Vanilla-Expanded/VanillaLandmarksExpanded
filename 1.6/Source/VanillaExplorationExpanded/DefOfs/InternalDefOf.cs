@@ -29,6 +29,10 @@ namespace VanillaExplorationExpanded
         public static TerrainDef VEE_IrradiatedWaterOceanShallow;
         public static TerrainDef VEE_IrradiatedOceanWaterDeep;
         public static TerrainDef VEE_Quicksand;
+        public static TerrainDef MarshyTerrain;
+        public static TerrainDef VEE_SwampyWaterMovingChestDeep;
+        public static TerrainDef VEE_SwampyWaterMovingShallow;
+        public static TerrainDef VEE_StagnantRiverWater;
 
         public static ThingDef VEE_RotstinkMote;
 		public static ThingDef VEE_ToxicMote;
