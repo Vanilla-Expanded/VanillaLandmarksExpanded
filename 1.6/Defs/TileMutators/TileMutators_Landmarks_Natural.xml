@@ -1,83 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<TileMutatorDef ParentName="BaseCoastMut">
-		<defName>VEE_LoneIsland</defName>
-		<label>lone island</label>
-		<description>A large island separated from the shore.</description>
-		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_LoneIsland</workerClass>
-		<coastSidesRange>3~5</coastSidesRange>
-		<preventsPondGeneration>true</preventsPondGeneration>
-		<canSpawnOnRoad>false</canSpawnOnRoad>
-	</TileMutatorDef>
-	<TileMutatorDef ParentName="BaseCoastMut">
-		<defName>VEE_DetachedIceberg</defName>
-		<label>detached iceberg</label>
-		<description>A floating mass of ice, detached from the larger ice sheet and quite distant from the shore.</description>
-		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_DetachedIceberg</workerClass>
-		<biomeWhitelist Inherit="False">
-			<li>SeaIce</li>
-			<li>IceSheet</li>
-			<li>Tundra</li>
-			<li>ColdBog</li>
-			<li>BorealForest</li>
-		</biomeWhitelist>
-		<averageTemperatureRange>-100~0</averageTemperatureRange>
-		<geyserCountFactor>0</geyserCountFactor>
-		<junkDensityFactor>0</junkDensityFactor>
-		<coastSidesRange>3~5</coastSidesRange>
-		<preventsPondGeneration>true</preventsPondGeneration>
-		<canSpawnOnRoad>false</canSpawnOnRoad>
-		<canSpawnOnRiver>false</canSpawnOnRiver>
-	</TileMutatorDef>
-	<TileMutatorDef ParentName="BaseCoastMut">
-		<defName>VEE_IceAndFire</defName>
-		<label>ice and fire</label>
-		<description>A floating mass of ice, with an active lava lake inside. It doesn't get more metal than this.</description>
-		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_IceAndFire</workerClass>
-		<biomeWhitelist Inherit="False">
-			<li>SeaIce</li>
-			<li>IceSheet</li>
-			<li>Tundra</li>
-			<li>ColdBog</li>
-			<li>BorealForest</li>
-		</biomeWhitelist>
-		<averageTemperatureRange>-100~0</averageTemperatureRange>
-		<geyserCountFactor>0</geyserCountFactor>
-		<junkDensityFactor>0</junkDensityFactor>
-		<coastSidesRange>3~5</coastSidesRange>
-		<preventsPondGeneration>true</preventsPondGeneration>
-		<canSpawnOnRoad>false</canSpawnOnRoad>
-		<canSpawnOnRiver>false</canSpawnOnRiver>
-	</TileMutatorDef>
-	<TileMutatorDef ParentName="BaseCoastMut">
-		<defName>VEE_LoneIslandWithLake</defName>
-		<label>central lake island</label>
-		<description>A large island separated from the shore with a freshwater lake inside it.</description>
-		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_LoneIslandWithLake</workerClass>
-		<coastSidesRange>3~5</coastSidesRange>
-		<preventsPondGeneration>true</preventsPondGeneration>
-		<canSpawnOnRoad>false</canSpawnOnRoad>
-	</TileMutatorDef>
-	<TileMutatorDef ParentName="BaseCoastMut">
-		<defName>VEE_LoneIslandWithMountain</defName>
-		<label>resurgent island</label>
-		<description>A large island separated from the shore with a tall peak in its center.</description>
-		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_LoneIslandWithMountain</workerClass>
-		<coastSidesRange>3~5</coastSidesRange>
-		<preventsPondGeneration>true</preventsPondGeneration>
-		<canSpawnOnRoad>false</canSpawnOnRoad>
-		<maxHilliness>Flat</maxHilliness>
-	</TileMutatorDef>
-	<TileMutatorDef ParentName="BaseCoastMut">
-		<defName>VEE_CoralReef</defName>
-		<label>coral reef</label>
-		<description>A large atoll separated from the shore with a ring of corals growing around it.</description>
-		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_CoralReef</workerClass>
-		<coastSidesRange>3~5</coastSidesRange>
-		<preventsPondGeneration>true</preventsPondGeneration>
-		<canSpawnOnRoad>false</canSpawnOnRoad>
-		<maxHilliness>Flat</maxHilliness>
-	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_MeteorCrater</defName>
 		<label>meteor crater</label>
@@ -186,6 +108,84 @@
 			<li>SeaIce</li>
 			<li>IceSheet</li>
 		</biomeBlacklist>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="BaseCoastMut">
+		<defName>VEE_LoneIsland</defName>
+		<label>detached coastal island</label>
+		<description>A large island separated from the shore.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_LoneIsland</workerClass>
+		<coastSidesRange>3~5</coastSidesRange>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRoad>false</canSpawnOnRoad>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="BaseCoastMut">
+		<defName>VEE_DetachedIceberg</defName>
+		<label>detached iceberg</label>
+		<description>A floating mass of ice, detached from the larger ice sheet and quite distant from the shore.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_DetachedIceberg</workerClass>
+		<biomeWhitelist Inherit="False">
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+			<li>Tundra</li>
+			<li>ColdBog</li>
+			<li>BorealForest</li>
+		</biomeWhitelist>
+		<averageTemperatureRange>-100~0</averageTemperatureRange>
+		<geyserCountFactor>0</geyserCountFactor>
+		<junkDensityFactor>0</junkDensityFactor>
+		<coastSidesRange>3~5</coastSidesRange>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRoad>false</canSpawnOnRoad>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="BaseCoastMut">
+		<defName>VEE_IceAndFire</defName>
+		<label>ice and fire</label>
+		<description>A floating mass of ice, with an active lava lake inside. It doesn't get more metal than this.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_IceAndFire</workerClass>
+		<biomeWhitelist Inherit="False">
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+			<li>Tundra</li>
+			<li>ColdBog</li>
+			<li>BorealForest</li>
+		</biomeWhitelist>
+		<averageTemperatureRange>-100~0</averageTemperatureRange>
+		<geyserCountFactor>0</geyserCountFactor>
+		<junkDensityFactor>0</junkDensityFactor>
+		<coastSidesRange>3~5</coastSidesRange>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRoad>false</canSpawnOnRoad>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="BaseCoastMut">
+		<defName>VEE_LoneIslandWithLake</defName>
+		<label>central lake island</label>
+		<description>A large island separated from the shore with a freshwater lake inside it.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_LoneIslandWithLake</workerClass>
+		<coastSidesRange>3~5</coastSidesRange>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRoad>false</canSpawnOnRoad>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="BaseCoastMut">
+		<defName>VEE_LoneIslandWithMountain</defName>
+		<label>resurgent island</label>
+		<description>A large island separated from the shore with a tall peak in its center.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_LoneIslandWithMountain</workerClass>
+		<coastSidesRange>3~5</coastSidesRange>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRoad>false</canSpawnOnRoad>
+		<maxHilliness>Flat</maxHilliness>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="BaseCoastMut">
+		<defName>VEE_CoralReef</defName>
+		<label>coral reef</label>
+		<description>A large atoll separated from the shore with a ring of corals growing around it.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_CoralReef</workerClass>
+		<coastSidesRange>3~5</coastSidesRange>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRoad>false</canSpawnOnRoad>
+		<maxHilliness>Flat</maxHilliness>
 	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_SaltPlains</defName>
@@ -363,7 +363,6 @@
 		<modExtensions>
 			<li Class="VEF.Maps.TileMutatorExtension">
 				<riverbankSizeMultiplier>4</riverbankSizeMultiplier>
-				
 			</li>
 		</modExtensions>
 	</TileMutatorDef>
@@ -478,7 +477,6 @@
 		<modExtensions>
 			<li Class="VEF.Maps.TileMutatorExtension">
 				<riverbankSizeMultiplier>4</riverbankSizeMultiplier>
-				
 			</li>
 		</modExtensions>
 	</TileMutatorDef>

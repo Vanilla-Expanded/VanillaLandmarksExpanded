@@ -1,14 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<RulePackDef>
-		<defName>VEE_NamerLandmark_Craters</defName>
+		<defName>VEE_NamerLandmark_ImpactCrater</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>terrain_word(p=4)->crater</li>
-				<li>terrain_word->caldera</li>
+				<li>terrain_word(p=3)->impact crater</li>
+				<li>terrain_word->meteor crater</li>
+				<li>terrain_word->impact basin</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_ResurgentCaldera</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=3)->resurgent caldera</li>
+				<li>terrain_word->uplifted caldera</li>
+				<li>terrain_word->central dome caldera</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_CraterLake</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=3)->crater lake</li>
+				<li>terrain_word->caldera lake</li>
+				<li>terrain_word->impact lake</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_ToxicCraterLake</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=3)->toxic crater lake</li>
+				<li>terrain_word->poisoned caldera</li>
+				<li>terrain_word->toxic basin</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_Volcano</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=3)->volcano</li>
+				<li>terrain_word->lava caldera</li>
+				<li>terrain_word->molten crater</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_CalmBasin</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=3)->calm basin</li>
+				<li>terrain_word->silent basin</li>
+				<li>terrain_word->windless hollow</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_LoneIsland</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=3)->lone island</li>
+				<li>terrain_word->isolated isle</li>
+				<li>terrain_word->detached island</li>
+				<li>terrain_word->solitary isle</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_DetachedIceberg</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->drift iceberg</li>
+				<li>terrain_word->pack ice mass</li>
+				<li>terrain_word->floating ice</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_IceAndFireIsland</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=3)->ice and fire island</li>
+				<li>terrain_word->frozen caldera</li>
+				<li>terrain_word->glacial fire isle</li>
+				<li>terrain_word->polar volcano isle</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_CentralLakeIsland</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=3)->lake island</li>
+				<li>terrain_word->isle of waters</li>
+				<li>terrain_word->ringed lake isle</li>
+				<li>terrain_word->inland lake island</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_ResurgentIsland</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=3)->resurgent island</li>
+				<li>terrain_word->uplifted island</li>
+				<li>terrain_word->central peak isle</li>
+				<li>terrain_word->emergent island</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_SaltPlains</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->salt plain</li>
+				<li>terrain_word->desiccated ocean</li>
+				<li>terrain_word->evaporation plain</li>
+				<li>terrain_word->saline flats</li>
+				<li>terrain_word->white barrens</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
@@ -287,18 +437,18 @@
 		</rulePack>
 	</RulePackDef>
 	<RulePackDef>
-	<defName>VEE_NamerLandmark_AlluvialFan</defName>
-	<include>
-		<li>WorldFeatureNamerCommon</li>
-	</include>
-	<rulePack>
-		<rulesStrings>
-			<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>
-			<li>terrain_word(p=2)->alluvial fan</li>
-			<li>terrain_word->sediment fan</li>
-			<li>terrain_word->river spillplain</li>
-			<li>terrain_word->depositional flats</li>
-		</rulesStrings>
-	</rulePack>
-</RulePackDef>
+		<defName>VEE_NamerLandmark_AlluvialFan</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>
+				<li>terrain_word(p=2)->alluvial fan</li>
+				<li>terrain_word->sediment fan</li>
+				<li>terrain_word->river spillplain</li>
+				<li>terrain_word->depositional flats</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 </Defs>

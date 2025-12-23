@@ -27,7 +27,7 @@
 	</TerrainDef>
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>VEE_VolcanicAsh</defName>
-		<label>volcanic ash</label>
+		<label>impact regolith</label>
 		<texturePath>Terrain/Surfaces/VEE_VolcanicAsh</texturePath>
 		<pollutedTexturePath>Terrain/Surfaces/VEE_VolcanicAsh</pollutedTexturePath>
 		<edgeType>FadeRough</edgeType>

@@ -246,5 +246,17 @@
 			<li>VEE_Sinkholes</li>
 		</extraGenSteps>
 	</TileMutatorDef>
+	<TileMutatorDef MayRequire="VanillaExpanded.HelixienGas">
+		<defName>VEE_UndergroundGasDeposits</defName>
+		<label>underground gas deposits</label>
+		<description>This region is rich in deep Helixien gas deposits.</description>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<extraDeepHelixienGasDeposits>8</extraDeepHelixienGasDeposits>
+			</li>
+		</modExtensions>
+		
+	</TileMutatorDef>
 </Defs>
 
