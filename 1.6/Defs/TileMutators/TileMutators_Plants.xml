@@ -96,12 +96,14 @@
 			<li>SeaIce</li>
 			<li>ExtremeDesert</li>
 		</biomeBlacklist>
-		<plantKinds>
-			<li>VEE_Mangrove</li>
-		</plantKinds>
 		<modExtensions>
 			<li Class="VEF.Maps.TileMutatorExtension">
-				<plantCommonality>5</plantCommonality>
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VEE_Mangrove</plantDef>
+						<commonality>5</commonality>
+					</li>
+				</plantDefsWithCommonality>
 			</li>
 		</modExtensions>
 	</TileMutatorDef>
@@ -144,12 +146,14 @@
 			<li>TemperateSwamp</li>
 			<li>Grasslands</li>
 		</biomeWhitelist>
-		<plantKinds>
-			<li>VEE_ButtercupFlower</li>
-		</plantKinds>
 		<modExtensions>
 			<li Class="VEF.Maps.TileMutatorExtension">
-				<plantCommonality>1</plantCommonality>
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VEE_ButtercupFlower</plantDef>
+						<commonality>1</commonality>
+					</li>
+				</plantDefsWithCommonality>
 			</li>
 		</modExtensions>
 	</TileMutatorDef>
@@ -164,12 +168,14 @@
 			<li>TemperateSwamp</li>
 			<li>Grasslands</li>
 		</biomeWhitelist>
-		<plantKinds>
-			<li>VEE_ForgetMeNot</li>
-		</plantKinds>
 		<modExtensions>
 			<li Class="VEF.Maps.TileMutatorExtension">
-				<plantCommonality>1</plantCommonality>
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VEE_ForgetMeNot</plantDef>
+						<commonality>1</commonality>
+					</li>
+				</plantDefsWithCommonality>
 			</li>
 		</modExtensions>
 	</TileMutatorDef>
@@ -184,12 +190,14 @@
 			<li>TemperateSwamp</li>
 			<li>Grasslands</li>
 		</biomeWhitelist>
-		<plantKinds>
-			<li>VEE_Knapweed</li>
-		</plantKinds>
 		<modExtensions>
 			<li Class="VEF.Maps.TileMutatorExtension">
-				<plantCommonality>0.5</plantCommonality>
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VEE_Knapweed</plantDef>
+						<commonality>0.5</commonality>
+					</li>
+				</plantDefsWithCommonality>
 			</li>
 		</modExtensions>
 	</TileMutatorDef>
@@ -204,12 +212,14 @@
 			<li>TemperateSwamp</li>
 			<li>Grasslands</li>
 		</biomeWhitelist>
-		<plantKinds>
-			<li>VEE_Loosestrife</li>
-		</plantKinds>
 		<modExtensions>
 			<li Class="VEF.Maps.TileMutatorExtension">
-				<plantCommonality>0.5</plantCommonality>
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VEE_Loosestrife</plantDef>
+						<commonality>0.5</commonality>
+					</li>
+				</plantDefsWithCommonality>
 			</li>
 		</modExtensions>
 	</TileMutatorDef>
@@ -228,12 +238,14 @@
 			<li>Desert</li>
 			<li>AridShrubland</li>
 		</biomeWhitelist>
-		<plantKinds>
-			<li>VEE_Plant_BarrelCactus</li>
-		</plantKinds>
 		<modExtensions>
 			<li Class="VEF.Maps.TileMutatorExtension">
-				<plantCommonality>1</plantCommonality>
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VEE_Plant_BarrelCactus</plantDef>
+						<commonality>1</commonality>
+					</li>
+				</plantDefsWithCommonality>
 			</li>
 		</modExtensions>
 	</TileMutatorDef>
@@ -247,12 +259,14 @@
 			<li>Desert</li>
 			<li>AridShrubland</li>
 		</biomeWhitelist>
-		<plantKinds>
-			<li>VEE_Plant_BeavertailCactus</li>
-		</plantKinds>
 		<modExtensions>
 			<li Class="VEF.Maps.TileMutatorExtension">
-				<plantCommonality>1</plantCommonality>
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VEE_Plant_BeavertailCactus</plantDef>
+						<commonality>1</commonality>
+					</li>
+				</plantDefsWithCommonality>
 			</li>
 		</modExtensions>
 	</TileMutatorDef>
@@ -266,12 +280,14 @@
 			<li>Desert</li>
 			<li>AridShrubland</li>
 		</biomeWhitelist>
-		<plantKinds>
-			<li>VEE_Plant_HedgehogCactus</li>
-		</plantKinds>
 		<modExtensions>
 			<li Class="VEF.Maps.TileMutatorExtension">
-				<plantCommonality>1</plantCommonality>
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VEE_Plant_HedgehogCactus</plantDef>
+						<commonality>1</commonality>
+					</li>
+				</plantDefsWithCommonality>
 			</li>
 		</modExtensions>
 	</TileMutatorDef>
@@ -283,14 +299,16 @@
 		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
 		<biomeWhitelist>
 			<li>Desert</li>
-		<li>AridShrubland</li>
+			<li>AridShrubland</li>
 		</biomeWhitelist>
-		<plantKinds>
-			<li>VEE_Plant_OrganPipeCactus</li>
-		</plantKinds>
 		<modExtensions>
 			<li Class="VEF.Maps.TileMutatorExtension">
-				<plantCommonality>1</plantCommonality>
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VEE_Plant_OrganPipeCactus</plantDef>
+						<commonality>1</commonality>
+					</li>
+				</plantDefsWithCommonality>
 			</li>
 		</modExtensions>
 	</TileMutatorDef>

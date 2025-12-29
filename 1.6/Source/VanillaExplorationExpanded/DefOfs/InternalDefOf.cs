@@ -33,6 +33,16 @@ namespace VanillaExplorationExpanded
         public static TerrainDef VEE_SwampyWaterMovingChestDeep;
         public static TerrainDef VEE_SwampyWaterMovingShallow;
         public static TerrainDef VEE_StagnantRiverWater;
+        public static TerrainDef VEE_AnimaSoil;
+        public static TerrainDef VEE_AnimaSoilRich;
+        public static TerrainDef VEE_AnimaCrackedSoil;
+        public static TerrainDef VEE_AnimaWaterDeep;
+        public static TerrainDef VEE_AnimaWaterOceanDeep;
+        public static TerrainDef VEE_AnimaWaterMovingChestDeep;
+        public static TerrainDef VEE_AnimaWaterShallow;
+        public static TerrainDef VEE_AnimaWaterOceanShallow;
+        public static TerrainDef VEE_AnimaWaterMovingShallow;
+        public static TerrainDef VEE_AnimaSand;
 
         public static ThingDef VEE_RotstinkMote;
 		public static ThingDef VEE_ToxicMote;

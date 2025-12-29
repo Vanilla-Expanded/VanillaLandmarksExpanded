@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TerrainDef ParentName="WaterDeepBase">
+		<defName>VEE_SulfuricWaterDeep</defName>
+		<label>sulfuric deep water</label>
+		<renderPrecedence>395</renderPrecedence>
+		<texturePath>Terrain/Surfaces/VEE_SulfuricWaterDeepRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_SulfuricWaterDeepRamp</pollutedTexturePath>
+		<toxicBuildupFactor>1</toxicBuildupFactor>
+		<pathCost>400</pathCost>
+		<traversedThought>VEE_SulfuricWater</traversedThought>
+		<waterBodyType>Other</waterBodyType>
+		<statBases>
+			<Beauty>-4</Beauty>
+		</statBases>
+	</TerrainDef>
+	<TerrainDef ParentName="WaterChestDeepBase">
+		<defName>VEE_SulfuricWaterDeepMovingChestDeep</defName>
+		<label>sulfuric chest-deep moving water</label>
+		<renderPrecedence>399</renderPrecedence>
+		<affordances>
+			<li>MovingFluid</li>
+		</affordances>
+		<tags>
+			<li>River</li>
+		</tags>
+		<waterDepthShaderParameters>
+			<_UseWaterOffset>1</_UseWaterOffset>
+		</waterDepthShaderParameters>
+		<texturePath>Terrain/Surfaces/VEE_SulfuricWaterChestDeepRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_SulfuricWaterChestDeepRamp</pollutedTexturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<toxicBuildupFactor>1</toxicBuildupFactor>
+		<pathCost>150</pathCost>
+		<traversedThought>VEE_SulfuricWater</traversedThought>
+		<waterBodyType>Other</waterBodyType>
+		<floodTerrain>VEE_SulfuricWaterFlood</floodTerrain>
+		<statBases>
+			<Beauty>-4</Beauty>
+		</statBases>
+	</TerrainDef>
+	<TerrainDef ParentName="VEE_SulfuricWaterDeepShallowBase">
+		<defName>VEE_SulfuricWaterFlood</defName>
+		<label>sulfuric shallow floodwater</label>
+		<temporary>true</temporary>
+		<tags>
+			<li>Flood</li>
+		</tags>
+		<canFreeze>false</canFreeze>
+		<!-- Thin ice and floodwater are both temp terrain, this means we can't support frozen floodwater -->
+		<driesTo/>
+		<!-- We don't want moisture pumps to turn temp terrain into stony soil -->
+		<floodTerrain>VEE_SulfuricWaterFlood</floodTerrain>
+		<renderPrecedence>325</renderPrecedence>
+	</TerrainDef>
+	<TerrainDef Name="VEE_SulfuricWaterDeepShallowBase" ParentName="WaterShallowBase">
+		<defName>VEE_SulfuricWaterShallow</defName>
+		<label>sulfuric shallow water</label>
+		<renderPrecedence>394</renderPrecedence>
+		<driesTo>Gravel</driesTo>
+		<texturePath>Terrain/Surfaces/VEE_SulfuricWaterShallowRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_SulfuricWaterShallowRamp</pollutedTexturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<toxicBuildupFactor>1</toxicBuildupFactor>
+		<pathCost>100</pathCost>
+		<traversedThought>VEE_SulfuricWater</traversedThought>
+		<waterBodyType>Other</waterBodyType>
+		<floodTerrain>VEE_SulfuricWaterFlood</floodTerrain>
+		<statBases>
+			<Beauty>-4</Beauty>
+		</statBases>
+	</TerrainDef>
+	<TerrainDef Name="VEE_IrradiatedWaterDeepBase" ParentName="WaterDeepBase">
+		<defName>VEE_IrradiatedWaterDeep</defName>
+		<label>irradiated deep water</label>
+		<renderPrecedence>395</renderPrecedence>
+		<texturePath>Terrain/Surfaces/VEE_IrradiatedWaterDeepRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_IrradiatedWaterDeepRamp</pollutedTexturePath>
+		<toxicBuildupFactor>8</toxicBuildupFactor>
+		<pathCost>600</pathCost>
+		<traversedThought>VEE_IrradiatedWater</traversedThought>
+		<waterBodyType>Other</waterBodyType>
+		<statBases>
+			<Beauty>-10</Beauty>
+		</statBases>
+	</TerrainDef>
+	<TerrainDef ParentName="VEE_IrradiatedWaterDeepBase">
+		<defName>VEE_IrradiatedOceanWaterDeep</defName>
+		<label>irradiated deep ocean water</label>
+		<renderPrecedence>397</renderPrecedence>
+		<waterBodyType>Saltwater</waterBodyType>
+		<gravshipReplacementTerrain>VEE_IrradiatedWaterOceanShallow</gravshipReplacementTerrain>
+		<tags>
+			<li>Ocean</li>
+		</tags>
+	</TerrainDef>
+	<TerrainDef ParentName="WaterChestDeepBase">
+		<defName>VEE_IrradiatedWaterDeepMovingChestDeep</defName>
+		<label>irradiated chest-deep moving water</label>
+		<renderPrecedence>399</renderPrecedence>
+		<affordances>
+			<li>MovingFluid</li>
+		</affordances>
+		<tags>
+			<li>River</li>
+		</tags>
+		<waterDepthShaderParameters>
+			<_UseWaterOffset>1</_UseWaterOffset>
+		</waterDepthShaderParameters>
+		<texturePath>Terrain/Surfaces/VEE_IrradiatedWaterChestDeepRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_IrradiatedWaterChestDeepRamp</pollutedTexturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<toxicBuildupFactor>8</toxicBuildupFactor>
+		<pathCost>700</pathCost>
+		<traversedThought>VEE_IrradiatedWater</traversedThought>
+		<waterBodyType>Other</waterBodyType>
+		<floodTerrain>VEE_IrradiatedWaterFlood</floodTerrain>
+		<statBases>
+			<Beauty>-10</Beauty>
+		</statBases>
+	</TerrainDef>
+	<TerrainDef ParentName="VEE_IrradiatedWaterShallowBase">
+		<defName>VEE_IrradiatedWaterFlood</defName>
+		<label>irradiated shallow floodwater</label>
+		<temporary>true</temporary>
+		<tags>
+			<li>Flood</li>
+		</tags>
+		<canFreeze>false</canFreeze>
+		<!-- Thin ice and floodwater are both temp terrain, this means we can't support frozen floodwater -->
+		<driesTo/>
+		<!-- We don't want moisture pumps to turn temp terrain into stony soil -->
+		<floodTerrain>VEE_IrradiatedWaterFlood</floodTerrain>
+		<renderPrecedence>325</renderPrecedence>
+	</TerrainDef>
+	<TerrainDef Name="VEE_IrradiatedWaterShallowBase" ParentName="WaterShallowBase">
+		<defName>VEE_IrradiatedWaterShallow</defName>
+		<label>irradiated shallow water</label>
+		<renderPrecedence>394</renderPrecedence>
+		<driesTo>VEE_IrradiatedSoil</driesTo>
+		<texturePath>Terrain/Surfaces/VEE_IrradiatedWaterShallowRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_IrradiatedWaterShallowRamp</pollutedTexturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<toxicBuildupFactor>8</toxicBuildupFactor>
+		<pathCost>400</pathCost>
+		<traversedThought>VEE_IrradiatedWater</traversedThought>
+		<waterBodyType>Other</waterBodyType>
+		<floodTerrain>VEE_IrradiatedWaterFlood</floodTerrain>
+		<statBases>
+			<Beauty>-10</Beauty>
+		</statBases>
+	</TerrainDef>
+	<TerrainDef ParentName="VEE_IrradiatedWaterShallowBase">
+		<defName>VEE_IrradiatedWaterMovingShallow</defName>
+		<label>irradiated shallow moving water</label>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<renderPrecedence>398</renderPrecedence>
+		<affordances>
+			<li>MovingFluid</li>
+		</affordances>
+		<tags>
+			<li>River</li>
+			<li>WaterFreshShallow</li>
+			<li>WaterFreshShallowMoving</li>
+		</tags>
+		<waterDepthShaderParameters>
+			<_UseWaterOffset>1</_UseWaterOffset>
+		</waterDepthShaderParameters>
+	</TerrainDef>
+	<TerrainDef ParentName="VEE_IrradiatedWaterShallowBase">
+		<defName>VEE_IrradiatedWaterOceanShallow</defName>
+		<label>irradiated shallow ocean water</label>
+		<renderPrecedence>396</renderPrecedence>
+		<canFreeze>false</canFreeze>
+		<waterBodyType>Saltwater</waterBodyType>
+		<tags>
+			<li>Ocean</li>
+		</tags>
+	</TerrainDef>
+	<TerrainDef ParentName="WaterChestDeepBase">
+		<defName>VEE_SwampyWaterMovingChestDeep</defName>
+		<label>chest-deep swampy moving water</label>
+		<renderPrecedence>399</renderPrecedence>
+		<texturePath>Terrain/Surfaces/Marsh</texturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMarsh</pollutionOverlayTexturePath>
+		<affordances>
+			<li>MovingFluid</li>
+		</affordances>
+		<tags>
+			<li>River</li>
+			<li>WaterMarshy</li>
+		</tags>
+		<waterDepthShaderParameters>
+			<_UseWaterOffset>1</_UseWaterOffset>
+		</waterDepthShaderParameters>
+	</TerrainDef>
+	<TerrainDef ParentName="WaterShallowBase">
+		<defName>VEE_SwampyWaterMovingShallow</defName>
+		<label>shallow swampy moving water</label>
+		<texturePath>Terrain/Surfaces/Marsh</texturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMarsh</pollutionOverlayTexturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<renderPrecedence>398</renderPrecedence>
+		<affordances>
+			<li>MovingFluid</li>
+		</affordances>
+		<tags>
+			<li>River</li>
+			<li>WaterFreshShallow</li>
+			<li>WaterFreshShallowMoving</li>
+			<li>WaterMarshy</li>
+		</tags>
+		<waterDepthShaderParameters>
+			<_UseWaterOffset>1</_UseWaterOffset>
+		</waterDepthShaderParameters>
+	</TerrainDef>
+	<TerrainDef ParentName="MarshBase">
+		<defName>VEE_StagnantRiverWater</defName>
+		<label>stagnant river water</label>
+		<statBases>
+			<Beauty>-5</Beauty>
+			<BeautyOutdoors>-5</BeautyOutdoors>
+			<Cleanliness>-3</Cleanliness>
+		</statBases>
+		<driesTo>MarshyTerrain</driesTo>
+		<tags>
+			<li>WaterMarshy</li>
+		</tags>
+	</TerrainDef>
+	<!-- Anima Deep Water -->
+	<TerrainDef Abstract="True" Name="VEE_AnimaWaterDeepBase" ParentName="WaterBase">
+		<texturePath>Terrain/Surfaces/AnimaWaterDeepRamp</texturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<passability>Impassable</passability>
+		<pathCost>300</pathCost>
+		<changeable>false</changeable>
+		<canFreeze>false</canFreeze>
+		<waterBodyType>Freshwater</waterBodyType>
+	</TerrainDef>
+	<TerrainDef ParentName="VEE_AnimaWaterDeepBase">
+		<defName>VEE_AnimaWaterDeep</defName>
+		<label>deep anima water</label>
+		<renderPrecedence>395</renderPrecedence>
+		<pollutedTexturePath>Terrain/Surfaces/WaterDeepRampPolluted</pollutedTexturePath>
+		<forcePassableByFlyingPawns>true</forcePassableByFlyingPawns>
+		<gravshipReplacementTerrain>WaterShallow</gravshipReplacementTerrain>
+	</TerrainDef>
+	<TerrainDef ParentName="VEE_AnimaWaterDeepBase">
+		<defName>VEE_AnimaWaterOceanDeep</defName>
+		<label>deep anima ocean water</label>
+		<renderPrecedence>397</renderPrecedence>
+		<waterBodyType>Saltwater</waterBodyType>
+		<gravshipReplacementTerrain>WaterOceanShallow</gravshipReplacementTerrain>
+		<tags>
+			<li>Ocean</li>
+		</tags>
+	</TerrainDef>
+	<!-- Anima Chest-deep -->
+	<TerrainDef Abstract="True" Name="VEE_AnimaWaterChestDeepBase" ParentName="WaterBase">
+		<texturePath>Terrain/Surfaces/AnimaWaterChestDeepRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/WaterChestDeepRampPolluted</pollutedTexturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<waterBodyType>Freshwater</waterBodyType>
+		<pathCost>42</pathCost>
+		<affordances>
+			<li>Bridgeable</li>
+			<li>Walkable</li>
+		</affordances>
+	</TerrainDef>
+	<TerrainDef ParentName="VEE_AnimaWaterChestDeepBase">
+		<defName>VEE_AnimaWaterMovingChestDeep</defName>
+		<label>chest-deep moving anima water</label>
+		<renderPrecedence>399</renderPrecedence>
+		<pollutedTexturePath>Terrain/Surfaces/WaterChestDeepRampPolluted</pollutedTexturePath>
+		<affordances>
+			<li>MovingFluid</li>
+		</affordances>
+		<tags>
+			<li>River</li>
+		</tags>
+		<waterDepthShaderParameters>
+			<_UseWaterOffset>1</_UseWaterOffset>
+		</waterDepthShaderParameters>
+	</TerrainDef>
+	<!-- Anima Shallow -->
+	<TerrainDef Abstract="True" Name="VEE_AnimaWaterShallowBase" ParentName="WaterBase">
+		<pathCost>30</pathCost>
+		<waterBodyType>Freshwater</waterBodyType>
+		<affordances>
+			<li>ShallowWater</li>
+			<li>WaterproofConduitable</li>
+			<li>Bridgeable</li>
+			<li>Walkable</li>
+		</affordances>
+	</TerrainDef>
+	<TerrainDef ParentName="VEE_AnimaWaterShallowBase">
+		<defName>VEE_AnimaWaterShallow</defName>
+		<label>shallow anima water</label>
+		<texturePath>Terrain/Surfaces/AnimaWaterShallowRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/WaterShallowRampPolluted</pollutedTexturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<renderPrecedence>394</renderPrecedence>
+		<driesTo>VEE_AnimaCrackedSoil</driesTo>
+		<tags>
+			<li>WaterFreshShallow</li>
+			<li>WaterFreshShallowStill</li>
+		</tags>
+	</TerrainDef>
+	<TerrainDef ParentName="VEE_AnimaWaterShallowBase">
+		<defName>VEE_AnimaWaterOceanShallow</defName>
+		<label>shallow ocean anima water</label>
+		<texturePath>Terrain/Surfaces/AnimaWaterShallowRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/WaterShallowRampPolluted</pollutedTexturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<renderPrecedence>396</renderPrecedence>
+		<driesTo>VEE_AnimaCrackedSoil</driesTo>
+		<canFreeze>false</canFreeze>
+		<waterBodyType>Saltwater</waterBodyType>
+		<tags>
+			<li>Ocean</li>
+		</tags>
+	</TerrainDef>
+	<TerrainDef ParentName="VEE_AnimaWaterShallowBase">
+		<defName>VEE_AnimaWaterMovingShallow</defName>
+		<label>shallow moving anima water</label>
+		<texturePath>Terrain/Surfaces/AnimaWaterShallowRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/WaterShallowRampPolluted</pollutedTexturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<renderPrecedence>398</renderPrecedence>
+		<affordances>
+			<li>MovingFluid</li>
+		</affordances>
+		<tags>
+			<li>River</li>
+			<li>WaterFreshShallow</li>
+			<li>WaterFreshShallowMoving</li>
+		</tags>
+		<waterDepthShaderParameters>
+			<_UseWaterOffset>1</_UseWaterOffset>
+		</waterDepthShaderParameters>
+	</TerrainDef>
+</Defs>

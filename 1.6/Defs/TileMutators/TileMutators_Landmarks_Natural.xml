@@ -489,15 +489,14 @@
 		</categories>
 		<priority>2</priority>
 		<coastSidesRange>1~6</coastSidesRange>
-	
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_RelictDelta</workerClass>
 		<maxHilliness>Flat</maxHilliness>
 		<biomeWhitelist>
 			<li>Desert</li>
-			<li>ExtremeDesert</li>	
+			<li>ExtremeDesert</li>
 			<li>AridShrubland</li>
 			<li>Grasslands</li>
-			<li>TemperateForest</li>		
+			<li>TemperateForest</li>
 		</biomeWhitelist>
 	</TileMutatorDef>
 	<TileMutatorDef>
@@ -508,10 +507,84 @@
 			<li>River</li>
 		</categories>
 		<priority>2</priority>
-		
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_StagnantRivulet</workerClass>
 		<maxHilliness>Flat</maxHilliness>
-		
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_AnimaSoils</defName>
+		<label>anima soils</label>
+		<description>A slow-moving river where water barely flows, its course clogged with silt and shallow pools.</description>
+		<chanceOnNonLandmarkTile>1</chanceOnNonLandmarkTile>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_AnimaSoils</workerClass>
+		<biomeWhitelist>
+			<li>TemperateForest</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_AnimaFlora</defName>
+		<label>anima flora</label>
+		<description>A slow-moving river where water barely flows, its course clogged with silt and shallow pools.</description>
+		<chanceOnNonLandmarkTile>1</chanceOnNonLandmarkTile>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_AnimaFlora</workerClass>
+		<biomeWhitelist>
+			<li>TemperateForest</li>
+		</biomeWhitelist>
+		<plantKinds>
+			<li>VEE_Plant_AnimaBush</li>
+			<li>VEE_Plant_YoungAnimaTree</li>
+			<li>Plant_Grass</li>
+			<li>Plant_TallGrass</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Plant_GrassAnima</li>
+			<li>VEE_Plant_AnimaRoot</li>
+			<li>VEE_Plant_AnimaBrambles</li>
+			<li>VEE_Plant_AnimaBell</li>
+			<li>VEE_Plant_MysticCap</li>
+			<li>VEE_Plant_AnimaTreeAncient</li>
+			<li>VEE_Plant_AnimaHeartBlossom</li>
+		</plantKinds>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VEE_Plant_AnimaBush</plantDef>
+						<commonality>0.6</commonality>
+					</li>
+					<li>
+						<plantDef>VEE_Plant_YoungAnimaTree</plantDef>
+						<commonality>1.5</commonality>
+					</li>
+					<li>
+						<plantDef>VEE_Plant_AnimaTreeAncient</plantDef>
+						<commonality>0.5</commonality>
+					</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">
+						<plantDef>Plant_GrassAnima</plantDef>
+						<commonality>4</commonality>
+					</li>
+					<li>
+						<plantDef>VEE_Plant_AnimaRoot</plantDef>
+						<commonality>1</commonality>
+					</li>
+					<li>
+						<plantDef>VEE_Plant_AnimaBrambles</plantDef>
+						<commonality>3</commonality>
+					</li>
+					<li>
+						<plantDef>VEE_Plant_AnimaBell</plantDef>
+						<commonality>1</commonality>
+					</li>
+					<li>
+						<plantDef>VEE_Plant_MysticCap</plantDef>
+						<commonality>0.75</commonality>
+					</li>
+					<li>
+						<plantDef>VEE_Plant_AnimaHeartBlossom</plantDef>
+						<commonality>0.25</commonality>
+					</li>
+					
+				</plantDefsWithCommonality>
+			</li>
+		</modExtensions>
 	</TileMutatorDef>
 </Defs>
 
