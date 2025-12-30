@@ -467,18 +467,35 @@
 		</rulePack>
 	</RulePackDef>
 	<RulePackDef>
-	<defName>VEE_NamerLandmark_StagnantRivulet</defName>
-	<include>
-		<li>WorldFeatureNamerCommon</li>
-	</include>
-	<rulePack>
-		<rulesStrings>
-			<li>terrain_word(p=2)->stagnant rivulet</li>
-			<li>terrain_word->stilled stream</li>
-			<li>terrain_word->sluggish rivulet</li>
-			<li>terrain_word->standing channel</li>
-			<li>terrain_word->silted creek</li>
-		</rulesStrings>
-	</rulePack>
-</RulePackDef>
+		<defName>VEE_NamerLandmark_StagnantRivulet</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=2)->stagnant rivulet</li>
+				<li>terrain_word->stilled stream</li>
+				<li>terrain_word->sluggish rivulet</li>
+				<li>terrain_word->standing channel</li>
+				<li>terrain_word->silted creek</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_AnimaForest</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>
+				<li>terrain_word(p=3)->anima forest</li>
+				<li>terrain_word(p=2)->anima woods</li>
+				<li>terrain_word->psychoactive forest</li>
+				<li>terrain_word->glowleaf grove</li>
+				<li>terrain_word->whispering anima trees</li>
+				<li>terrain_word->lucent woodland</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 </Defs>

@@ -513,8 +513,8 @@
 	<TileMutatorDef>
 		<defName>VEE_AnimaSoils</defName>
 		<label>anima soils</label>
-		<description>A slow-moving river where water barely flows, its course clogged with silt and shallow pools.</description>
-		<chanceOnNonLandmarkTile>1</chanceOnNonLandmarkTile>
+		<description>This area contains soil infused with latent anima energy, subtly influencing plants, animals, and minds.</description>
+		
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_AnimaSoils</workerClass>
 		<biomeWhitelist>
 			<li>TemperateForest</li>
@@ -523,8 +523,8 @@
 	<TileMutatorDef>
 		<defName>VEE_AnimaFlora</defName>
 		<label>anima flora</label>
-		<description>A slow-moving river where water barely flows, its course clogged with silt and shallow pools.</description>
-		<chanceOnNonLandmarkTile>1</chanceOnNonLandmarkTile>
+		<description>This region contains a dense forest with anima trees and lesser anima growths, quietly resonating with psychic energy. The air feels attentive, as if the land itself is listening.</description>
+		
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_AnimaFlora</workerClass>
 		<biomeWhitelist>
 			<li>TemperateForest</li>
