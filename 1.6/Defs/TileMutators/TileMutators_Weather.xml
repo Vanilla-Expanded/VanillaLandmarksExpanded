@@ -19,6 +19,36 @@
 		</additionalGameConditions>
 	</TileMutatorDef>
 	<TileMutatorDef>
+		<defName>VEE_RagingWind</defName>
+		<label>raging winds</label>
+		<description>Winds are extraordinarily stronger in this area.</description>
+		<categories>
+			<li>Weather</li>
+			<li>VEE_Windy</li>
+		</categories>
+		<workerClass>TileMutatorWorker_IncreaseWeatherFrequency</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<weathersToAffect>
+			<li>Windy</li>
+		</weathersToAffect>
+		<weatherFrequencyOffset>10</weatherFrequencyOffset>
+		<additionalGameConditions>
+			<li>VEE_RagingWind</li>
+		</additionalGameConditions>
+		<biomeWhitelist>
+			<li>AridShrubland</li>
+			<li>Desert</li>
+			<li>ExtremeDesert</li>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+			<li>Tundra</li>
+			<li>Grasslands</li>
+			<li>GlacialPlain</li>
+			<li>LavaField</li>
+			<li>Scarlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
+	<TileMutatorDef>
 		<defName>VEE_GeomagneticStorm</defName>
 		<label>geomagnetic storm</label>
 		<description>An intense geomagnetic event blankets the region, completely disabling all electrical devices.</description>
@@ -111,14 +141,12 @@
 		<label>increased solar exposure</label>
 		<description>Insolation is stronger in this area, increasing the output of solar power by 25%.</description>
 		<categories>
-			<li>VEE_Solar</li>		
+			<li>VEE_Solar</li>
 		</categories>
-
 		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
 		<biomeBlacklist>
 			<li>Glowforest</li>
 			<li MayRequire="sarg.alphabiomes">AB_RockyCrags</li>
-			
 		</biomeBlacklist>
 	</TileMutatorDef>
 	<TileMutatorDef>
@@ -126,16 +154,13 @@
 		<label>reduced solar exposure</label>
 		<description>Insolation is weaker in this area, reducing the output of solar power by 25%.</description>
 		<categories>
-			<li>VEE_Solar</li>		
+			<li>VEE_Solar</li>
 		</categories>
-
 		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
 		<biomeBlacklist>
 			<li>Glowforest</li>
 			<li MayRequire="sarg.alphabiomes">AB_RockyCrags</li>
-			
 		</biomeBlacklist>
 	</TileMutatorDef>
-	
 </Defs>
 

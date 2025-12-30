@@ -87,11 +87,13 @@
     <Compile Include="GameConditions\GameCondition_ColossalFauna.cs" />
     <Compile Include="GameConditions\GameCondition_FertileRains.cs" />
     <Compile Include="GameConditions\GameCondition_GeomagneticStorm.cs" />
+    <Compile Include="GameConditions\GameCondition_RagingWind.cs" />
     <Compile Include="GameConditions\GameCondition_RottenStench.cs" />
     <Compile Include="GameConditions\GameCondition_Microfauna.cs" />
     <Compile Include="GameConditions\GameCondition_NoWind.cs" />
     <Compile Include="GameConditions\GameCondition_SkygazingSpot.cs" />
     <Compile Include="GenSteps\GenStep_Driftwood.cs" />
+    <Compile Include="GenSteps\GenStep_JadeChunks.cs" />
     <Compile Include="Harmony\CompPowerPlantSolar_DesiredPowerOutput.cs" />
     <Compile Include="Harmony\CompPowerPlantSolar_PostDraw.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
@@ -143,6 +145,7 @@
     <Compile Include="TileMutatorWorkers\Rivers\TileMutatorWorker_DryRiver.cs" />
     <Compile Include="TileMutatorWorkers\Lakes\TileMutatorWorker_ContaminatedReservoir.cs" />
     <Compile Include="TileMutatorWorkers\Rivers\TileMutatorWorker_RelictDelta.cs" />
+    <Compile Include="TileMutatorWorkers\Rivers\TileMutatorWorker_SulfuricRiver.cs" />
     <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_AnimaSoils.cs" />
     <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_RemoveFertileSoils.cs" />
     <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_RemoveTrees.cs" />

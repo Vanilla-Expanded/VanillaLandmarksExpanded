@@ -16,4 +16,9 @@
 		<order>970</order>
 		<genStep Class="VanillaExplorationExpanded.GenStep_Driftwood"/>
 	</GenStepDef>
+	<GenStepDef>
+		<defName>VEE_JadeChunks</defName>
+		<order>970</order>
+		<genStep Class="VanillaExplorationExpanded.GenStep_JadeChunks"/>
+	</GenStepDef>
 </Defs>

@@ -339,6 +339,24 @@
 		</modExtensions>
 	</TileMutatorDef>
 	<TileMutatorDef>
+		<defName>VEE_SulfuricRiver</defName>
+		<label>sulfuric river</label>
+		<description>A foul-smelling river carrying acidic, sulfur-laden waters, its banks scorched and inhospitable to most forms of life.</description>
+		<categories>
+			<li>River</li>
+		</categories>
+		<priority>2</priority>
+		<overrideRiverbankTerrain>VEE_SaltySand</overrideRiverbankTerrain>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_SulfuricRiver</workerClass>
+		<maxHilliness>Flat</maxHilliness>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<thingToSpawn>VEE_SulfurVent</thingToSpawn>
+				<thingToSpawnAmount>15~25</thingToSpawnAmount>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef>
 		<defName>VEE_BurnedForest</defName>
 		<label>burned forest</label>
 		<description>A forested area that has been recently affected by a severe wildfire.</description>
@@ -519,6 +537,33 @@
 		<biomeWhitelist>
 			<li>TemperateForest</li>
 		</biomeWhitelist>
+		
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_AnimaSoils_Coast</defName>
+		<label>anima soils</label>
+		<description>This area contains soil infused with latent anima energy, subtly influencing plants, animals, and minds.</description>
+		<coastSidesRange>1~6</coastSidesRange>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_AnimaSoils</workerClass>
+		<biomeWhitelist>
+			<li>TemperateForest</li>
+		</biomeWhitelist>
+		
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_JadeChunks</defName>
+		<label>jadeite chunks</label>
+		<description>This area contains small deposits of jadeite.</description>
+		
+		
+		<biomeWhitelist>
+			<li>TemperateForest</li>
+		</biomeWhitelist>
+		<extraGenSteps>
+			<li>VEE_JadeChunks</li>
+		</extraGenSteps>
+		
+		<chunkDensityFactor>0.25</chunkDensityFactor>
 	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_AnimaFlora</defName>
@@ -583,6 +628,41 @@
 					</li>
 					
 				</plantDefsWithCommonality>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_AnimaFauna</defName>
+		<label>anima fauna</label>
+		<description>The placid environment of the anima forest attracts some anima-touched animals.</description>
+		
+		
+		<workerClass>VEF.Maps.TileMutatorWorker_ExtraAnimal</workerClass>
+		<biomeWhitelist>
+			<li>TemperateForest</li>
+		</biomeWhitelist>
+		
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<forcedPawnKindDefs>
+					<li>
+						<forcedPawnKindDef>VEE_AnimaDeer</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.4</forcedPawnKindDefChance>
+					</li>
+					<li>
+						<forcedPawnKindDef>VEE_AnimaBear</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.15</forcedPawnKindDefChance>
+					</li>
+					<li MayRequire="sarg.alphaanimals">
+						<forcedPawnKindDef>AA_AnimaColossus</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					<li MayRequire="sarg.alphaanimals">
+						<forcedPawnKindDef>AA_Animalisk</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					
+				</forcedPawnKindDefs>
 			</li>
 		</modExtensions>
 	</TileMutatorDef>
