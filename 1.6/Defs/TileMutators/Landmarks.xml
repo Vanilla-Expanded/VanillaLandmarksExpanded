@@ -1000,7 +1000,7 @@
 			<PlantLife_Increased>0.05</PlantLife_Increased>
 			<Marshy>0.05</Marshy>
 			<Sandy>0.05</Sandy>
-			<Fertile>0.05</Fertile>
+			<VEE_Fertility_Reduced>0.85</VEE_Fertility_Reduced>
 			<Muddy>0.05</Muddy>
 			<InsectMegahive>0.02</InsectMegahive>
 			<MixedBiome>0.5</MixedBiome>

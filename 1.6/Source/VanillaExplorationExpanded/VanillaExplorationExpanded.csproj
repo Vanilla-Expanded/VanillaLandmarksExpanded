@@ -96,6 +96,7 @@
     <Compile Include="GenSteps\GenStep_JadeChunks.cs" />
     <Compile Include="Harmony\CompPowerPlantSolar_DesiredPowerOutput.cs" />
     <Compile Include="Harmony\CompPowerPlantSolar_PostDraw.cs" />
+    <Compile Include="Harmony\CompPowerPlantWind_CompTick.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\PawnUtility_GetManhunterOnDamageChance.cs" />
     <Compile Include="Harmony\Plant_GrowthRateFactor_Drought.cs" />
