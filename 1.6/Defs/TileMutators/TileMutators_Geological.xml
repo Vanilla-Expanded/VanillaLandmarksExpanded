@@ -258,5 +258,31 @@
 		</modExtensions>
 		
 	</TileMutatorDef>
+	<TileMutatorDef MayRequire="VanillaExpanded.VFEPower">
+		<defName>VEE_StrongerTides</defName>
+		<label>stronger tides</label>
+		<description>Tides in this region are particularly strong, increasng output of tidal generators by 40%.</description>
+		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
+		<coastSidesRange>1~6</coastSidesRange>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<tideStrengthMultiplier>1.4</tideStrengthMultiplier>
+			</li>
+		</modExtensions>
+		
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_LargeRiverBanks</defName>
+		<label>large river banks</label>
+		<description>The river present in this region has larger banks.</description>
+		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
+	
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<riverbankSizeMultiplier>2</riverbankSizeMultiplier>
+			</li>
+		</modExtensions>
+		
+	</TileMutatorDef>
 </Defs>
 

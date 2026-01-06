@@ -312,5 +312,32 @@
 			</li>
 		</modExtensions>
 	</TileMutatorDef>
+	<TileMutatorDef ParentName="WildPlants_Base" MayRequire="VanillaExpanded.VPlantsESucculents">
+		<defName>VEE_WildSucculents</defName>
+		<label>wild succulents</label>
+		<description>This area can grow a large number of wild {0}.</description>
+		<workerClass>TileMutatorWorker_WildPlants</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+			<li>Tundra</li>
+			<li>BorealForest</li>
+			<li>ColdBog</li>
+			<li>GlacialPlain</li>
+		</biomeBlacklist>
+		<plantKinds>
+			<li>VCE_Plant_AloeVera</li>
+			<li>VCE_Plant_BunnyEarsCactus</li>
+			<li>VCE_Plant_Echeveria</li>
+			<li>VCE_Plant_FairyWashboard</li>
+			<li>VCE_Plant_JadePlant</li>
+			<li>VCE_Plant_PeyotePlant</li>
+			<li>VCE_Plant_PincushionPlant</li>
+			<li>VCE_Plant_Schlumbergera</li>
+			<li>VCE_Plant_SnakePlant</li>
+			<li>VCE_Plant_SweetheartPlant</li>
+		</plantKinds>
+	</TileMutatorDef>
 </Defs>
 

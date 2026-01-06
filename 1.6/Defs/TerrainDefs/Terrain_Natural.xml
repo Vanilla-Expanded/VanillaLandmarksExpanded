@@ -188,18 +188,18 @@
 		</affordances>
 		<fertility>0</fertility>
 	</TerrainDef>
-	<TerrainDef ParentName="WaterShallowBase">
+	<TerrainDef>
 		<defName>VEE_Quicksand</defName>
 		<label>quicksand</label>
 		<customShader>ShallowLava</customShader>
 		<renderPrecedence>394</renderPrecedence>
 		<driesTo>Sand</driesTo>
 		<texturePath>Terrain/Surfaces/Quicksand</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/Quicksand</pollutedTexturePath>
 		<customShaderParameters>
 			<_NoiseTex>/UI/Empty</_NoiseTex>
 			<_LavaBrightness>0</_LavaBrightness>
-			<_BrightSpotSpeed>0</_BrightSpotSpeed>
-			<_BrightSpotScale>0</_BrightSpotScale>
+			
 		</customShaderParameters>
 		<pathCost>2</pathCost>
 		<canFreeze>false</canFreeze>
@@ -208,6 +208,22 @@
 		<statBases>
 			<Beauty>-2</Beauty>
 		</statBases>
+		<affordances>
+			<li>ShallowWater</li>
+			<li>WaterproofConduitable</li>
+			<li>Bridgeable</li>
+			<li>Walkable</li>
+		</affordances>
+		<edgeType>Water</edgeType>
+		<fertility>0</fertility>
+		<natural>true</natural>
+		<holdSnowOrSand>false</holdSnowOrSand>
+		<takeSplashes>true</takeSplashes>
+		<extinguishesFire>true</extinguishesFire>
+		<extraDeteriorationFactor>3</extraDeteriorationFactor>
+		<filthAcceptanceMask>
+			<li>None</li>
+		</filthAcceptanceMask>
 	</TerrainDef>
 	<TerrainDef ParentName="FloorBase">
 		<defName>VEE_RuinedFarmland</defName>
