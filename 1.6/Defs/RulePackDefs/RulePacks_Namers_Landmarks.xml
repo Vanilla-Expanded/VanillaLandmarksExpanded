@@ -577,4 +577,49 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_GravelBeach</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->gravel shore</li>
+				<li>terrain_word->shingle coast</li>
+				<li>terrain_word->stone-littered beach</li>
+				<li>terrain_word->pebble strand</li>
+				<li>terrain_word->rocky shoreline</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_AuburnForest</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->auburn woods</li>
+				<li>terrain_word->auburn forest</li>
+				<li>terrain_word->auburn grove</li>
+				<li>terrain_word->auburn woodland</li>
+				<li>terrain_word->auburn thicket</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_Cenotes</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->cenote field</li>
+				<li>terrain_word->cenote lakes</li>
+				<li>terrain_word->collapsed limestone pools</li>
+				<li>terrain_word->water-filled cenotes</li>
+				<li>terrain_word->karst hollows</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 </Defs>

@@ -7,7 +7,7 @@ namespace VanillaExplorationExpanded
     public class TileMutatorWorker_StoneForest : TileMutatorWorker
     {
         private ModuleBase blobs;
-        private const float blobFreq = 0.1f;
+        private const float blobFreq = 0.15f;
         private const float blobThreshold = 0.2f;
         private const float warpFreq = 0.02f;
         private const float warpStrength = 18f;

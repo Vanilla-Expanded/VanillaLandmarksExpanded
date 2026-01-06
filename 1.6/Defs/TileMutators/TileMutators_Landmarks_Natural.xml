@@ -532,12 +532,10 @@
 		<defName>VEE_AnimaSoils</defName>
 		<label>anima soils</label>
 		<description>This area contains soil infused with latent anima energy, subtly influencing plants, animals, and minds.</description>
-		
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_AnimaSoils</workerClass>
 		<biomeWhitelist>
 			<li>TemperateForest</li>
 		</biomeWhitelist>
-		
 	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_AnimaSoils_Coast</defName>
@@ -548,28 +546,23 @@
 		<biomeWhitelist>
 			<li>TemperateForest</li>
 		</biomeWhitelist>
-		
 	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_JadeChunks</defName>
 		<label>jadeite chunks</label>
 		<description>This area contains small deposits of jadeite.</description>
-		
-		
 		<biomeWhitelist>
 			<li>TemperateForest</li>
 		</biomeWhitelist>
 		<extraGenSteps>
 			<li>VEE_JadeChunks</li>
 		</extraGenSteps>
-		
 		<chunkDensityFactor>0.25</chunkDensityFactor>
 	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_AnimaFlora</defName>
 		<label>anima flora</label>
 		<description>This region contains a dense forest with anima trees and lesser anima growths, quietly resonating with psychic energy. The air feels attentive, as if the land itself is listening.</description>
-		
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_AnimaFlora</workerClass>
 		<biomeWhitelist>
 			<li>TemperateForest</li>
@@ -626,7 +619,6 @@
 						<plantDef>VEE_Plant_AnimaHeartBlossom</plantDef>
 						<commonality>0.25</commonality>
 					</li>
-					
 				</plantDefsWithCommonality>
 			</li>
 		</modExtensions>
@@ -635,13 +627,10 @@
 		<defName>VEE_AnimaFauna</defName>
 		<label>anima fauna</label>
 		<description>The placid environment of the anima forest attracts some anima-touched animals.</description>
-		
-		
 		<workerClass>VEF.Maps.TileMutatorWorker_ExtraAnimal</workerClass>
 		<biomeWhitelist>
 			<li>TemperateForest</li>
 		</biomeWhitelist>
-		
 		<modExtensions>
 			<li Class="VEF.Maps.TileMutatorExtension">
 				<forcedPawnKindDefs>
@@ -661,7 +650,6 @@
 						<forcedPawnKindDef>AA_Animalisk</forcedPawnKindDef>
 						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
 					</li>
-					
 				</forcedPawnKindDefs>
 			</li>
 		</modExtensions>
@@ -674,7 +662,6 @@
 			<li>Mountain</li>
 		</categories>
 		<priority>5</priority>
-		
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_StoneForest</workerClass>
 		<genOrder>-200</genOrder>
 		<!-- Must be before any mutators that generate caves -->
@@ -683,11 +670,36 @@
 		<biomeBlacklist>
 			<li>SeaIce</li>
 			<li>IceSheet</li>
-			
 		</biomeBlacklist>
 		<overrideCategories>
 			<li>BaseCaves</li>
 		</overrideCategories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_GravelBeach</defName>
+		<label>gravel beach</label>
+		<description>A harsh shoreline of loose gravel and rounded stones, where waves grind rock against rock.</description>
+		<coastSidesRange>1~6</coastSidesRange>
+		<overrideCoastalBeachTerrain>VEE_GravelBeach</overrideCoastalBeachTerrain>
+		<categories>
+			<li>Coast</li>
+		</categories>
+		<priority>5</priority>
+		<overrideCategories>
+			<li>Mountain</li>
+		</overrideCategories>
+		<genOrder>100</genOrder>
+		<workerClass>TileMutatorWorker_Coast</workerClass>
+	</TileMutatorDef>
+		<TileMutatorDef>
+		<defName>VEE_Cenotes</defName>
+		<label>cenotes</label>
+		<description>A scattered network of deep, water-filled sinkholes formed by collapsed stone.</description>
+		
+		<extraGenSteps>
+			<li>VEE_Cenotes_Large</li>
+			<li>VEE_Cenotes_Small</li>
+		</extraGenSteps>
 	</TileMutatorDef>
 </Defs>
 

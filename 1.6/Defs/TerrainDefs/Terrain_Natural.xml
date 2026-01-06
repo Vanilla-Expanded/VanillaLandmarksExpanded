@@ -199,7 +199,6 @@
 		<customShaderParameters>
 			<_NoiseTex>/UI/Empty</_NoiseTex>
 			<_LavaBrightness>0</_LavaBrightness>
-			
 		</customShaderParameters>
 		<pathCost>2</pathCost>
 		<canFreeze>false</canFreeze>
@@ -417,5 +416,41 @@
 			</li>
 		</tools>
 		<pollutionColor>(1, 1, 1, 0.25)</pollutionColor>
+	</TerrainDef>
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>VEE_GravelBeach</defName>
+		<label>gravel beach</label>
+		<texturePath>Terrain/Surfaces/GravelBeach</texturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>320</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>gravel</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>GravelInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
 	</TerrainDef>
 </Defs>

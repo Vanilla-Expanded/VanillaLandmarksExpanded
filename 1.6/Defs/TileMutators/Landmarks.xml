@@ -798,7 +798,6 @@
 		<label>driftwood shore</label>
 		<iconTexturePath>World/Landmarks/VEE_DriftwoodShore</iconTexturePath>
 		<atlasSize>(2, 2)</atlasSize>
-		<drawType>TerrainMask</drawType>
 		<commonality>0.75</commonality>
 		<nameMaker>VEE_NamerLandmark_DriftwoodShore</nameMaker>
 		<category>coastal</category>
@@ -831,6 +830,7 @@
 		<atlasSize>(2, 2)</atlasSize>
 		<commonality>0.6</commonality>
 		<nameMaker>VEE_NamerLandmark_AlluvialFan</nameMaker>
+		<category>coastal</category>
 		<mutatorChances>
 			<VEE_AlluvialFan Required="True"/>
 			<Stockpile>0.05</Stockpile>
@@ -1013,7 +1013,6 @@
 			<DryGround>0.15</DryGround>
 		</mutatorChances>
 	</LandmarkDef>
-	
 	<LandmarkDef>
 		<defName>VEE_StoneForest</defName>
 		<label>stone forest</label>
@@ -1047,5 +1046,110 @@
 			<AncientUplink>0.02</AncientUplink>
 			<AnimalLife_Increased>0.05</AnimalLife_Increased>
 		</mutatorChances>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_GravelBeach</defName>
+		<label>gravel beach</label>
+		<drawScale>0.7</drawScale>
+		<iconTexturePath>World/Landmarks/VEE_GravelBeach</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.2</commonality>
+		<category>coastal</category>
+		<nameMaker>VEE_NamerLandmark_GravelBeach</nameMaker>
+		<mutatorChances>
+			<VEE_GravelBeach Required="True"/>
+			<Stockpile>0.05</Stockpile>
+			<AnimalLife_Decreased>0.15</AnimalLife_Decreased>
+			<PlantLife_Decreased>0.1</PlantLife_Decreased>
+			<SunnyMutator>0.25</SunnyMutator>
+			<WetClimate>0</WetClimate>
+			<Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.02</Pollution_Increased>
+			<AncientUplink>0.02</AncientUplink>
+			<Junkyard MayRequire="Ludeon.RimWorld.Ideology">0.1</Junkyard>
+		</mutatorChances>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_AuburnForest</defName>
+		<label>auburn forest</label>
+		<drawScale>0.8</drawScale>
+		<iconTexturePath>World/Landmarks/VEE_AuburnForest</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.25</commonality>
+		<nameMaker>VEE_NamerLandmark_AuburnForest</nameMaker>
+		<mutatorChances>
+			<VEE_AuburnTree_Oaks Required="True"/>
+			<VEE_AuburnTree_Poplars Required="True"/>
+			<VEE_AuburnTree_Maples Required="True"/>
+			<VEE_AuburnTree_Birches Required="True"/>
+			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
+			<Stockpile>0.05</Stockpile>
+			<MineralRich>0.03</MineralRich>
+			<Sandy>0.05</Sandy>
+			<Muddy>0.05</Muddy>
+			<FoggyMutator>0.05</FoggyMutator>
+			<SunnyMutator>0.05</SunnyMutator>
+			<WetClimate>0.05</WetClimate>
+			<WindyMutator>0.05</WindyMutator>
+			<InsectMegahive>0.01</InsectMegahive>
+			<MixedBiome>0.5</MixedBiome>
+			<AncientUplink>0.02</AncientUplink>
+			<AnimalLife_Increased>0.05</AnimalLife_Increased>
+			<AnimalHabitat>0.15</AnimalHabitat>
+			<PlantGrove>0.05</PlantGrove>
+			<ArcheanTrees>0.01</ArcheanTrees>
+			<PlantLife_Increased>0.03</PlantLife_Increased>
+			<Fertile>0.05</Fertile>
+			<WildPlants>0.05</WildPlants>
+			<WildTropicalPlants>0.03</WildTropicalPlants>
+			<PlantGrove>0.05</PlantGrove>
+		</mutatorChances>
+		<comboLandmarkMutators>
+			<Valley>0.1</Valley>
+			<Cavern>0.1</Cavern>
+			<Chasm>0.1</Chasm>
+			<TerraformingScar>0.1</TerraformingScar>
+			<Wetland>0.02</Wetland>
+		</comboLandmarkMutators>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_Cenotes</defName>
+		<label>cenotes</label>
+		<drawScale>0.8</drawScale>
+		<iconTexturePath>World/Landmarks/VEE_Cenotes</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.25</commonality>
+		<nameMaker>VEE_NamerLandmark_Cenotes</nameMaker>
+		<mutatorChances>
+			<VEE_Cenotes Required="True"/>
+			
+			<VEE_PlantLife_Overgrown>0.25</VEE_PlantLife_Overgrown>
+			<Stockpile>0.05</Stockpile>
+			<MineralRich>0.03</MineralRich>
+			<Sandy>0.05</Sandy>
+			<Muddy>0.05</Muddy>
+			<FoggyMutator>0.05</FoggyMutator>
+			<SunnyMutator>0.05</SunnyMutator>
+			<WetClimate>0.05</WetClimate>
+			<WindyMutator>0.05</WindyMutator>
+			<InsectMegahive>0.05</InsectMegahive>
+			<MixedBiome>0.5</MixedBiome>
+			<AncientUplink>0.02</AncientUplink>
+			<AnimalLife_Increased>0.25</AnimalLife_Increased>
+			<AnimalHabitat>0.15</AnimalHabitat>
+			<PlantGrove>0.25</PlantGrove>
+			<ArcheanTrees>0.05</ArcheanTrees>
+			
+			<Fertile>0.25</Fertile>
+			<WildPlants>0.25</WildPlants>
+			<WildTropicalPlants>0.5</WildTropicalPlants>
+			<PlantGrove>0.05</PlantGrove>
+		</mutatorChances>
+		<comboLandmarkMutators>
+			<Valley>0.1</Valley>
+			<Cavern>0.1</Cavern>
+			<Chasm>0.1</Chasm>
+			<TerraformingScar>0.1</TerraformingScar>
+			<Wetland>0.02</Wetland>
+		</comboLandmarkMutators>
 	</LandmarkDef>
 </Defs>

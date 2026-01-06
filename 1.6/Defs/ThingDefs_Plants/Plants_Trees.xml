@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	  <ThingDef ParentName="DeciduousTreeBase">
+    <defName>VEE_Plant_TreeOak_Auburn</defName>
+    <label>auburn oak tree</label>
+    <description>A hardwood tree. Oaks take a long time to grow, but their wood is so strong that 'oak' is used as a metaphor for strength across many cultures.</description>
+    <graphicData>
+      <texPath>Things/Plant/AutumnTrees/TreeRedOak</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.2, 0.35, 0.13)</volume>
+        <offset>(-0.03,0,-0.44)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+      <BeautyOutdoors>2</BeautyOutdoors>
+    </statBases>
+    <plant>
+      <growDays>30</growDays>
+      <leaflessGraphicPath>Things/Plant/TreeOak_Leafless</leaflessGraphicPath>
+      <leaflessImmatureGraphicPath>Things/Plant/TreeOak_LeaflessImmature</leaflessImmatureGraphicPath>
+      <leaflessSnowOverlayGraphicPath>Things/Plant/TreeOak_LeaflessSnowy</leaflessSnowOverlayGraphicPath>
+      <immatureSnowOverlayGraphicPath>Things/Plant/TreeOak_LeaflessSnowyImmature</immatureSnowOverlayGraphicPath>
+      <harvestWork>1400</harvestWork>
+      <harvestYield>46</harvestYield>
+      <wildClusterWeight>35</wildClusterWeight>
+    </plant>
+  </ThingDef>
+  
+  <ThingDef ParentName="DeciduousTreeBase">
+    <defName>VEE_Plant_TreePoplar_Auburn</defName>
+    <label>auburn poplar tree</label>
+    <description>A softwood tree that grows very fast. Unfortunately, its wood is weak and so it yields less useful material than hardwood trees.</description>
+    <graphicData>
+      <texPath>Things/Plant/AutumnTrees/TreeYellowPoplar</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <statBases>
+      <Beauty>1</Beauty>
+      <Nutrition>1.5</Nutrition>
+    </statBases>
+    <ingestible />
+    <plant>
+      <growDays>15.05</growDays>
+      <leaflessGraphicPath>Things/Plant/TreePoplar_Leafless</leaflessGraphicPath>
+  
+      <leaflessImmatureGraphicPath>Things/Plant/TreePoplar_LeaflessImmature</leaflessImmatureGraphicPath>
+      <leaflessSnowOverlayGraphicPath>Things/Plant/TreePoplar_LeaflessSnowy</leaflessSnowOverlayGraphicPath>
+      <immatureSnowOverlayGraphicPath>Things/Plant/TreePoplar_LeaflessSnowyImmature</immatureSnowOverlayGraphicPath>
+      <harvestWork>800</harvestWork>
+      <harvestYield>27</harvestYield>
+      <wildClusterWeight>35</wildClusterWeight>
+    </plant>
+  </ThingDef>
+  
+   <ThingDef ParentName="DeciduousTreeBase">
+    <defName>VEE_Plant_TreeBirch_Auburn</defName>
+    <label>auburn birch tree</label>
+    <description>A temperate-biome tree known for its thin, white, paper-like bark.</description>
+    <graphicData>
+      <texPath>Things/Plant/AutumnTrees/TreeOrangeBirch</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.1)</volume>
+        <offset>(-0.03,0,-0.44)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+      <BeautyOutdoors>2</BeautyOutdoors>
+    </statBases>
+    <ingestible />
+    <plant>
+      <growDays>20</growDays>
+      <harvestWork>800</harvestWork>
+      <harvestYield>27</harvestYield>
+    
+      <leaflessGraphicPath>Things/Plant/TreeBirch_Leafless</leaflessGraphicPath>
+      <leaflessImmatureGraphicPath>Things/Plant/TreeBirch_LeaflessImmature</leaflessImmatureGraphicPath>
+      <leaflessSnowOverlayGraphicPath>Things/Plant/TreeBirch_LeaflessSnowy</leaflessSnowOverlayGraphicPath>
+      <immatureSnowOverlayGraphicPath>Things/Plant/TreeBirch_LeaflessSnowyImmature</immatureSnowOverlayGraphicPath>
+    </plant>
+  </ThingDef>
+  
+   <ThingDef ParentName="DeciduousTreeBase">
+    <defName>VEE_Plant_TreeMaple_Auburn</defName>
+    <label>auburn maple tree</label>
+    <description>A common medium-sized tree, easily identifiable by its distinct three-pointed leaf.</description>
+    <graphicData>
+      <texPath>Things/Plant/AutumnTrees/TreeSugarMaple</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.14, 0.32, 0.12)</volume>
+        <offset>(0,0,-0.44)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+      <BeautyOutdoors>2</BeautyOutdoors>
+    </statBases>
+    <plant>
+      <growDays>27</growDays>
+      <leaflessGraphicPath>Things/Plant/TreeMaple_Leafless</leaflessGraphicPath>
+    
+      <leaflessImmatureGraphicPath>Things/Plant/TreeMaple_LeaflessImmature</leaflessImmatureGraphicPath>
+      <leaflessSnowOverlayGraphicPath>Things/Plant/TreeMaple_LeaflessSnowy</leaflessSnowOverlayGraphicPath>
+      <immatureSnowOverlayGraphicPath>Things/Plant/TreeMaple_LeaflessSnowyImmature</immatureSnowOverlayGraphicPath>
+      <harvestWork>800</harvestWork>
+      <harvestYield>27</harvestYield>
+      <wildClusterRadius>17</wildClusterRadius>
+      <wildClusterWeight>25</wildClusterWeight>
+    </plant>
+  </ThingDef>
+</Defs>

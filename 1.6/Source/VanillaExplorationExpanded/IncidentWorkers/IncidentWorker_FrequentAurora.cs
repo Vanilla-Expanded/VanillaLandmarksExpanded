@@ -16,10 +16,10 @@ namespace VanillaExplorationExpanded
 
             if (map.TileInfo?.Mutators?.Contains(InternalDefOf.VEE_FrequentAuroras) != true)
             {
-                return false;
+                return base.CanFireNowSub(parms);
             }
 
-            return base.CanFireNowSub(parms);
+            return false;
 
         }
 

@@ -216,11 +216,11 @@
 		<thingClass>Crater</thingClass>
 		<useHitPoints>false</useHitPoints>
 		<rotatable>false</rotatable>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		 <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<canOverlapZones>false</canOverlapZones>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<pathCost>42</pathCost>
+		<passability>Impassable</passability>
+		
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shaderType>Transparent</shaderType>
@@ -318,5 +318,62 @@
 		<costList>
 			<Jade>20</Jade>
 		</costList>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>VEE_Cenote</defName>
+		<label>cenote</label>
+		<description>A deep, water filled sinkhole carved into the stone, its sheer walls dropping into clear, silent depths. The surface appears calm.</description>
+	<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Cenotes/Cenote</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>8</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<rotatable>false</rotatable>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<selectable>true</selectable>
+		<passability>Impassable</passability>
+		<size>(8,8)</size>
+		<neverOverlapFloors>true</neverOverlapFloors>
+		<building>
+			 <isEdifice>true</isEdifice>
+      <deconstructible>false</deconstructible>
+      <isTargetable>false</isTargetable>
+      <isInert>true</isInert>
+      <claimable>false</claimable>
+      <expandHomeArea>false</expandHomeArea>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>VEE_Cenote_Small</defName>
+		<label>small cenote</label>
+		<description>A deep, water filled sinkhole carved into the stone, its sheer walls dropping into clear, silent depths. The surface appears calm.</description>
+	<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Cenotes/CenoteSmall</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<altitudeLayer>Floor</altitudeLayer>
+		 <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<rotatable>false</rotatable>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<selectable>true</selectable>
+		<passability>Impassable</passability>
+		<size>(2,2)</size>
+		<neverOverlapFloors>true</neverOverlapFloors>
+		<building>
+			 <isEdifice>true</isEdifice>
+      <deconstructible>false</deconstructible>
+      <isTargetable>false</isTargetable>
+      <isInert>true</isInert>
+      <claimable>false</claimable>
+      <expandHomeArea>false</expandHomeArea>
+		</building>
 	</ThingDef>
 </Defs>

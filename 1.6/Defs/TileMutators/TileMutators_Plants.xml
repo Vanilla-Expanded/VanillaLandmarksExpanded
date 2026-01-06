@@ -339,5 +339,103 @@
 			<li>VCE_Plant_SweetheartPlant</li>
 		</plantKinds>
 	</TileMutatorDef>
+	
+	<TileMutatorDef Name="VEE_AuburnTrees_Base" Abstract="True">
+		<label>auburn trees</label>
+		<plantDensityRange>0~4</plantDensityRange>
+		<pollutionRange>0~0.25</pollutionRange>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="VEE_AuburnTrees_Base">
+		<defName>VEE_AuburnTree_Oaks</defName>
+		<label>auburn oaks</label>
+		<description>In this forested area many trees remain locked in shades of red and gold, as if autumn never fully passes.</description>
+		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
+		
+		<biomeWhitelist>
+			<li>TemperateForest</li>
+			<li>TemperateSwamp</li>
+			<li>BorealForest</li>
+			<li>Tundra</li>
+		</biomeWhitelist>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VEE_Plant_TreeOak_Auburn</plantDef>
+						<commonality>0.25</commonality>
+					</li>
+				</plantDefsWithCommonality>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="VEE_AuburnTrees_Base">
+		<defName>VEE_AuburnTree_Poplars</defName>
+		<label>auburn poplars</label>
+		<description>In this forested area many trees remain locked in shades of red and gold, as if autumn never fully passes.</description>
+		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
+		
+		<biomeWhitelist>
+			<li>TemperateForest</li>
+			<li>TemperateSwamp</li>
+			<li>BorealForest</li>
+			<li>Tundra</li>
+		</biomeWhitelist>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VEE_Plant_TreePoplar_Auburn</plantDef>
+						<commonality>0.25</commonality>
+					</li>
+				</plantDefsWithCommonality>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="VEE_AuburnTrees_Base">
+		<defName>VEE_AuburnTree_Maples</defName>
+		<label>auburn maples</label>
+		<description>In this forested area many trees remain locked in shades of red and gold, as if autumn never fully passes.</description>
+		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
+		
+		<biomeWhitelist>
+			<li>TemperateForest</li>
+			<li>TemperateSwamp</li>
+			<li>BorealForest</li>
+			<li>Tundra</li>
+		</biomeWhitelist>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VEE_Plant_TreeMaple_Auburn</plantDef>
+						<commonality>0.25</commonality>
+					</li>
+				</plantDefsWithCommonality>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="VEE_AuburnTrees_Base">
+		<defName>VEE_AuburnTree_Birches</defName>
+		<label>auburn birches</label>
+		<description>In this forested area many trees remain locked in shades of red and gold, as if autumn never fully passes.</description>
+		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
+		
+		<biomeWhitelist>
+			<li>TemperateForest</li>
+			<li>TemperateSwamp</li>
+			<li>BorealForest</li>
+			<li>Tundra</li>
+		</biomeWhitelist>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VEE_Plant_TreeBirch_Auburn</plantDef>
+						<commonality>0.25</commonality>
+					</li>
+				</plantDefsWithCommonality>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
 </Defs>
 

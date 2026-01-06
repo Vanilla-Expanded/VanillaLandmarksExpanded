@@ -21,4 +21,26 @@
 		<order>970</order>
 		<genStep Class="VanillaExplorationExpanded.GenStep_JadeChunks"/>
 	</GenStepDef>
+	<GenStepDef>
+		<defName>VEE_Cenotes_Large</defName>
+		<order>950</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>VEE_Cenote</thingDef>
+			<createUsedRect>true</createUsedRect>
+			<skipRoofed>true</skipRoofed>
+			<countPer10kCellsRange>1~4</countPer10kCellsRange>
+			<warnOnFail>false</warnOnFail>
+		</genStep>
+	</GenStepDef>
+	<GenStepDef>
+		<defName>VEE_Cenotes_Small</defName>
+		<order>950</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>VEE_Cenote_Small</thingDef>
+			<createUsedRect>true</createUsedRect>
+			<skipRoofed>true</skipRoofed>
+			<countPer10kCellsRange>1~4</countPer10kCellsRange>
+			<warnOnFail>false</warnOnFail>
+		</genStep>
+	</GenStepDef>
 </Defs>
