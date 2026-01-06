@@ -280,6 +280,23 @@
 		</rulePack>
 	</RulePackDef>
 	<RulePackDef>
+		<defName>VEE_NamerLandmark_SulfuricRiver</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>
+				<li>terrain_word(p=2)->sulfuric river</li>
+				<li>terrain_word->acidic stream</li>
+				<li>terrain_word->sulfur flow</li>
+				<li>terrain_word->stinging waters</li>
+				<li>terrain_word->reeking river</li>
+				<li>terrain_word->yellow run</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
 		<defName>VEE_NamerLandmark_BurnedForest</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
@@ -495,6 +512,53 @@
 				<li>terrain_word->glowleaf grove</li>
 				<li>terrain_word->whispering anima trees</li>
 				<li>terrain_word->lucent woodland</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_AnimaCoast</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>
+				<li>terrain_word(p=3)->anima coast</li>
+				<li>terrain_word->anima shoreline</li>
+				<li>terrain_word->spirit-touched coast</li>
+				<li>terrain_word->anima forest shore</li>
+				<li>terrain_word->glowing coastal grove</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_CradleOfLife</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s [terrain_word]</li>
+				<li>terrain_word(p=3)->cradle of life</li>
+				<li>terrain_word(p=2)->life basin</li>
+				<li>terrain_word->verdant cradle</li>
+				<li>terrain_word->genesis hollow</li>
+				<li>terrain_word->primeval basin</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_WindBlownPlateau</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->wind-blown plateau</li>
+				<li>terrain_word->windswept mesa</li>
+				<li>terrain_word->exposed rise</li>
+				<li>terrain_word->gusted tableland</li>
+				<li>terrain_word->barren butte</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

@@ -20,6 +20,8 @@ namespace VanillaExplorationExpanded
         public static TerrainDef VEE_DryRiverBank;
         public static TerrainDef VEE_SulfuricWaterDeep;
         public static TerrainDef VEE_SulfuricWaterShallow;
+        public static TerrainDef VEE_SulfuricWaterDeepMovingChestDeep;
+        public static TerrainDef VEE_SulfuricWaterMovingShallow;
         public static TerrainDef VEE_BurntForestSoil;
         public static TerrainDef VEE_IrradiatedWaterDeep;
         public static TerrainDef VEE_IrradiatedWaterShallow;
@@ -54,6 +56,7 @@ namespace VanillaExplorationExpanded
         [MayRequire("VanillaExpanded.VPsycastsE")]
         public static ThingDef VPE_EltexOre;
         public static ThingDef VEE_DriftwoodChunk;
+        public static ThingDef VEE_JadeChunk;
 
         public static GameConditionDef VEE_FertileRainsGameCondition;
 

@@ -22,6 +22,13 @@
 		<canBePermanent>true</canBePermanent>
 	</GameConditionDef>
 	<GameConditionDef>
+		<defName>VEE_RagingWind</defName>
+		<conditionClass>VanillaExplorationExpanded.GameCondition_RagingWind</conditionClass>
+		<label>raging winds</label>
+		<description>Winds are extraordinarily stronger in this area.</description>
+		<canBePermanent>true</canBePermanent>
+	</GameConditionDef>
+	<GameConditionDef>
 		<defName>VEE_GeomagneticStorm</defName>
 		<label>geomagnetic storm</label>
 		<description>An intense geomagnetic event blankets the region, completely disabling all electrical devices.</description>

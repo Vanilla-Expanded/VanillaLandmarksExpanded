@@ -284,4 +284,39 @@
 			<WoodLog>20</WoodLog>
 		</costList>
 	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>VEE_JadeChunk</defName>
+		<label>jadeite chunk</label>
+		<description>A chunk of jadeite. It can be deconstructed to acquire some jade.</description>
+		<graphicData>
+			<texPath>Things/Item/JadeChunk</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Item</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.30</fillPercent>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>2</Beauty>
+			
+		</statBases>
+		<selectable>true</selectable>
+		<pathCost>42</pathCost>
+		<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+		<randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
+		<building>
+			<isEdifice>true</isEdifice>
+			<claimable>false</claimable>
+			<deconstructible>true</deconstructible>
+			<alwaysDeconstructible>true</alwaysDeconstructible>
+		</building>
+		<killedLeavings>
+			<Jade>20</Jade>
+		</killedLeavings>
+		<costList>
+			<Jade>20</Jade>
+		</costList>
+	</ThingDef>
 </Defs>

@@ -39,7 +39,24 @@
 			<Beauty>-4</Beauty>
 		</statBases>
 	</TerrainDef>
-	<TerrainDef ParentName="VEE_SulfuricWaterDeepShallowBase">
+	<TerrainDef ParentName="VEE_SulfuricWaterShallowBase">
+		<defName>VEE_SulfuricWaterMovingShallow</defName>
+		<label>sulfuric shallow moving water</label>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<renderPrecedence>398</renderPrecedence>
+		<affordances>
+			<li>MovingFluid</li>
+		</affordances>
+		<tags>
+			<li>River</li>
+			<li>WaterFreshShallow</li>
+			<li>WaterFreshShallowMoving</li>
+		</tags>
+		<waterDepthShaderParameters>
+			<_UseWaterOffset>1</_UseWaterOffset>
+		</waterDepthShaderParameters>
+	</TerrainDef>
+	<TerrainDef ParentName="VEE_SulfuricWaterShallowBase">
 		<defName>VEE_SulfuricWaterFlood</defName>
 		<label>sulfuric shallow floodwater</label>
 		<temporary>true</temporary>
@@ -53,7 +70,7 @@
 		<floodTerrain>VEE_SulfuricWaterFlood</floodTerrain>
 		<renderPrecedence>325</renderPrecedence>
 	</TerrainDef>
-	<TerrainDef Name="VEE_SulfuricWaterDeepShallowBase" ParentName="WaterShallowBase">
+	<TerrainDef Name="VEE_SulfuricWaterShallowBase" ParentName="WaterShallowBase">
 		<defName>VEE_SulfuricWaterShallow</defName>
 		<label>sulfuric shallow water</label>
 		<renderPrecedence>394</renderPrecedence>
