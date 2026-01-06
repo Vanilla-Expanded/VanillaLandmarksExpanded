@@ -57,6 +57,8 @@ namespace VanillaExplorationExpanded
         public static ThingDef VPE_EltexOre;
         public static ThingDef VEE_DriftwoodChunk;
         public static ThingDef VEE_JadeChunk;
+        public static ThingDef VEE_Cenote;
+        public static ThingDef VEE_Cenote_Small;
 
         public static GameConditionDef VEE_FertileRainsGameCondition;
 
