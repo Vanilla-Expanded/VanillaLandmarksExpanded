@@ -666,5 +666,28 @@
 			</li>
 		</modExtensions>
 	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_StoneForest</defName>
+		<label>stone forest</label>
+		<description>A strange expanse of towering stone spires and jagged rock formations, rising like gigantic, petrified trees from the ground.</description>
+		<categories>
+			<li>Mountain</li>
+		</categories>
+		<priority>5</priority>
+		
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_StoneForest</workerClass>
+		<genOrder>-200</genOrder>
+		<!-- Must be before any mutators that generate caves -->
+		<maxHilliness>Flat</maxHilliness>
+		<coastSidesRange>0~0</coastSidesRange>
+		<biomeBlacklist>
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+			
+		</biomeBlacklist>
+		<overrideCategories>
+			<li>BaseCaves</li>
+		</overrideCategories>
+	</TileMutatorDef>
 </Defs>
 

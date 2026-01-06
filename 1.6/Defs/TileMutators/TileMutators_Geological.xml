@@ -276,7 +276,7 @@
 		<label>large river banks</label>
 		<description>The river present in this region has larger banks.</description>
 		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
-	
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_LargeRiverBanks</workerClass>
 		<modExtensions>
 			<li Class="VEF.Maps.TileMutatorExtension">
 				<riverbankSizeMultiplier>2</riverbankSizeMultiplier>

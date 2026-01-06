@@ -562,4 +562,19 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_StoneForest</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->jagged stone grove</li>
+				<li>terrain_word->pillar-strewn expanse</li>
+				<li>terrain_word->rocky spire field</li>
+				<li>terrain_word->shattered monoliths</li>
+				<li>terrain_word->craggy stone thicket</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 </Defs>

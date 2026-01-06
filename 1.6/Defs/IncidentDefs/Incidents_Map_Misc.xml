@@ -71,4 +71,21 @@
 		<durationDays>3~7</durationDays>
 		<!-- 8~36 hours -->
 	</IncidentDef>
+	<IncidentDef>
+		<defName>VEE_Aurora</defName>
+		<label>aurora</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>World</li>
+		</targetTags>
+		<workerClass>VanillaExplorationExpanded.IncidentWorker_FrequentAurora</workerClass>
+		<gameCondition>Aurora</gameCondition>
+		<letterLabel>Aurora</letterLabel>
+		<letterDef>PositiveEvent</letterDef>
+		<baseChance>3.6</baseChance>
+		<minRefireDays>10</minRefireDays>
+		<durationDays>0.125~0.35</durationDays>
+		<tale>Aurora</tale>
+		<canOccurOnAllPlanetLayers>true</canOccurOnAllPlanetLayers>
+	</IncidentDef>
 </Defs>

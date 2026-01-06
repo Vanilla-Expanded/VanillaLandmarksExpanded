@@ -103,6 +103,7 @@
     <Compile Include="Harmony\Plant_PlantCollected.cs" />
     <Compile Include="Harmony\WindManager_WindManagerTick.cs" />
     <Compile Include="IncidentWorkers\IncidentWorker_Alphabeavers_MutatorLocked.cs" />
+    <Compile Include="IncidentWorkers\IncidentWorker_FrequentAurora.cs" />
     <Compile Include="IncidentWorkers\IncidentWorker_FertileRains_MutatorLocked.cs" />
     <Compile Include="IncidentWorkers\IncidentWorker_HerdMigration_MutatorLocked.cs" />
     <Compile Include="IncidentWorkers\IncidentWorker_Infestation_MutatorLocked.cs" />
@@ -136,6 +137,7 @@
     <Compile Include="TileMutatorWorkers\Lone Islands\TileMutatorWorker_LoneIslandWithMountain.cs" />
     <Compile Include="TileMutatorWorkers\Geology\TileMutatorWorker_MineralDevoid.cs" />
     <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_PoisonousFlora.cs" />
+    <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_StoneForest.cs" />
     <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_SerpentineCanyons.cs" />
     <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_JaggedRocks.cs" />
     <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_Ridge.cs" />

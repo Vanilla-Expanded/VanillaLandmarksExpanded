@@ -162,5 +162,16 @@
 			<li MayRequire="sarg.alphabiomes">AB_RockyCrags</li>
 		</biomeBlacklist>
 	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_FrequentAuroras</defName>
+		<label>frequent auroras</label>
+		<description>Auroras happen much more often in this region.</description>
+		
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>Glowforest</li>
+			<li MayRequire="sarg.alphabiomes">AB_RockyCrags</li>
+		</biomeBlacklist>
+	</TileMutatorDef>
 </Defs>
 
