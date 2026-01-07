@@ -320,6 +320,41 @@
 		</costList>
 	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
+		<defName>VEE_ObsidianChunk</defName>
+		<label>obsidian chunk</label>
+		<description>A chunk of obsidian. It can be deconstructed to acquire some obsidian.</description>
+		<graphicData>
+			<texPath>Things/Item/ObsidianChunk</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Item</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.30</fillPercent>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>1</Beauty>
+			
+		</statBases>
+		<selectable>true</selectable>
+		<pathCost>42</pathCost>
+		<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+		
+		<building>
+			<isEdifice>true</isEdifice>
+			<claimable>false</claimable>
+			<deconstructible>true</deconstructible>
+			<alwaysDeconstructible>true</alwaysDeconstructible>
+		</building>
+		<killedLeavings>
+			<Obsidian>10</Obsidian>
+		</killedLeavings>
+		<costList>
+			<Obsidian>10</Obsidian>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
 		<defName>VEE_Cenote</defName>
 		<label>cenote</label>
 		<description>A deep, water filled sinkhole carved into the stone, its sheer walls dropping into clear, silent depths. The surface appears calm.</description>

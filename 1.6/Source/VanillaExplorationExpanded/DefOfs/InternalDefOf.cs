@@ -45,6 +45,8 @@ namespace VanillaExplorationExpanded
         public static TerrainDef VEE_AnimaWaterOceanShallow;
         public static TerrainDef VEE_AnimaWaterMovingShallow;
         public static TerrainDef VEE_AnimaSand;
+        public static TerrainDef VEE_RedSand;
+        public static TerrainDef VEE_RedSoftSand;
 
         public static ThingDef VEE_RotstinkMote;
 		public static ThingDef VEE_ToxicMote;
@@ -57,8 +59,7 @@ namespace VanillaExplorationExpanded
         public static ThingDef VPE_EltexOre;
         public static ThingDef VEE_DriftwoodChunk;
         public static ThingDef VEE_JadeChunk;
-        public static ThingDef VEE_Cenote;
-        public static ThingDef VEE_Cenote_Small;
+        public static ThingDef VEE_ObsidianChunk;
 
         public static GameConditionDef VEE_FertileRainsGameCondition;
 
@@ -96,7 +97,6 @@ namespace VanillaExplorationExpanded
         public static TileMutatorDef VEE_MoreSolarPower;
         public static TileMutatorDef VEE_LessSolarPower;
         public static TileMutatorDef VEE_FrequentAuroras;
-
 
         public static WeatherDef Windy;
     }

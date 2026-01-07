@@ -22,6 +22,11 @@
 		<genStep Class="VanillaExplorationExpanded.GenStep_JadeChunks"/>
 	</GenStepDef>
 	<GenStepDef>
+		<defName>VEE_ObsidianChunks</defName>
+		<order>970</order>
+		<genStep Class="VanillaExplorationExpanded.GenStep_ObsidianChunks"/>
+	</GenStepDef>
+	<GenStepDef>
 		<defName>VEE_Cenotes_Large</defName>
 		<order>950</order>
 		<genStep Class="GenStep_ScatterThings">

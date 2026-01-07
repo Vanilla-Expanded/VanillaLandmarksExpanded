@@ -94,6 +94,7 @@
     <Compile Include="GameConditions\GameCondition_SkygazingSpot.cs" />
     <Compile Include="GenSteps\GenStep_Driftwood.cs" />
     <Compile Include="GenSteps\GenStep_JadeChunks.cs" />
+    <Compile Include="GenSteps\GenStep_ObsidianChunks.cs" />
     <Compile Include="Harmony\CompPowerPlantSolar_DesiredPowerOutput.cs" />
     <Compile Include="Harmony\CompPowerPlantSolar_PostDraw.cs" />
     <Compile Include="Harmony\CompPowerPlantWind_CompTick.cs" />
@@ -150,6 +151,7 @@
     <Compile Include="TileMutatorWorkers\Rivers\TileMutatorWorker_RelictDelta.cs" />
     <Compile Include="TileMutatorWorkers\Rivers\TileMutatorWorker_SulfuricRiver.cs" />
     <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_AnimaSoils.cs" />
+    <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_RedDesert.cs" />
     <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_RemoveFertileSoils.cs" />
     <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_RemoveTrees.cs" />
     <Compile Include="TileMutatorWorkers\Lakes\TileMutatorWorker_DustBowl.cs" />

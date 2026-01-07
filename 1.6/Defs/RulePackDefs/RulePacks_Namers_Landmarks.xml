@@ -622,4 +622,34 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<RulePackDef>
+	<defName>VEE_NamerLandmark_BasaltCape</defName>
+	<include>
+		<li>WorldFeatureNamerCommon</li>
+	</include>
+	<rulePack>
+		<rulesStrings>
+			<li>terrain_word->basalt cape</li>
+			<li>terrain_word->basalt headland</li>
+			<li>terrain_word->black stone promontory</li>
+			<li>terrain_word->volcanic headland</li>
+			<li>terrain_word->basalt cliffs</li>
+		</rulesStrings>
+	</rulePack>
+</RulePackDef>
+<RulePackDef>
+	<defName>VEE_NamerLandmark_RedSandDesert</defName>
+	<include>
+		<li>WorldFeatureNamerCommon</li>
+	</include>
+	<rulePack>
+		<rulesStrings>
+			<li>terrain_word->red sand desert</li>
+			<li>terrain_word->crimson dunes</li>
+			<li>terrain_word->rust-colored sands</li>
+			<li>terrain_word->scarlet dune sea</li>
+			<li>terrain_word->iron-rich wasteland</li>
+		</rulesStrings>
+	</rulePack>
+</RulePackDef>
 </Defs>
