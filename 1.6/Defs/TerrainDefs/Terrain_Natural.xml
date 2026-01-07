@@ -548,4 +548,76 @@
     </tools>
     <pollutionColor>(1, 1, 1, 0.25)</pollutionColor>
   </TerrainDef>
+  
+    <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>VEE_VolcanicSand</defName>
+    <label>volcanic sand</label>
+    <texturePath>Terrain/Surfaces/VEE_VolcanicSand</texturePath>
+ 
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionSand</pollutionOverlayTexturePath>
+    <edgeType>FadeRough</edgeType>
+    <categoryType>Sand</categoryType>
+    <renderPrecedence>350</renderPrecedence>
+    <pathCost>4</pathCost>
+    <statBases>
+      <Beauty>-3</Beauty>
+      <BeautyOutdoors>0</BeautyOutdoors>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <scatterType>SoftDry</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Diggable</li>
+    </affordances>
+    <generatedFilth>Filth_Sand</generatedFilth>
+    <fertility>0.10</fertility>
+    <takeFootprints>True</takeFootprints>
+    <tools>
+      <li>
+        <label>sand</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>SandInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+    <pollutionColor>(1, 1, 1, 0.25)</pollutionColor>
+  </TerrainDef>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>VEE_SoftVolcanicSand</defName>
+    <label>volcanic soft sand</label>
+    <texturePath>Terrain/Surfaces/VEE_SoftVolcanicSand</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>352</renderPrecedence>
+    <pathCost>14</pathCost>
+    <driesTo>VEE_VolcanicSand</driesTo>
+    <categoryType>Sand</categoryType>
+    <statBases>
+      <Beauty>-3</Beauty>
+      <BeautyOutdoors>0</BeautyOutdoors>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Diggable</li>
+    </affordances>
+    <generatedFilth>Filth_Sand</generatedFilth>
+    <fertility>0</fertility>
+    <takeFootprints>true</takeFootprints>
+    <tools>
+      <li>
+        <label>sand</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>SandInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+    <pollutionColor>(1, 1, 1, 0.25)</pollutionColor>
+  </TerrainDef>
 </Defs>

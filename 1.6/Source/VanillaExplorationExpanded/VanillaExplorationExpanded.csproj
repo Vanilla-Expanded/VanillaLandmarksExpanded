@@ -126,7 +126,7 @@
     <Compile Include="TileMutatorWorkers\Crater\TileMutatorWorker_ResurgentCaldera.cs" />
     <Compile Include="TileMutatorWorkers\Crater\TileMutatorWorker_ToxicCrater.cs" />
     <Compile Include="TileMutatorWorkers\Crater\TileMutatorWorker_Volcano.cs" />
-    <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_AnimaFlora.cs" />
+    <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_RemoveSpecificFlora.cs" />
     <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_BurnedForest.cs" />
     <Compile Include="TileMutatorWorkers\Geology\TileMutatorWorker_EltexDeposits.cs" />
     <Compile Include="TileMutatorWorkers\Lakes\TileMutatorWorker_QuicksandPits.cs" />
@@ -157,6 +157,7 @@
     <Compile Include="TileMutatorWorkers\Lakes\TileMutatorWorker_DustBowl.cs" />
     <Compile Include="TileMutatorWorkers\Lakes\TileMutatorWorker_SaltPlains.cs" />
     <Compile Include="TileMutatorWorkers\Lakes\TileMutatorWorker_SulfuricLake.cs" />
+    <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_VolcanicSandDesert.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

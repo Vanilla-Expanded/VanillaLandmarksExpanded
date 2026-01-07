@@ -1121,7 +1121,6 @@
 		<nameMaker>VEE_NamerLandmark_Cenotes</nameMaker>
 		<mutatorChances>
 			<VEE_Cenotes Required="True"/>
-			
 			<VEE_PlantLife_Overgrown>0.25</VEE_PlantLife_Overgrown>
 			<Stockpile>0.05</Stockpile>
 			<MineralRich>0.03</MineralRich>
@@ -1138,7 +1137,6 @@
 			<AnimalHabitat>0.15</AnimalHabitat>
 			<PlantGrove>0.25</PlantGrove>
 			<ArcheanTrees>0.05</ArcheanTrees>
-			
 			<Fertile>0.25</Fertile>
 			<WildPlants>0.25</WildPlants>
 			<WildTropicalPlants>0.5</WildTropicalPlants>
@@ -1152,58 +1150,77 @@
 			<Wetland>0.02</Wetland>
 		</comboLandmarkMutators>
 	</LandmarkDef>
-	
-	  <LandmarkDef>
-    <defName>VEE_BasaltCape</defName>
-    <label>basalt cape</label>
-    <iconTexturePath>World/Landmarks/VEE_BasaltCape</iconTexturePath>
-    <atlasSize>(2, 2)</atlasSize>
-    <coastRotateMode>ToCoast</coastRotateMode>
-    <drawType>TerrainMask</drawType>
-    <commonality>0.75</commonality>
-    <nameMaker>VEE_NamerLandmark_BasaltCape</nameMaker>
-    <category>coastal</category>
-    <mutatorChances>
-      <VEE_BasaltCape Required="True"/>
-	  <VEE_ObsidianChunks Required="True"/>
-      <Stockpile>0.05</Stockpile>
-      <SunnyMutator>0.05</SunnyMutator>
-      <WetClimate>0.25</WetClimate>
-      <WindyMutator>0.25</WindyMutator>
-      <AnimalHabitat>0.05</AnimalHabitat>
-      <AnimalLife_Increased>0.05</AnimalLife_Increased>
-      <PlantGrove>0.15</PlantGrove>
-      <PlantLife_Increased>0.05</PlantLife_Increased>
-      <Sandy>0.05</Sandy>
-      <Fertile>0.05</Fertile>
-      <Muddy>0.05</Muddy>
-      <WildPlants>0.1</WildPlants>
-      <WildTropicalPlants>0.03</WildTropicalPlants>
-      <ArcheanTrees>0.01</ArcheanTrees>
-      <AncientUplink>0.02</AncientUplink>
-      <Fish_Increased>0.05</Fish_Increased>
-      <Fish_Decreased>0.01</Fish_Decreased>
-    </mutatorChances>
-  </LandmarkDef>
-  
-    <LandmarkDef>
-    <defName>VEE_RedDesert</defName>
-    <label>red sand desert</label>
-    <iconTexturePath>World/Landmarks/VEE_RedDesert</iconTexturePath>
-    <atlasSize>(2, 2)</atlasSize>
-    <commonality>0.2</commonality>
-    <nameMaker>VEE_NamerLandmark_RedSandDesert</nameMaker>
-    <mutatorChances>
-      <VEE_RedDesert Required="True"/>
-	  <VEE_RedDesertPlants Required="True"/>
-	  <VEE_Sandstorms Required="True"/>
-	  <VEE_Cactus_Barrel Required="True"/>
-	  <VEE_Cactus_Hedgehog Required="True"/>
-      <Stockpile>0.15</Stockpile>
-      <AncientUplink>0.15</AncientUplink>
-      <SunnyMutator>0.05</SunnyMutator>
-      <Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.02</Pollution_Increased>
-      <WindyMutator>0.05</WindyMutator>
-    </mutatorChances>
-  </LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_BasaltCape</defName>
+		<label>basalt cape</label>
+		<iconTexturePath>World/Landmarks/VEE_BasaltCape</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<coastRotateMode>ToCoast</coastRotateMode>
+		<drawType>TerrainMask</drawType>
+		<commonality>0.75</commonality>
+		<nameMaker>VEE_NamerLandmark_BasaltCape</nameMaker>
+		<category>coastal</category>
+		<mutatorChances>
+			<VEE_BasaltCape Required="True"/>
+			<VEE_ObsidianChunks Required="True"/>
+			<Stockpile>0.05</Stockpile>
+			<SunnyMutator>0.05</SunnyMutator>
+			<WetClimate>0.25</WetClimate>
+			<WindyMutator>0.25</WindyMutator>
+			<AnimalHabitat>0.05</AnimalHabitat>
+			<AnimalLife_Increased>0.05</AnimalLife_Increased>
+			<PlantGrove>0.15</PlantGrove>
+			<PlantLife_Increased>0.05</PlantLife_Increased>
+			<Sandy>0.05</Sandy>
+			<Fertile>0.05</Fertile>
+			<Muddy>0.05</Muddy>
+			<WildPlants>0.1</WildPlants>
+			<WildTropicalPlants>0.03</WildTropicalPlants>
+			<ArcheanTrees>0.01</ArcheanTrees>
+			<AncientUplink>0.02</AncientUplink>
+			<Fish_Increased>0.05</Fish_Increased>
+			<Fish_Decreased>0.01</Fish_Decreased>
+		</mutatorChances>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_RedDesert</defName>
+		<label>red sand desert</label>
+		<iconTexturePath>World/Landmarks/VEE_RedDesert</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.2</commonality>
+		<nameMaker>VEE_NamerLandmark_RedSandDesert</nameMaker>
+		<mutatorChances>
+			<VEE_RedDesert Required="True"/>
+			<VEE_RedDesertPlants Required="True"/>
+			<VEE_Sandstorms Required="True"/>
+			<VEE_Cactus_Barrel Required="True"/>
+			<VEE_Cactus_Hedgehog Required="True"/>
+			<Stockpile>0.15</Stockpile>
+			<AncientUplink>0.15</AncientUplink>
+			<SunnyMutator>0.05</SunnyMutator>
+			<Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.02</Pollution_Increased>
+			<WindyMutator>0.05</WindyMutator>
+		</mutatorChances>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_VolcanicSandDesert</defName>
+		<label>volcanic sand desert</label>
+		<iconTexturePath>World/Landmarks/VEE_VolcanicDesert</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.2</commonality>
+		<nameMaker>VEE_NamerLandmark_VolcanicSandDesert</nameMaker>
+		<mutatorChances>
+			<VEE_VolcanicSandDesert Required="True"/>
+			<VEE_VolcanicSandDesertFlora Required="True"/>
+			<Stockpile>0.15</Stockpile>
+			<AncientUplink>0.15</AncientUplink>
+			<SunnyMutator>0.05</SunnyMutator>
+			<Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.02</Pollution_Increased>
+			<WindyMutator>0.05</WindyMutator>
+			<SteamGeysers_Increased> 0.25</SteamGeysers_Increased>
+			<VEE_ObsidianChunks>0.25</VEE_ObsidianChunks>
+			<MineralRich>0.05</MineralRich>
+			<ObsidianDeposits>0.25</ObsidianDeposits>
+		</mutatorChances>
+	</LandmarkDef>
 </Defs>

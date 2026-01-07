@@ -7,12 +7,12 @@ using VEF.Maps;
 using Verse;
 namespace VanillaExplorationExpanded
 {
-    public class TileMutatorWorker_AnimaFlora : TileMutatorWorker_PlantsWithCommonality
+    public class TileMutatorWorker_RemoveSpecificFlora : TileMutatorWorker_PlantsWithCommonality
     {
 
       
 
-        public TileMutatorWorker_AnimaFlora(TileMutatorDef def)
+        public TileMutatorWorker_RemoveSpecificFlora(TileMutatorDef def)
             : base(def)
         {
         }

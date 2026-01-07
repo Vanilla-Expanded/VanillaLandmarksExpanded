@@ -47,6 +47,8 @@ namespace VanillaExplorationExpanded
         public static TerrainDef VEE_AnimaSand;
         public static TerrainDef VEE_RedSand;
         public static TerrainDef VEE_RedSoftSand;
+        public static TerrainDef VEE_VolcanicSand;
+        public static TerrainDef VEE_SoftVolcanicSand;
 
         public static ThingDef VEE_RotstinkMote;
 		public static ThingDef VEE_ToxicMote;

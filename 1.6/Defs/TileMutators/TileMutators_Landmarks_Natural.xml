@@ -563,7 +563,7 @@
 		<defName>VEE_AnimaFlora</defName>
 		<label>anima flora</label>
 		<description>This region contains a dense forest with anima trees and lesser anima growths, quietly resonating with psychic energy. The air feels attentive, as if the land itself is listening.</description>
-		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_AnimaFlora</workerClass>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_RemoveSpecificFlora</workerClass>
 		<biomeWhitelist>
 			<li>TemperateForest</li>
 		</biomeWhitelist>
@@ -781,6 +781,57 @@
 						<plantDef>VEE_Plant_ChollaCactus</plantDef>
 						<commonality>1</commonality>
 					</li>
+					<li>
+						<plantDef>VEE_Plant_HoodiaCactus</plantDef>
+						<commonality>1</commonality>
+					</li>
+					
+				</plantDefsWithCommonality>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_VolcanicSandDesert</defName>
+		<label>volcanic sand desert</label>
+		<description>A barren desert of black volcanic sand, born from long-dead eruptions.</description>
+	
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_VolcanicSandDesert</workerClass>
+		<biomeWhitelist>
+			<li>Desert</li>
+			<li>ExtremeDesert</li>
+			
+		</biomeWhitelist>
+	</TileMutatorDef>
+	
+	<TileMutatorDef>
+		<defName>VEE_VolcanicSandDesertFlora</defName>
+		<label>volcanic sand flora</label>
+		<description>This region contains some cacti adapted to the volcanic sands, and an absence of grass.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_RemoveSpecificFlora</workerClass>
+		<biomeWhitelist>
+			<li>Desert</li>
+			<li>ExtremeDesert</li>
+		</biomeWhitelist>
+		<plantKinds>
+			<li>VEE_Plant_HoodiaCactus</li>
+			<li>Plant_PincushionCactus</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Plant_PebbleCactus</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Plant_Reeds</li>
+			<li>Plant_SaguaroCactus</li>
+			<li>Plant_Dandelion</li>
+			<li>Plant_TreeDrago</li>
+			<li>Plant_Agave</li>
+			<li>Plant_Bush</li>
+			<li>VEE_Plant_AnimaHeartBlossom</li>
+			
+			
+		
+			
+			
+		</plantKinds>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantDefsWithCommonality>
 					<li>
 						<plantDef>VEE_Plant_HoodiaCactus</plantDef>
 						<commonality>1</commonality>
