@@ -331,12 +331,10 @@
 		<priority>2</priority>
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_SulfuricLake</workerClass>
 		<canSpawnOnRiver>false</canSpawnOnRiver>
-		<modExtensions>
-			<li Class="VEF.Maps.TileMutatorExtension">
-				<thingToSpawn>VEE_SulfurVent</thingToSpawn>
-				<thingToSpawnAmount>15~25</thingToSpawnAmount>
-			</li>
-		</modExtensions>
+		<extraGenSteps>
+			<li>VEE_SulfurVents</li>
+		</extraGenSteps>
+		
 	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_SulfuricRiver</defName>
@@ -349,12 +347,9 @@
 		<overrideRiverbankTerrain>VEE_SaltySand</overrideRiverbankTerrain>
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_SulfuricRiver</workerClass>
 		<maxHilliness>Flat</maxHilliness>
-		<modExtensions>
-			<li Class="VEF.Maps.TileMutatorExtension">
-				<thingToSpawn>VEE_SulfurVent</thingToSpawn>
-				<thingToSpawnAmount>15~25</thingToSpawnAmount>
-			</li>
-		</modExtensions>
+		<extraGenSteps>
+			<li>VEE_SulfurVents</li>
+		</extraGenSteps>
 	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_BurnedForest</defName>

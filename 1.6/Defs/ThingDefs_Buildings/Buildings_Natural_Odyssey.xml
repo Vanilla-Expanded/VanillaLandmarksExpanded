@@ -170,6 +170,8 @@
 		<size>(3,3)</size>
 		<neverOverlapFloors>true</neverOverlapFloors>
 		<blockPlants>true</blockPlants>
+		 <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<canOverlapZones>false</canOverlapZones>
 		<building>
 			<isEdifice>true</isEdifice>
 			<canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>

@@ -13,11 +13,13 @@
 		<statBases>
 			<Beauty>-4</Beauty>
 		</statBases>
+		<avoidWander>true</avoidWander>
 	</TerrainDef>
 	<TerrainDef ParentName="WaterChestDeepBase">
 		<defName>VEE_SulfuricWaterDeepMovingChestDeep</defName>
 		<label>sulfuric chest-deep moving water</label>
 		<renderPrecedence>399</renderPrecedence>
+		<avoidWander>true</avoidWander>
 		<affordances>
 			<li>MovingFluid</li>
 		</affordances>
@@ -44,13 +46,12 @@
 		<label>sulfuric shallow moving water</label>
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<renderPrecedence>398</renderPrecedence>
+		<avoidWander>true</avoidWander>
 		<affordances>
 			<li>MovingFluid</li>
 		</affordances>
 		<tags>
 			<li>River</li>
-			<li>WaterFreshShallow</li>
-			<li>WaterFreshShallowMoving</li>
 		</tags>
 		<waterDepthShaderParameters>
 			<_UseWaterOffset>1</_UseWaterOffset>
@@ -60,6 +61,7 @@
 		<defName>VEE_SulfuricWaterFlood</defName>
 		<label>sulfuric shallow floodwater</label>
 		<temporary>true</temporary>
+		<avoidWander>true</avoidWander>
 		<tags>
 			<li>Flood</li>
 		</tags>
@@ -74,6 +76,7 @@
 		<defName>VEE_SulfuricWaterShallow</defName>
 		<label>sulfuric shallow water</label>
 		<renderPrecedence>394</renderPrecedence>
+		<avoidWander>true</avoidWander>
 		<driesTo>Gravel</driesTo>
 		<texturePath>Terrain/Surfaces/VEE_SulfuricWaterShallowRamp</texturePath>
 		<pollutedTexturePath>Terrain/Surfaces/VEE_SulfuricWaterShallowRamp</pollutedTexturePath>
@@ -90,6 +93,7 @@
 	<TerrainDef Name="VEE_IrradiatedWaterDeepBase" ParentName="WaterDeepBase">
 		<defName>VEE_IrradiatedWaterDeep</defName>
 		<label>irradiated deep water</label>
+		<avoidWander>true</avoidWander>
 		<renderPrecedence>395</renderPrecedence>
 		<texturePath>Terrain/Surfaces/VEE_IrradiatedWaterDeepRamp</texturePath>
 		<pollutedTexturePath>Terrain/Surfaces/VEE_IrradiatedWaterDeepRamp</pollutedTexturePath>
@@ -115,6 +119,7 @@
 		<defName>VEE_IrradiatedWaterDeepMovingChestDeep</defName>
 		<label>irradiated chest-deep moving water</label>
 		<renderPrecedence>399</renderPrecedence>
+		<avoidWander>true</avoidWander>
 		<affordances>
 			<li>MovingFluid</li>
 		</affordances>
@@ -153,6 +158,7 @@
 	<TerrainDef Name="VEE_IrradiatedWaterShallowBase" ParentName="WaterShallowBase">
 		<defName>VEE_IrradiatedWaterShallow</defName>
 		<label>irradiated shallow water</label>
+		<avoidWander>true</avoidWander>
 		<renderPrecedence>394</renderPrecedence>
 		<driesTo>VEE_IrradiatedSoil</driesTo>
 		<texturePath>Terrain/Surfaces/VEE_IrradiatedWaterShallowRamp</texturePath>
@@ -177,8 +183,6 @@
 		</affordances>
 		<tags>
 			<li>River</li>
-			<li>WaterFreshShallow</li>
-			<li>WaterFreshShallowMoving</li>
 		</tags>
 		<waterDepthShaderParameters>
 			<_UseWaterOffset>1</_UseWaterOffset>

@@ -48,4 +48,16 @@
 			<warnOnFail>false</warnOnFail>
 		</genStep>
 	</GenStepDef>
+	<GenStepDef>
+		<defName>VEE_SulfurVents</defName>
+		<order>950</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>VEE_SulfurVent</thingDef>
+			<createUsedRect>true</createUsedRect>
+			<skipRoofed>true</skipRoofed>
+			<countPer10kCellsRange>1~4</countPer10kCellsRange>
+			<warnOnFail>false</warnOnFail>
+		</genStep>
+	</GenStepDef>
+	
 </Defs>
