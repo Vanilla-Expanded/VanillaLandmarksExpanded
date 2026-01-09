@@ -153,6 +153,7 @@
     <Compile Include="TileMutatorWorkers\Rivers\TileMutatorWorker_RelictDelta.cs" />
     <Compile Include="TileMutatorWorkers\Rivers\TileMutatorWorker_SulfuricRiver.cs" />
     <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_AnimaSoils.cs" />
+    <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_PermafrostBasin.cs" />
     <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_RedDesert.cs" />
     <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_RemoveFertileSoils.cs" />
     <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_RemoveTrees.cs" />

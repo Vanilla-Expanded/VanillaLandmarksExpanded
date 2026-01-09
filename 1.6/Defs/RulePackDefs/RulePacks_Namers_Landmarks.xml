@@ -623,47 +623,61 @@
 		</rulePack>
 	</RulePackDef>
 	<RulePackDef>
-	<defName>VEE_NamerLandmark_BasaltCape</defName>
-	<include>
-		<li>WorldFeatureNamerCommon</li>
-	</include>
-	<rulePack>
-		<rulesStrings>
-			<li>terrain_word->basalt cape</li>
-			<li>terrain_word->basalt headland</li>
-			<li>terrain_word->black stone promontory</li>
-			<li>terrain_word->volcanic headland</li>
-			<li>terrain_word->basalt cliffs</li>
-		</rulesStrings>
-	</rulePack>
-</RulePackDef>
-<RulePackDef>
-	<defName>VEE_NamerLandmark_RedSandDesert</defName>
-	<include>
-		<li>WorldFeatureNamerCommon</li>
-	</include>
-	<rulePack>
-		<rulesStrings>
-			<li>terrain_word->red sand desert</li>
-			<li>terrain_word->crimson desert</li>
-			<li>terrain_word->rust-colored desert</li>
-			<li>terrain_word->iron-rich desert</li>
-		</rulesStrings>
-	</rulePack>
-</RulePackDef>
-<RulePackDef>
-	<defName>VEE_NamerLandmark_VolcanicSandDesert</defName>
-	<include>
-		<li>WorldFeatureNamerCommon</li>
-	</include>
-	<rulePack>
-		<rulesStrings>
-			<li>terrain_word->volcanic sand desert</li>
-			<li>terrain_word->black sand wastes</li>
-			<li>terrain_word->black desert</li>
-			<li>terrain_word->obsidian sands</li>
-			
-		</rulesStrings>
-	</rulePack>
-</RulePackDef>
+		<defName>VEE_NamerLandmark_BasaltCape</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->basalt cape</li>
+				<li>terrain_word->basalt headland</li>
+				<li>terrain_word->black stone promontory</li>
+				<li>terrain_word->volcanic headland</li>
+				<li>terrain_word->basalt cliffs</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_RedSandDesert</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->red sand desert</li>
+				<li>terrain_word->crimson desert</li>
+				<li>terrain_word->rust-colored desert</li>
+				<li>terrain_word->iron-rich desert</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_VolcanicSandDesert</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->volcanic sand desert</li>
+				<li>terrain_word->black sand wastes</li>
+				<li>terrain_word->black desert</li>
+				<li>terrain_word->obsidian sands</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_PermafrostBasin</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->permafrost basin</li>
+				<li>terrain_word->frozen lowland</li>
+				<li>terrain_word->ice-locked tundra</li>
+				<li>terrain_word->frostbound basin</li>
+				<li>terrain_word->perennial frost tundra</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 </Defs>

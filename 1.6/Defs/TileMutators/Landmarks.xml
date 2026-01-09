@@ -964,11 +964,11 @@
 		<nameMaker>VEE_NamerLandmark_CradleOfLife</nameMaker>
 		<mutatorChances>
 			<VEE_PlantLife_Overgrown Required="True"/>
-			<WetClimate>0.15</WetClimate>
 			<AnimalHabitat>0.15</AnimalHabitat>
 			<AnimalLife_Increased>1</AnimalLife_Increased>
 			<PlantGrove>0.5</PlantGrove>
 			<Fertile>1</Fertile>
+			<VEE_FertileRains>0.25</VEE_FertileRains>
 			<WildPlants>0.3</WildPlants>
 			<WildTropicalPlants>0.3</WildTropicalPlants>
 			<ArcheanTrees>0.01</ArcheanTrees>
@@ -1221,6 +1221,23 @@
 			<VEE_ObsidianChunks>0.25</VEE_ObsidianChunks>
 			<MineralRich>0.05</MineralRich>
 			<ObsidianDeposits>0.25</ObsidianDeposits>
+		</mutatorChances>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_PermafrostBasin</defName>
+		<label>permafrost basin</label>
+		<iconTexturePath>World/Landmarks/VEE_PermafrostBasin</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.15</commonality>
+		<nameMaker>VEE_NamerLandmark_PermafrostBasin</nameMaker>
+		<mutatorChances>
+			<VEE_PermafrostBasin Required="True"/>
+			<AnimalLife_Decreased>0.25</AnimalLife_Decreased>
+			<WetClimate>0.25</WetClimate>
+			<WindyMutator>0.15</WindyMutator>
+			<VEE_Fertility_Reduced>0.25</VEE_Fertility_Reduced>
+			<VEE_HardToTraverse>0.5</VEE_HardToTraverse>
+			<Fish_Decreased>0.01</Fish_Decreased>
 		</mutatorChances>
 	</LandmarkDef>
 </Defs>

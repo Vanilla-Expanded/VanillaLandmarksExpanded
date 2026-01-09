@@ -334,7 +334,6 @@
 		<extraGenSteps>
 			<li>VEE_SulfurVents</li>
 		</extraGenSteps>
-		
 	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_SulfuricRiver</defName>
@@ -705,12 +704,10 @@
 			<li>GlacialPlain</li>
 		</biomeBlacklist>
 	</TileMutatorDef>
-	
 	<TileMutatorDef>
 		<defName>VEE_BasaltCape</defName>
 		<label>basalt cape</label>
 		<description>A jutting headland of dark basalt, fractured into sharp columns by ancient lava flows. Rich in volcanic rocks.</description>
-		
 		<overrideCoastalBeachTerrain>VEE_Basalt</overrideCoastalBeachTerrain>
 		<categories>
 			<li>Coast</li>
@@ -725,18 +722,15 @@
 		<genOrder>100</genOrder>
 		<workerClass>TileMutatorWorker_Peninsula</workerClass>
 		<biomeBlacklist>
-		
 			<li>LavaField</li>
 			<li>SeaIce</li>
 			<li>IceSheet</li>
-		
 		</biomeBlacklist>
 	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_ObsidianChunks</defName>
 		<label>obsidian chunks</label>
 		<description>This area contains small chunks of obsidian.</description>
-		
 		<extraGenSteps>
 			<li>VEE_ObsidianChunks</li>
 		</extraGenSteps>
@@ -746,12 +740,10 @@
 		<defName>VEE_RedDesert</defName>
 		<label>red desert</label>
 		<description>A vast desert of iron-rich sand, stained red by the slow grinding of ancient stone.</description>
-	
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_RedDesert</workerClass>
 		<biomeWhitelist>
 			<li>Desert</li>
 			<li>ExtremeDesert</li>
-			
 		</biomeWhitelist>
 	</TileMutatorDef>
 	<TileMutatorDef>
@@ -762,12 +754,10 @@
 		<biomeWhitelist>
 			<li>Desert</li>
 			<li>ExtremeDesert</li>
-			
 		</biomeWhitelist>
 		<plantKinds>
 			<li>VEE_Plant_ChollaCactus</li>
 			<li>VEE_Plant_HoodiaCactus</li>
-			
 		</plantKinds>
 		<modExtensions>
 			<li Class="VEF.Maps.TileMutatorExtension">
@@ -780,7 +770,6 @@
 						<plantDef>VEE_Plant_HoodiaCactus</plantDef>
 						<commonality>1</commonality>
 					</li>
-					
 				</plantDefsWithCommonality>
 			</li>
 		</modExtensions>
@@ -789,15 +778,12 @@
 		<defName>VEE_VolcanicSandDesert</defName>
 		<label>volcanic sand desert</label>
 		<description>A barren desert of black volcanic sand, born from long-dead eruptions.</description>
-	
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_VolcanicSandDesert</workerClass>
 		<biomeWhitelist>
 			<li>Desert</li>
 			<li>ExtremeDesert</li>
-			
 		</biomeWhitelist>
 	</TileMutatorDef>
-	
 	<TileMutatorDef>
 		<defName>VEE_VolcanicSandDesertFlora</defName>
 		<label>volcanic sand flora</label>
@@ -818,11 +804,6 @@
 			<li>Plant_Agave</li>
 			<li>Plant_Bush</li>
 			<li>VEE_Plant_AnimaHeartBlossom</li>
-			
-			
-		
-			
-			
 		</plantKinds>
 		<modExtensions>
 			<li Class="VEF.Maps.TileMutatorExtension">
@@ -831,10 +812,20 @@
 						<plantDef>VEE_Plant_HoodiaCactus</plantDef>
 						<commonality>1</commonality>
 					</li>
-					
 				</plantDefsWithCommonality>
 			</li>
 		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_PermafrostBasin</defName>
+		<label>permafrost basin</label>
+		<description>A shallow basin where the ground remains permanently frozen beneath a thin surface thaw.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_PermafrostBasin</workerClass>
+		<biomeWhitelist>
+			<li>Tundra</li>
+		</biomeWhitelist>
+		<averageTemperatureRange>-100~10</averageTemperatureRange>
+		<maxHilliness>Flat</maxHilliness>
 	</TileMutatorDef>
 </Defs>
 
