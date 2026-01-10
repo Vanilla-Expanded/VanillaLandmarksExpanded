@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>VEE_TidalFlood</defName>
+    <selectable>false</selectable>
+    <tickerType>Normal</tickerType>
+    <thingClass>VanillaExplorationExpanded.TidalFlood</thingClass>
+  </ThingDef>
+
+ 
+
+</Defs>

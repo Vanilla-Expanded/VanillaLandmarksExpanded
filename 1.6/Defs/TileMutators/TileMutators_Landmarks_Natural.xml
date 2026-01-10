@@ -824,8 +824,89 @@
 		<biomeWhitelist>
 			<li>Tundra</li>
 		</biomeWhitelist>
-		<averageTemperatureRange>-100~10</averageTemperatureRange>
+		<averageTemperatureRange>-100~5</averageTemperatureRange>
 		<maxHilliness>Flat</maxHilliness>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_QuicksandDunes</defName>
+		<label>quicksand dunes</label>
+		<description>A barren expanse of sand and shallow quicksand that impedes movement. This area is extremely inhospitable.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_QuicksandDunes</workerClass>
+		<preventsLandmarks>true</preventsLandmarks>
+		<biomeWhitelist>
+			<li>ExtremeDesert</li>
+		</biomeWhitelist>
+		<maxHilliness>Flat</maxHilliness>
+		<preventNaturalElevation>true</preventNaturalElevation>
+		<preventPatches>true</preventPatches>
+		<junkDensityFactor>0</junkDensityFactor>
+		<geyserCountFactor>0</geyserCountFactor>
+		<plantDensityFactor>0</plantDensityFactor>
+		<chunkDensityFactor>0.15</chunkDensityFactor>
+		<overrideRiverbankTerrain>Sand</overrideRiverbankTerrain>
+		<preventGenSteps>
+			<li>ScatterRuinsSimple</li>
+			<li>ScatterShrines</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AncientUtilityBuilding</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AncientLandingPad</li>
+		</preventGenSteps>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_PebbleDunes</defName>
+		<label>pebble dunes</label>
+		<description>Low dunes of rounded pebbles shaped by constant wind and shifting ground.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_PebbleDunes</workerClass>
+		
+		<biomeWhitelist>
+			<li>ExtremeDesert</li>
+			<li>Desert</li>
+			<li>AridShrubland</li>
+			<li>Grasslands</li>
+		</biomeWhitelist>
+		<maxHilliness>Flat</maxHilliness>
+		
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_LittoralDunes</defName>
+		<label>littoral dunes</label>
+		<description>A band of fertile, wind-shaped dunes running along the shoreline, built from sand pulled inland from the sea.</description>
+		
+		<categories>
+			<li>Coast</li>
+		</categories>
+		<coastSidesRange>1~5</coastSidesRange>
+	
+		<priority>5</priority>
+		<overrideCategories>
+			<li>Mountain</li>
+		</overrideCategories>
+		<genOrder>100</genOrder>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_LittoralDunes</workerClass>
+		<biomeWhitelist>
+			<li>ExtremeDesert</li>
+			<li>Desert</li>
+			
+		</biomeWhitelist>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_RisingWaters</defName>
+		<label>rising waters</label>
+		<description>An extremely flat coastal plain where the tides push far inland. Large stretches of land are regularly submerged.</description>
+		
+		<categories>
+			<li>Coast</li>
+		</categories>
+		<coastSidesRange>1~5</coastSidesRange>
+		<maxHilliness>Flat</maxHilliness>
+		<priority>5</priority>
+		<overrideCategories>
+			<li>Mountain</li>
+		</overrideCategories>
+		<genOrder>100</genOrder>
+		<workerClass>TileMutatorWorker_Coast</workerClass>
+		<additionalGameConditions>
+			<li>VEE_TidalFlooding</li>
+		</additionalGameConditions>
 	</TileMutatorDef>
 </Defs>
 

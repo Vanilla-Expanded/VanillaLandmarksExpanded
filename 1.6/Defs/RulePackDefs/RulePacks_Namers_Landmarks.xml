@@ -680,4 +680,63 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_QuicksandDunes</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=4)->quicksand dunes</li>
+				<li>terrain_word->sinking dunes</li>
+				<li>terrain_word->loose earth dunes</li>
+				<li>terrain_word->unstable dunes</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_PebbleDunes</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->pebble dunes</li>
+				<li>terrain_word->shingle dunes</li>
+				<li>terrain_word->gravel drifts</li>
+				<li>terrain_word->stone-swept ridges</li>
+				<li>terrain_word->rolling pebble fields</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_LittoralDunes</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->littoral dunes</li>
+				<li>terrain_word->coastal sand dunes</li>
+				<li>terrain_word->shoreline dune fields</li>
+				<li>terrain_word->wind-sculpted coast</li>
+				<li>terrain_word->beach dune ridges</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_RisingWaters</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->rising waters</li>
+				<li>terrain_word->tidal flats</li>
+				<li>terrain_word->flooded lowlands</li>
+				<li>terrain_word->tidal floodplain</li>
+				<li>terrain_word->inundated coast</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 </Defs>

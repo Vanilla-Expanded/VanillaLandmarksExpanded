@@ -88,4 +88,15 @@
 		<tale>Aurora</tale>
 		<canOccurOnAllPlanetLayers>true</canOccurOnAllPlanetLayers>
 	</IncidentDef>
+	<IncidentDef>
+		<defName>VEE_TidalFloodingIncident</defName>
+		<label>tidal flooding</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>VanillaExplorationExpanded.IncidentWorker_TidalFlooding</workerClass>
+		<baseChance>0</baseChance>
+		<minRefireDays>1</minRefireDays>
+	</IncidentDef>
 </Defs>

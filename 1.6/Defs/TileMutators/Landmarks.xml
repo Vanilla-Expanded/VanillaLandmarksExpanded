@@ -1240,4 +1240,97 @@
 			<Fish_Decreased>0.01</Fish_Decreased>
 		</mutatorChances>
 	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_QuicksandDunes</defName>
+		<label>quicksand dunes</label>
+		<iconTexturePath>World/Landmarks/VEE_QuicksandDunes</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.2</commonality>
+		<nameMaker>VEE_NamerLandmark_QuicksandDunes</nameMaker>
+		<mutatorChances>
+			<VEE_QuicksandDunes Required="True"/>
+			<Stockpile>0.15</Stockpile>
+			<AncientUplink>0.15</AncientUplink>
+			<SunnyMutator>0.05</SunnyMutator>
+			<Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.02</Pollution_Increased>
+			<WindyMutator>0.05</WindyMutator>
+			<VEE_HardToTraverse>1</VEE_HardToTraverse>
+		</mutatorChances>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_PebbleDunes</defName>
+		<label>pebble dunes</label>
+		<iconTexturePath>World/Landmarks/VEE_PebbleDunes</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.2</commonality>
+		<nameMaker>VEE_NamerLandmark_PebbleDunes</nameMaker>
+		<mutatorChances>
+			<VEE_PebbleDunes Required="True"/>
+			<Stockpile>0.15</Stockpile>
+			<AncientUplink>0.15</AncientUplink>
+			<SunnyMutator>0.05</SunnyMutator>
+			<Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.02</Pollution_Increased>
+			<WindyMutator>0.05</WindyMutator>
+			<VEE_HardToTraverse>1</VEE_HardToTraverse>
+		</mutatorChances>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_LittoralDunes</defName>
+		<label>littoral dunes</label>
+		<iconTexturePath>World/Landmarks/VEE_LittoralDunes</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.75</commonality>
+		<nameMaker>VEE_NamerLandmark_LittoralDunes</nameMaker>
+		<category>coastal</category>
+		<mutatorChances>
+			<VEE_LittoralDunes Required="True"/>
+			<Stockpile>0.05</Stockpile>
+			<SunnyMutator>0.05</SunnyMutator>
+			<WetClimate>0.25</WetClimate>
+			<WindyMutator>0.25</WindyMutator>
+			<AnimalHabitat>0.05</AnimalHabitat>
+			<AnimalLife_Increased>0.05</AnimalLife_Increased>
+			<PlantGrove>0.15</PlantGrove>
+			<PlantLife_Increased>1</PlantLife_Increased>
+			<Sandy>0.05</Sandy>
+			<Fertile>0.05</Fertile>
+			<Muddy>0.05</Muddy>
+			<WildPlants>0.1</WildPlants>
+			<WildTropicalPlants>0.03</WildTropicalPlants>
+			<ArcheanTrees>0.01</ArcheanTrees>
+			<AncientUplink>0.02</AncientUplink>
+			<Fish_Increased>0.05</Fish_Increased>
+			<Fish_Decreased>0.01</Fish_Decreased>
+		</mutatorChances>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_RisingWaters</defName>
+		<label>rising waters</label>
+		<iconTexturePath>World/Landmarks/VEE_RisingWaters</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.5</commonality>
+		<nameMaker>VEE_NamerLandmark_RisingWaters</nameMaker>
+		<category>coastal</category>
+		<mutatorChances>
+			<VEE_RisingWaters Required="True"/>
+			<VEE_StrongerTides MayRequire="VanillaExpanded.VFEPower">1</VEE_StrongerTides>
+			<Stockpile>0.05</Stockpile>
+			<SunnyMutator>0.05</SunnyMutator>
+			<WetClimate>0.25</WetClimate>
+			<WindyMutator>0.25</WindyMutator>
+			<AnimalHabitat>0.05</AnimalHabitat>
+			<AnimalLife_Increased>0.05</AnimalLife_Increased>
+			<PlantGrove>0.15</PlantGrove>
+			<PlantLife_Increased>0.05</PlantLife_Increased>
+			<Sandy>0.05</Sandy>
+			<Fertile>0.05</Fertile>
+			<Muddy>0.05</Muddy>
+			<WildPlants>0.1</WildPlants>
+			<WildTropicalPlants>0.03</WildTropicalPlants>
+			<ArcheanTrees>0.01</ArcheanTrees>
+			<AncientUplink>0.02</AncientUplink>
+			<Fish_Increased>0.5</Fish_Increased>
+			<Fish_Decreased>0.01</Fish_Decreased>
+		</mutatorChances>
+	</LandmarkDef>
 </Defs>

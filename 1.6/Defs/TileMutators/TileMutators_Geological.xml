@@ -261,7 +261,7 @@
 	<TileMutatorDef MayRequire="VanillaExpanded.VFEPower">
 		<defName>VEE_StrongerTides</defName>
 		<label>stronger tides</label>
-		<description>Tides in this region are particularly strong, increasng output of tidal generators by 40%.</description>
+		<description>Tides in this region are particularly strong, increasing output of tidal generators by 40%.</description>
 		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
 		<coastSidesRange>1~6</coastSidesRange>
 		<modExtensions>

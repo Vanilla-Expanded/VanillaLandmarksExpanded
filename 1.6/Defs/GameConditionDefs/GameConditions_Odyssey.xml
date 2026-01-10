@@ -60,4 +60,11 @@
 		<endMessage>The fertile rain is ending.</endMessage>
 		<allowUnderground>false</allowUnderground>
 	</GameConditionDef>
+	<GameConditionDef>
+		<defName>VEE_TidalFlooding</defName>
+		<label>tidal flooding</label>
+		<description>In this extremely flat coastal plain the tides push far inland, regularly submerging large stretches of land.</description>
+		<conditionClass>VanillaExplorationExpanded.GameCondition_TidalFlooding</conditionClass>
+		<canBePermanent>false</canBePermanent>
+	</GameConditionDef>
 </Defs>

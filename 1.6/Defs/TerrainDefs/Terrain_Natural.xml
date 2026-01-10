@@ -434,7 +434,6 @@
 		<scatterType>Rocky</scatterType>
 		<affordances>
 			<li>Light</li>
-			
 		</affordances>
 		<generatedFilth>Filth_Dirt</generatedFilth>
 		<fertility>0</fertility>
@@ -469,155 +468,217 @@
 			<li>Light</li>
 			<li>Medium</li>
 			<li>Heavy</li>
-			
 		</affordances>
 		<generatedFilth>Filth_Dirt</generatedFilth>
 		<fertility>0</fertility>
 		<takeFootprints>false</takeFootprints>
-		
 	</TerrainDef>
-	
-	  <TerrainDef ParentName="NaturalTerrainBase">
-    <defName>VEE_RedSand</defName>
-    <label>red sand</label>
-    <texturePath>Terrain/Surfaces/Quicksand</texturePath>
- 
-    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionSand</pollutionOverlayTexturePath>
-    <edgeType>FadeRough</edgeType>
-    <categoryType>Sand</categoryType>
-    <renderPrecedence>350</renderPrecedence>
-    <pathCost>4</pathCost>
-    <statBases>
-      <Beauty>-3</Beauty>
-      <BeautyOutdoors>0</BeautyOutdoors>
-      <Cleanliness>-1</Cleanliness>
-    </statBases>
-    <scatterType>SoftDry</scatterType>
-    <affordances>
-      <li>Light</li>
-      <li>Medium</li>
-      <li>Heavy</li>
-      <li>Diggable</li>
-    </affordances>
-    <generatedFilth>Filth_Sand</generatedFilth>
-    <fertility>0.10</fertility>
-    <takeFootprints>True</takeFootprints>
-    <tools>
-      <li>
-        <label>sand</label>
-        <capacities>
-          <li>KickMaterialInEyes</li>
-        </capacities>
-        <hediff>SandInEyes</hediff>
-        <cooldownTime>1.5</cooldownTime>
-      </li>
-    </tools>
-    <pollutionColor>(1, 1, 1, 0.25)</pollutionColor>
-  </TerrainDef>
-
-  <TerrainDef ParentName="NaturalTerrainBase">
-    <defName>VEE_RedSoftSand</defName>
-    <label>red soft sand</label>
-    <texturePath>Terrain/Surfaces/ShiftingSands</texturePath>
-    <edgeType>FadeRough</edgeType>
-    <renderPrecedence>352</renderPrecedence>
-    <pathCost>14</pathCost>
-    <driesTo>VEE_RedSand</driesTo>
-    <categoryType>Sand</categoryType>
-    <statBases>
-      <Beauty>-3</Beauty>
-      <BeautyOutdoors>0</BeautyOutdoors>
-      <Cleanliness>-1</Cleanliness>
-    </statBases>
-    <affordances>
-      <li>Light</li>
-      <li>Diggable</li>
-    </affordances>
-    <generatedFilth>Filth_Sand</generatedFilth>
-    <fertility>0</fertility>
-    <takeFootprints>true</takeFootprints>
-    <tools>
-      <li>
-        <label>sand</label>
-        <capacities>
-          <li>KickMaterialInEyes</li>
-        </capacities>
-        <hediff>SandInEyes</hediff>
-        <cooldownTime>1.5</cooldownTime>
-      </li>
-    </tools>
-    <pollutionColor>(1, 1, 1, 0.25)</pollutionColor>
-  </TerrainDef>
-  
-    <TerrainDef ParentName="NaturalTerrainBase">
-    <defName>VEE_VolcanicSand</defName>
-    <label>volcanic sand</label>
-    <texturePath>Terrain/Surfaces/VEE_VolcanicSand</texturePath>
- 
-    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionSand</pollutionOverlayTexturePath>
-    <edgeType>FadeRough</edgeType>
-    <categoryType>Sand</categoryType>
-    <renderPrecedence>350</renderPrecedence>
-    <pathCost>4</pathCost>
-    <statBases>
-      <Beauty>-3</Beauty>
-      <BeautyOutdoors>0</BeautyOutdoors>
-      <Cleanliness>-1</Cleanliness>
-    </statBases>
-    <scatterType>SoftDry</scatterType>
-    <affordances>
-      <li>Light</li>
-      <li>Medium</li>
-      <li>Heavy</li>
-      <li>Diggable</li>
-    </affordances>
-    <generatedFilth>Filth_Sand</generatedFilth>
-    <fertility>0.10</fertility>
-    <takeFootprints>True</takeFootprints>
-    <tools>
-      <li>
-        <label>sand</label>
-        <capacities>
-          <li>KickMaterialInEyes</li>
-        </capacities>
-        <hediff>SandInEyes</hediff>
-        <cooldownTime>1.5</cooldownTime>
-      </li>
-    </tools>
-    <pollutionColor>(1, 1, 1, 0.25)</pollutionColor>
-  </TerrainDef>
-
-  <TerrainDef ParentName="NaturalTerrainBase">
-    <defName>VEE_SoftVolcanicSand</defName>
-    <label>volcanic soft sand</label>
-    <texturePath>Terrain/Surfaces/VEE_SoftVolcanicSand</texturePath>
-    <edgeType>FadeRough</edgeType>
-    <renderPrecedence>352</renderPrecedence>
-    <pathCost>14</pathCost>
-    <driesTo>VEE_VolcanicSand</driesTo>
-    <categoryType>Sand</categoryType>
-    <statBases>
-      <Beauty>-3</Beauty>
-      <BeautyOutdoors>0</BeautyOutdoors>
-      <Cleanliness>-1</Cleanliness>
-    </statBases>
-    <affordances>
-      <li>Light</li>
-      <li>Diggable</li>
-    </affordances>
-    <generatedFilth>Filth_Sand</generatedFilth>
-    <fertility>0</fertility>
-    <takeFootprints>true</takeFootprints>
-    <tools>
-      <li>
-        <label>sand</label>
-        <capacities>
-          <li>KickMaterialInEyes</li>
-        </capacities>
-        <hediff>SandInEyes</hediff>
-        <cooldownTime>1.5</cooldownTime>
-      </li>
-    </tools>
-    <pollutionColor>(1, 1, 1, 0.25)</pollutionColor>
-  </TerrainDef>
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>VEE_RedSand</defName>
+		<label>red sand</label>
+		<texturePath>Terrain/Surfaces/Quicksand</texturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionSand</pollutionOverlayTexturePath>
+		<edgeType>FadeRough</edgeType>
+		<categoryType>Sand</categoryType>
+		<renderPrecedence>350</renderPrecedence>
+		<pathCost>4</pathCost>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>SoftDry</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Sand</generatedFilth>
+		<fertility>0.10</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>sand</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>SandInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<pollutionColor>(1, 1, 1, 0.25)</pollutionColor>
+	</TerrainDef>
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>VEE_RedSoftSand</defName>
+		<label>red soft sand</label>
+		<texturePath>Terrain/Surfaces/ShiftingSands</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>352</renderPrecedence>
+		<pathCost>14</pathCost>
+		<driesTo>VEE_RedSand</driesTo>
+		<categoryType>Sand</categoryType>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Sand</generatedFilth>
+		<fertility>0</fertility>
+		<takeFootprints>true</takeFootprints>
+		<tools>
+			<li>
+				<label>sand</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>SandInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<pollutionColor>(1, 1, 1, 0.25)</pollutionColor>
+	</TerrainDef>
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>VEE_VolcanicSand</defName>
+		<label>volcanic sand</label>
+		<texturePath>Terrain/Surfaces/VEE_VolcanicSand</texturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionSand</pollutionOverlayTexturePath>
+		<edgeType>FadeRough</edgeType>
+		<categoryType>Sand</categoryType>
+		<renderPrecedence>350</renderPrecedence>
+		<pathCost>4</pathCost>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>SoftDry</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Sand</generatedFilth>
+		<fertility>0.10</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>sand</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>SandInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<pollutionColor>(1, 1, 1, 0.25)</pollutionColor>
+	</TerrainDef>
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>VEE_SoftVolcanicSand</defName>
+		<label>volcanic soft sand</label>
+		<texturePath>Terrain/Surfaces/VEE_SoftVolcanicSand</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>352</renderPrecedence>
+		<pathCost>14</pathCost>
+		<driesTo>VEE_VolcanicSand</driesTo>
+		<categoryType>Sand</categoryType>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Sand</generatedFilth>
+		<fertility>0</fertility>
+		<takeFootprints>true</takeFootprints>
+		<tools>
+			<li>
+				<label>sand</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>SandInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<pollutionColor>(1, 1, 1, 0.25)</pollutionColor>
+	</TerrainDef>
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>VEE_PebbleDunes</defName>
+		<label>loose pebbles</label>
+		<texturePath>Terrain/Surfaces/VEE_PebbleDunes</texturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>320</renderPrecedence>
+		<pathCost>10</pathCost>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>0</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>gravel</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>GravelInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+	</TerrainDef>
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>VEE_LittoralDuneSand</defName>
+		<label>littoral dune sand</label>
+		<texturePath>Terrain/Surfaces/VEE_LittoralDuneSand</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<categoryType>Soil</categoryType>
+		<renderPrecedence>340</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Sand</generatedFilth>
+		<fertility>0.8</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>sand</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>SandInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<tags>
+			<li>Soil</li>
+		</tags>
+	</TerrainDef>
 </Defs>
