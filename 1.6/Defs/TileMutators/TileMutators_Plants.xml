@@ -344,6 +344,7 @@
 		<label>auburn trees</label>
 		<plantDensityRange>0~4</plantDensityRange>
 		<pollutionRange>0~0.25</pollutionRange>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
 	</TileMutatorDef>
 	<TileMutatorDef ParentName="VEE_AuburnTrees_Base">
 		<defName>VEE_AuburnTree_Oaks</defName>
@@ -431,6 +432,37 @@
 				<plantDefsWithCommonality>
 					<li>
 						<plantDef>VEE_Plant_TreeBirch_Auburn</plantDef>
+						<commonality>0.25</commonality>
+					</li>
+				</plantDefsWithCommonality>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_Mycelium</defName>
+		<label>mycelium</label>
+		<description>A variety of light-resistant mushrooms similar to the ones growing in glowforests are common in this area.</description>
+		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+			<li>ExtremeDesert</li>
+			<li>Glowforest</li>
+		</biomeBlacklist>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VEE_DayBoomshroom</plantDef>
+						<commonality>0.25</commonality>
+					</li>
+					<li>
+						<plantDef>VEE_DayPsilocap</plantDef>
+						<commonality>0.25</commonality>
+					</li>
+					<li>
+						<plantDef>VEE_DayWillowgill</plantDef>
 						<commonality>0.25</commonality>
 					</li>
 				</plantDefsWithCommonality>

@@ -59,5 +59,26 @@
 			<warnOnFail>false</warnOnFail>
 		</genStep>
 	</GenStepDef>
-	
+	<GenStepDef>
+		<defName>VEE_FleshPits_Large</defName>
+		<order>950</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>VEE_InertPitGate</thingDef>
+			<createUsedRect>true</createUsedRect>
+			<skipRoofed>true</skipRoofed>
+			<count>7</count>
+			<warnOnFail>false</warnOnFail>
+		</genStep>
+	</GenStepDef>
+	<GenStepDef>
+		<defName>VEE_FleshPits_Small</defName>
+		<order>950</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>PitBurrow</thingDef>
+			<createUsedRect>true</createUsedRect>
+			<skipRoofed>true</skipRoofed>
+			<count>7</count>
+			<warnOnFail>false</warnOnFail>
+		</genStep>
+	</GenStepDef>
 </Defs>

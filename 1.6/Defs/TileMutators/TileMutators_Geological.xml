@@ -229,7 +229,7 @@
 		<categories>
 			<li>VEE_Traversability</li>
 		</categories>
-	</TileMutatorDef> 
+	</TileMutatorDef>
 	<TileMutatorDef MayRequire="VanillaExpanded.VPsycastsE">
 		<defName>VEE_EltexDeposits</defName>
 		<label>eltex deposits</label>
@@ -256,7 +256,6 @@
 				<extraDeepHelixienGasDeposits>8</extraDeepHelixienGasDeposits>
 			</li>
 		</modExtensions>
-		
 	</TileMutatorDef>
 	<TileMutatorDef MayRequire="VanillaExpanded.VFEPower">
 		<defName>VEE_StrongerTides</defName>
@@ -269,7 +268,6 @@
 				<tideStrengthMultiplier>1.4</tideStrengthMultiplier>
 			</li>
 		</modExtensions>
-		
 	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_LargeRiverBanks</defName>
@@ -282,7 +280,13 @@
 				<riverbankSizeMultiplier>2</riverbankSizeMultiplier>
 			</li>
 		</modExtensions>
-		
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_MineableComponentSpacer</defName>
+		<label>advanced component deposits</label>
+		<description>This area has deposits of advanced ancient machinery, which can be mined for advanced components.</description>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_AdvancedComponentDeposits</workerClass>
 	</TileMutatorDef>
 </Defs>
 

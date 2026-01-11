@@ -66,6 +66,9 @@ namespace VanillaExplorationExpanded
         public static ThingDef VEE_JadeChunk;
         public static ThingDef VEE_ObsidianChunk;
         public static ThingDef VEE_TidalFlood;
+        [MayRequireAnomaly]
+        public static ThingDef VEE_InertPitGate;
+        public static ThingDef VEE_MineableComponentSpacer;
 
         public static GameConditionDef VEE_FertileRainsGameCondition;
 

@@ -170,7 +170,7 @@
 		<size>(3,3)</size>
 		<neverOverlapFloors>true</neverOverlapFloors>
 		<blockPlants>true</blockPlants>
-		 <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<canOverlapZones>false</canOverlapZones>
 		<building>
 			<isEdifice>true</isEdifice>
@@ -218,11 +218,10 @@
 		<thingClass>Crater</thingClass>
 		<useHitPoints>false</useHitPoints>
 		<rotatable>false</rotatable>
-		 <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<canOverlapZones>false</canOverlapZones>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
 		<passability>Impassable</passability>
-		
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shaderType>Transparent</shaderType>
@@ -302,7 +301,6 @@
 			<MaxHitPoints>150</MaxHitPoints>
 			<Flammability>0</Flammability>
 			<Beauty>2</Beauty>
-			
 		</statBases>
 		<selectable>true</selectable>
 		<pathCost>42</pathCost>
@@ -337,12 +335,10 @@
 			<MaxHitPoints>350</MaxHitPoints>
 			<Flammability>0</Flammability>
 			<Beauty>1</Beauty>
-			
 		</statBases>
 		<selectable>true</selectable>
 		<pathCost>42</pathCost>
 		<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
-		
 		<building>
 			<isEdifice>true</isEdifice>
 			<claimable>false</claimable>
@@ -360,7 +356,7 @@
 		<defName>VEE_Cenote</defName>
 		<label>cenote</label>
 		<description>A deep, water filled sinkhole carved into the stone, its sheer walls dropping into clear, silent depths. The surface appears calm.</description>
-	<thingClass>Building</thingClass>
+		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Cenotes/Cenote</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -376,19 +372,19 @@
 		<size>(8,8)</size>
 		<neverOverlapFloors>true</neverOverlapFloors>
 		<building>
-			 <isEdifice>true</isEdifice>
-      <deconstructible>false</deconstructible>
-      <isTargetable>false</isTargetable>
-      <isInert>true</isInert>
-      <claimable>false</claimable>
-      <expandHomeArea>false</expandHomeArea>
+			<isEdifice>true</isEdifice>
+			<deconstructible>false</deconstructible>
+			<isTargetable>false</isTargetable>
+			<isInert>true</isInert>
+			<claimable>false</claimable>
+			<expandHomeArea>false</expandHomeArea>
 		</building>
 	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
 		<defName>VEE_Cenote_Small</defName>
 		<label>small cenote</label>
 		<description>A deep, water filled sinkhole carved into the stone, its sheer walls dropping into clear, silent depths. The surface appears calm.</description>
-	<thingClass>Building</thingClass>
+		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Cenotes/CenoteSmall</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -396,7 +392,7 @@
 		</graphicData>
 		<uiIconScale>0.5</uiIconScale>
 		<altitudeLayer>Floor</altitudeLayer>
-		 <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<rotatable>false</rotatable>
 		<destroyable>false</destroyable>
 		<useHitPoints>false</useHitPoints>
@@ -405,12 +401,82 @@
 		<size>(2,2)</size>
 		<neverOverlapFloors>true</neverOverlapFloors>
 		<building>
-			 <isEdifice>true</isEdifice>
-      <deconstructible>false</deconstructible>
-      <isTargetable>false</isTargetable>
-      <isInert>true</isInert>
-      <claimable>false</claimable>
-      <expandHomeArea>false</expandHomeArea>
+			<isEdifice>true</isEdifice>
+			<deconstructible>false</deconstructible>
+			<isTargetable>false</isTargetable>
+			<isInert>true</isInert>
+			<claimable>false</claimable>
+			<expandHomeArea>false</expandHomeArea>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase" MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>VEE_InertPitGate</defName>
+		<label>pit gate</label>
+		<description>A massive, foreboding hole that connects the surface with a dark network of underground caves. It is possible to climb down into the caverns below.</description>
+		<size>(8,8)</size>
+		<useHitPoints>false</useHitPoints>
+		<thingClass>PitGate</thingClass>
+		<tickerType>Normal</tickerType>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<canOverlapZones>false</canOverlapZones>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/PitGate/PitGate</texPath>
+			<drawSize>(8,8)</drawSize>
+		</graphicData>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Impassable</passability>
+		<holdsRoof>true</holdsRoof>
+		<destroyable>false</destroyable>
+		<building>
+			<isEdifice>true</isEdifice>
+			<deconstructible>false</deconstructible>
+			<isTargetable>false</isTargetable>
+			<isInert>true</isInert>
+			<claimable>false</claimable>
+			<expandHomeArea>false</expandHomeArea>
+		</building>
+		<portal>
+			<pocketMapGenerator>Undercave</pocketMapGenerator>
+			<exitDef>CaveExit</exitDef>
+			<enteredLetterLabel>Fleshbeast lair</enteredLetterLabel>
+			<enteredLetterText>In the depths of the pit gate, you have discovered a massive cavern system infested with fleshbeasts.\n\nThe cavern system is clogged with masses of living flesh that block your progress. Attack the fleshmass to destroy it.\n\nThe entire cavern system seems unstable. If you find what lies behind the fleshmass, you may be able to collapse the tunnels and close the pit gate.</enteredLetterText>
+			<enteredLetterDef>ThreatBig</enteredLetterDef>
+			<traverseSound>TraversePitGate</traverseSound>
+		</portal>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<inspectorTabs>
+			<li>ITab_ContentsMapPortal</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_LeaveFilthOnDestroyed">
+				<filthDef>Filth_LooseGround</filthDef>
+				<thickness>5</thickness>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RockBase">
+		<defName>VEE_MineableComponentSpacer</defName>
+		<label>advanced compacted machinery</label>
+		<description>Advanced ancient machinery, compacted over time. Can be mined for useful advanced components.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/CompactedElectronics_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>2500</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>ComponentSpacer</mineableThing>
+			<mineableYield>2</mineableYield>
+			<veinMineable>true</veinMineable>
+			<mineablePreventMeteorite>true</mineablePreventMeteorite>
+			<mineablePreventNaturalRockOnSurface>true</mineablePreventNaturalRockOnSurface>
+			<mineableScatterCommonality>0</mineableScatterCommonality>
 		</building>
 	</ThingDef>
 </Defs>

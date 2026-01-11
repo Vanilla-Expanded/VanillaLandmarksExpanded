@@ -739,4 +739,19 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	
+<RulePackDef>
+		<defName>VEE_NamerLandmark_FleshPits</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->flesh pits</li>
+				<li>terrain_word->anomalous caverns</li>
+				<li>terrain_word->flesh pit expanse</li>
+				
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 </Defs>

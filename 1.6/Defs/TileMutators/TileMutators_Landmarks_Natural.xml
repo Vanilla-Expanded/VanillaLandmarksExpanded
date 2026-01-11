@@ -856,7 +856,6 @@
 		<label>pebble dunes</label>
 		<description>Low dunes of rounded pebbles shaped by constant wind and shifting ground.</description>
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_PebbleDunes</workerClass>
-		
 		<biomeWhitelist>
 			<li>ExtremeDesert</li>
 			<li>Desert</li>
@@ -864,18 +863,15 @@
 			<li>Grasslands</li>
 		</biomeWhitelist>
 		<maxHilliness>Flat</maxHilliness>
-		
 	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_LittoralDunes</defName>
 		<label>littoral dunes</label>
 		<description>A band of fertile, wind-shaped dunes running along the shoreline, built from sand pulled inland from the sea.</description>
-		
 		<categories>
 			<li>Coast</li>
 		</categories>
 		<coastSidesRange>1~5</coastSidesRange>
-	
 		<priority>5</priority>
 		<overrideCategories>
 			<li>Mountain</li>
@@ -885,14 +881,12 @@
 		<biomeWhitelist>
 			<li>ExtremeDesert</li>
 			<li>Desert</li>
-			
 		</biomeWhitelist>
 	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_RisingWaters</defName>
 		<label>rising waters</label>
 		<description>An extremely flat coastal plain where the tides push far inland. Large stretches of land are regularly submerged.</description>
-		
 		<categories>
 			<li>Coast</li>
 		</categories>
@@ -907,6 +901,16 @@
 		<additionalGameConditions>
 			<li>VEE_TidalFlooding</li>
 		</additionalGameConditions>
+	</TileMutatorDef>
+	<TileMutatorDef MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>VEE_FleshPits</defName>
+		<label>flesh pits</label>
+		<description>A scattered network of anomalous cave entrances, leading to a subterranean realm of pulsating flesh and grotesque abominations.</description>
+		<extraGenSteps>
+			<li>VEE_FleshPits_Large</li>
+			<li>VEE_FleshPits_Small</li>
+		</extraGenSteps>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_Fleshpits</workerClass>
 	</TileMutatorDef>
 </Defs>
 

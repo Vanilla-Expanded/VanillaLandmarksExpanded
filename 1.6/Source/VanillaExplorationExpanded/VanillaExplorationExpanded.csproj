@@ -103,6 +103,7 @@
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\HediffGiver_Terrain_OnIntervalPassed.cs" />
     <Compile Include="Harmony\PawnUtility_GetManhunterOnDamageChance.cs" />
+    <Compile Include="Harmony\PitGate_FireRandomIncidentByWeight.cs" />
     <Compile Include="Harmony\Plant_GrowthRateFactor_Drought.cs" />
     <Compile Include="Harmony\Plant_PlantCollected.cs" />
     <Compile Include="Harmony\WindManager_WindManagerTick.cs" />
@@ -133,6 +134,7 @@
     <Compile Include="TileMutatorWorkers\Crater\TileMutatorWorker_Volcano.cs" />
     <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_RemoveSpecificFlora.cs" />
     <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_BurnedForest.cs" />
+    <Compile Include="TileMutatorWorkers\Geology\TileMutatorWorker_AdvancedComponentDeposits.cs" />
     <Compile Include="TileMutatorWorkers\Geology\TileMutatorWorker_EltexDeposits.cs" />
     <Compile Include="TileMutatorWorkers\Lakes\TileMutatorWorker_QuicksandPits.cs" />
     <Compile Include="TileMutatorWorkers\Lone Islands\TileMutatorWorker_CoralReef.cs" />
@@ -143,6 +145,7 @@
     <Compile Include="TileMutatorWorkers\Lone Islands\TileMutatorWorker_LoneIslandWithMountain.cs" />
     <Compile Include="TileMutatorWorkers\Geology\TileMutatorWorker_MineralDevoid.cs" />
     <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_PoisonousFlora.cs" />
+    <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_Fleshpits.cs" />
     <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_StoneForest.cs" />
     <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_SerpentineCanyons.cs" />
     <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_JaggedRocks.cs" />
@@ -156,6 +159,7 @@
     <Compile Include="TileMutatorWorkers\Rivers\TileMutatorWorker_RelictDelta.cs" />
     <Compile Include="TileMutatorWorkers\Rivers\TileMutatorWorker_SulfuricRiver.cs" />
     <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_AnimaSoils.cs" />
+    <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_GreaterTerraformingScar.cs" />
     <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_LittoralDunes.cs" />
     <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_PebbleDunes.cs" />
     <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_QuicksandDunes.cs" />

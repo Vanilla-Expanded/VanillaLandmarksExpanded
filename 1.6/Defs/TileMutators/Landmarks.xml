@@ -1333,4 +1333,30 @@
 			<Fish_Decreased>0.01</Fish_Decreased>
 		</mutatorChances>
 	</LandmarkDef>
+	
+	<LandmarkDef MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>VEE_FleshPits</defName>
+		<label>flesh pits</label>
+		<iconTexturePath>World/Landmarks/VEE_FleshPits</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.5</commonality>
+		<nameMaker>VEE_NamerLandmark_FleshPits</nameMaker>
+		<mutatorChances>
+			<VEE_FleshPits MayRequire="Ludeon.RimWorld.Anomaly" Required="True"/>		
+			<Stockpile>0.05</Stockpile>
+			<WetClimate>0.2</WetClimate>
+			<AnimalLife_Increased>0.05</AnimalLife_Increased>
+			<AnimalHabitat>0.15</AnimalHabitat>
+			<Fertile>0.05</Fertile>
+			<WildPlants>0.1</WildPlants>
+			<WildTropicalPlants>0.03</WildTropicalPlants>
+			<ArcheanTrees>0.01</ArcheanTrees>
+			<AncientUplink>0.02</AncientUplink>
+			<PlantLife_Increased>0.05</PlantLife_Increased>
+			<PlantGrove>0.05</PlantGrove>
+			<Fish_Increased>0.05</Fish_Increased>
+			<Fish_Decreased>0.01</Fish_Decreased>
+		</mutatorChances>
+	</LandmarkDef>
+	
 </Defs>
