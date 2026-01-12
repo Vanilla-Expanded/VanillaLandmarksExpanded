@@ -56,11 +56,14 @@ public class TileMutatorWorker_QuicksandDunes : TileMutatorWorker
     {
         foreach (IntVec3 allCell in map.AllCells)
         {
-            if (!(quicksandNoise.GetValue(allCell) > 0.2f))
+            if (quicksandNoise.GetValue(allCell) < 0.2f)
             {
                 map.terrainGrid.SetTerrain(allCell, InternalDefOf.VEE_Quicksand);
+            }else if (quicksandNoise.GetValue(allCell) < 0.25f)
+                {
+                    map.terrainGrid.SetTerrain(allCell, InternalDefOf.VEE_RedSoftSand);
+                }
             }
-        }
     }
 }
 }

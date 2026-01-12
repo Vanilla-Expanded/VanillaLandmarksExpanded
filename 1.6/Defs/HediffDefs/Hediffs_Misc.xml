@@ -99,7 +99,7 @@
 		</stages>
 	</HediffDef>
 	<HediffDef>
-		<defName>VEE_Quicksand</defName>
+		<defName>VEE_QuicksandHediff</defName>
 		<label>traversing quicksand</label>
 		<makesSickThought>false</makesSickThought>
 		<description>Moving through quicksand. Greatly reduces movement speed.</description>
@@ -110,10 +110,9 @@
 		<initialSeverity>1.0</initialSeverity>
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
-			<li Class="VEF.Cooking.HediffCompProperties_WhileHavingThoughts">
-				<thoughtDefs>
-					<li>VEE_Quicksand</li>
-				</thoughtDefs>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>1000~1000</disappearsAfterTicks>
+				<showRemainingTime>false</showRemainingTime>
 			</li>
 		</comps>
 		<stages>

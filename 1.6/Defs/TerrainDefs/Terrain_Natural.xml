@@ -194,11 +194,20 @@
 		<customShader>ShallowLava</customShader>
 		<renderPrecedence>394</renderPrecedence>
 		<driesTo>Sand</driesTo>
-		<texturePath>Terrain/Surfaces/Quicksand</texturePath>
-		<pollutedTexturePath>Terrain/Surfaces/Quicksand</pollutedTexturePath>
+		<texturePath>Terrain/Surfaces/VEE_Quicksand</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_Quicksand</pollutedTexturePath>
 		<customShaderParameters>
 			<_NoiseTex>/UI/Empty</_NoiseTex>
+			<_AlphaAddTex>/UI/Empty</_AlphaAddTex>
+			<_MaskTex>/UI/Empty</_MaskTex>
+			<_DistortionSpeed>0.5</_DistortionSpeed>
 			<_LavaBrightness>0</_LavaBrightness>
+			<_BrightSpotThresholdMin>0</_BrightSpotThresholdMin>
+			<_BrightSpotThresholdMax>0</_BrightSpotThresholdMax>
+			<_BrightSpotScale>0</_BrightSpotScale>
+			<_BrightSpotSpeed>0</_BrightSpotSpeed>
+			<_BrightSpotWarpFrequency>0</_BrightSpotWarpFrequency>
+			<_BrightSpotWarpAmplitude>0</_BrightSpotWarpAmplitude>
 		</customShaderParameters>
 		<pathCost>2</pathCost>
 		<canFreeze>false</canFreeze>
@@ -267,7 +276,7 @@
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>VEE_AnimaSoil</defName>
 		<label>anima soil</label>
-		<texturePath>Terrain/Surfaces/AnimaSoil</texturePath>
+		<texturePath>Terrain/Surfaces/VEE_AnimaSoil</texturePath>
 		<edgeType>FadeRough</edgeType>
 		<categoryType>Soil</categoryType>
 		<renderPrecedence>340</renderPrecedence>
@@ -305,7 +314,7 @@
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>VEE_AnimaSoilRich</defName>
 		<label>enchanted anima soil</label>
-		<texturePath>Terrain/Surfaces/AnimaEnchantedSoil</texturePath>
+		<texturePath>Terrain/Surfaces/VEE_AnimaEnchantedSoil</texturePath>
 		<edgeType>FadeRough</edgeType>
 		<categoryType>Soil</categoryType>
 		<renderPrecedence>335</renderPrecedence>
@@ -345,7 +354,7 @@
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>VEE_AnimaCrackedSoil</defName>
 		<label>cracked anima soil</label>
-		<texturePath>Terrain/Surfaces/AnimaCrackedSoil</texturePath>
+		<texturePath>Terrain/Surfaces/VEE_AnimaCrackedSoil</texturePath>
 		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
 		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
 		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
@@ -420,7 +429,7 @@
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>VEE_GravelBeach</defName>
 		<label>gravel beach</label>
-		<texturePath>Terrain/Surfaces/GravelBeach</texturePath>
+		<texturePath>Terrain/Surfaces/VEE_GravelBeach</texturePath>
 		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
 		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
 		<edgeType>FadeRough</edgeType>
@@ -452,7 +461,7 @@
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>VEE_Basalt</defName>
 		<label>basalt</label>
-		<texturePath>Terrain/Surfaces/ObsidianFormationsRock</texturePath>
+		<texturePath>Terrain/Surfaces/VEE_ObsidianFormationsRock</texturePath>
 		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
 		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
 		<edgeType>FadeRough</edgeType>
@@ -476,7 +485,7 @@
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>VEE_RedSand</defName>
 		<label>red sand</label>
-		<texturePath>Terrain/Surfaces/Quicksand</texturePath>
+		<texturePath>Terrain/Surfaces/VEE_RedSand</texturePath>
 		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionSand</pollutionOverlayTexturePath>
 		<edgeType>FadeRough</edgeType>
 		<categoryType>Sand</categoryType>
@@ -512,7 +521,7 @@
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>VEE_RedSoftSand</defName>
 		<label>red soft sand</label>
-		<texturePath>Terrain/Surfaces/ShiftingSands</texturePath>
+		<texturePath>Terrain/Surfaces/VEE_ShiftingSands</texturePath>
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>352</renderPrecedence>
 		<pathCost>14</pathCost>

@@ -51,7 +51,7 @@ namespace VanillaExplorationExpanded
                 }
                 else if (value > 0.4f)
                 {
-                    map.terrainGrid.SetTerrain(allCell, TerrainDefOf.SoftSand);
+                    map.terrainGrid.SetTerrain(allCell, InternalDefOf.VEE_RedSoftSand);
                 }
             }
         }

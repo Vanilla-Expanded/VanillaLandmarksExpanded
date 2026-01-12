@@ -60,8 +60,6 @@
 	</ThoughtDef>
 	<ThoughtDef>
 		<defName>VEE_Quicksand</defName>
-		<thoughtClass>VEF.Cooking.Thought_Hediff</thoughtClass>
-		<hediff>VEE_Quicksand</hediff>
 		<durationDays>0.005</durationDays>
 		<stages>
 			<li>

@@ -92,6 +92,7 @@ namespace VanillaExplorationExpanded
         public static HediffDef VEE_ColossalFauna;
         public static HediffDef VEE_Microfauna;
         public static HediffDef VEE_RottenStench;
+        public static HediffDef VEE_QuicksandHediff;
 
         public static TileMutatorDef VEE_Alphabeavers;
         public static TileMutatorDef VEE_MigratoryHerds;

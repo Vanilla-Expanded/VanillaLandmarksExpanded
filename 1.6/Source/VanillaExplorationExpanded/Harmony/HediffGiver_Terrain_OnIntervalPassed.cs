@@ -15,7 +15,7 @@ namespace VanillaExplorationExpanded
     public static class VanillaExplorationExpanded_HediffGiver_Terrain_OnIntervalPassed_Patch
     {
         [HarmonyPostfix]
-        public static void DoAcid(Pawn pawn)
+        public static void DoTerrainEffects(Pawn pawn)
         {
             if (pawn.Spawned)
             {
@@ -27,6 +27,10 @@ namespace VanillaExplorationExpanded
                     DamageInfo dinfo = new DamageInfo(DamageDefOf.AcidBurn, num);
                     dinfo.SetBodyRegion(BodyPartHeight.Bottom, BodyPartDepth.Outside);
                     pawn.TakeDamage(dinfo);
+                }
+                if (terrain == InternalDefOf.VEE_Quicksand)
+                {
+                    pawn.health.AddHediff(InternalDefOf.VEE_QuicksandHediff);
                 }
 
             }

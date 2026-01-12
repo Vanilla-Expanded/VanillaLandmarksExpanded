@@ -250,7 +250,7 @@
 	</TerrainDef>
 	<!-- Anima Deep Water -->
 	<TerrainDef Abstract="True" Name="VEE_AnimaWaterDeepBase" ParentName="WaterBase">
-		<texturePath>Terrain/Surfaces/AnimaWaterDeepRamp</texturePath>
+		<texturePath>Terrain/Surfaces/VEE_AnimaWaterDeepRamp</texturePath>
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<passability>Impassable</passability>
 		<pathCost>300</pathCost>
@@ -262,7 +262,7 @@
 		<defName>VEE_AnimaWaterDeep</defName>
 		<label>deep anima water</label>
 		<renderPrecedence>395</renderPrecedence>
-		<pollutedTexturePath>Terrain/Surfaces/WaterDeepRampPolluted</pollutedTexturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_AnimaWaterDeepRamp</pollutedTexturePath>
 		<forcePassableByFlyingPawns>true</forcePassableByFlyingPawns>
 		<gravshipReplacementTerrain>WaterShallow</gravshipReplacementTerrain>
 	</TerrainDef>
@@ -278,8 +278,8 @@
 	</TerrainDef>
 	<!-- Anima Chest-deep -->
 	<TerrainDef Abstract="True" Name="VEE_AnimaWaterChestDeepBase" ParentName="WaterBase">
-		<texturePath>Terrain/Surfaces/AnimaWaterChestDeepRamp</texturePath>
-		<pollutedTexturePath>Terrain/Surfaces/WaterChestDeepRampPolluted</pollutedTexturePath>
+		<texturePath>Terrain/Surfaces/VEE_AnimaWaterChestDeepRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_AnimaWaterChestDeepRamp</pollutedTexturePath>
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<waterBodyType>Freshwater</waterBodyType>
 		<pathCost>42</pathCost>
@@ -292,7 +292,7 @@
 		<defName>VEE_AnimaWaterMovingChestDeep</defName>
 		<label>chest-deep moving anima water</label>
 		<renderPrecedence>399</renderPrecedence>
-		<pollutedTexturePath>Terrain/Surfaces/WaterChestDeepRampPolluted</pollutedTexturePath>
+		
 		<affordances>
 			<li>MovingFluid</li>
 		</affordances>
@@ -317,8 +317,8 @@
 	<TerrainDef ParentName="VEE_AnimaWaterShallowBase">
 		<defName>VEE_AnimaWaterShallow</defName>
 		<label>shallow anima water</label>
-		<texturePath>Terrain/Surfaces/AnimaWaterShallowRamp</texturePath>
-		<pollutedTexturePath>Terrain/Surfaces/WaterShallowRampPolluted</pollutedTexturePath>
+		<texturePath>Terrain/Surfaces/VEE_AnimaWaterShallowRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_AnimaWaterShallowRamp</pollutedTexturePath>
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<renderPrecedence>394</renderPrecedence>
 		<driesTo>VEE_AnimaCrackedSoil</driesTo>
@@ -330,8 +330,8 @@
 	<TerrainDef ParentName="VEE_AnimaWaterShallowBase">
 		<defName>VEE_AnimaWaterOceanShallow</defName>
 		<label>shallow ocean anima water</label>
-		<texturePath>Terrain/Surfaces/AnimaWaterShallowRamp</texturePath>
-		<pollutedTexturePath>Terrain/Surfaces/WaterShallowRampPolluted</pollutedTexturePath>
+		<texturePath>Terrain/Surfaces/VEE_AnimaWaterShallowRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_AnimaWaterShallowRamp</pollutedTexturePath>
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<renderPrecedence>396</renderPrecedence>
 		<driesTo>VEE_AnimaCrackedSoil</driesTo>
@@ -344,8 +344,8 @@
 	<TerrainDef ParentName="VEE_AnimaWaterShallowBase">
 		<defName>VEE_AnimaWaterMovingShallow</defName>
 		<label>shallow moving anima water</label>
-		<texturePath>Terrain/Surfaces/AnimaWaterShallowRamp</texturePath>
-		<pollutedTexturePath>Terrain/Surfaces/WaterShallowRampPolluted</pollutedTexturePath>
+		<texturePath>Terrain/Surfaces/VEE_AnimaWaterShallowRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VEE_AnimaWaterShallowRamp</pollutedTexturePath>
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<renderPrecedence>398</renderPrecedence>
 		<affordances>
