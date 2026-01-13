@@ -57,6 +57,45 @@
 			<li>VCE_Wheat</li>
 		</plantKinds>
 	</TileMutatorDef>
+	<TileMutatorDef ParentName="WildPlants_Base" MayRequire="VanillaExpanded.VPlantsEMore">
+		<defName>VEE_WildCereals</defName>
+		<label>wild cereals</label>
+		<description>This area can grow a large number of wild cereals.</description>
+		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeBlacklist>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+			<li>ExtremeDesert</li>
+		</biomeBlacklist>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VCE_Buckwheat</plantDef>
+						<commonality>0.25</commonality>
+					</li>
+					<li MayRequire="VanillaExpanded.VCookE">
+						<plantDef>VCE_Barley</plantDef>
+						<commonality>0.25</commonality>
+					</li>
+					<li MayRequire="VanillaExpanded.VCookE">
+						<plantDef>VCE_Sorghum</plantDef>
+						<commonality>0.25</commonality>
+					</li>
+					<li MayRequire="VanillaExpanded.VCookE">
+						<plantDef>VCE_Rye</plantDef>
+						<commonality>0.25</commonality>
+					</li>
+					<li MayRequire="VanillaExpanded.VCookE">
+						<plantDef>VCE_Oats</plantDef>
+						<commonality>0.25</commonality>
+					</li>
+					
+				</plantDefsWithCommonality>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_NoTrees</defName>
 		<label>lack of trees</label>
@@ -70,8 +109,13 @@
 			<li>Glowforest</li>
 		</biomeBlacklist>
 		<categories>
-			<li>PlantLife</li>
+			<li>VEE_FruitTreesAndNoTrees</li>
 			<li>VEE_GroveAndNoTrees</li>
+			<li>VEE_MangroveAndNoTrees</li>
+			<li>VEE_AuburnTree_OaksAndNoTrees</li>
+			<li>VEE_AuburnTree_PoplarsAndNoTrees</li>
+			<li>VEE_AuburnTree_MaplesAndNoTrees</li>
+			<li>VEE_AuburnTree_BirchesAndNoTrees</li>
 		</categories>
 	</TileMutatorDef>
 	<TileMutatorDef>
@@ -106,6 +150,10 @@
 				</plantDefsWithCommonality>
 			</li>
 		</modExtensions>
+		<categories>
+		
+			<li>VEE_MangroveAndNoTrees</li>
+		</categories>
 	</TileMutatorDef>
 	<TileMutatorDef ParentName="WildPlants_Base" MayRequire="VanillaExpanded.VPlantsE">
 		<defName>VEE_WildFruitTrees</defName>
@@ -129,6 +177,10 @@
 			<li>VCE_BananaTree</li>
 			<li>VCE_OrangeTree</li>
 		</plantKinds>
+		<categories>
+			<li>VEE_FruitTreesAndNoTrees</li>
+			
+		</categories>
 	</TileMutatorDef>
 	<TileMutatorDef Name="VEE_WildFlowers_Base" Abstract="True">
 		<label>wild flowers</label>
@@ -339,7 +391,6 @@
 			<li>VCE_Plant_SweetheartPlant</li>
 		</plantKinds>
 	</TileMutatorDef>
-	
 	<TileMutatorDef Name="VEE_AuburnTrees_Base" Abstract="True">
 		<label>auburn trees</label>
 		<plantDensityRange>0~4</plantDensityRange>
@@ -351,7 +402,6 @@
 		<label>auburn oaks</label>
 		<description>In this forested area many trees remain locked in shades of red and gold, as if autumn never fully passes.</description>
 		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
-		
 		<biomeWhitelist>
 			<li>TemperateForest</li>
 			<li>TemperateSwamp</li>
@@ -368,13 +418,16 @@
 				</plantDefsWithCommonality>
 			</li>
 		</modExtensions>
+		<categories>
+			<li>VEE_AuburnTree_OaksAndNoTrees</li>
+			
+		</categories>
 	</TileMutatorDef>
 	<TileMutatorDef ParentName="VEE_AuburnTrees_Base">
 		<defName>VEE_AuburnTree_Poplars</defName>
 		<label>auburn poplars</label>
 		<description>In this forested area many trees remain locked in shades of red and gold, as if autumn never fully passes.</description>
 		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
-		
 		<biomeWhitelist>
 			<li>TemperateForest</li>
 			<li>TemperateSwamp</li>
@@ -391,13 +444,16 @@
 				</plantDefsWithCommonality>
 			</li>
 		</modExtensions>
+		<categories>
+			<li>VEE_AuburnTree_PoplarsAndNoTrees</li>
+			
+		</categories>
 	</TileMutatorDef>
 	<TileMutatorDef ParentName="VEE_AuburnTrees_Base">
 		<defName>VEE_AuburnTree_Maples</defName>
 		<label>auburn maples</label>
 		<description>In this forested area many trees remain locked in shades of red and gold, as if autumn never fully passes.</description>
 		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
-		
 		<biomeWhitelist>
 			<li>TemperateForest</li>
 			<li>TemperateSwamp</li>
@@ -414,13 +470,16 @@
 				</plantDefsWithCommonality>
 			</li>
 		</modExtensions>
+		<categories>
+			<li>VEE_AuburnTree_MaplesAndNoTrees</li>
+			
+		</categories>
 	</TileMutatorDef>
 	<TileMutatorDef ParentName="VEE_AuburnTrees_Base">
 		<defName>VEE_AuburnTree_Birches</defName>
 		<label>auburn birches</label>
 		<description>In this forested area many trees remain locked in shades of red and gold, as if autumn never fully passes.</description>
 		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
-		
 		<biomeWhitelist>
 			<li>TemperateForest</li>
 			<li>TemperateSwamp</li>
@@ -437,6 +496,10 @@
 				</plantDefsWithCommonality>
 			</li>
 		</modExtensions>
+		<categories>
+			<li>VEE_AuburnTree_BirchesAndNoTrees</li>
+			
+		</categories>
 	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_Mycelium</defName>
@@ -468,6 +531,19 @@
 				</plantDefsWithCommonality>
 			</li>
 		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_PlentifulGrass</defName>
+		<label>plentiful grass</label>
+		<description>Grass is very common in this region.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_PlentifulGrass</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeWhitelist>
+			<li>TemperateForest</li>
+		</biomeWhitelist>
+		<categories>
+			<li>VEE_LowPlantPlentifulGrass</li>
+		</categories>
 	</TileMutatorDef>
 </Defs>
 

@@ -132,6 +132,7 @@
     <Compile Include="TileMutatorWorkers\Crater\TileMutatorWorker_ResurgentCaldera.cs" />
     <Compile Include="TileMutatorWorkers\Crater\TileMutatorWorker_ToxicCrater.cs" />
     <Compile Include="TileMutatorWorkers\Crater\TileMutatorWorker_Volcano.cs" />
+    <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_PlentifulGrass.cs" />
     <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_RemoveSpecificFlora.cs" />
     <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_BurnedForest.cs" />
     <Compile Include="TileMutatorWorkers\Geology\TileMutatorWorker_AdvancedComponentDeposits.cs" />
@@ -146,6 +147,7 @@
     <Compile Include="TileMutatorWorkers\Geology\TileMutatorWorker_MineralDevoid.cs" />
     <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_PoisonousFlora.cs" />
     <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_Fleshpits.cs" />
+    <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_IceSpires.cs" />
     <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_StoneForest.cs" />
     <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_SerpentineCanyons.cs" />
     <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_JaggedRocks.cs" />

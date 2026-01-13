@@ -912,5 +912,27 @@
 		</extraGenSteps>
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_Fleshpits</workerClass>
 	</TileMutatorDef>
+	
+	<TileMutatorDef>
+		<defName>VEE_IceSpires</defName>
+		<label>ice spires</label>
+		<description>Tall, narrow columns of ice rise from the frozen ground, shaped by wind and extreme cold.</description>
+		<categories>
+			<li>Mountain</li>
+		</categories>
+		<priority>5</priority>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_IceSpires</workerClass>
+		<genOrder>-200</genOrder>
+		<!-- Must be before any mutators that generate caves -->
+		<maxHilliness>Flat</maxHilliness>
+		<coastSidesRange>0~0</coastSidesRange>
+		<biomeWhitelist>
+			<li>SeaIce</li>
+			<li>IceSheet</li>
+		</biomeWhitelist>
+		<overrideCategories>
+			<li>BaseCaves</li>
+		</overrideCategories>
+	</TileMutatorDef>
 </Defs>
 

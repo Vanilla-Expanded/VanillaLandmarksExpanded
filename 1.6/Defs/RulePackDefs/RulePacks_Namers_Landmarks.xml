@@ -739,8 +739,7 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	
-<RulePackDef>
+	<RulePackDef>
 		<defName>VEE_NamerLandmark_FleshPits</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
@@ -750,7 +749,36 @@
 				<li>terrain_word->flesh pits</li>
 				<li>terrain_word->anomalous caverns</li>
 				<li>terrain_word->flesh pit expanse</li>
-				
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_TemperateGrasslands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->temperate grasslands</li>
+				<li>terrain_word->open plains</li>
+				<li>terrain_word->rolling grasslands</li>
+				<li>terrain_word->wind-swept prairie</li>
+				<li>terrain_word->broad meadowlands</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_IceSpires</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->ice spires</li>
+				<li>terrain_word->frozen spire field</li>
+				<li>terrain_word->glacial pinnacles</li>
+				<li>terrain_word->ice needle plains</li>
+				<li>terrain_word->frosted towers</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

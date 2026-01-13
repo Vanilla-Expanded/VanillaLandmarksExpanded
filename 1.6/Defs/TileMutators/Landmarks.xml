@@ -1333,7 +1333,6 @@
 			<Fish_Decreased>0.01</Fish_Decreased>
 		</mutatorChances>
 	</LandmarkDef>
-	
 	<LandmarkDef MayRequire="Ludeon.RimWorld.Anomaly">
 		<defName>VEE_FleshPits</defName>
 		<label>flesh pits</label>
@@ -1342,7 +1341,7 @@
 		<commonality>0.5</commonality>
 		<nameMaker>VEE_NamerLandmark_FleshPits</nameMaker>
 		<mutatorChances>
-			<VEE_FleshPits MayRequire="Ludeon.RimWorld.Anomaly" Required="True"/>		
+			<VEE_FleshPits MayRequire="Ludeon.RimWorld.Anomaly" Required="True"/>
 			<Stockpile>0.05</Stockpile>
 			<WetClimate>0.2</WetClimate>
 			<AnimalLife_Increased>0.05</AnimalLife_Increased>
@@ -1358,5 +1357,53 @@
 			<Fish_Decreased>0.01</Fish_Decreased>
 		</mutatorChances>
 	</LandmarkDef>
-	
+	<LandmarkDef>
+		<defName>VEE_TemperateGrasslands</defName>
+		<label>temperate grasslands</label>
+		<drawScale>1</drawScale>
+		<iconTexturePath>World/Landmarks/VEE_TemperateGrasslands</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.25</commonality>
+		<nameMaker>VEE_NamerLandmark_TemperateGrasslands</nameMaker>
+		<mutatorChances>
+			<VEE_PlantLife_Overgrown Required="True"/>
+			<VEE_NoTrees Required="True"/>
+			<VEE_PlentifulGrass Required="True"/>
+			<Stockpile>0.05</Stockpile>
+			<MineralRich>0.03</MineralRich>
+			<Sandy>0.05</Sandy>
+			<Muddy>0.05</Muddy>
+			<FoggyMutator>0.05</FoggyMutator>
+			<SunnyMutator>0.05</SunnyMutator>
+			<WetClimate>0.05</WetClimate>
+			<WindyMutator>0.05</WindyMutator>
+			<InsectMegahive>0.05</InsectMegahive>
+			<MixedBiome>0.5</MixedBiome>
+			<AncientUplink>0.02</AncientUplink>
+			<AnimalLife_Increased>0.25</AnimalLife_Increased>
+			<AnimalHabitat>0.15</AnimalHabitat>
+			<PlantGrove>0.25</PlantGrove>
+			<ArcheanTrees>0.05</ArcheanTrees>
+			<Fertile>0.25</Fertile>
+			<WildPlants>0.25</WildPlants>
+			<WildTropicalPlants>0.15</WildTropicalPlants>
+			<PlantGrove>0.05</PlantGrove>
+		</mutatorChances>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_IceSpires</defName>
+		<label>ice spires</label>
+		<iconTexturePath>World/Landmarks/VEE_IceSpires</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.2</commonality>
+		<nameMaker>VEE_NamerLandmark_IceSpires</nameMaker>
+		<mutatorChances>
+			<VEE_IceSpires Required="True"/>
+			<SunnyMutator>0.15</SunnyMutator>
+			<Stockpile>0.15</Stockpile>
+			<AncientUplink>0.15</AncientUplink>
+			<WindyMutator>0.05</WindyMutator>
+			<AnimalLife_Decreased>0.15</AnimalLife_Decreased>
+		</mutatorChances>
+	</LandmarkDef>
 </Defs>
