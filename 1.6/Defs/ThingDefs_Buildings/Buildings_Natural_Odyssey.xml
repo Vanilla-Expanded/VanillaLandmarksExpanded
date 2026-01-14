@@ -463,7 +463,7 @@
 		<label>advanced compacted machinery</label>
 		<description>Advanced ancient machinery, compacted over time. Can be mined for useful advanced components.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/CompactedElectronics_Atlas</texPath>
+			<texPath>Things/Building/Linked/VEE_CompactedElectronics_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
