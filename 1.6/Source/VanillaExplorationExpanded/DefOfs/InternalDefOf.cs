@@ -69,6 +69,7 @@ namespace VanillaExplorationExpanded
         [MayRequireAnomaly]
         public static ThingDef VEE_InertPitGate;
         public static ThingDef VEE_MineableComponentSpacer;
+        public static ThingDef VEE_MineableJadeite;
 
         public static GameConditionDef VEE_FertileRainsGameCondition;
 
@@ -93,6 +94,7 @@ namespace VanillaExplorationExpanded
         public static HediffDef VEE_Microfauna;
         public static HediffDef VEE_RottenStench;
         public static HediffDef VEE_QuicksandHediff;
+        public static HediffDef VEE_AnimaPearlsHediff;
 
         public static TileMutatorDef VEE_Alphabeavers;
         public static TileMutatorDef VEE_MigratoryHerds;

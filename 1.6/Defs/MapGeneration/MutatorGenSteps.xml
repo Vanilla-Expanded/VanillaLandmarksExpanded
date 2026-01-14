@@ -92,4 +92,15 @@
 			<warnOnFail>false</warnOnFail>
 		</genStep>
 	</GenStepDef>
+	<GenStepDef>
+		<defName>VEE_AncientAnimaTree</defName>
+		<order>950</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>VEE_Plant_TreeAnima_Ancient</thingDef>
+			<createUsedRect>true</createUsedRect>
+			<skipRoofed>true</skipRoofed>
+			<count>1</count>
+			<warnOnFail>false</warnOnFail>
+		</genStep>
+	</GenStepDef>
 </Defs>

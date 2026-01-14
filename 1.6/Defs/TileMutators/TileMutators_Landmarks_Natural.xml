@@ -564,6 +564,8 @@
 		<plantKinds>
 			<li>VEE_Plant_AnimaBush</li>
 			<li>VEE_Plant_YoungAnimaTree</li>
+			<li>VEE_Plant_FakeAnimaTree</li>
+			<li>VEE_Plant_GrandAnimaTree</li>
 			<li>Plant_Grass</li>
 			<li>Plant_TallGrass</li>
 			<li MayRequire="Ludeon.RimWorld.Royalty">Plant_GrassAnima</li>
@@ -571,9 +573,15 @@
 			<li>VEE_Plant_AnimaBrambles</li>
 			<li>VEE_Plant_AnimaBell</li>
 			<li>VEE_Plant_MysticCap</li>
-			<li>VEE_Plant_AnimaTreeAncient</li>
+			<li>VEE_Plant_AnimaHusk</li>
 			<li>VEE_Plant_AnimaHeartBlossom</li>
 		</plantKinds>
+		<extraGenSteps>
+			<li MayRequire="Ludeon.RimWorld.Royalty">VEE_AncientAnimaTree</li>
+		</extraGenSteps>
+		<preventGenSteps>
+			<li MayRequire="Ludeon.RimWorld.Royalty">AnimaTrees</li>
+		</preventGenSteps>
 		<modExtensions>
 			<li Class="VEF.Maps.TileMutatorExtension">
 				<plantDefsWithCommonality>
@@ -583,10 +591,14 @@
 					</li>
 					<li>
 						<plantDef>VEE_Plant_YoungAnimaTree</plantDef>
-						<commonality>1.5</commonality>
+						<commonality>0.75</commonality>
 					</li>
 					<li>
-						<plantDef>VEE_Plant_AnimaTreeAncient</plantDef>
+						<plantDef>VEE_Plant_FakeAnimaTree</plantDef>
+						<commonality>1</commonality>
+					</li>
+					<li>
+						<plantDef>VEE_Plant_GrandAnimaTree</plantDef>
 						<commonality>0.5</commonality>
 					</li>
 					<li MayRequire="Ludeon.RimWorld.Royalty">
@@ -612,6 +624,10 @@
 					<li>
 						<plantDef>VEE_Plant_AnimaHeartBlossom</plantDef>
 						<commonality>0.25</commonality>
+					</li>
+					<li>
+						<plantDef>VEE_Plant_AnimaHusk</plantDef>
+						<commonality>1</commonality>
 					</li>
 				</plantDefsWithCommonality>
 			</li>
@@ -647,6 +663,14 @@
 				</forcedPawnKindDefs>
 			</li>
 		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_JadeiteMountains</defName>
+		<label>jadeite mountains</label>
+		<description>The stone found in this region is a jade rich mineral.</description>
+		
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_JadeiteMountains</workerClass>
+		
 	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_StoneForest</defName>
@@ -947,7 +971,6 @@
 		<maxHilliness>Flat</maxHilliness>
 		<coastSidesRange>0~0</coastSidesRange>
 		<biomeWhitelist>
-			
 			<li>IceSheet</li>
 			<li>GlacialPlain</li>
 		</biomeWhitelist>

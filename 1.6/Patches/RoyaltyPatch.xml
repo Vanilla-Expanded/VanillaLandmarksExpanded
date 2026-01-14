@@ -5,11 +5,11 @@
 			<li>Royalty</li>
 		</mods>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName = "VEE_Plant_AnimaTreeAncient"]/comps</xpath>
+			<xpath>Defs/ThingDef[defName = "VEE_Plant_GrandAnimaTree"]/comps</xpath>
 			<value>
 				<li Class="CompProperties_GiveThoughtToAllMapPawnsOnDestroy">
 					<thought>AnimaScream</thought>
-					<message>The ancient anima tree has died and emitted a disturbing psychic scream.</message>
+					<message>The grand anima tree has died and emitted a disturbing psychic scream.</message>
 				</li>
 				<li Class="CompProperties_PlaySoundOnDestroy">
 					<sound>AnimaTreeScream</sound>
