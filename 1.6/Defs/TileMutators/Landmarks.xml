@@ -1406,4 +1406,20 @@
 			<AnimalLife_Decreased>0.15</AnimalLife_Decreased>
 		</mutatorChances>
 	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_GlacialMoraine</defName>
+		<label>glacial moraine</label>
+		<iconTexturePath>World/Landmarks/Wetland</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.5</commonality>
+		<nameMaker>VEE_NamerLandmark_GlacialMoraine</nameMaker>
+		<mutatorChances>
+			<VEE_GlacialMoraine Required="True"/>
+			<SunnyMutator>0.15</SunnyMutator>
+			<Stockpile>0.15</Stockpile>
+			<AncientUplink>0.15</AncientUplink>
+			<WindyMutator>0.05</WindyMutator>
+			<AnimalLife_Decreased>0.15</AnimalLife_Decreased>
+		</mutatorChances>
+	</LandmarkDef>
 </Defs>

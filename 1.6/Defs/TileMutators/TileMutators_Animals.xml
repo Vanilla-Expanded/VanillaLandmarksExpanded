@@ -338,6 +338,49 @@
 		
 		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
 	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_Megafauna</defName>
+		<label>abundant megafauna</label>
+		<description>This region has an abundance of megafauna, brought back to life by genetic engineering.</description>
+		
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<workerClass>VEF.Maps.TileMutatorWorker_ExtraAnimal</workerClass>
+		<biomeBlacklist>
+			<li>SeaIce</li>
+			<li>ExtremeDesert</li>
+		</biomeBlacklist>
+		
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<forcedPawnKindDefs>
+					<li>
+						<forcedPawnKindDef>Megasloth</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					<li>
+						<forcedPawnKindDef>Mastodon</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					<li>
+						<forcedPawnKindDef>Cat_Scimitar</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					<li>
+						<forcedPawnKindDef>Wolf_Great</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					<li>
+						<forcedPawnKindDef>Megavole</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+					<li>
+						<forcedPawnKindDef>ColossusToad</forcedPawnKindDef>
+						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
+					</li>
+				</forcedPawnKindDefs>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
 	
 </Defs>
 

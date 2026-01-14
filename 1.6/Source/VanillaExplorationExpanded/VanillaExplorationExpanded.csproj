@@ -161,6 +161,7 @@
     <Compile Include="TileMutatorWorkers\Rivers\TileMutatorWorker_RelictDelta.cs" />
     <Compile Include="TileMutatorWorkers\Rivers\TileMutatorWorker_SulfuricRiver.cs" />
     <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_AnimaSoils.cs" />
+    <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_GlacialMoraine.cs" />
     <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_GreaterTerraformingScar.cs" />
     <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_LittoralDunes.cs" />
     <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_PebbleDunes.cs" />

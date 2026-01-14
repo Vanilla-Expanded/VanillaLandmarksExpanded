@@ -912,7 +912,6 @@
 		</extraGenSteps>
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_Fleshpits</workerClass>
 	</TileMutatorDef>
-	
 	<TileMutatorDef>
 		<defName>VEE_IceSpires</defName>
 		<label>ice spires</label>
@@ -933,6 +932,40 @@
 		<overrideCategories>
 			<li>BaseCaves</li>
 		</overrideCategories>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_GlacialMoraine</defName>
+		<label>glacial moraine</label>
+		<description>Long ridges of rock and sediment left behind by retreating ice. The ground is uneven and unstable, full of ponds of melted glacial water.</description>
+		<categories>
+			<li>Mountain</li>
+		</categories>
+		<priority>5</priority>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_GlacialMoraine</workerClass>
+		<genOrder>-200</genOrder>
+		<!-- Must be before any mutators that generate caves -->
+		<maxHilliness>Flat</maxHilliness>
+		<coastSidesRange>0~0</coastSidesRange>
+		<biomeWhitelist>
+			
+			<li>IceSheet</li>
+			<li>GlacialPlain</li>
+		</biomeWhitelist>
+		<overrideCategories>
+			<li>BaseCaves</li>
+		</overrideCategories>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.035</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>VEE_PebbleDunes</terrain>
+						<min>0.3</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
 	</TileMutatorDef>
 </Defs>
 

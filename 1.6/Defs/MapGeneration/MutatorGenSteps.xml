@@ -81,4 +81,15 @@
 			<warnOnFail>false</warnOnFail>
 		</genStep>
 	</GenStepDef>
+	<GenStepDef>
+		<defName>VEE_MechanoidShipChunks</defName>
+		<order>950</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>ShipChunk_Mech</thingDef>
+			<createUsedRect>true</createUsedRect>
+			<skipRoofed>true</skipRoofed>
+			<count>5</count>
+			<warnOnFail>false</warnOnFail>
+		</genStep>
+	</GenStepDef>
 </Defs>

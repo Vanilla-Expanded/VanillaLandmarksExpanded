@@ -11,5 +11,15 @@
 			<li>CratersSmall</li>
 		</extraGenSteps>
 	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_MechanoidShipChunks</defName>
+		<label>mechanoid chunks</label>
+		<description>Chunks of a crashed mechanoid ship are found around this region.</description>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<extraGenSteps>
+			<li>VEE_MechanoidShipChunks</li>
+			
+		</extraGenSteps>
+	</TileMutatorDef>
 </Defs>
 
