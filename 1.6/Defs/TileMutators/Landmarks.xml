@@ -1424,4 +1424,23 @@
 			<AnimalLife_Decreased>0.15</AnimalLife_Decreased>
 		</mutatorChances>
 	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_Sinkholes</defName>
+		<label>sinkholes</label>
+		<iconTexturePath>World/Landmarks/VEE_StoneForest</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.2</commonality>
+		<nameMaker>VEE_NamerLandmark_Sinkholes</nameMaker>
+		<mutatorChances>
+			<VEE_Sinkholes Required="True"/>
+			<Stockpile>0.15</Stockpile>
+			<AncientUplink>0.15</AncientUplink>
+			<SunnyMutator>0.05</SunnyMutator>
+			<Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.02</Pollution_Increased>
+			<WindyMutator>0.05</WindyMutator>
+			<SteamGeysers_Increased> 0.15</SteamGeysers_Increased>
+			<MineralRich>0.05</MineralRich>
+		
+		</mutatorChances>
+	</LandmarkDef>
 </Defs>

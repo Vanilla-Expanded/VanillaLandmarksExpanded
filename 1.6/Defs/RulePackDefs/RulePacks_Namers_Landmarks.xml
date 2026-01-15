@@ -783,18 +783,32 @@
 		</rulePack>
 	</RulePackDef>
 	<RulePackDef>
-	<defName>VEE_NamerLandmark_GlacialMoraine</defName>
-	<include>
-		<li>WorldFeatureNamerCommon</li>
-	</include>
-	<rulePack>
-		<rulesStrings>
-			<li>terrain_word->glacial moraine</li>
-			<li>terrain_word->ice-pushed ridge</li>
-			<li>terrain_word->stone-strewn moraine</li>
-			<li>terrain_word->frozen debris fields</li>
-			<li>terrain_word->glacial rubble ridges</li>
-		</rulesStrings>
-	</rulePack>
-</RulePackDef>
+		<defName>VEE_NamerLandmark_GlacialMoraine</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->glacial moraine</li>
+				<li>terrain_word->ice-pushed ridge</li>
+				<li>terrain_word->stone-strewn moraine</li>
+				<li>terrain_word->frozen debris fields</li>
+				<li>terrain_word->glacial rubble ridges</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_Sinkholes</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->sinkholes</li>
+				<li>terrain_word->collapsed ground</li>
+				<li>terrain_word->subsurface hollows</li>
+				<li>terrain_word->broken lowlands</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 </Defs>

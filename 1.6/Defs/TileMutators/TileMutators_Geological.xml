@@ -245,6 +245,10 @@
 		<extraGenSteps>
 			<li>VEE_Sinkholes</li>
 		</extraGenSteps>
+		<biomeBlacklist>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+		</biomeBlacklist>
 	</TileMutatorDef>
 	<TileMutatorDef MayRequire="VanillaExpanded.HelixienGas">
 		<defName>VEE_UndergroundGasDeposits</defName>
