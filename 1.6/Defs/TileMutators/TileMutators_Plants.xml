@@ -135,6 +135,7 @@
 		<description>This area is filled with large amounts of mangrove trees whose roots can thrive in brackish water.</description>
 		<workerClass>VEF.Maps.TileMutatorWorker_PlantsWithCommonality</workerClass>
 		<coastSidesRange>1~6</coastSidesRange>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
 		<biomeBlacklist>
 			<li>IceSheet</li>
 			<li>SeaIce</li>
