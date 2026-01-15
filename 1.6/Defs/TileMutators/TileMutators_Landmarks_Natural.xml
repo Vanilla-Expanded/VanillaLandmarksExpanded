@@ -830,7 +830,7 @@
 			<li>Plant_TreeDrago</li>
 			<li>Plant_Agave</li>
 			<li>Plant_Bush</li>
-			<li>VEE_Plant_AnimaHeartBlossom</li>
+			
 		</plantKinds>
 		<modExtensions>
 			<li Class="VEF.Maps.TileMutatorExtension">
