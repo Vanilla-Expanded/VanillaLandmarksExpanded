@@ -70,6 +70,7 @@
 			<li>SeaIce</li>
 			<li>IceSheet</li>
 		</biomeBlacklist>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
 		<coastSidesRange>0~0</coastSidesRange>
 	</TileMutatorDef>
 	<TileMutatorDef>
@@ -84,6 +85,7 @@
 		<genOrder>-200</genOrder>
 		<!-- Must be before any mutators that generate caves -->
 		<maxHilliness>Flat</maxHilliness>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
 		<coastSidesRange>0~0</coastSidesRange>
 		<biomeBlacklist>
 			<li>SeaIce</li>
@@ -186,6 +188,7 @@
 		<preventsPondGeneration>true</preventsPondGeneration>
 		<canSpawnOnRoad>false</canSpawnOnRoad>
 		<maxHilliness>Flat</maxHilliness>
+		
 	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_SaltPlains</defName>

@@ -38,7 +38,7 @@ namespace VanillaExplorationExpanded
 
             map.waterInfo.lakeCenter = map.Center;
             innerLakeNoise = new DistFromPoint((float)map.Size.x * LakeRadius);
-            innerLakeNoise = new ScaleBias(-1.0, 1.0, innerLakeNoise);    
+            innerLakeNoise = new ScaleBias(-1.0, 1.0, innerLakeNoise);
             innerLakeNoise = new Rotate(0.0, Rand.Range(0f, 360f), 0.0, innerLakeNoise);
             innerLakeNoise = new Translate(-map.waterInfo.lakeCenter.x, 0.0, -map.waterInfo.lakeCenter.z, innerLakeNoise);
             innerLakeNoise = new Clamp(0.0, 1.0, innerLakeNoise);
@@ -62,19 +62,33 @@ namespace VanillaExplorationExpanded
 
                     ProcessCell(cell, map);
                 }
-                if (cell.GetTerrain(map).IsWater&&cell.DistanceTo(map.Center) > map.Size.x/2 * CoralRadius.min && cell.DistanceTo(map.Center) < map.Size.x/2 * CoralRadius.max)
+                if (cell.GetTerrain(map).IsWater)
                 {
-                   
-                    if (Rand.Chance(0.25f))
+                    Thing thing = ThingMaker.MakeThing(InternalDefOf.VEE_Coral, null);
+                    if (cell.DistanceTo(map.Center) > map.Size.x / 2 * CoralRadius.min && cell.DistanceTo(map.Center) < map.Size.x / 2 * CoralRadius.max)
                     {
-                        Thing thing = ThingMaker.MakeThing(InternalDefOf.VEE_Coral, null);
 
-                        GenSpawn.Spawn(thing, cell, map);
+                        if (Rand.Chance(0.5f))
+                        {
+                          
+
+                            GenSpawn.Spawn(thing, cell, map);
+                        }
+
                     }
-                    
-                }
-                   
+                    else
+                    {
+                        if (Rand.Chance(0.02f) && cell.DistanceToEdge(map)>3)
+                        {
+                         
 
+                            GenSpawn.Spawn(thing, cell, map);
+                        }
+
+                    }
+
+
+                }
             }
         }
 

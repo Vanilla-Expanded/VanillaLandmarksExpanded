@@ -123,14 +123,17 @@
 		<uiIconScale>0.5</uiIconScale>
 		<altitudeLayer>Floor</altitudeLayer>
 		<rotatable>false</rotatable>
-		<destroyable>false</destroyable>
-		<useHitPoints>false</useHitPoints>
+	
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
 		<selectable>true</selectable>
 		<pathCost>100</pathCost>
-		<size>(2,2)</size>
+		<size>(1,1)</size>
 		<neverOverlapFloors>true</neverOverlapFloors>
 		<building>
-			<isEdifice>false</isEdifice>
+			<isEdifice>true</isEdifice>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
 		</building>
