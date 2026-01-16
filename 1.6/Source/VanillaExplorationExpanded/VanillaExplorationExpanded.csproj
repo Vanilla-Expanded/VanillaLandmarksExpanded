@@ -79,6 +79,7 @@
     <Compile Include="Building effects\SmokeSprayer.cs" />
     <Compile Include="Building effects\ToxicSprayer.cs" />
     <Compile Include="Buildings and Things\Building_DeadlifeVent.cs" />
+    <Compile Include="Buildings and Things\Building_Filth2x2.cs" />
     <Compile Include="Buildings and Things\Building_FakePlant2x2.cs" />
     <Compile Include="Buildings and Things\Building_RotstinkVent.cs" />
     <Compile Include="Buildings and Things\Building_SmokeVent.cs" />
