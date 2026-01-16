@@ -84,6 +84,7 @@
     <Compile Include="Buildings and Things\Building_RotstinkVent.cs" />
     <Compile Include="Buildings and Things\Building_SmokeVent.cs" />
     <Compile Include="Buildings and Things\Building_ToxicVent.cs" />
+    <Compile Include="Buildings and Things\DenseSnow.cs" />
     <Compile Include="Buildings and Things\TidalFlood.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="GameConditions\GameCondition_ColossalFauna.cs" />
@@ -148,6 +149,7 @@
     <Compile Include="TileMutatorWorkers\Lone Islands\TileMutatorWorker_LoneIslandWithMountain.cs" />
     <Compile Include="TileMutatorWorkers\Geology\TileMutatorWorker_MineralDevoid.cs" />
     <Compile Include="TileMutatorWorkers\Flora\TileMutatorWorker_PoisonousFlora.cs" />
+    <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_DeepSnow.cs" />
     <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_Fleshpits.cs" />
     <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_IceSpires.cs" />
     <Compile Include="TileMutatorWorkers\Mountains\TileMutatorWorker_JadeiteMountains.cs" />
@@ -176,6 +178,7 @@
     <Compile Include="TileMutatorWorkers\Lakes\TileMutatorWorker_DustBowl.cs" />
     <Compile Include="TileMutatorWorkers\Lakes\TileMutatorWorker_SaltPlains.cs" />
     <Compile Include="TileMutatorWorkers\Lakes\TileMutatorWorker_SulfuricLake.cs" />
+    <Compile Include="TileMutatorWorkers\Coast\TileMutatorWorker_TropicalBeach.cs" />
     <Compile Include="TileMutatorWorkers\Terrain Substitution\TileMutatorWorker_VolcanicSandDesert.cs" />
   </ItemGroup>
   <ItemGroup>

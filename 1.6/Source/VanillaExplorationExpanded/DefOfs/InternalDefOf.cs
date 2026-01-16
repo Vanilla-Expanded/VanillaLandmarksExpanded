@@ -70,6 +70,8 @@ namespace VanillaExplorationExpanded
         public static ThingDef VEE_InertPitGate;
         public static ThingDef VEE_MineableComponentSpacer;
         public static ThingDef VEE_MineableJadeite;
+        public static ThingDef VEE_Filth_Seashells;
+        public static ThingDef VEE_DenseSnow;
 
         public static GameConditionDef VEE_FertileRainsGameCondition;
 

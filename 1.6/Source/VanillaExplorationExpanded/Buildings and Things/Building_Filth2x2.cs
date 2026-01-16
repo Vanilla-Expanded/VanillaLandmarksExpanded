@@ -70,7 +70,7 @@ namespace VanillaExplorationExpanded
                 Material material = Graphic.MatSingle;
                 Graphic.TryGetTextureAtlasReplacementInfo(material, def.category.ToAtlasGroup(), @bool, vertexColors: false, out material, out Vector2[] uvs, out Color32 _);
 
-                Printer_Plane.PrintPlane(size: new Vector2(num2, num2), layer: layer, center: center, mat: material, rot: 0f, flipUv: @bool, uvs: uvs, topVerticesAltitudeBias: 0.1f, uvzPayload: this.HashOffset() % 1024);
+                Printer_Plane.PrintPlane(size: new Vector2(num2, num2), layer: layer, center: center, mat: material, rot: Rand.Range(0f, 360f), flipUv: @bool, uvs: uvs, topVerticesAltitudeBias: 0.1f, uvzPayload: this.HashOffset() % 1024);
                 num4++;
                 if (num4 >= num)
                 {

@@ -188,7 +188,6 @@
 		<preventsPondGeneration>true</preventsPondGeneration>
 		<canSpawnOnRoad>false</canSpawnOnRoad>
 		<maxHilliness>Flat</maxHilliness>
-		
 	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_SaltPlains</defName>
@@ -671,9 +670,7 @@
 		<defName>VEE_JadeiteMountains</defName>
 		<label>jadeite mountains</label>
 		<description>The stone found in this region is a jade rich mineral.</description>
-		
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_JadeiteMountains</workerClass>
-		
 	</TileMutatorDef>
 	<TileMutatorDef>
 		<defName>VEE_StoneForest</defName>
@@ -830,7 +827,6 @@
 			<li>Plant_TreeDrago</li>
 			<li>Plant_Agave</li>
 			<li>Plant_Bush</li>
-			
 		</plantKinds>
 		<modExtensions>
 			<li Class="VEF.Maps.TileMutatorExtension">
@@ -993,5 +989,271 @@
 			</li>
 		</terrainPatchMakers>
 	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_TropicalBeach</defName>
+		<label>tropical beach</label>
+		<description>A warm coastal region shaped by steady tides and seasonal storms. Sandy beaches and shallow waters support dense vegetation along the shoreline.</description>
+		<overrideCoastalBeachTerrain>VEE_TropicalBeachSand</overrideCoastalBeachTerrain>
+		<categories>
+			<li>Coast</li>
+		</categories>
+		<coastSidesRange>1~5</coastSidesRange>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRoad>false</canSpawnOnRoad>
+		<priority>5</priority>
+		<overrideCategories>
+			<li>Mountain</li>
+		</overrideCategories>
+		<genOrder>100</genOrder>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_TropicalBeach</workerClass>
+		<biomeWhitelist>
+			<li>TropicalRainforest</li>
+		</biomeWhitelist>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<thingToSpawn>VEE_Filth_Seashells</thingToSpawn>
+				<thingToSpawnAmount>500~1000</thingToSpawnAmount>
+				<terrainValidation>
+					<li>VEE_TropicalBeachSand</li>
+				</terrainValidation>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_TropicalBeachFlora</defName>
+		<label>tropical beach flora</label>
+		<description>This region is rich in palm trees, including cocoa trees, screw pines and date palms.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_RemoveSpecificFlora</workerClass>
+		<biomeWhitelist>
+			<li>TropicalRainforest</li>
+		</biomeWhitelist>
+		<plantKinds>
+			<li>Plant_TreeCocoa</li>
+			<li>Plant_Grass</li>
+			<li>Plant_TallGrass</li>
+			<li>Plant_TreePalm</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Plant_GrayGrass</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Plant_RatPalm</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Plant_Reeds</li>
+			<li>VEE_Plant_ScrewPine</li>
+			<li>VEE_Plant_DatePalm</li>
+		</plantKinds>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VEE_Plant_ScrewPine</plantDef>
+						<commonality>1</commonality>
+					</li>
+					<li>
+						<plantDef>Plant_TreeCocoa</plantDef>
+						<commonality>0.05</commonality>
+					</li>
+					<li>
+						<plantDef>VEE_Plant_DatePalm</plantDef>
+						<commonality>1</commonality>
+					</li>
+				</plantDefsWithCommonality>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="BasePatch">
+		<defName>VEE_Mossy</defName>
+		<label>mossy</label>
+		<description>This area contains large patches of mossy soil.</description>
+		<pollutionRange>0~0.25</pollutionRange>
+		<biomeWhitelist>
+			<li>TropicalRainforest</li>
+		</biomeWhitelist>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.035</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>VEE_MossySoil</terrain>
+						<min>0.35</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_LaurelForest</defName>
+		<label>laurel forest</label>
+		<description>A dense evergreen forest thriving in mild temperatures and constant humidity. Broad-leaved trees trap moisture from passing clouds, keeping the ground shaded and damp year-round.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_RemoveSpecificFlora</workerClass>
+		<biomeWhitelist>
+			<li>TropicalRainforest</li>
+		</biomeWhitelist>
+		<plantKinds>
+		
+			<li>Plant_Grass</li>
+			<li>Plant_TallGrass</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Biotech">Plant_GrayGrass</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Plant_Reeds</li>
+			<li>VEE_Plant_Laurel</li>
+			<li>VEE_Plant_Fern</li>
+		</plantKinds>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VEE_Plant_Laurel</plantDef>
+						<commonality>1</commonality>
+					</li>
+					
+					<li>
+						<plantDef>VEE_Plant_Fern</plantDef>
+						<commonality>2</commonality>
+					</li>
+				</plantDefsWithCommonality>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="BasePatch">
+		<defName>VEE_Moor</defName>
+		<label>moor</label>
+		<description>An open, windswept landscape of low shrubs and grasses growing over waterlogged soil. The ground is peaty and uneven, shaped by constant exposure and poor drainage.</description>
+		
+		<biomeWhitelist>
+			<li>ColdBog</li>
+		</biomeWhitelist>
+		<terrainPatchMakers>
+			 <li>
+        <perlinFrequency>0.035</perlinFrequency>
+        <isPond>true</isPond>
+        <thresholds>
+          
+          <li>
+            <terrain>Mud</terrain>
+            <min>0.22</min>
+            <max>0.6</max>
+          </li>
+          <li>
+            <terrain>WaterShallow</terrain>
+            <min>0.6</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+		</terrainPatchMakers>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_MoorFlora</defName>
+		<label>moor plants</label>
+		<description>This region is rich in low, hardy shrubs and grasses mingled with twisted, gnarled pines, all adapted to acidic, waterlogged soil and constant wind.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_RemoveSpecificFlora</workerClass>
+		<biomeWhitelist>
+			<li>ColdBog</li>
+		</biomeWhitelist>
+		<plantKinds>
+
+			<li>Plant_Chokevine</li>
+			<li>Plant_TallGrass</li>
+			<li>Plant_Moss</li>
+			<li>Plant_HealrootWild</li>	
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Plant_Bulrush</li>			
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Plant_Reeds</li>
+			<li>VEE_Plant_GnarledPine</li>
+			<li>VEE_Plant_JuniperBush</li>
+			<li>VEE_Heather</li>
+			<li>VEE_Gorse</li>
+		</plantKinds>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VEE_Plant_GnarledPine</plantDef>
+						<commonality>0.2</commonality>
+					</li>
+					
+					<li>
+						<plantDef>VEE_Plant_JuniperBush</plantDef>
+						<commonality>0.5</commonality>
+					</li>
+					<li>
+						<plantDef>VEE_Heather</plantDef>
+						<commonality>1</commonality>
+					</li>
+					<li>
+						<plantDef>VEE_Gorse</plantDef>
+						<commonality>1</commonality>
+					</li>
+				</plantDefsWithCommonality>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	<TileMutatorDef ParentName="BasePatch">
+		<defName>VEE_LushLavaFields</defName>
+		<label>lush lava fields</label>
+		<description>Ancient lava flows broken by cracks and cooled rock now support dense vegetation. Heat lingers beneath the surface, creating a strange landscape where living growth spreads across black stone.</description>
+		
+		<biomeWhitelist>
+			<li>LavaField</li>
+		</biomeWhitelist>
+		<terrainPatchMakers>
+			 <li>
+        <perlinFrequency>0.035</perlinFrequency>
+        <isPond>true</isPond>
+        <thresholds>
+          
+          <li>
+            <terrain>VEE_VolcanicSoilRich</terrain>
+            <min>0.12</min>
+            <max>0.3</max>
+          </li>
+		  <li>
+            <terrain>VolcanicRock</terrain>
+            <min>0.3</min>
+            <max>0.6</max>
+          </li>
+          <li>
+            <terrain>LavaDeep</terrain>
+            <min>0.6</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+		</terrainPatchMakers>
+	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_FirewoodTrees</defName>
+		<label>firewood trees</label>
+		<description>This region is rich in firewood trees, adapted to fertile volcanic terrain.</description>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_RemoveSpecificFlora</workerClass>
+		<biomeWhitelist>
+			<li>LavaField</li>
+		</biomeWhitelist>
+		<plantKinds>
+ 
+			<li>Plant_Grass</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Plant_GrayGrass</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Plant_PebbleCactus</li>		
+			<li>Plant_PincushionCactus</li>
+			<li>Plant_MagmaCactus</li>		
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Plant_Reeds</li>
+			<li>Plant_Agave</li>
+			<li>Plant_Bush</li>
+			<li>Plant_Berry</li>
+			<li>VEE_Plant_Firewood</li>
+			<li>BurnedTree</li>
+		</plantKinds>
+		<modExtensions>
+			<li Class="VEF.Maps.TileMutatorExtension">
+				<plantDefsWithCommonality>
+					<li>
+						<plantDef>VEE_Plant_Firewood</plantDef>
+						<commonality>0.5</commonality>
+					</li>
+					
+					
+				</plantDefsWithCommonality>
+			</li>
+		</modExtensions>
+	</TileMutatorDef>
+	
 </Defs>
 

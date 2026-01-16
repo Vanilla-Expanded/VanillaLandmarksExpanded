@@ -690,4 +690,75 @@
 			<li>Soil</li>
 		</tags>
 	</TerrainDef>
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>VEE_TropicalBeachSand</defName>
+		<label>tropical beach sand</label>
+		<texturePath>Terrain/Surfaces/VEE_LittoralDuneSand</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<categoryType>Sand</categoryType>
+		<renderPrecedence>340</renderPrecedence>
+		<pathCost>4</pathCost>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>SoftDry</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Sand</generatedFilth>
+		<fertility>0</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>sand</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>SandInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<tags>
+			<li>VEE_TropicalBeachSand</li>
+		</tags>
+		<pollutionColor>(1, 1, 1, 0.25)</pollutionColor>
+	</TerrainDef>
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>VEE_MossySoil</defName>
+		<label>mossy soil</label>
+		<texturePath>Terrain/Surfaces/VEE_MossySoil</texturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMossy</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
+		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
+		<edgeType>FadeRough</edgeType>
+		<categoryType>Soil</categoryType>
+		<renderPrecedence>315</renderPrecedence>
+		<pathCost>3</pathCost>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<fertility>1</fertility>
+		<takeFootprints>True</takeFootprints>
+		<avoidWander>false</avoidWander>
+		<tags>
+			<li>Soil</li>
+		</tags>
+	</TerrainDef>
 </Defs>

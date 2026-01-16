@@ -114,4 +114,54 @@
 			<maxGrowthTemperature>75</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
+	<ThingDef ParentName="BushBase">
+		<defName>VEE_Heather</defName>
+		<label>heather</label>
+		<description>A low, flowering shrub with dense clusters of tiny blooms. It carpets the landscape with muted colors and weathers wind and exposure with ease.</description>
+		<statBases>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Heather</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1</drawSize>
+			<shadowData>
+				<volume>(0.55, 0.17, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<plant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<maxMeshCount>4</maxMeshCount>
+			<wildClusterWeight>7.5</wildClusterWeight>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="BushBase">
+		<defName>VEE_Gorse</defName>
+		<label>gorse</label>
+		<description>A spiny, evergreen shrub covered in bright yellow flowers. Its thick, tangled branches provide shelter while resisting wind and harsh conditions.</description>
+		<statBases>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Gorse</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1</drawSize>
+			<shadowData>
+				<volume>(0.55, 0.17, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<plant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<maxMeshCount>4</maxMeshCount>
+			<wildClusterWeight>7.5</wildClusterWeight>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
+		</plant>
+	</ThingDef>
 </Defs>

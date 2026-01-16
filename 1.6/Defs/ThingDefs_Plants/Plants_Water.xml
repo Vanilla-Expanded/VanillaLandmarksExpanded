@@ -24,7 +24,7 @@
 			</wildTerrainTags>
 		</plant>
 	</ThingDef>
-	<ThingDef ParentName="StumpBase" Name="StumpChoppedBase">
+	<ThingDef ParentName="StumpBase">
 		<defName>VEE_Mangrove_ChoppedStump</defName>
 		<label>mangrove chopped stump</label>
 		<description>A stump left behind after a mangrove tree has been felled. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
@@ -33,7 +33,7 @@
 			<DeteriorationRate>20</DeteriorationRate>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Tree_ChoppedStump_Mangrove</texPath>
+			<texPath>Things/Plant/Stumps/Tree_ChoppedStump_Mangrove</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutPlant</shaderType>
 			<shadowData>
@@ -45,7 +45,7 @@
 			<harvestWork>90</harvestWork>
 		</plant>
 	</ThingDef>
-	<ThingDef ParentName="StumpBase" Name="StumpSmashedBase">
+	<ThingDef ParentName="StumpBase">
 		<defName>VEE_Mangrove_SmashedStump</defName>
 		<label>mangrove smashed stump</label>
 		<description>The remnants of a mangrove tree destroyed by damage. It's ugly. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
@@ -53,7 +53,7 @@
 			<Beauty>-8</Beauty>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Tree_SmashedStump_Mangrove</texPath>
+			<texPath>Things/Plant/Stumps/Tree_SmashedStump_Mangrove</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutPlant</shaderType>
 			<shadowData>

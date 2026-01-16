@@ -1,5 +1,6 @@
 ﻿
 using System.Collections.Generic;
+using System.Linq;
 using RimWorld;
 using RimWorld.Planet;
 using VEF.Genes;
@@ -19,7 +20,9 @@ namespace VanillaExplorationExpanded
    
         public override float PlantCommonalityFactorFor(ThingDef plant, PlanetTile tile)
         {
-            if (!this.def.plantKinds.Contains(plant)) { return 0; }
+            if (!this.def.plantKinds.Contains(plant)) { 
+                return 0; 
+            }
             return 1;
         }
 

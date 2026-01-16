@@ -1,28 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
-  <ThingDef ParentName="BaseFilth">
-    <defName>VEE_Filth_Seashells</defName>
-    <label>seashells</label>
-	<thingClass>VanillaExplorationExpanded.Building_Filth2x2</thingClass>
-    <graphicData>
-      <graphicClass>Graphic_Random</graphicClass>
-      <texPath>Things/Filth/Seashells</texPath>
-	  <drawSize>0.75</drawSize>
-    </graphicData>
-    <filth>
-      <placementMask>
-        <li>Terrain</li>
-        <li>Unnatural</li>
-      </placementMask>
-      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
-   
-      <cleaningWorkToReduceThickness>25</cleaningWorkToReduceThickness>
-      <canFilthAttach>true</canFilthAttach>
-      <cleaningSound>Interact_CleanFilth_Scattered</cleaningSound>
-    </filth>
-  </ThingDef>
-
+	<ThingDef ParentName="BaseFilth">
+		<defName>VEE_Filth_Seashells</defName>
+		<label>seashells</label>
+		<thingClass>VanillaExplorationExpanded.Building_Filth2x2</thingClass>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Filth/Seashells</texPath>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+	
+		<filth>
+			<placementMask>
+				<li>Terrain</li>
+				<li>Unnatural</li>
+			</placementMask>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<cleaningWorkToReduceThickness>25</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Scattered</cleaningSound>
+		</filth>
+	</ThingDef>
 </Defs>

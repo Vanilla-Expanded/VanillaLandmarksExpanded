@@ -1,115 +1,365 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	  <ThingDef ParentName="DeciduousTreeBase">
-    <defName>VEE_Plant_TreeOak_Auburn</defName>
-    <label>auburn oak tree</label>
-    <description>A hardwood tree. Oaks take a long time to grow, but their wood is so strong that 'oak' is used as a metaphor for strength across many cultures.</description>
-    <graphicData>
-      <texPath>Things/Plant/AutumnTrees/TreeRedOak</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <shadowData>
-        <volume>(0.2, 0.35, 0.13)</volume>
-        <offset>(-0.03,0,-0.44)</offset>
-      </shadowData>
-    </graphicData>
-    <statBases>
-      <Beauty>2</Beauty>
-      <BeautyOutdoors>2</BeautyOutdoors>
-    </statBases>
-    <plant>
-      <growDays>30</growDays>
-      <leaflessGraphicPath>Things/Plant/TreeOak_Leafless</leaflessGraphicPath>
-      <leaflessImmatureGraphicPath>Things/Plant/TreeOak_LeaflessImmature</leaflessImmatureGraphicPath>
-      <leaflessSnowOverlayGraphicPath>Things/Plant/TreeOak_LeaflessSnowy</leaflessSnowOverlayGraphicPath>
-      <immatureSnowOverlayGraphicPath>Things/Plant/TreeOak_LeaflessSnowyImmature</immatureSnowOverlayGraphicPath>
-      <harvestWork>1400</harvestWork>
-      <harvestYield>46</harvestYield>
-      <wildClusterWeight>35</wildClusterWeight>
-    </plant>
-  </ThingDef>
-  
-  <ThingDef ParentName="DeciduousTreeBase">
-    <defName>VEE_Plant_TreePoplar_Auburn</defName>
-    <label>auburn poplar tree</label>
-    <description>A softwood tree that grows very fast. Unfortunately, its wood is weak and so it yields less useful material than hardwood trees.</description>
-    <graphicData>
-      <texPath>Things/Plant/AutumnTrees/TreeYellowPoplar</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-    </graphicData>
-    <statBases>
-      <Beauty>1</Beauty>
-      <Nutrition>1.5</Nutrition>
-    </statBases>
-    <ingestible />
-    <plant>
-      <growDays>15.05</growDays>
-      <leaflessGraphicPath>Things/Plant/TreePoplar_Leafless</leaflessGraphicPath>
-  
-      <leaflessImmatureGraphicPath>Things/Plant/TreePoplar_LeaflessImmature</leaflessImmatureGraphicPath>
-      <leaflessSnowOverlayGraphicPath>Things/Plant/TreePoplar_LeaflessSnowy</leaflessSnowOverlayGraphicPath>
-      <immatureSnowOverlayGraphicPath>Things/Plant/TreePoplar_LeaflessSnowyImmature</immatureSnowOverlayGraphicPath>
-      <harvestWork>800</harvestWork>
-      <harvestYield>27</harvestYield>
-      <wildClusterWeight>35</wildClusterWeight>
-    </plant>
-  </ThingDef>
-  
-   <ThingDef ParentName="DeciduousTreeBase">
-    <defName>VEE_Plant_TreeBirch_Auburn</defName>
-    <label>auburn birch tree</label>
-    <description>A temperate-biome tree known for its thin, white, paper-like bark.</description>
-    <graphicData>
-      <texPath>Things/Plant/AutumnTrees/TreeOrangeBirch</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <shadowData>
-        <volume>(0.15, 0.3, 0.1)</volume>
-        <offset>(-0.03,0,-0.44)</offset>
-      </shadowData>
-    </graphicData>
-    <statBases>
-      <Beauty>2</Beauty>
-      <BeautyOutdoors>2</BeautyOutdoors>
-    </statBases>
-    <ingestible />
-    <plant>
-      <growDays>20</growDays>
-      <harvestWork>800</harvestWork>
-      <harvestYield>27</harvestYield>
-    
-      <leaflessGraphicPath>Things/Plant/TreeBirch_Leafless</leaflessGraphicPath>
-      <leaflessImmatureGraphicPath>Things/Plant/TreeBirch_LeaflessImmature</leaflessImmatureGraphicPath>
-      <leaflessSnowOverlayGraphicPath>Things/Plant/TreeBirch_LeaflessSnowy</leaflessSnowOverlayGraphicPath>
-      <immatureSnowOverlayGraphicPath>Things/Plant/TreeBirch_LeaflessSnowyImmature</immatureSnowOverlayGraphicPath>
-    </plant>
-  </ThingDef>
-  
-   <ThingDef ParentName="DeciduousTreeBase">
-    <defName>VEE_Plant_TreeMaple_Auburn</defName>
-    <label>auburn maple tree</label>
-    <description>A common medium-sized tree, easily identifiable by its distinct three-pointed leaf.</description>
-    <graphicData>
-      <texPath>Things/Plant/AutumnTrees/TreeSugarMaple</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <shadowData>
-        <volume>(0.14, 0.32, 0.12)</volume>
-        <offset>(0,0,-0.44)</offset>
-      </shadowData>
-    </graphicData>
-    <statBases>
-      <Beauty>2</Beauty>
-      <BeautyOutdoors>2</BeautyOutdoors>
-    </statBases>
-    <plant>
-      <growDays>27</growDays>
-      <leaflessGraphicPath>Things/Plant/TreeMaple_Leafless</leaflessGraphicPath>
-    
-      <leaflessImmatureGraphicPath>Things/Plant/TreeMaple_LeaflessImmature</leaflessImmatureGraphicPath>
-      <leaflessSnowOverlayGraphicPath>Things/Plant/TreeMaple_LeaflessSnowy</leaflessSnowOverlayGraphicPath>
-      <immatureSnowOverlayGraphicPath>Things/Plant/TreeMaple_LeaflessSnowyImmature</immatureSnowOverlayGraphicPath>
-      <harvestWork>800</harvestWork>
-      <harvestYield>27</harvestYield>
-      <wildClusterRadius>17</wildClusterRadius>
-      <wildClusterWeight>25</wildClusterWeight>
-    </plant>
-  </ThingDef>
+	<ThingDef ParentName="TreeBase">
+		<defName>VEE_Plant_TreeOak_Auburn</defName>
+		<label>auburn oak tree</label>
+		<description>A hardwood tree. Oaks take a long time to grow, but their wood is so strong that 'oak' is used as a metaphor for strength across many cultures.</description>
+		<graphicData>
+			<texPath>Things/Plant/AutumnTrees/TreeRedOak</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<growDays>30</growDays>
+			<leaflessGraphicPath>Things/Plant/TreeOak_Leafless</leaflessGraphicPath>
+			<leaflessImmatureGraphicPath>Things/Plant/TreeOak_LeaflessImmature</leaflessImmatureGraphicPath>
+			<leaflessSnowOverlayGraphicPath>Things/Plant/TreeOak_LeaflessSnowy</leaflessSnowOverlayGraphicPath>
+			<immatureSnowOverlayGraphicPath>Things/Plant/TreeOak_LeaflessSnowyImmature</immatureSnowOverlayGraphicPath>
+			<harvestWork>1400</harvestWork>
+			<harvestYield>46</harvestYield>
+			<wildClusterWeight>35</wildClusterWeight>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="TreeBase">
+		<defName>VEE_Plant_TreePoplar_Auburn</defName>
+		<label>auburn poplar tree</label>
+		<description>A softwood tree that grows very fast. Unfortunately, its wood is weak and so it yields less useful material than hardwood trees.</description>
+		<graphicData>
+			<texPath>Things/Plant/AutumnTrees/TreeYellowPoplar</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<Beauty>1</Beauty>
+			<Nutrition>1.5</Nutrition>
+		</statBases>
+		<ingestible/>
+		<plant>
+			<growDays>15.05</growDays>
+			<leaflessGraphicPath>Things/Plant/TreePoplar_Leafless</leaflessGraphicPath>
+			<leaflessImmatureGraphicPath>Things/Plant/TreePoplar_LeaflessImmature</leaflessImmatureGraphicPath>
+			<leaflessSnowOverlayGraphicPath>Things/Plant/TreePoplar_LeaflessSnowy</leaflessSnowOverlayGraphicPath>
+			<immatureSnowOverlayGraphicPath>Things/Plant/TreePoplar_LeaflessSnowyImmature</immatureSnowOverlayGraphicPath>
+			<harvestWork>800</harvestWork>
+			<harvestYield>27</harvestYield>
+			<wildClusterWeight>35</wildClusterWeight>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="TreeBase">
+		<defName>VEE_Plant_TreeBirch_Auburn</defName>
+		<label>auburn birch tree</label>
+		<description>A temperate-biome tree known for its thin, white, paper-like bark.</description>
+		<graphicData>
+			<texPath>Things/Plant/AutumnTrees/TreeOrangeBirch</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.1)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<ingestible/>
+		<plant>
+			<growDays>20</growDays>
+			<harvestWork>800</harvestWork>
+			<harvestYield>27</harvestYield>
+			<leaflessGraphicPath>Things/Plant/TreeBirch_Leafless</leaflessGraphicPath>
+			<leaflessImmatureGraphicPath>Things/Plant/TreeBirch_LeaflessImmature</leaflessImmatureGraphicPath>
+			<leaflessSnowOverlayGraphicPath>Things/Plant/TreeBirch_LeaflessSnowy</leaflessSnowOverlayGraphicPath>
+			<immatureSnowOverlayGraphicPath>Things/Plant/TreeBirch_LeaflessSnowyImmature</immatureSnowOverlayGraphicPath>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="TreeBase">
+		<defName>VEE_Plant_TreeMaple_Auburn</defName>
+		<label>auburn maple tree</label>
+		<description>A common medium-sized tree, easily identifiable by its distinct three-pointed leaf.</description>
+		<graphicData>
+			<texPath>Things/Plant/AutumnTrees/TreeSugarMaple</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.14, 0.32, 0.12)</volume>
+				<offset>(0,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<growDays>27</growDays>
+			<leaflessGraphicPath>Things/Plant/TreeMaple_Leafless</leaflessGraphicPath>
+			<leaflessImmatureGraphicPath>Things/Plant/TreeMaple_LeaflessImmature</leaflessImmatureGraphicPath>
+			<leaflessSnowOverlayGraphicPath>Things/Plant/TreeMaple_LeaflessSnowy</leaflessSnowOverlayGraphicPath>
+			<immatureSnowOverlayGraphicPath>Things/Plant/TreeMaple_LeaflessSnowyImmature</immatureSnowOverlayGraphicPath>
+			<harvestWork>800</harvestWork>
+			<harvestYield>27</harvestYield>
+			<wildClusterRadius>17</wildClusterRadius>
+			<wildClusterWeight>25</wildClusterWeight>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="TreeBase">
+		<defName>VEE_Plant_ScrewPine</defName>
+		<label>screw pine</label>
+		<description>A hardy coastal tree with spiraled leaves and exposed roots, adapted to wind, salt, and shifting sand.</description>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Tree_ScrewPine</texPath>
+			<drawSize>1</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.2, 0.15)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>4</wildClusterWeight>
+			<visualSizeRange>1~1.5</visualSizeRange>
+			<choppedThingDef>VEE_Plant_ScrewPine_ChoppedStump</choppedThingDef>
+			<smashedThingDef>VEE_Plant_ScrewPine_SmashedStump</smashedThingDef>
+			<immatureGraphicPath>Things/Plant/Immature/TreeScrewPine_Immature</immatureGraphicPath>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="StumpBase">
+		<defName>VEE_Plant_ScrewPine_ChoppedStump</defName>
+		<label>chopped stump</label>
+		<description>A stump left behind after a screw pine has been felled. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
+		<statBases>
+			<Beauty>0</Beauty>
+			<DeteriorationRate>20</DeteriorationRate>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/Tree_ChoppedStump_ScrewPine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutPlant</shaderType>
+			<shadowData>
+				<volume>(0.15, 0.1, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<harvestWork>90</harvestWork>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="StumpBase">
+		<defName>VEE_Plant_ScrewPine_SmashedStump</defName>
+		<label>smashed stump</label>
+		<description>The remnants of a screw pine destroyed by damage. It's ugly. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
+		<statBases>
+			<Beauty>-8</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/Tree_SmashedStump_ScrewPine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutPlant</shaderType>
+			<shadowData>
+				<volume>(0.15, 0.15, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="TreeBase">
+		<defName>VEE_Plant_DatePalm</defName>
+		<label>date palm</label>
+		<description>A tall palm thriving along warm coasts, bearing clusters of sweet, energy-rich fruit. Its deep roots and flexible trunk help it withstand salt spray and coastal winds.</description>
+		<graphicData>
+			<texPath>Things/Plant/Tree_DatePalm</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.18, 0.3, 0.15)</volume>
+				<offset>(0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>1</Beauty>
+			<Nutrition>1.5</Nutrition>
+		</statBases>
+		<plant>
+			<wildPlantUseDistanceToShore>true</wildPlantUseDistanceToShore>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
+			<growDays>16</growDays>
+			<harvestWork>310</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<forceIsTree>true</forceIsTree>
+			<harvestYield>20</harvestYield>
+			<harvestedThingDef>VEE_RawDates</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+			<wildClusterRadius>10</wildClusterRadius>
+			<wildClusterWeight>11</wildClusterWeight>
+			<immatureGraphicPath>Things/Plant/Immature/TreeDatePalm_Sapling</immatureGraphicPath>
+			<wildTerrainTags>
+				<li>VEE_TropicalBeachSand</li>
+			</wildTerrainTags>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
+		</plant>
+		<ingestible/>
+	</ThingDef>
+	<ThingDef ParentName="TreeBase">
+		<defName>VEE_Plant_Laurel</defName>
+		<label>laurel tree</label>
+		<description>An evergreen broadleaf tree with dense foliage and aromatic leaves, well adapted to mild, humid climates.</description>
+		<graphicData>
+			<texPath>Things/Plant/LaurelTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.14, 0.32, 0.12)</volume>
+				<offset>(0,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<growDays>27</growDays>
+			<immatureGraphicPath>Things/Plant/Immature/LaurelTree_Immature</immatureGraphicPath>
+			<choppedThingDef>VEE_Plant_LaurelTree_ChoppedStump</choppedThingDef>
+			<smashedThingDef>VEE_Plant_LaurelTree_SmashedStump</smashedThingDef>
+			<harvestWork>800</harvestWork>
+			<harvestYield>27</harvestYield>
+			<wildClusterRadius>17</wildClusterRadius>
+			<wildClusterWeight>25</wildClusterWeight>
+			<visualSizeRange>2~3</visualSizeRange>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="StumpBase">
+		<defName>VEE_Plant_LaurelTree_ChoppedStump</defName>
+		<label>chopped stump</label>
+		<description>A stump left behind after a laurel tree has been felled. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
+		<statBases>
+			<Beauty>0</Beauty>
+			<DeteriorationRate>20</DeteriorationRate>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/Tree_ChoppedStump_LaurelTree</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutPlant</shaderType>
+			<shadowData>
+				<volume>(0.15, 0.1, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<harvestWork>90</harvestWork>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="StumpBase">
+		<defName>VEE_Plant_LaurelTree_SmashedStump</defName>
+		<label>smashed stump</label>
+		<description>The remnants of a laurel tree destroyed by damage. It's ugly. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
+		<statBases>
+			<Beauty>-8</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/Tree_SmashedStump_LaurelTree</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutPlant</shaderType>
+			<shadowData>
+				<volume>(0.15, 0.15, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="TreeBase">
+		<defName>VEE_Plant_GnarledPine</defName>
+		<label>gnarled pine tree</label>
+		<description>A twisted, weathered pine shaped by wind and poor soil. Its gnarled branches and sparse needles give it a rugged, enduring appearance.</description>
+		<graphicData>
+			<texPath>Things/Plant/Tree_GnarledPine</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<ingestible/>
+		<plant>
+			<growDays>20</growDays>
+			<visualSizeRange>1.5~2.4</visualSizeRange>
+			<harvestWork>710</harvestWork>
+			<harvestYield>22</harvestYield>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="TreeBase">
+		<defName>VEE_Plant_Firewood</defName>
+		<label>firewood tree</label>
+		<description>A hardy tree adapted to grow on volcanic ground. It is among the first plants to colonize cooled lava, helping life return to the black stone.</description>
+		<graphicData>
+			<texPath>Things/Plant/Tree_Firewood</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.14, 0.32, 0.12)</volume>
+				<offset>(0,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<Flammability>0</Flammability>
+		</statBases>
+		<plant>
+			<growDays>27</growDays>
+			
+			<choppedThingDef>VEE_Plant_Firewood_ChoppedStump</choppedThingDef>
+			<smashedThingDef>VEE_Plant_Firewood_SmashedStump</smashedThingDef>
+			<harvestWork>800</harvestWork>
+			<harvestYield>27</harvestYield>
+			<wildClusterRadius>17</wildClusterRadius>
+			<wildClusterWeight>25</wildClusterWeight>
+			<visualSizeRange>2~3</visualSizeRange>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="StumpBase">
+		<defName>VEE_Plant_Firewood_ChoppedStump</defName>
+		<label>chopped stump</label>
+		<description>A stump left behind after a firewood tree has been felled. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
+		<statBases>
+			<Beauty>0</Beauty>
+			<DeteriorationRate>20</DeteriorationRate>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/Tree_ChoppedStump_Firewood</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutPlant</shaderType>
+			<shadowData>
+				<volume>(0.15, 0.1, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<harvestWork>90</harvestWork>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="StumpBase">
+		<defName>VEE_Plant_Firewood_SmashedStump</defName>
+		<label>smashed stump</label>
+		<description>The remnants of a firewood tree destroyed by damage. It's ugly. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
+		<statBases>
+			<Beauty>-8</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/Tree_SmashedStump_Firewood</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutPlant</shaderType>
+			<shadowData>
+				<volume>(0.15, 0.15, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+	</ThingDef>
 </Defs>

@@ -1234,6 +1234,7 @@
 		<nameMaker>VEE_NamerLandmark_PermafrostBasin</nameMaker>
 		<mutatorChances>
 			<VEE_PermafrostBasin Required="True"/>
+			<VEE_DeepSnow Required="True"/>
 			<AnimalLife_Decreased>0.25</AnimalLife_Decreased>
 			<WetClimate>0.25</WetClimate>
 			<WindyMutator>0.15</WindyMutator>
@@ -1440,7 +1441,108 @@
 			<WindyMutator>0.05</WindyMutator>
 			<SteamGeysers_Increased> 0.15</SteamGeysers_Increased>
 			<MineralRich>0.05</MineralRich>
-		
+		</mutatorChances>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_TropicalBeach</defName>
+		<label>tropical beach</label>
+		<drawScale>1</drawScale>
+		<iconTexturePath>World/Landmarks/VEE_TemperateGrasslands</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.25</commonality>
+		<nameMaker>VEE_NamerLandmark_TropicalBeach</nameMaker>
+		<mutatorChances>
+			<VEE_TropicalBeach Required="True"/>
+			<VEE_TropicalBeachFlora Required="True"/>
+			<Stockpile>0.05</Stockpile>
+			<MineralRich>0.03</MineralRich>
+			<Sandy>0.05</Sandy>
+			<Muddy>0.05</Muddy>
+			<FoggyMutator>0.05</FoggyMutator>
+			<SunnyMutator>0.5</SunnyMutator>
+			<WetClimate>0.05</WetClimate>
+			<WindyMutator>0.05</WindyMutator>
+			<InsectMegahive>0.05</InsectMegahive>
+			<AncientUplink>0.02</AncientUplink>
+			<AnimalLife_Increased>0.25</AnimalLife_Increased>
+			<AnimalHabitat>0.15</AnimalHabitat>
+			<ArcheanTrees>0.05</ArcheanTrees>
+			<Fertile>0.25</Fertile>
+			<WildTropicalPlants>1</WildTropicalPlants>
+		</mutatorChances>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_LaurelForest</defName>
+		<label>laurel forest</label>
+		<drawScale>1</drawScale>
+		<iconTexturePath>World/Landmarks/VEE_TemperateGrasslands</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.25</commonality>
+		<nameMaker>VEE_NamerLandmark_LaurelForest</nameMaker>
+		<mutatorChances>
+			<VEE_LaurelForest Required="True"/>
+			<VEE_Mossy Required="True"/>
+			<Stockpile>0.05</Stockpile>
+			<MineralRich>0.03</MineralRich>
+			<Muddy>0.05</Muddy>
+			<FoggyMutator>0.5</FoggyMutator>
+			<SunnyMutator>0.5</SunnyMutator>
+			<WetClimate>0.75</WetClimate>
+			<WindyMutator>0.05</WindyMutator>
+			<InsectMegahive>0.05</InsectMegahive>
+			<AncientUplink>0.02</AncientUplink>
+			<AnimalLife_Increased>0.25</AnimalLife_Increased>
+			<AnimalHabitat>0.15</AnimalHabitat>
+			<ArcheanTrees>0.05</ArcheanTrees>
+			<Fertile>0.75</Fertile>
+		</mutatorChances>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_Moor</defName>
+		<label>moor</label>
+		<iconTexturePath>World/Landmarks/VEE_Moor</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.5</commonality>
+		<nameMaker>VEE_NamerLandmark_Moor</nameMaker>
+		<mutatorChances>
+			<VEE_Moor Required="True"/>
+			<VEE_MoorFlora Required="True"/>
+			<Stockpile>0.05</Stockpile>
+			<FoggyMutator>1</FoggyMutator>
+			<AnimalLife_Increased>0.05</AnimalLife_Increased>
+			<AnimalHabitat>0.15</AnimalHabitat>
+			<Sandy>0.05</Sandy>
+			<Fertile>0.05</Fertile>
+			<Muddy>0.75</Muddy>
+			<ArcheanTrees>0.01</ArcheanTrees>
+			<AncientUplink>0.02</AncientUplink>
+			<PlantLife_Increased>0.05</PlantLife_Increased>
+			<Fish_Increased>0.05</Fish_Increased>
+			<Fish_Decreased>0.01</Fish_Decreased>
+		</mutatorChances>
+	</LandmarkDef>
+	<LandmarkDef>
+		<defName>VEE_LushLavaFields</defName>
+		<label>lush lava fields</label>
+		<iconTexturePath>World/Landmarks/VEE_Moor</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.25</commonality>
+		<nameMaker>VEE_NamerLandmark_LushLavaFields</nameMaker>
+		<mutatorChances>
+			<VEE_LushLavaFields Required="True"/>
+			<VEE_FirewoodTrees Required="True"/>
+			<SteamGeysers_Increased> 0.25</SteamGeysers_Increased>
+			<Stockpile>0.05</Stockpile>
+			<AnimalLife_Increased>0.25</AnimalLife_Increased>
+			<PlantLife_Increased>0.5</PlantLife_Increased>
+			<SunnyMutator>0.1</SunnyMutator>
+			<WindyMutator>0.05</WindyMutator>
+			<Sandy>0.05</Sandy>
+			<Fertile>1</Fertile>
+			<Muddy>0.05</Muddy>
+			<AncientUplink>0.02</AncientUplink>
+			<MineralRich>0.05</MineralRich>
+			<ObsidianDeposits>0.25</ObsidianDeposits>
 		</mutatorChances>
 	</LandmarkDef>
 </Defs>

@@ -811,4 +811,64 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_TropicalBeach</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->tropical beach</li>
+				<li>terrain_word->palm-lined shore</li>
+				<li>terrain_word->warm coastal strand</li>
+				<li>terrain_word->sunlit shoreline</li>
+				<li>terrain_word->tropical seaboard</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_LaurelForest</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->laurel forest</li>
+				<li>terrain_word->evergreen cloud forest</li>
+				<li>terrain_word->mist-laden woodland</li>
+				<li>terrain_word->humid evergreen forest</li>
+				<li>terrain_word->broadleaf evergreen woods</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_Moor</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->moor</li>
+				<li>terrain_word->open heath</li>
+				<li>terrain_word->windswept moorland</li>
+				<li>terrain_word->heather plain</li>
+				<li>terrain_word->peaty uplands</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VEE_NamerLandmark_LushLavaFields</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word->lush lava fields</li>
+				<li>terrain_word->vegetated lava plain</li>
+				<li>terrain_word->green volcanic flats</li>
+				<li>terrain_word->overgrown basalt fields</li>
+				<li>terrain_word->life-bound lava flows</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 </Defs>

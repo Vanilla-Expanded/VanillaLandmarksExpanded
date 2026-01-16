@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<ThingDef ParentName="BushBase">
+		<defName>VEE_Plant_Fern</defName>
+		<label>fern</label>
+		<description>A shade-loving plant with broad fronds that spreads across damp forest floors and sheltered ground.</description>
+		<graphicData>
+			<texPath>Things/Plant/Fern</texPath>
+			<drawSize>2</drawSize>
+			<shadowData>
+				<volume>(0.55, 0.17, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<plant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>7.5</wildClusterWeight>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
+		</plant>
+	</ThingDef>
+	
+    <ThingDef ParentName="PlantBase">
+    <defName>VEE_Plant_JuniperBush</defName>
+    <label>juniper bush</label>
+    <description>A hardy, low-growing bush with aromatic needles and dense berries. Its branches twist and spread, enduring harsh winds and exposed conditions.</description>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Nutrition>0.50</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/JuniperBush/JuniperBush</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.55, 0.2, 0.2)</volume>
+        <offset>(0,0,-0.25)</offset>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <fillPercent>0.20</fillPercent>
+    <pathCost>30</pathCost>
+    <plant>
+      <fertilityMin>0.5</fertilityMin>
+      <fertilitySensitivity>0.5</fertilitySensitivity>
+      <growDays>6</growDays>
+      <leaflessGraphicPath>Things/Plant/JuniperBush/Leafless</leaflessGraphicPath>
+      <immatureGraphicPath>Things/Plant/JuniperBush/Immature</immatureGraphicPath>
+   
+      <harvestYield>10</harvestYield>
+      <harvestWork>250</harvestWork>
+      <harvestTag>Standard</harvestTag>
+      <harvestAfterGrowth>0.30</harvestAfterGrowth>
+      <harvestedThingDef>RawBerries</harvestedThingDef>
+      <wildClusterRadius>5</wildClusterRadius>
+      <wildClusterWeight>250</wildClusterWeight>
+      <visualSizeRange>0.95~1.7</visualSizeRange>
+      <topWindExposure>0.3</topWindExposure>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+</Defs>

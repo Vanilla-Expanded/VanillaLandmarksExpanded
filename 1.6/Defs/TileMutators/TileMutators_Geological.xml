@@ -292,5 +292,18 @@
 		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_AdvancedComponentDeposits</workerClass>
 	</TileMutatorDef>
+	<TileMutatorDef>
+		<defName>VEE_DeepSnow</defName>
+		<label>solid snow</label>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<description>This region is covered in heavy, compacted layers of snow that resist movement and muffle sound.</description>
+		<biomeWhitelist>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+			<li>Tundra</li>
+		</biomeWhitelist>
+		<averageTemperatureRange>-100~5</averageTemperatureRange>
+		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_DeepSnow</workerClass>
+	</TileMutatorDef>
 </Defs>
 
