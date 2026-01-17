@@ -59,7 +59,7 @@
 			<warnOnFail>false</warnOnFail>
 		</genStep>
 	</GenStepDef>
-	<GenStepDef>
+	<GenStepDef MayRequire="Ludeon.RimWorld.Anomaly">
 		<defName>VEE_FleshPits_Large</defName>
 		<order>950</order>
 		<genStep Class="GenStep_ScatterThings">
@@ -70,7 +70,7 @@
 			<warnOnFail>false</warnOnFail>
 		</genStep>
 	</GenStepDef>
-	<GenStepDef>
+	<GenStepDef MayRequire="Ludeon.RimWorld.Anomaly">
 		<defName>VEE_FleshPits_Small</defName>
 		<order>950</order>
 		<genStep Class="GenStep_ScatterThings">
@@ -92,7 +92,7 @@
 			<warnOnFail>false</warnOnFail>
 		</genStep>
 	</GenStepDef>
-	<GenStepDef>
+	<GenStepDef MayRequire="Ludeon.RimWorld.Royalty">
 		<defName>VEE_AncientAnimaTree</defName>
 		<order>950</order>
 		<genStep Class="GenStep_ScatterThings">
