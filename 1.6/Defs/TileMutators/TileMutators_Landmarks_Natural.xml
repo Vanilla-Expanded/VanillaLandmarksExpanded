@@ -575,7 +575,7 @@
 			<li>VEE_Plant_AnimaBrambles</li>
 			<li>VEE_Plant_AnimaBell</li>
 			<li>VEE_Plant_MysticCap</li>
-			<li>VEE_Plant_AnimaHusk</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">VEE_Plant_AnimaHusk</li>
 			<li>VEE_Plant_AnimaHeartBlossom</li>
 		</plantKinds>
 		<extraGenSteps>
@@ -627,7 +627,7 @@
 						<plantDef>VEE_Plant_AnimaHeartBlossom</plantDef>
 						<commonality>0.25</commonality>
 					</li>
-					<li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
 						<plantDef>VEE_Plant_AnimaHusk</plantDef>
 						<commonality>1</commonality>
 					</li>

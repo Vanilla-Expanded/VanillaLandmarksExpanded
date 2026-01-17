@@ -388,7 +388,7 @@
 			<li Class="CompProperties_PlantPreventCutting"/>
 		</comps>
 	</ThingDef>
-	<ThingDef ParentName="PollutionTreeWithStumpBase">
+	<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="PollutionTreeWithStumpBase">
 		<defName>VEE_Plant_AnimaHusk</defName>
 		<label>anima husk</label>
 		<description>A withered anima tree whose bark has hardened into a gray, lifeless shell under relentless pollution. Its psychic presence is muted and distorted, yet a stubborn echo of anima still clings to the husk, refusing to fully fade.</description>
