@@ -62,6 +62,7 @@
 			<li>Mountain</li>
 		</categories>
 		<priority>5</priority>
+		<preventsPondGeneration>true</preventsPondGeneration>
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_ToxicCrater</workerClass>
 		<genOrder>-200</genOrder>
 		<!-- Must be before any mutators that generate caves -->
@@ -81,6 +82,7 @@
 			<li>Mountain</li>
 		</categories>
 		<priority>5</priority>
+		<preventsPondGeneration>true</preventsPondGeneration>
 		<workerClass>VanillaExplorationExpanded.TileMutatorWorker_Volcano</workerClass>
 		<genOrder>-200</genOrder>
 		<!-- Must be before any mutators that generate caves -->
