@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		
+		<xpath>Defs/TileMutatorDef[defName="MineralRich"]/resourceBlacklist</xpath>
+		<value>
+			<li>VEE_MineableJadeite</li>
+			<li>VEE_SmoothedJadeite</li>
+			<li>VEE_MineableComponentSpacer</li>
+		
+		</value>
+	</Operation>
+</Patch>
+
