@@ -897,7 +897,7 @@
 			<Fish_Decreased>0.01</Fish_Decreased>
 		</mutatorChances>
 	</LandmarkDef>
-	<LandmarkDef>
+	<LandmarkDef MayRequire="Ludeon.RimWorld.Royalty">
 		<defName>VEE_AnimaForest</defName>
 		<label>anima forest</label>
 		<iconTexturePath>World/Landmarks/VEE_AnimaForest</iconTexturePath>
@@ -907,7 +907,7 @@
 		<mutatorChances>
 			<VEE_AnimaSoils Required="True"/>
 			<VEE_AnimaFlora Required="True"/>
-			<VEE_AnimaFauna Required="True"/>
+			<VEE_AnimaFauna MayRequire="sarg.alphaanimals" Required="True"/>
 			<VEE_JadeChunks Required="True"/>
 			<VEE_JadeiteMountains Required="True"/>
 			<Stockpile>0.05</Stockpile>
@@ -926,7 +926,7 @@
 			<Fish_Increased>0.05</Fish_Increased>
 		</mutatorChances>
 	</LandmarkDef>
-	<LandmarkDef>
+	<LandmarkDef MayRequire="Ludeon.RimWorld.Royalty">
 		<defName>VEE_AnimaCoast</defName>
 		<label>anima coast</label>
 		<iconTexturePath>World/Landmarks/VEE_AnimaForest</iconTexturePath>
@@ -936,7 +936,7 @@
 		<mutatorChances>
 			<VEE_AnimaSoils_Coast Required="True"/>
 			<VEE_AnimaFlora Required="True"/>
-			<VEE_AnimaFauna Required="True"/>
+			<VEE_AnimaFauna MayRequire="sarg.alphaanimals" Required="True"/>
 			<VEE_JadeChunks Required="True"/>
 			<VEE_JadeiteMountains Required="True"/>
 			<Stockpile>0.05</Stockpile>

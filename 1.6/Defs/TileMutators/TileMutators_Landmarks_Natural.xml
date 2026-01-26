@@ -463,7 +463,7 @@
 	</TileMutatorDef>
 	<TileMutatorDef ParentName="BaseCoastMut">
 		<defName>VEE_DriftwoodShore</defName>
-		<label>driftwood shore</label>
+		<label>driftwood</label>
 		<description>A stretch of coastline littered with bleached logs and broken timber, deposited by tides and storms from distant shores.</description>
 		<extraGenSteps>
 			<li>VEE_DriftwoodShore</li>
@@ -648,14 +648,7 @@
 		<modExtensions>
 			<li Class="VEF.Maps.TileMutatorExtension">
 				<forcedPawnKindDefs>
-					<li>
-						<forcedPawnKindDef>VEE_AnimaDeer</forcedPawnKindDef>
-						<forcedPawnKindDefChance>0.4</forcedPawnKindDefChance>
-					</li>
-					<li>
-						<forcedPawnKindDef>VEE_AnimaBear</forcedPawnKindDef>
-						<forcedPawnKindDefChance>0.15</forcedPawnKindDefChance>
-					</li>
+					
 					<li MayRequire="sarg.alphaanimals">
 						<forcedPawnKindDef>AA_AnimaColossus</forcedPawnKindDef>
 						<forcedPawnKindDefChance>0.1</forcedPawnKindDefChance>
