@@ -76,7 +76,7 @@
 	<ThingDef ParentName="BushBase" Name="Plant_Bush">
 		<defName>VEE_Plant_AnimaBush</defName>
 		<label>anima bush</label>
-		<description>A short shrub. Does talk, you are just too dumb to understand it.</description>
+		<description>A short shrub. Does talk, but only when you're not around.</description>
 		<graphicData>
 			<texPath>Things/Plant/AnimaBush</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -131,7 +131,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>VEE_Plant_AnimaBrambles</defName>
 		<label>anima brambles</label>
-		<description>Thorny, fast-growing vines infused with faint anima energy, their barbs humming softly to the touch.</description>
+		<description>Thorny, fast-growing vines infused with faint anima energy. Their barbs are humming softly to the touch.</description>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Nutrition>0.2</Nutrition>
@@ -235,7 +235,7 @@
 	<ThingDef ParentName="TreeBase">
 		<defName>VEE_Plant_GrandAnimaTree</defName>
 		<label>grand anima tree</label>
-		<description>A grand anima-touched tree. It lacks the psychic potency of a true anima tree, but still hums faintly with psychic life..</description>
+		<description>A grand anima-touched tree. It lacks the psychic potency of a true anima tree, but still hums faintly with psychic life.</description>
 		<graphicData>
 			<texPath>Things/Plant/GrandAnimaTree</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

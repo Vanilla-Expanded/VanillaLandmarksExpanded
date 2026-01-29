@@ -5,7 +5,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>VEE_AnimaPearls</defName>
 		<label>anima pearl</label>
-		<description>A smooth, lustrous pearl formed within anima heart blossoms, faintly humming with psychic resonance. Anima pearls can be consumed to increase psychic sensitivity for some time.</description>
+		<description>A smooth, lustrous pearl formed within anima blossoms, faintly humming with psychic resonance. Anima pearls can be consumed to increase psychic sensitivity for some time.</description>
 		<graphicData>
 			<texPath>Things/Item/AnimaPearls</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>

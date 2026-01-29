@@ -84,7 +84,7 @@
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>VEE_DeadlifeVent</defName>
 		<label>deadlife geyser</label>
-		<description>A sinister geyser that exhales eerie, ash-like dust, capable of reawakening the dead under its haunting influence.</description>
+		<description>A sinister geyser that exhales eerie, ash-like dust, capable of reawakening the dead under its influence.</description>
 		<thingClass>VanillaExplorationExpanded.Building_DeadlifeVent</thingClass>
 		<graphicData>
 			<texPath>Things/Building/DeadlifeDustGeyser</texPath>
@@ -358,7 +358,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>VEE_Cenote</defName>
 		<label>cenote</label>
-		<description>A deep, water filled sinkhole carved into the stone, its sheer walls dropping into clear, silent depths. The surface appears calm.</description>
+		<description>A deep, water filled sinkhole carved into the stone. The surface appears calm. Due to its depth, it can't be filled.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Cenotes/Cenote</texPath>
@@ -386,7 +386,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>VEE_Cenote_Small</defName>
 		<label>small cenote</label>
-		<description>A deep, water filled sinkhole carved into the stone, its sheer walls dropping into clear, silent depths. The surface appears calm.</description>
+		<description>A deep, water filled sinkhole carved into the stone. The surface appears calm. Due to its depth, it can't be filled.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Cenotes/CenoteSmall</texPath>
@@ -464,7 +464,7 @@
 	<ThingDef ParentName="RockBase">
 		<defName>VEE_MineableComponentSpacer</defName>
 		<label>advanced compacted machinery</label>
-		<description>Advanced ancient machinery, compacted over time. Can be mined for useful advanced components.</description>
+		<description>Advanced ancient electronics, compacted over time. Can be mined for useful advanced components.</description>
 		<graphicData>
 			<texPath>Things/Building/Linked/VEE_CompactedElectronics_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

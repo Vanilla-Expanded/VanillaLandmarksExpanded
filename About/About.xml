@@ -8,7 +8,16 @@
 	</supportedVersions>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/VELogo</modIconPath>
 	<packageId>VanillaExpanded.VExplorationE</packageId>
-	<description>Tex.todo</description>
+	<description>Vanilla Landmarks Expanded represents a substantial evolution of the original Vanilla Exploration Expanded concept. Our ambition is to enrich the world map, transforming it from a mere travel surface into a truly unique and engaging mix of environments. The goal is simple: to ensure that every journey undertaken and every new region explored will consistently yield something new, something unique.
+
+While the base game already provides a decent foundation of unique geographical markers, Vanilla Landmarks Expanded takes the opportunity to push this boundary much further. By seamlessly integrating the new content from this mod with existing locations and those introduced in the Odyssey DLC, players will now have a staggering 100 unique locations to discover and interact with across the world map.
+
+This mod introduces 59 entirely new landmarks, each carefully designed to offer a new environmental flavor and challenge. A core feature of these new locations is the introduction of unique mutators - essentially genes, but for the world map. These new mutators range from improved fertility and overgrown maps, to quicksand dunes and tornadoes!
+
+Explore the blistering landscapes of Red Deserts, or attempt to cross treacherous Quicksand Dunes! Settle within the serene beauty of a Laurel Forest, thick with ancient, fragrant evergreens, or delve into the atmospheric Anima Groves, natural centers of potent psychic energy.
+
+Subsequent add-ons of this mod will introduce man-made landmarks, but for now our focus has been solely on the beauty of nature. I sincerely hope you will find this mod to be a must-have!
+</description>
 	<modDependencies>
 		<li>
 			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
