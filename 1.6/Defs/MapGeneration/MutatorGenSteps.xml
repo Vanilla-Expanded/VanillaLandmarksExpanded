@@ -95,12 +95,15 @@
 	<GenStepDef MayRequire="Ludeon.RimWorld.Royalty">
 		<defName>VEE_AncientAnimaTree</defName>
 		<order>950</order>
-		<genStep Class="GenStep_ScatterThings">
+		<genStep Class="VanillaExplorationExpanded.GenStep_ScatterThingsClearPlants">
 			<thingDef>VEE_Plant_TreeAnima_Ancient</thingDef>
 			<createUsedRect>true</createUsedRect>
 			<skipRoofed>true</skipRoofed>
 			<count>1</count>
+			<clearSpaceSize>10</clearSpaceSize>
+			<minEdgeDist>30</minEdgeDist>
 			<warnOnFail>false</warnOnFail>
+			<nearMapCenter>true</nearMapCenter>
 		</genStep>
 	</GenStepDef>
 	

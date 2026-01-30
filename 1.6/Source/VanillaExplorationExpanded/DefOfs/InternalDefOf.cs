@@ -72,6 +72,8 @@ namespace VanillaExplorationExpanded
         public static ThingDef VEE_MineableJadeite;
         public static ThingDef VEE_Filth_Seashells;
         public static ThingDef VEE_DenseSnow;
+        [MayRequireRoyalty]
+        public static ThingDef VEE_Plant_TreeAnima_Ancient;
 
         public static GameConditionDef VEE_FertileRainsGameCondition;
 

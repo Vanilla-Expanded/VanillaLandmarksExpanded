@@ -99,6 +99,7 @@
     <Compile Include="GenSteps\GenStep_Driftwood.cs" />
     <Compile Include="GenSteps\GenStep_JadeChunks.cs" />
     <Compile Include="GenSteps\GenStep_ObsidianChunks.cs" />
+    <Compile Include="GenSteps\GenStep_ScatterThingsClearPlants.cs" />
     <Compile Include="Harmony\CompPowerPlantSolar_DesiredPowerOutput.cs" />
     <Compile Include="Harmony\CompPowerPlantSolar_PostDraw.cs" />
     <Compile Include="Harmony\CompPowerPlantWind_CompTick.cs" />

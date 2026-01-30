@@ -243,6 +243,7 @@
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>320</renderPrecedence>
 		<pathCost>10</pathCost>
+		<designationCategory />
 		<statBases>
 			<Beauty>-10</Beauty>
 			<BeautyOutdoors>-5</BeautyOutdoors>
