@@ -105,6 +105,7 @@
     <Compile Include="Harmony\CompPowerPlantWind_CompTick.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\HediffGiver_Terrain_OnIntervalPassed.cs" />
+    <Compile Include="Harmony\JobDriver_Meditate_MeditationTick.cs" />
     <Compile Include="Harmony\PawnUtility_GetManhunterOnDamageChance.cs" />
     <Compile Include="Harmony\PitGate_FireRandomIncidentByWeight.cs" />
     <Compile Include="Harmony\Plant_GrowthRateFactor_Drought.cs" />
