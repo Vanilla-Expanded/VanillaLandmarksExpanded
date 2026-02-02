@@ -7,7 +7,12 @@
 			<li>VEE_MineableJadeite</li>
 			<li>VEE_SmoothedJadeite</li>
 			<li>VEE_MineableComponentSpacer</li>
-		
+			<li MayRequire="vanillaexpanded.gravship">VGE_Compressed_Steel</li>
+			<li MayRequire="vanillaexpanded.gravship">VGE_Compressed_Silver</li>
+			<li MayRequire="vanillaexpanded.gravship">VGE_Compressed_Gold</li>
+			<li MayRequire="vanillaexpanded.gravship">VGE_Compressed_Uranium</li>
+			<li MayRequire="vanillaexpanded.gravship">VGE_Compressed_Plasteel</li>
+			<li MayRequire="vanillaexpanded.gravship">VGE_Compressed_Jade</li>
 		</value>
 	</Operation>
 </Patch>

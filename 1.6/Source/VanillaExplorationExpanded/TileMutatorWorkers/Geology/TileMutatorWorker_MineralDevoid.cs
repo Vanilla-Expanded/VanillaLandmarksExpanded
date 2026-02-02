@@ -25,7 +25,7 @@ namespace VanillaExplorationExpanded
                     cachedMineables = new List<ThingDef>();
                     foreach (ThingDef def in DefDatabase<ThingDef>.AllDefs)
                     {
-                        if (def.building?.mineableThing != null && def.building.isResourceRock)
+                        if (def.building?.mineableThing != null && def.building.isResourceRock && !InternalDefOf.MineralRich.resourceBlacklist.Contains(def))
                         {
                             cachedMineables.Add(def);
                         }
