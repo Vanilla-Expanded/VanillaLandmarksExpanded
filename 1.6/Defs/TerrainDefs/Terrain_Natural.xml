@@ -248,7 +248,7 @@
 			<Beauty>-10</Beauty>
 			<BeautyOutdoors>-5</BeautyOutdoors>
 			<Cleanliness>-1</Cleanliness>
-			<WorkToBuild>20000</WorkToBuild>
+			
 		</statBases>
 		<scatterType>Rocky</scatterType>
 		<affordances>
