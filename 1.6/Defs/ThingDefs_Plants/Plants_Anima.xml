@@ -266,9 +266,10 @@
 			<sowResearchPrerequisites Inherit="False"/>
 			<topWindExposure>0.03</topWindExposure>
 			<harvestYield>2</harvestYield>
-			 <forceIsTree>true</forceIsTree>
+			<forceIsTree>true</forceIsTree>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>VEE_AnimaPearls</harvestedThingDef>
+			<harvestAfterGrowth>0.20</harvestAfterGrowth>
 		</plant>
 		<comps>
 			
@@ -319,6 +320,7 @@
 			<harvestYield>12</harvestYield>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>VEE_AnimaPearls</harvestedThingDef>
+			<harvestAfterGrowth>0.20</harvestAfterGrowth>
 		</plant>
 		<comps>
 			<li Class="CompProperties_MeditationFocus">

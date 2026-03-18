@@ -202,6 +202,7 @@
 				<li>VEE_TropicalBeachSand</li>
 			</wildTerrainTags>
 			<maxGrowthTemperature>75</maxGrowthTemperature>
+			<harvestAfterGrowth>0.20</harvestAfterGrowth>
 		</plant>
 		<ingestible/>
 	</ThingDef>

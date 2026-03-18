@@ -200,6 +200,7 @@
 			<MaxHitPoints>10</MaxHitPoints>
 			<Flammability>2</Flammability>
 		</statBases>
+		<preventGravshipLandingOn>false</preventGravshipLandingOn>
 		<uiIconScale>0.5</uiIconScale>
 		<altitudeLayer>Item</altitudeLayer>
 		<rotatable>false</rotatable>
@@ -273,6 +274,7 @@
 		</statBases>
 		<selectable>true</selectable>
 		<pathCost>42</pathCost>
+		<preventGravshipLandingOn>false</preventGravshipLandingOn>
 		<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
 		<randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
 		<building>
@@ -300,6 +302,7 @@
 		<altitudeLayer>Item</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.30</fillPercent>
+		<preventGravshipLandingOn>false</preventGravshipLandingOn>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Flammability>0</Flammability>
@@ -334,6 +337,7 @@
 		<altitudeLayer>Item</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.30</fillPercent>
+		<preventGravshipLandingOn>false</preventGravshipLandingOn>
 		<statBases>
 			<MaxHitPoints>350</MaxHitPoints>
 			<Flammability>0</Flammability>
