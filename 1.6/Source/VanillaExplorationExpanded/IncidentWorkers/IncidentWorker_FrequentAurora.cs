@@ -13,12 +13,12 @@ namespace VanillaExplorationExpanded
     {
         protected override bool CanFireNowSub(IncidentParms parms)
         {
-            PlanetTile tile = parms.target.Tile;
+            /*PlanetTile tile = parms.target.Tile;
 
             if (tile.Tile.Mutators?.Contains(InternalDefOf.VEE_FrequentAuroras) != true)
             {
                 return base.CanFireNowSub(parms);
-            }
+            }*/
 
             return false;
 

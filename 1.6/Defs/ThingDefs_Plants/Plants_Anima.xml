@@ -260,7 +260,7 @@
 			<sowTags Inherit="False"/>
 			<dieIfNoSunlight>False</dieIfNoSunlight>
 			<dieFromToxicFallout>False</dieFromToxicFallout>
-			<lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
+			<lifespanDaysPerGrowDays>6</lifespanDaysPerGrowDays>
 			<fertilityMin>0.02</fertilityMin>
 			<fertilitySensitivity>0</fertilitySensitivity>
 			<sowResearchPrerequisites Inherit="False"/>
