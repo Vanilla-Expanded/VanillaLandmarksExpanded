@@ -44,7 +44,7 @@
 			<li>Medium</li>
 			<li>Heavy</li>
 			<li>Walkable</li>
-			<li>SmoothableStone</li>
+			
 		</affordances>
 		<generatedFilth>Filth_VolcanicAsh</generatedFilth>
 		<fertility>0</fertility>
