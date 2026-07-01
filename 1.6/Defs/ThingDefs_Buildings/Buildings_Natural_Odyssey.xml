@@ -212,6 +212,7 @@
 			<isEdifice>false</isEdifice>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
+			<canLandGravshipOn>true</canLandGravshipOn>
 		</building>
 	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
@@ -280,6 +281,7 @@
 			<claimable>false</claimable>
 			<deconstructible>true</deconstructible>
 			<alwaysDeconstructible>true</alwaysDeconstructible>
+			<canLandGravshipOn>true</canLandGravshipOn>
 		</building>
 		<killedLeavings>
 			<WoodLog>20</WoodLog>
@@ -314,6 +316,7 @@
 			<claimable>false</claimable>
 			<deconstructible>true</deconstructible>
 			<alwaysDeconstructible>true</alwaysDeconstructible>
+			<canLandGravshipOn>true</canLandGravshipOn>
 		</building>
 		<killedLeavings>
 			<Jade>20</Jade>
@@ -347,6 +350,7 @@
 			<claimable>false</claimable>
 			<deconstructible>true</deconstructible>
 			<alwaysDeconstructible>true</alwaysDeconstructible>
+			<canLandGravshipOn>true</canLandGravshipOn>
 		</building>
 		<killedLeavings>
 			<Obsidian>10</Obsidian>
