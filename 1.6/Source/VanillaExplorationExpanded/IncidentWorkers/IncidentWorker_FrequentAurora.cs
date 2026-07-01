@@ -1,5 +1,4 @@
 ﻿using RimWorld;
-using RimWorld.Planet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,12 +12,12 @@ namespace VanillaExplorationExpanded
     {
         protected override bool CanFireNowSub(IncidentParms parms)
         {
-            /*PlanetTile tile = parms.target.Tile;
+            Map map = (Map)parms.target;
 
-            if (tile.Tile.Mutators?.Contains(InternalDefOf.VEE_FrequentAuroras) != true)
+            if (map.TileInfo?.Mutators?.Contains(InternalDefOf.VEE_FrequentAuroras) != true)
             {
                 return base.CanFireNowSub(parms);
-            }*/
+            }
 
             return false;
 

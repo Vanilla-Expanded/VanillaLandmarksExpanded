@@ -29,7 +29,7 @@
 			</li>
 		</modExtensions>
 		<workerClass>VEF.Maps.TileMutatorWorker_GenericPrefabSpawner</workerClass>
-		<chanceOnNonLandmarkTile>0.025</chanceOnNonLandmarkTile>
+		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
 		<biomeBlacklist>
 			<li>SeaIce</li>
 			<li>IceSheet</li>
@@ -50,7 +50,7 @@
 			</li>
 		</modExtensions>
 		<workerClass>VEF.Maps.TileMutatorWorker_GenericPrefabSpawner</workerClass>
-		<chanceOnNonLandmarkTile>0.025</chanceOnNonLandmarkTile>
+		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
 		<biomeBlacklist>
 			<li>SeaIce</li>
 			<li>IceSheet</li>
@@ -71,7 +71,7 @@
 			</li>
 		</modExtensions>
 		<workerClass>VEF.Maps.TileMutatorWorker_GenericPrefabSpawner</workerClass>
-		<chanceOnNonLandmarkTile>0.025</chanceOnNonLandmarkTile>
+		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
 		<biomeBlacklist>
 			<li>SeaIce</li>
 			<li>IceSheet</li>
@@ -92,7 +92,7 @@
 			</li>
 		</modExtensions>
 		<workerClass>VEF.Maps.TileMutatorWorker_GenericPrefabSpawner</workerClass>
-		<chanceOnNonLandmarkTile>0.025</chanceOnNonLandmarkTile>
+		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
 		<biomeBlacklist>
 			<li>SeaIce</li>
 			<li>IceSheet</li>

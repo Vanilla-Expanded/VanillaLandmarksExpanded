@@ -9,9 +9,7 @@
 			<texPath>Things/Filth/Seashells</texPath>
 			<drawSize>0.75</drawSize>
 		</graphicData>
-		<statBases>
-			<BeautyOutdoors>2</BeautyOutdoors>
-		</statBases>
+	
 		<filth>
 			<placementMask>
 				<li>Terrain</li>

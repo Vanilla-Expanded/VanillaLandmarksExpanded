@@ -14,8 +14,6 @@
 		<biomeBlacklist>
 			<li>IceSheet</li>
 			<li>SeaIce</li>
-			<li>ExtremeDesert</li>
-			<li>Scarlands</li>
 		</biomeBlacklist>
 	</TileMutatorDef>
 	<TileMutatorDef>
@@ -84,7 +82,11 @@
 					<li MayRequire="VanillaExpanded.VCookE">
 						<plantDef>VCE_Sorghum</plantDef>
 						<commonality>0.25</commonality>
-					</li>					
+					</li>
+					<li MayRequire="VanillaExpanded.VCookE">
+						<plantDef>VCE_Rye</plantDef>
+						<commonality>0.25</commonality>
+					</li>
 					<li MayRequire="VanillaExpanded.VCookE">
 						<plantDef>VCE_Oats</plantDef>
 						<commonality>0.25</commonality>
