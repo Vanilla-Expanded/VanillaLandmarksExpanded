@@ -26,7 +26,7 @@ namespace VanillaExplorationExpanded
 
         public override float AnimalCommonalityFactorFor(PawnKindDef animal, PlanetTile tile)
         {
-            return (GetAnimalKind(tile).Contains(animal)) ? AnimalCommonalityFactor : 1f;
+            return (GetAnimalKind(tile)?.Contains(animal)==true) ? AnimalCommonalityFactor : 1f;
         }
 
         public List<PawnKindDef> GetAnimalKind(PlanetTile tile)
@@ -51,7 +51,7 @@ namespace VanillaExplorationExpanded
                 }
                 if (tmpAnimals.Empty())
                 {
-                    Log.ErrorOnce($"TileMutatorWorker_Aerie: Could not find animal in biome with commonality > {MinAnimalCommonality}, either increase some commonalities, or decrease animalDensity in the biomeDef below this mutators min of {def.animalDensityRange.min}", 123498);
+                    Log.ErrorOnce($"TileMutatorWorker_Venomous: Could not find venomous animal in biome", 123498);
                     return null;
                 }
 
