@@ -25,6 +25,10 @@ namespace VanillaExplorationExpanded
                 {
                     map.terrainGrid.SetTerrain(cell, InternalDefOf.VEE_AnimaSand);
                 }
+                if (cell.GetTerrain(map) == TerrainDefOf.SoftSand)
+                {
+                    map.terrainGrid.SetTerrain(cell, InternalDefOf.VEE_AnimaSoftSand);
+                }
                 if (cell.GetTerrain(map) == TerrainDefOf.SoilRich || cell.GetTerrain(map) == TerrainDefOf.Riverbank)
                 {
                     map.terrainGrid.SetTerrain(cell, InternalDefOf.VEE_AnimaSoilRich);

@@ -45,6 +45,7 @@ namespace VanillaExplorationExpanded
         public static TerrainDef VEE_AnimaWaterOceanShallow;
         public static TerrainDef VEE_AnimaWaterMovingShallow;
         public static TerrainDef VEE_AnimaSand;
+        public static TerrainDef VEE_AnimaSoftSand;
         public static TerrainDef VEE_RedSand;
         public static TerrainDef VEE_RedSoftSand;
         public static TerrainDef VEE_VolcanicSand;

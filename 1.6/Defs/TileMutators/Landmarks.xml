@@ -902,7 +902,7 @@
 		<label>anima forest</label>
 		<iconTexturePath>World/Landmarks/VEE_AnimaForest</iconTexturePath>
 		<atlasSize>(2, 2)</atlasSize>
-		<commonality>0.5</commonality>
+		<commonality>0.15</commonality>
 		<nameMaker>VEE_NamerLandmark_AnimaForest</nameMaker>
 		<mutatorChances>
 			<VEE_AnimaSoils Required="True"/>
@@ -931,7 +931,7 @@
 		<label>anima coast</label>
 		<iconTexturePath>World/Landmarks/VEE_AnimaForest</iconTexturePath>
 		<atlasSize>(2, 2)</atlasSize>
-		<commonality>0.5</commonality>
+		<commonality>0.15</commonality>
 		<nameMaker>VEE_NamerLandmark_AnimaCoast</nameMaker>
 		<mutatorChances>
 			<VEE_AnimaSoils_Coast Required="True"/>

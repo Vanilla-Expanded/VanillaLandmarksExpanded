@@ -319,10 +319,10 @@
 			<alwaysDeconstructible>true</alwaysDeconstructible>
 		</building>
 		<killedLeavings>
-			<Jade>20</Jade>
+			<Jade>4</Jade>
 		</killedLeavings>
 		<costList>
-			<Jade>20</Jade>
+			<Jade>4</Jade>
 		</costList>
 	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
@@ -353,10 +353,10 @@
 			<alwaysDeconstructible>true</alwaysDeconstructible>
 		</building>
 		<killedLeavings>
-			<Obsidian>10</Obsidian>
+			<Obsidian>5</Obsidian>
 		</killedLeavings>
 		<costList>
-			<Obsidian>10</Obsidian>
+			<Obsidian>5</Obsidian>
 		</costList>
 	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
@@ -507,6 +507,7 @@
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>Jade</mineableThing>
 			<mineableYield>2</mineableYield>
+			<mineableDropChance>0.25</mineableDropChance>
 			<veinMineable>false</veinMineable>
 			<mineablePreventMeteorite>true</mineablePreventMeteorite>
 			<mineablePreventNaturalRockOnSurface>true</mineablePreventNaturalRockOnSurface>

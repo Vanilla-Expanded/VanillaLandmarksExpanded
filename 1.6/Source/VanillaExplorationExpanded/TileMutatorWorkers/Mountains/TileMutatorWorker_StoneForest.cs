@@ -11,6 +11,7 @@ namespace VanillaExplorationExpanded
         private const float blobThreshold = 0.2f;
         private const float warpFreq = 0.02f;
         private const float warpStrength = 18f;
+        public float clearRadius = 35f;
 
         public TileMutatorWorker_StoneForest(TileMutatorDef def)
             : base(def)
@@ -36,15 +37,15 @@ namespace VanillaExplorationExpanded
         public override void GeneratePostElevationFertility(Map map)
         {
             MapGenFloatGrid elevation = MapGenerator.Elevation;
-
+            IntVec3 center = map.Center;
+           
             foreach (IntVec3 c in map.AllCells)
             {
-                float v = blobs.GetValue(c);
+                if ((c - center).LengthHorizontalSquared <= clearRadius * clearRadius)
+                    continue;
 
-                if (v > blobThreshold)
-                {
+                if (blobs.GetValue(c) > blobThreshold)
                     elevation[c] = 1f;
-                }
             }
         }
 
