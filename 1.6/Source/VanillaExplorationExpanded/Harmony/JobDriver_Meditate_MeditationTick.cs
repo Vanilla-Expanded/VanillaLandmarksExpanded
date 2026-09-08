@@ -18,7 +18,7 @@ namespace VanillaExplorationExpanded
         [HarmonyPostfix]
         public static void AddGrass(JobDriver_Meditate __instance)
         {
-            if (MeditationFocusDefOf.Natural.CanPawnUse(__instance.pawn))
+            if (__instance.pawn?.Map?.Tile.Tile?.Mutators?.Contains(InternalDefOf.VEE_AnimaFlora) ==true && MeditationFocusDefOf.Natural.CanPawnUse(__instance.pawn))
             {
                 int num = GenRadial.NumCellsInRadius(MeditationUtility.FocusObjectSearchRadius);
                 for (int i = 0; i < num; i++)

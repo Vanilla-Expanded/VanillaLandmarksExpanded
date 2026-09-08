@@ -116,6 +116,7 @@ namespace VanillaExplorationExpanded
         public static TileMutatorDef VEE_FrequentAuroras;
         public static TileMutatorDef VEE_RisingWaters;
         public static TileMutatorDef MineralRich;
+        public static TileMutatorDef VEE_AnimaFlora;
 
         public static WeatherDef Windy;
 
