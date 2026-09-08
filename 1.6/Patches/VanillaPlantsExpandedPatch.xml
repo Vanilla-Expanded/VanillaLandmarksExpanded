@@ -24,6 +24,16 @@
 						<li>VCE_Fruit</li>
 					</value>
 				</li>
+				<li Class="PatchOperationAdd"> 
+					<success>Always</success>
+					<xpath>/Defs/VanillaPlantsExpanded.TillableTerrainDef[defName="VCE_AcceptedTillableTerrains"]/terrains</xpath>
+					<value>
+						<li>VEE_AnimaSoil</li>
+						<li>VEE_LittoralDuneSand</li>
+						<li>VEE_MossySoil</li>
+						
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>
